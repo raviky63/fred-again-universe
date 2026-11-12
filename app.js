@@ -34,14 +34,12 @@ function build(data){
   // crew stays in data/crew.json for a future crew page, but is left out of the web for now
   (data.merch||[]).forEach(m => add({id:m.id, type:"merch", name:m.title, raw:m, year:yearOf(m.date), s:15, img:m.image}));
 
-  data.releases.forEach(r => { link(c.id, r.id, true); (r.with||[]).forEach(w=>link(r.id,w)); (r.tracks||[]).forEach(t=>link(r.id,t)); });
+  data.releases.forEach(r => { if (r.part_of && byId[r.part_of]) link(r.part_of, r.id); else link(c.id, r.id, true); (r.with||[]).forEach(w=>link(r.id,w)); (r.tracks||[]).forEach(t=>link(r.id,t)); });
   data.tracks.forEach(t => (t.with||[]).forEach(w=>link(t.id,w)));
-  // shows with no other connection hang on a year node, so the web stays readable
-  const linkedByOthers = new Set((data.merch||[]).flatMap(x=>x.links_to||[]));
+  // every show hangs on its year, so nothing floats loose; special shows keep their own links to artists and tracks
   data.events.forEach(e => {
-    const plain = !(e.with||[]).length && !(e.tracks||[]).length && !e.story && !linkedByOthers.has(e.id);
     const y = yearOf(e.date);
-    if (plain && y){
+    if (y){
       const hid = "year-"+y;
       if (!byId[hid]){ add({id:hid, type:"hub", name:`${y} · shows`, raw:{story:"", source:"setlist.fm / 1001Tracklists"}, year:y, r:15}); link(c.id, hid, true); }
       byId[hid].count = (byId[hid].count||0)+1; link(hid, e.id);
@@ -144,8 +142,9 @@ function build(data){
       g.append("polygon").attr("points",pts).attr("fill",cc?"#222":"#fff").attr("fill-opacity",unv?.5:1);
       // the flag of the country is the icon itself; a photo (if we have one) still wins
       if (!d.img && cc){ const id="f"+d.id.replace(/[^a-z0-9]/gi,""); defs.append("clipPath").attr("id",id).append("polygon").attr("points",pts);
-        g.append("image").attr("href",flagUrl(cc,80)).attr("x",-s*.71).attr("y",-s*.71).attr("width",s*1.42).attr("height",s*1.42)
-          .attr("preserveAspectRatio","xMidYMid slice").attr("clip-path",`url(#${id})`).on("error",function(){ this.remove(); }); }
+        // the whole flag, turned 45° so it fills the diamond exactly (no stripes cut off)
+        g.append("image").attr("href",flagUrl(cc,80)).attr("x",-s/2).attr("y",-s/2).attr("width",s).attr("height",s)
+          .attr("preserveAspectRatio","none").attr("transform","rotate(45)").on("error",function(){ this.remove(); }); }
       photo(g,d,cp=>cp.append("polygon").attr("points",pts));
       if (fest){ const o=s*.71+4; g.append("polygon").attr("points",`0,${-o} ${o},0 0,${o} ${-o},0`).attr("fill","none").attr("stroke",COLORS.fest).attr("stroke-width",1.4); }
       g.append("polygon").attr("points",pts).attr("fill","none").attr("stroke",fest?COLORS.fest:"#fff").attr("stroke-width",1.2).attr("stroke-dasharray",unv?"3 3":null);
@@ -292,12 +291,13 @@ function build(data){
       const cw=ofType(id,["crew"]); if (cw.length) h+=`<div class="section"><h3>Crew</h3>${pills(cw)}</div>`;
     } else {
       h+=hero(n)+`<div class="sub">${esc(r.date||"Date to add")}</div><p class="story">${esc(r.story)}</p>`;
+      if (r.part_of) h+=`<div class="section"><h3>Addition to</h3>${pills([r.part_of])}</div>`;
       if (r.with?.length) h+=`<div class="section"><h3>Featuring</h3>${pills(r.with)}</div>`;
       if (r.tracks?.length) h+=`<div class="section"><h3>Tracks</h3>${pills(r.tracks)}</div>`;
       const mm=ofType(id,["merch"]); if (mm.length) h+=`<div class="section"><h3>Merch</h3>${pills(mm)}</div>`;
     }
     const L=r.links||{};
-    const ls=[["Spotify",L.spotify],["YouTube",L.youtube],["Instagram",L.instagram],["Website",L.website]].filter(x=>x[1]);
+    const ls=[["Spotify",L.spotify],["YouTube",L.youtube],["Instagram",L.instagram],["SoundCloud",L.soundcloud],["Website",L.website]].filter(x=>x[1]);
     if (ls.length) h+=`<div class="section links"><h3>Listen / watch</h3>${ls.map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${k} ↗</a>`).join("")}</div>`;
     if (n.type!=="fred") h+=`<div class="section"><button class="pill" id="focusBtn">Start the web from here</button> <a class="pill" style="text-decoration:none" href="timeline.html#${id}">${["artist","crew"].includes(n.type)?"Follow through time":"See on the timeline"} →</a></div>`;
     h+=`<div class="section"><h3>Source</h3>${badge(r)}<div class="src">${esc(r.source||"")}</div></div>`;

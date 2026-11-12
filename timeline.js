@@ -1,10 +1,10 @@
 // Timeline view of the Fred again.. Universe — a horizontal ride through time, era by era.
 // Same data/ folder as the web; eras come from data/eras.json.
-const COLORS = {artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", ep:"#ffd166", mixtape:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", mix:"#9a97a6", upcoming:"#ff5a36", merch:"#d7ff5e"};
-const GROUP = {album:"releases", ep:"releases", mixtape:"releases", single:"releases", feature:"releases", track:"tracks", event:"shows", upcoming:"shows", mix:"mixes", merch:"merch"};
+const COLORS = {artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", ep:"#ffd166", mixtape:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", mix:"#9a97a6", upcoming:"#ff5a36", merch:"#d7ff5e", milestone:"#5ee3b0"};
+const GROUP = {album:"releases", ep:"releases", mixtape:"releases", single:"releases", feature:"releases", track:"tracks", event:"shows", upcoming:"shows", mix:"mixes", merch:"merch", milestone:"milestones"};
 const LABEL = {releases:"Releases", tracks:"Tracks", shows:"Shows & moments", mixes:"DJ mixes & radio", merch:"Merch"};
 const NAME = {album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single", feature:"Feature", track:"Track", event:"Show", festival:"Festival", upcoming:"Upcoming", mix:"DJ mix / radio", merch:"Merch"};
-const FILES = ["meta","center","artists","releases","tracks","events","crew","merch","eras"];
+const FILES = ["meta","center","artists","releases","tracks","events","crew","merch","eras","milestones"];
 const state = {hidden:new Set(["tracks"]), q:"", follow:null};
 
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -17,10 +17,11 @@ function pin(kind, raw){
   if (kind==="event" && cc){
     const fest = raw.setting==="festival", id = "fp"+raw.id.replace(/[^a-z0-9]/gi,"");
     return `<svg class="pin flagpin" viewBox="0 0 20 20"><defs><clipPath id="${id}"><polygon points="10,3 17,10 10,17 3,10"/></clipPath></defs>
-      <polygon points="10,3 17,10 10,17 3,10" fill="#222"/><image href="https://flagcdn.com/w40/${cc.toLowerCase()}.png" x="3" y="3" width="14" height="14" preserveAspectRatio="xMidYMid slice" clip-path="url(#${id})"/>
+      <polygon points="10,3 17,10 10,17 3,10" fill="#222"/><image href="https://flagcdn.com/w40/${cc.toLowerCase()}.png" x="5.05" y="5.05" width="9.9" height="9.9" preserveAspectRatio="none" transform="rotate(45 10 10)"/>
       <polygon points="10,3 17,10 10,17 3,10" fill="none" stroke="${fest?"#ffd166":"#fff"}" stroke-width="1"/>${fest?`<polygon points="10,.5 19.5,10 10,19.5 .5,10" fill="none" stroke="#ffd166" stroke-width="1"/>`:""}</svg>`;
   }
   if (["event","upcoming","mix"].includes(kind)) return `<svg class="pin" viewBox="0 0 14 14"><rect x="3" y="3" width="8" height="8" fill="${c}" transform="rotate(45 7 7)"/></svg>`;
+  if (kind==="milestone") return `<svg class="pin" viewBox="0 0 14 14" style="filter:drop-shadow(0 0 4px #5ee3b0)"><circle cx="7" cy="7" r="5" fill="#5ee3b0"/><circle cx="7" cy="7" r="2" fill="#08080c"/></svg>`;
   if (kind==="merch") return `<svg class="pin" viewBox="0 0 14 14"><polygon points="13,7 10,12.2 4,12.2 1,7 4,1.8 10,1.8" fill="${c}"/></svg>`;
   return `<svg class="pin" viewBox="0 0 14 14"><rect x="1.5" y="1.5" width="11" height="11" rx="1.5" fill="${c}"/></svg>`;
 }
@@ -39,8 +40,10 @@ function build(data){
   data.tracks.forEach(t => add(t, "track", t.title, t.date, t.cover || releaseCover[(t.releases||[])[0]]));
   data.events.forEach(e => add(e, e.kind==="mix"?"mix":e.kind==="upcoming"?"upcoming":"event", e.title, e.date, e.thumbnail));
   data.merch.forEach(m => add(m, "merch", m.title, m.date, m.image));
+  (data.milestones||[]).forEach(m => add({...m, story:m.text}, "milestone", m.title, m.date, releaseCover[m.release]));
   const link = (a,b) => { if(!a||!b||a===b) return; (nb[a]??=new Set()).add(b); (nb[b]??=new Set()).add(a); };
-  data.releases.forEach(r => { (r.with||[]).forEach(w=>link(r.id,w)); (r.tracks||[]).forEach(t=>link(r.id,t)); });
+  data.releases.forEach(r => { (r.with||[]).forEach(w=>link(r.id,w)); (r.tracks||[]).forEach(t=>link(r.id,t)); link(r.id, r.part_of); });
+  (data.milestones||[]).forEach(m => link(m.id, m.release));
   data.tracks.forEach(t => (t.with||[]).forEach(w=>link(t.id,w)));
   data.events.forEach(e => { (e.with||[]).forEach(w=>link(e.id,w)); (e.tracks||[]).forEach(t=>link(e.id,t)); });
   [...data.crew, ...data.merch].forEach(x => (x.links_to||[]).forEach(t=>link(x.id,t)));
@@ -76,6 +79,7 @@ function build(data){
   }
   function visible(it){
     if (state.follow) return touches(it, state.follow);
+    if (it.kind==="milestone") return !state.q || (it.title+" "+it.raw.text).toLowerCase().includes(state.q);
     if (state.hidden.has(it.group)) return false;
     if (state.q){
       const hay = (it.title+" "+(it.raw.story||"")+" "+(it.raw.location||"")+" "+[...(nb[it.id]||[])].map(x=>(people[x]||byId[x]||{}).name||(byId[x]||{}).title||"").join(" ")).toLowerCase();
@@ -85,6 +89,12 @@ function build(data){
   }
 
   function card(it){
+    if (it.kind==="milestone"){ const r = it.raw;
+      return `<article class="item milestone" id="t-${it.id}">
+        <div class="meta">USB moment <span class="date">· ${fmt(it.date)}</span></div>
+        <div class="title">${esc(it.title)}</div><p class="story">${esc(r.text)}</p>
+        <div class="pills"><span class="pill" data-go="${r.release}">USB, the never-ending album</span></div>
+        <div class="src">${esc(r.source)}</div></article>`; }
     const r = it.raw, c = COLORS[it.kind]||"#fff", year = (it.date||"").slice(0,4);
     const n = [...(nb[it.id]||[])];
     const who = n.filter(x => people[x]);
@@ -104,7 +114,7 @@ function build(data){
     return `<article class="item ${mini?"mini":""} ${r.verified===false?"unv":""}" id="t-${it.id}">
         ${thumb}
         <div class="meta" style="color:${r.setting==="festival"?"#ffd166":c}">${r.setting==="festival"?NAME.festival:NAME[it.kind]||it.kind} <span class="date">· ${fmt(it.date)}</span></div>
-        <div class="title">${esc(it.title)}</div>${where}
+        <div class="title">${esc(it.title)}</div>${where}${r.part_of&&byId[r.part_of]?`<div class="where">Addition to <span class="pill" data-go="${r.part_of}">${esc(byId[r.part_of].title)}</span></div>`:""}
         ${r.story?`<p class="story">${esc(r.story)}</p>`:""}${tracklist}
         ${(who.length||back.length||fwd.length||same.length)?`<div class="pills">${who.map(person).join("")}${back.map(x=>pill(x,"back")).join("")}${same.slice(0,8).map(x=>pill(x)).join("")}${fwd.map(x=>pill(x,"fwd")).join("")}</div>`:""}
         ${mini?"":`<div class="actions">${acts}</div>`}

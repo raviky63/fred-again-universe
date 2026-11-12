@@ -3,35 +3,52 @@
     "id": "set-2019-09-26-rinse-fm",
     "title": "Rinse FM",
     "date": "2019-09-26",
-    "location": "Radio / online mix",
+    "location": "Rinse FM, London",
     "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "",
+    "story": "Listed on 1001Tracklists, but no Rinse FM upload found for this date. The Rinse FM show that can be checked is from 4 April 2020.",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": false
   },
   {
     "id": "set-2019-12-13-energy-crew-minimix",
-    "title": "Energy Crew minimix",
+    "title": "Radio 1 Mini Mix ('Energy Crew')",
     "date": "2019-12-13",
-    "location": "Radio / online mix",
+    "location": "BBC Radio 1, Annie Mac's Mini Mix",
     "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "",
+    "story": "His first Radio 1 Mini Mix, made to celebrate Stormzy's album Heavy Is the Head, which Fred worked on a lot.",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "BBC Radio 1 Mini Mix (13 Dec 2019); 1001Tracklists",
+    "verified": true
+  },
+  {
+    "id": "set-2020-04-04-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2020-04-04",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Guest show on Rinse FM, early in lockdown.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain040420"
+    },
+    "source": "Rinse FM on SoundCloud (published 4 Apr 2020)",
     "verified": true
   },
   {
     "id": "set-2020-05-06-highsnobiety-soundsystem-guest",
     "title": "Highsnobiety Soundsystem Guest Mix 013",
     "date": "2020-05-06",
-    "location": "Radio / online mix",
+    "location": "Highsnobiety (online)",
     "kind": "mix",
     "with": [],
     "tracks": [],
@@ -63,7 +80,7 @@
     "id": "set-2021-05-08-rinse-fm",
     "title": "Rinse FM",
     "date": "2021-05-08",
-    "location": "Radio / online mix",
+    "location": "Rinse FM, London",
     "kind": "mix",
     "with": [],
     "tracks": [],
@@ -77,7 +94,7 @@
     "id": "set-2021-05-19-dance-department-812",
     "title": "Dance Department 812",
     "date": "2021-05-19",
-    "location": "Radio / online mix",
+    "location": "Dance Department radio show, hosted by Ivo van Breukelen (NL)",
     "kind": "mix",
     "with": [
       "ivo-van-breukelen"
@@ -87,13 +104,13 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": false
   },
   {
     "id": "set-2021-05-22-1live-dj-session",
     "title": "1LIVE DJ Session",
     "date": "2021-05-22",
-    "location": "Radio / online mix",
+    "location": "1LIVE, Germany",
     "kind": "mix",
     "with": [],
     "tracks": [],
@@ -107,7 +124,7 @@
     "id": "set-2021-05-29-siriusxm-dance-again-virtual-f",
     "title": "SiriusXM Dance Again Virtual Festival",
     "date": "2021-05-29",
-    "location": "Radio / online mix",
+    "location": "SiriusXM (online festival)",
     "kind": "mix",
     "with": [],
     "tracks": [],
@@ -193,7 +210,7 @@
     "id": "set-2021-11-15-mixmag-the-cover-mix",
     "title": "Mixmag The Cover Mix",
     "date": "2021-11-15",
-    "location": "Radio / online mix",
+    "location": "Mixmag (online)",
     "kind": "mix",
     "with": [],
     "tracks": [],
@@ -297,7 +314,7 @@
     "id": "set-2021-12-18-1live-dj-session-best-of-2021-",
     "title": "1LIVE DJ Session, Best of 2021 pt 1",
     "date": "2021-12-18",
-    "location": "Radio / online mix",
+    "location": "1LIVE, Germany (with Shouse and FISHER)",
     "kind": "mix",
     "with": [
       "shouse",
@@ -314,7 +331,7 @@
     "id": "set-2021-12-24-apple-music-mixes-nye-2022-dj-",
     "title": "Apple Music Mixes NYE 2022 DJ mix",
     "date": "2021-12-24",
-    "location": "Radio / online mix",
+    "location": "Apple Music",
     "kind": "mix",
     "with": [],
     "tracks": [],
@@ -328,7 +345,7 @@
     "id": "set-2022-01-12-fazemag-in-the-mix-118",
     "title": "FAZEmag In The Mix 118",
     "date": "2022-01-12",
-    "location": "Radio / online mix",
+    "location": "FAZEmag (online)",
     "kind": "mix",
     "with": [],
     "tracks": [],
@@ -336,13 +353,13 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": false
   },
   {
     "id": "set-2022-02-25-triple-j-friday-mix",
     "title": "Triple J Friday Mix",
     "date": "2022-02-25",
-    "location": "Radio / online mix",
+    "location": "triple j, Australia",
     "kind": "mix",
     "with": [],
     "tracks": [],
@@ -1946,7 +1963,7 @@
     "id": "set-2023-05-03-nts-radio-secret-life-album-mi",
     "title": "NTS Radio Secret Life album mix",
     "date": "2023-05-03",
-    "location": "Radio / online mix",
+    "location": "NTS Radio, with Brian Eno",
     "kind": "mix",
     "with": [
       "brian-eno"
@@ -3507,7 +3524,7 @@
     "id": "set-2024-09-09-radio-1-dance-morning",
     "title": "Radio 1 Dance Morning",
     "date": "2024-09-09",
-    "location": "Radio / online mix",
+    "location": "BBC Radio 1, with Arielle Free",
     "kind": "mix",
     "with": [
       "arielle-free"
@@ -3860,23 +3877,23 @@
     "id": "set-2024-10-17-nts-radio",
     "title": "NTS Radio",
     "date": "2024-10-17",
-    "location": "Radio / online mix",
+    "location": "NTS Radio, with Jim Legxacy",
     "kind": "mix",
     "with": [
       "jim-legxacy"
     ],
     "tracks": [],
     "thumbnail": "",
-    "story": "",
+    "story": "Fred and Jim Legxacy made this guest show for NTS at Fred's flat.",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "NTS (17 Oct 2024); 1001Tracklists",
     "verified": true
   },
   {
     "id": "set-2024-12-25-sunshine-live-mix-mission",
     "title": "Sunshine Live Mix Mission",
     "date": "2024-12-25",
-    "location": "Radio / online mix",
+    "location": "Sunshine Live, Germany",
     "kind": "mix",
     "with": [],
     "tracks": [],
@@ -3884,7 +3901,7 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": false
   },
   {
     "id": "set-2025-05-21-twitch",
@@ -4121,20 +4138,6 @@
     "setting": "own"
   },
   {
-    "id": "set-2025-08-29-skepta-fred-full-tape-mix",
-    "title": "Skepta .. Fred (full tape mix)",
-    "date": "2025-08-29",
-    "location": "Radio / online mix",
-    "kind": "mix",
-    "with": [],
-    "tracks": [],
-    "thumbnail": "",
-    "story": "",
-    "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
-  },
-  {
     "id": "set-2025-09-04-ex-macello-milan",
     "title": "Ex Macello, Milan",
     "date": "2025-09-04",
@@ -4369,7 +4372,7 @@
     "id": "set-2025-10-22-nts-radio-drumless-mix",
     "title": "NTS Radio Drumless Mix",
     "date": "2025-10-22",
-    "location": "Radio / online mix",
+    "location": "NTS Radio, with Caribou and Floating Points",
     "kind": "mix",
     "with": [
       "caribou",
@@ -4482,7 +4485,7 @@
       "sammy-virji"
     ],
     "tracks": [
-      "winny"
+      "winny-track"
     ],
     "thumbnail": "",
     "story": "Phone-free show. Only official footage gets linked here.",
@@ -4863,7 +4866,7 @@
     "id": "set-2026-06-09-young-nation-show-300",
     "title": "Young Nation Show #300",
     "date": "2026-06-09",
-    "location": "Radio / online mix",
+    "location": "Young Nation Show, hosted by Chester Young",
     "kind": "mix",
     "with": [
       "chester-young"
@@ -4873,13 +4876,13 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": false
   },
   {
     "id": "set-2026-06-24-dior-summer-2027-men-s-show",
     "title": "Dior Summer 2027 Men's Show",
     "date": "2026-06-24",
-    "location": "Radio / online mix",
+    "location": "Dior men's show, Paris (soundtrack mix)",
     "kind": "mix",
     "with": [],
     "tracks": [],

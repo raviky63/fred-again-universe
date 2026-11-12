@@ -1,18 +1,58 @@
 [
-  {"id":"early", "name":"Before Actual Life", "start":"0000", "release":"", "color":"#5b6475",
-   "note":"The early singles and GANG with Headie One, before the Actual Life diaries came out."},
-  {"id":"actual-life", "name":"Actual Life", "start":"2021-04-16", "release":"actual-life", "color":"#d9a441",
-   "note":"From the release of Actual Life (April 14 – December 17 2020)."},
-  {"id":"actual-life-2", "name":"Actual Life 2", "start":"2021-11-19", "release":"actual-life-2", "color":"#4f8fd6",
-   "note":"From the release of Actual Life 2 (February 2 – October 15 2021). USB001 and the Boiler Room set land here."},
-  {"id":"actual-life-3", "name":"Actual Life 3", "start":"2022-10-28", "release":"actual-life-3", "color":"#e0603a",
-   "note":"From the release of Actual Life 3 (January 1 – September 9 2022)."},
-  {"id":"secret-life", "name":"Secret Life", "start":"2023-05-05", "release":"secret-life", "color":"#8a7bd1",
-   "note":"From Secret Life with Brian Eno."},
-  {"id":"ten-days", "name":"ten days", "start":"2023-12-08", "release":"ten-days", "color":"#e8e3d6",
-   "note":"From leavemealone, the first single of the ten days era, through the album and two more days."},
-  {"id":"usb002", "name":"USB002", "start":"2025-06-01", "release":"usb", "color":"#5ee3b0",
-   "note":"USB002: a new track every week, the phone-free shows and Skepta .. Fred."},
-  {"id":"nine-months", "name":"9 Months & 50 Hours", "start":"2026-07-31", "release":"nine-months", "color":"#ff9ecb",
-   "note":"From the 9 Months & 50 Hours mixtape."}
+  {
+    "id": "actual-life",
+    "name": "Actual Life",
+    "start": "0000",
+    "release": "actual-life",
+    "color": "#d9a441",
+    "note": "From the first singles and GANG with Headie One to Actual Life (April 14 – December 17 2020), released 16 April 2021."
+  },
+  {
+    "id": "actual-life-2",
+    "name": "Actual Life 2",
+    "start": "2021-11-19",
+    "release": "actual-life-2",
+    "color": "#4f8fd6",
+    "note": "From the release of Actual Life 2 (February 2 – October 15 2021). USB001 and the Boiler Room set land here."
+  },
+  {
+    "id": "actual-life-3",
+    "name": "Actual Life 3",
+    "start": "2022-10-28",
+    "release": "actual-life-3",
+    "color": "#e0603a",
+    "note": "From the release of Actual Life 3 (January 1 – September 9 2022)."
+  },
+  {
+    "id": "secret-life",
+    "name": "Secret Life",
+    "start": "2023-05-05",
+    "release": "secret-life",
+    "color": "#8a7bd1",
+    "note": "From Secret Life with Brian Eno."
+  },
+  {
+    "id": "ten-days",
+    "name": "ten days",
+    "start": "2023-12-08",
+    "release": "ten-days",
+    "color": "#e8e3d6",
+    "note": "From leavemealone, the first single of the ten days era, through the album and two more days, the two tracks added to it in December 2024."
+  },
+  {
+    "id": "usb002",
+    "name": "USB002",
+    "start": "2025-09-25",
+    "release": "usb",
+    "color": "#5ee3b0",
+    "note": "Announced 25 September 2025: ten songs, ten shows, ten cities in ten weeks. Then the residencies in New York and London, and USB002 REMIXES."
+  },
+  {
+    "id": "nine-months",
+    "name": "9 Months & 50 Hours",
+    "start": "2026-07-31",
+    "release": "nine-months",
+    "color": "#ff9ecb",
+    "note": "From the 9 Months & 50 Hours mixtape."
+  }
 ]

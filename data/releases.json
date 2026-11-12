@@ -16,7 +16,7 @@
     "tracks": []
   },
   {
-    "id": "octavian",
+    "id": "octavian-myownworld",
     "title": "Octavian (MyOwnWorld)",
     "kind": "single",
     "date": "2019-09",
@@ -297,7 +297,7 @@
       "solo",
       "icey",
       "feisty",
-      "winny",
+      "winny-track",
       "beto-s-horns-fred-remix",
       "talk-of-the-town",
       "hardstyle-2",
@@ -451,7 +451,7 @@
     "date": "2024-12-13",
     "with": [],
     "cover": "https://i.scdn.co/image/ab67616d00001e022ba0b2f14c22b038bdb94c31",
-    "story": "Two extra singles added to Ten Days on 13 December 2024.",
+    "story": "Two tracks added to ten days on 13 December 2024: light dark light and little mystery. Not a separate record, an addition to ten days.",
     "links": {
       "spotify": "https://open.spotify.com/album/0tMLTrwCaJcqioPLMwxZBc",
       "youtube": ""
@@ -461,7 +461,8 @@
     "tracks": [
       "light-dark-light",
       "little-mystery"
-    ]
+    ],
+    "part_of": "ten-days"
   },
   {
     "id": "air-maxes",

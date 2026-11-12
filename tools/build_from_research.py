@@ -83,12 +83,12 @@ for id, title, date, with_ in [
     ("mike-desert-island-duvet", "Mike (Desert Island Duvet)", "2023-03", ["The Streets", "Dermot Kennedy"]),
     ("air-maxes", "Air Maxes", "2025", ["KETTAMA", "Shady Nasty"]),
     ("kyren", "Kyren (My Son)", "2020-05", []), ("eazi", "Eazi (DoItNow)", "2019-10", ["Mr Eazi"]),
-    ("octavian", "Octavian (MyOwnWorld)", "2019-09", ["Octavian"]),
+    ("octavian-myownworld", "Octavian (MyOwnWorld)", "2019-09", ["Octavian"]),
 ]:
     ws = [ensure_artist(w) for w in with_]
     story = {"diana": "Released on Jayda G's DJ-Kicks.", "mike-desert-island-duvet": "On Fabric Presents The Streets, with Mike Skinner.",
              "air-maxes": "On Kettama's album Archangel.", "strong": "On Romy's album Mid Air. Grammy-nominated.",
-             "eazi": "Early SoundCloud upload (2019).", "octavian": "Early SoundCloud upload (2019).",
+             "eazi": "Early SoundCloud upload (2019).", "octavian-myownworld": "Early SoundCloud upload (2019).",
              "kyren": "SoundCloud upload (2020)."}.get(id, "")
     rel(id, title, "single", date, story=story, with_=[w for w in ws if w])
     releases[id]["cover"] = old_releases.get(id, {}).get("cover", "")
@@ -97,7 +97,7 @@ for id, title, date, with_ in [
 tracks = {}
 def add_track(title, artist_names, release_id, date):
     clean = re.sub(r"\s*\[feat\..*?\]", "", title).strip()
-    tid = slug(clean)
+    tid = slug(clean); tid = {"winny": "winny-track"}.get(tid, tid)  # artist "winny" has that id
     if tid in releases:  # avoid id clash with a release
         tid += "-track"
     ws = [ensure_artist(n) for n in artist_names]
@@ -146,7 +146,7 @@ EXTRA = {"jungle": ("2022-06-29", "https://i.scdn.co/image/ab67616d00001e0235bae
          "baby-again": ("2023-03-17", "https://i.scdn.co/image/ab67616d00001e02479a2e72d1ae8abaf4178bb5", "7J7redEXgOUEsUBXukhkUF"),
          "stayinit": ("2024-02-28", "https://i.scdn.co/image/ab67616d00001e02591a9aec98af75664276eecf", "0DeGmYq33W6Svw1eTgnxDF"),
          "i-luv-u": ("2025-12-12", "https://i.scdn.co/image/ab67616d00001e0211e3c1daf378abe0b819de9d", "5TMeo9RZrBOvQXDXt8EFsm"),
-         "winny": ("2025-11-21", "https://i.scdn.co/image/ab67616d00001e02b33612692e5bfd24060e634b", "63ITryjqkiwjmk3GABslAj"),
+         "winny-track": ("2025-11-21", "https://i.scdn.co/image/ab67616d00001e02b33612692e5bfd24060e634b", "63ITryjqkiwjmk3GABslAj"),
          "solo": ("2025-12-05", "https://i.scdn.co/image/ab67616d00001e02a558e977ecdbbe6e5a447795", "1FdXEZw2E4Z7HBsmhkV5E7"),
          "ok-ok": ("2025-10", "https://i.scdn.co/image/ab67616d00001e02dbd77ed6012bfa6573c72276", "0d9SgHDCP04wphWMeEMArX"),
          "feisty": ("2025-11-28", "https://i.scdn.co/image/ab67616d00001e0230963ea5204f1a9e17899430", "4XZZAJujVu3Li8LiiNB6vk"),
