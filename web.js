@@ -31,7 +31,9 @@ function build(D){
   const add = n => (all[n.id]=n);
   const c = D.center;
   add({id:c.id,type:"fred",name:"Fred again..",img:c.photo,r:34,raw:c});
-  eras.forEach(e=>add({id:"era-"+e.id,type:"era",name:e.name,era:e,r:22,raw:{story:e.note}}));
+  // three hubs around Fred: the web is about connections, not time (time = colour + the timeline)
+  add({id:"hub-singles",type:"hub",name:"Singles & collabs",r:24,raw:{story:"Every single, collab and feature outside the albums. Click to open them; the artists on them appear with them."}});
+  add({id:"hub-live",type:"hub",name:"Live: tours & shows",r:24,raw:{story:"Every tour, festival year and DJ mix, bundled. Click to open the tours, then click a tour to see its shows."}});
   const cover = {}; D.releases.forEach(r=>cover[r.id]=r.cover);
   D.releases.forEach(r=>add({id:r.id,type:"release",kind:r.kind,name:r.title,img:r.cover,era:eraOf(r.date),big:["album","mixtape"].includes(r.kind)||r.kind==="ep"&&!r.part_of,r:r.kind==="album"?17:r.kind==="single"?10:13,raw:r}));
   D.tracks.forEach(t=>add({id:t.id,type:"track",kind:"track",name:t.title,img:t.cover||cover[(t.releases||[])[0]],era:eraOf(t.date),r:6,raw:t}));
@@ -52,11 +54,11 @@ function build(D){
   const nb={}; edges.forEach(([a,b])=>{ (nb[a]??=new Set()).add(b); (nb[b]??=new Set()).add(a); });
   Object.values(all).filter(n=>n.type==="artist").forEach(n=>n.deg=(nb[n.id]||new Set()).size);
   const parent={};
-  D.releases.forEach(r=>parent[r.id]=r.part_of||"era-"+all[r.id].era.id);
-  D.tracks.forEach(t=>parent[t.id]=(t.releases||[])[0]||"era-"+all[t.id].era.id);
+  D.releases.forEach(r=>parent[r.id]=r.part_of|| (all[r.id].big ? c.id : "hub-singles"));
+  D.tracks.forEach(t=>parent[t.id]=(t.releases||[])[0]||"hub-singles");
   D.events.forEach(e=>parent[e.id]=all[e.id].group);
-  Object.values(all).filter(n=>n.type==="group").forEach(g=>parent[g.id]="era-"+g.era.id);
-  eras.forEach(e=>parent["era-"+e.id]=c.id);
+  Object.values(all).filter(n=>n.type==="group").forEach(g=>parent[g.id]="hub-live");
+  parent["hub-singles"]=c.id; parent["hub-live"]=c.id;
   D.artists.forEach(a=>{ const n=[...(nb[a.id]||[])].sort((p,q)=>(all[p].type==="release"?0:1)-(all[q].type==="release"?0:1)); parent[a.id]=n[0]; });
   const expanded=new Set();
 
@@ -65,7 +67,7 @@ function build(D){
     const v=new Set([c.id]);
     for(const n of Object.values(all)){
       if(n.type==="fred"||n.type==="artist") continue;
-      if(n.type==="era"){ v.add(n.id); continue; }
+      if(n.type==="hub"){ v.add(n.id); continue; }
       if(n.type==="release" && n.big && !n.raw.part_of){ v.add(n.id); continue; }
       const p=parent[n.id]; if(p && expanded.has(p) && (n.type!=="event"||expanded.has(n.group))) v.add(n.id);
     }
@@ -73,14 +75,14 @@ function build(D){
       if([...(nb[n.id]||[])].some(id=>v.has(id) && (all[id].type!=="release" || expanded.has(id) || expanded.has(parent[id])))) v.add(n.id);
     return v;
   }
-  const homeOf=(n,v)=>{ if(n.type==="era") return c.id; const p=parent[n.id]; if(p&&v.has(p)) return p; return c.id; };
+  const homeOf=(n,v)=>{ if(n.type==="hub") return c.id; const p=parent[n.id]; if(p&&v.has(p)) return p; return c.id; };
 
   // ---------- labels: only where there is room ----------
   let k=1, hover=null, selected=null;
   const labelW = d => Math.min((d.label||short(d.name)).length, 28)*6.1+10;
   const showsLabel = (d,kk=k) => {
     if(d.id===hover||d.id===selected) return true;
-    if(["fred","era","group"].includes(d.type)) return true;
+    if(["fred","hub","group"].includes(d.type)) return true;
     if(d.type==="release" && (d.big||expanded.has(parent[d.id]))) return true;
     if(expanded.has(parent[d.id])) return true;           // children of something you opened
     if(d.type==="artist") return true;
@@ -105,8 +107,8 @@ function build(D){
   svg.call(zoom).on("dblclick.zoom",null);
   svg.on("click",e=>{ if(e.target===svg.node()) select(null); });
   const sim=d3.forceSimulation()
-    .force("charge",d3.forceManyBody().strength(d=>d.type==="fred"?-1100:d.type==="era"?-700:d.type==="group"?-320:-150))
-    .force("link",d3.forceLink().id(d=>d.id).distance(l=>l.kind==="also"?160:l.kind==="home"?(l.target.type==="era"?260:l.target.type==="group"?110:80):90).strength(l=>l.kind==="home"?.6:l.kind==="also"?.02:.12))
+    .force("charge",d3.forceManyBody().strength(d=>d.type==="fred"?-1100:d.type==="hub"?-700:d.type==="group"?-320:-150))
+    .force("link",d3.forceLink().id(d=>d.id).distance(l=>l.kind==="also"?160:l.kind==="home"?(l.target.type==="hub"?240:l.target.type==="group"?110:80):90).strength(l=>l.kind==="home"?.6:l.kind==="also"?.02:.12))
     .force("collide",d3.forceCollide().radius(space).strength(.9).iterations(2))
     .force("x",d3.forceX(0).strength(.03)).force("y",d3.forceY(0).strength(.03));
   all[c.id].fx=0; all[c.id].fy=0;
@@ -138,12 +140,12 @@ function build(D){
     ne.transition().duration(450).style("opacity",1);
     ne.each(function(){ const g=d3.select(this); g.append("g").attr("class","shape"); g.append("rect").attr("class","lbg"); g.append("text").attr("class","lab").attr("text-anchor","middle"); });
     gN.selectAll("g.node").each(function(d){ draw(d3.select(this),d); });
-    crowd=nodes.length;
+    crowd=nodes.length; setTimeout(()=>highlight(selected),0);
     sim.nodes(nodes); sim.force("link").links(links); sim.force("collide").radius(space); sim.alpha(.8).restart();
     labels();
   }
   function toggle(d){
-    if(["era","group"].includes(d.type) || (d.type==="release" && (D.tracks.some(t=>(t.releases||[])[0]===d.id) || D.releases.some(r=>r.part_of===d.id) || (d.raw.with||[]).length))){
+    if(["hub","group"].includes(d.type) || (d.type==="release" && (D.tracks.some(t=>(t.releases||[])[0]===d.id) || D.releases.some(r=>r.part_of===d.id) || (d.raw.with||[]).length))){
       expanded.has(d.id)?expanded.delete(d.id):expanded.add(d.id); render();
     }
   }
@@ -152,7 +154,8 @@ function build(D){
     const clip=(make)=>{ const id="cp"+d.id.replace(/[^a-z0-9]/gi,""); if(!document.getElementById(id)) make(defs.append("clipPath").attr("id",id)); return `url(#${id})`; };
     const img=(u,shape,size)=>{ if(u) s.append("image").attr("href",u).attr("x",-size).attr("y",-size).attr("width",2*size).attr("height",2*size).attr("preserveAspectRatio","xMidYMid slice").attr("clip-path",clip(shape)).on("error",function(){this.remove();}); };
     if(d.type==="fred"){ s.append("circle").attr("r",r).attr("fill",COLORS.fred); img(d.img,cp=>cp.append("circle").attr("r",r),r); s.append("circle").attr("r",r).attr("fill","none").attr("stroke",COLORS.fred).attr("stroke-width",3); }
-    else if(d.type==="era"){ s.append("circle").attr("r",r).attr("fill",d.era.color+"2e").attr("stroke",d.era.color).attr("stroke-width",2).attr("stroke-dasharray",expanded.has(d.id)?null:"4 3"); }
+    else if(d.type==="hub"){ s.append("circle").attr("r",r).attr("fill","#1b1a24").attr("stroke","#f3efe7").attr("stroke-width",2).attr("stroke-dasharray",expanded.has(d.id)?null:"4 3");
+      s.append("text").attr("text-anchor","middle").attr("dy",".35em").attr("font-size",15).attr("fill","#f3efe7").text(d.id==="hub-live"?"♦":"♪"); }
     else if(d.type==="group"){ s.append("circle").attr("r",r).attr("fill","#15141c").attr("stroke",col).attr("stroke-width",1.5).attr("stroke-dasharray",expanded.has(d.id)?null:"2 3");
       [...d.ccs].slice(0,8).forEach((cc,i,a)=>{ const ang=-Math.PI/2+i*2*Math.PI/Math.max(a.length,1); s.append("image").attr("href",flagUrl(cc)).attr("x",Math.cos(ang)*(r+7)-6).attr("y",Math.sin(ang)*(r+7)-4).attr("width",12).attr("height",8).attr("preserveAspectRatio","none"); });
       s.append("text").attr("text-anchor","middle").attr("dy",".35em").attr("font-size",10).attr("fill","#fff").text(d.kids.length); }
@@ -169,7 +172,7 @@ function build(D){
     g.select(".lab").text(d.label||short(d.name));
   }
   // most important names first; a name is skipped if it would sit on top of one already placed
-  const prio = d => d.id===selected||d.id===hover?0 : d.type==="fred"?1 : d.type==="era"?2 : d.type==="release"&&d.big?3 : d.type==="group"?4 : d.type==="artist"?5-Math.min(d.deg,8)/10 : d.type==="release"?6 : 7;
+  const prio = d => d.id===selected||d.id===hover?0 : d.type==="fred"?1 : d.type==="hub"?2 : d.type==="release"&&d.big?3 : d.type==="group"?4 : d.type==="artist"?5-Math.min(d.deg,8)/10 : d.type==="release"?6 : 7;
   function labels(){
     const fs=11.5/Math.min(Math.max(k,.35),2.2), placed=[];
     const items=[]; gN.selectAll("g.node").each(function(d){ items.push([d,this]); });
@@ -209,17 +212,24 @@ function build(D){
       <div style="position:absolute;inset:0;display:grid;place-items:center;font-family:Space Grotesk;font-weight:700;font-size:56px;opacity:.85">${initials(n.name)}</div>
       ${im?`<img src="${esc(im)}" alt="" onerror="this.remove()">`:""}</div>`;
   }
+  function highlight(id){
+    if(!id){ gN.selectAll("g.node").classed("dim",false).classed("lit",false); gL.selectAll("line").classed("hot",false).classed("dim",false); return; }
+    const touch=l=>(l.source.id||l.source)===id||(l.target.id||l.target)===id;
+    const near=new Set([id]); gL.selectAll("line").each(l=>{ if(touch(l)){ near.add(l.source.id||l.source); near.add(l.target.id||l.target); } });
+    gN.selectAll("g.node").classed("dim",d=>!near.has(d.id)).classed("lit",d=>near.has(d.id)&&d.id!==id);
+    gL.selectAll("line").classed("hot",touch).classed("dim",l=>!touch(l));
+  }
   function select(id){
     selected=id; labels();
-    gN.selectAll("g.node").classed("dim",d=>id && d.id!==id && !(nb[id]||new Set()).has(d.id) && parent[d.id]!==id && parent[id]!==d.id);
+    highlight(id);
     if(!id){ panel.classList.remove("open"); return; }
     const n=all[id], r=n.raw||{};
-    let h=`<div class="kind" style="color:${n.era?.color||COLORS.fred}">${KIND[n.kind]||KIND[n.type]||n.type}${n.era&&n.type!=="era"?` · ${esc(n.era.name)} era`:""}</div><h2>${esc(n.type==="group"?n.label:n.name)}</h2>`;
+    let h=`<div class="kind" style="color:${n.era?.color||COLORS.fred}">${KIND[n.kind]||KIND[n.type]||n.type}${n.era?` · ${esc(n.era.name)} era`:""}</div><h2>${esc(n.type==="group"?n.label:n.name)}</h2>`;
     if(n.type==="fred"){
       h+=hero(n)+(r.photo_credit?`<div class="src">Photo: ${esc(r.photo_credit)}</div>`:"")+`<div class="sub">${esc(r.real_name)} · born ${esc(r.born)}</div><p class="story">${esc(r.bio)}</p><p class="story">${esc(r.story)}</p>${r.story_name?`<div class="section"><h3>Where the name comes from</h3><p class="story">${esc(r.story_name)}</p></div>`:""}<div class="section"><h3>Awards</h3><ul class="awards">${(r.awards||[]).map(a=>`<li>${esc(a)}</li>`).join("")}</ul></div>`;
-    } else if(n.type==="era"){
-      h+=`<p class="story">${esc(r.story)}</p><p class="story" style="color:#8d8a95">Click the circle to open or close everything in this era.</p>`;
-      h+=`<div class="section"><h3>In this era</h3>${pills(Object.keys(parent).filter(x=>parent[x]===id))}</div>`;
+    } else if(n.type==="hub"){
+      h+=`<p class="story">${esc(r.story)}</p>`;
+      h+=`<div class="section"><h3>Inside</h3>${pills(Object.keys(parent).filter(x=>parent[x]===id))}</div>`;
     } else if(n.type==="group"){
       h+=`<p class="story">${n.kids.length} shows. Click the circle to open them in the web, or walk through them on the timeline.</p><div class="section"><h3>Countries</h3><div>${flagsHtml([...n.ccs])}</div></div><div class="section"><h3>Shows</h3>${pills(n.kids)}</div>`;
     } else if(n.type==="artist"){
@@ -245,7 +255,7 @@ function build(D){
     }
     const L=r.links||{}; const ls=[["Spotify",L.spotify],["YouTube",L.youtube],["Instagram",L.instagram],["SoundCloud",L.soundcloud],["Website",L.website]].filter(x=>x[1]);
     if(ls.length) h+=`<div class="section links"><h3>Listen / watch</h3>${ls.map(([k2,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${k2} ↗</a>`).join("")}</div>`;
-    if(!["fred","era","group"].includes(n.type)) h+=`<div class="section"><a class="pill" style="text-decoration:none" href="timeline.html#${id}">${n.type==="artist"?"Follow through time":"See on the timeline"} →</a></div>`;
+    if(!["fred","hub","group"].includes(n.type)) h+=`<div class="section"><a class="pill" style="text-decoration:none" href="timeline.html#${id}">${n.type==="artist"?"Follow through time":"See on the timeline"} →</a></div>`;
     if(r.source||r.verified!==undefined) h+=`<div class="section"><h3>Source</h3>${badge(r)}<div class="src">${esc(r.source||"")}</div></div>`;
     body.innerHTML=h; panel.classList.add("open"); panel.scrollTop=0;
     body.querySelectorAll(".pill[data-id]").forEach(p=>p.onclick=()=>goTo(p.dataset.id));
@@ -273,8 +283,7 @@ function build(D){
   // open everything, era by era, so it unfolds like a big bang
   document.getElementById("openAll").onclick=()=>{
     select(null);
-    const order=[...eras.map(e=>"era-"+e.id), ...Object.values(all).filter(n=>n.type==="release").map(n=>n.id), ...Object.values(all).filter(n=>n.type==="group").map(n=>n.id)];
-    const waves=[order.filter(id=>id.startsWith("era-")), order.filter(id=>all[id].type==="release"), order.filter(id=>all[id].type==="group")];
+    const waves=[["hub-singles","hub-live"], Object.values(all).filter(n=>n.type==="release").map(n=>n.id)];
     waves.forEach((ids,i)=>setTimeout(()=>{ ids.forEach(id=>expanded.add(id)); render(); },i*900));
     const fit=()=>{ const ns=sim.nodes(); const xs=ns.map(n=>n.x), ys=ns.map(n=>n.y);
       const x0=Math.min(...xs)-40,x1=Math.max(...xs)+40,y0=Math.min(...ys)-40,y1=Math.max(...ys)+40;
@@ -285,7 +294,7 @@ function build(D){
   document.getElementById("closeAll").onclick=()=>{ expanded.clear(); select(null); render(); svg.transition().duration(700).call(zoom.transform,d3.zoomIdentity.translate(W()/2,H()/2+30).scale(.75)); };
 
   // ---------- search ----------
-  const list=Object.values(all).filter(n=>!["era","group"].includes(n.type));
+  const list=Object.values(all).filter(n=>!["hub","group"].includes(n.type));
   document.getElementById("search").addEventListener("keydown",e=>{
     if(e.key!=="Enter") return; const q=e.target.value.trim().toLowerCase(); if(q.length<2) return;
     const hit=list.find(n=>n.name.toLowerCase().startsWith(q))||list.find(n=>n.name.toLowerCase().includes(q));

@@ -144,7 +144,8 @@ function build(data){
     if (era) html += `</section>`;
     track.innerHTML = html;
     document.getElementById("empty").style.display = shown ? "none" : "block";
-    track.querySelectorAll("[data-go]").forEach(p => p.onclick = () => go(p.dataset.go));
+    track.querySelectorAll("[data-go]").forEach(p => p.onclick = e => { e.stopPropagation(); go(p.dataset.go); });
+    track.querySelectorAll("article.item").forEach(a => a.onclick = e => { if (e.target.closest("a,.pill,details") || dragMoved()) return; open(a.id.slice(2)); });
     track.querySelectorAll("[data-follow]").forEach(p => p.onclick = () => { state.follow = p.dataset.follow; render(); ride.scrollTo({left:0}); });
     observe();
     onScroll();
@@ -195,6 +196,36 @@ function build(data){
   // a normal mouse wheel rides sideways
   ride.addEventListener("wheel", e => { if (Math.abs(e.deltaY) > Math.abs(e.deltaX) && !e.target.closest(".item")){ ride.scrollLeft += e.deltaY; e.preventDefault(); } }, {passive:false});
   addEventListener("keydown", e => { if (e.key==="ArrowRight") ride.scrollBy({left:400, behavior:"smooth"}); if (e.key==="ArrowLeft") ride.scrollBy({left:-400, behavior:"smooth"}); });
+
+  // ---------- click a card: details in a side panel ----------
+  const dragMoved = () => false; // a drag never ends in a click (see the capture handler below)
+  const panel = document.getElementById("panel"), pbody = document.getElementById("pbody");
+  document.getElementById("pclose").onclick = () => panel.classList.remove("open");
+  addEventListener("keydown", e => { if (e.key === "Escape") panel.classList.remove("open"); });
+  function open(id){
+    const it = byId[id]; if (!it) return; const r = it.raw, e = eraOf(it.date), h = hue(id);
+    const n = [...(nb[id]||[])];
+    const who = n.filter(x => people[x]), linked = n.filter(x => byId[x]);
+    const L = r.links||{};
+    const ls = [["Spotify",L.spotify],["YouTube",L.youtube],["SoundCloud",L.soundcloud],["Instagram",L.instagram]].filter(x=>x[1]);
+    let html = `<div class="kind" style="color:${e.color}">${r.setting==="festival"?"Festival":NAME[it.kind]||it.kind} · ${esc(e.name)} era</div>
+      <h2>${esc(it.title)}</h2>
+      <div class="sub">${fmt(it.date)}${r.location&&r.location!==it.title?" · "+esc(r.location):""}${flags(r.country)}</div>
+      <div class="cover" style="background:linear-gradient(135deg,hsl(${h},55%,42%),hsl(${(h+50)%360},60%,18%))">${initials(it.title)}${it.img?`<img src="${esc(it.img)}" alt="" onerror="this.remove()">`:""}</div>
+      ${r.story||r.text?`<p>${esc(r.story||r.text)}</p>`:""}
+      ${r.part_of&&byId[r.part_of]?`<h3>Addition to</h3><div class="pills"><span class="pill" data-go="${r.part_of}">${esc(byId[r.part_of].title)}</span></div>`:""}
+      ${r.support?.length?`<h3>Support / opening</h3><p>${r.support.map(esc).join(", ")}</p><div class="src">${esc(r.support_source||"")}</div>`:""}
+      ${who.length?`<h3>With</h3><div class="pills">${who.map(x=>`<span class="pill" data-follow="${x}" style="color:${COLORS[people[x].type]}">${esc(people[x].name)}</span>`).join("")}</div>`:""}
+      ${linked.length?`<h3>Connected</h3><div class="pills">${linked.slice(0,30).map(x=>`<span class="pill" data-go="${x}">${byId[x].date?byId[x].date.slice(0,4)+" · ":""}${esc(byId[x].title.replace(/\s*\(.*\)$/,""))}</span>`).join("")}</div>`:""}
+      ${r.tracklist?.length?`<h3>Tracklist</h3><ol>${r.tracklist.map(t=>`<li>${esc(t)}</li>`).join("")}</ol>`:""}
+      ${ls.length?`<h3>Listen / watch</h3>${ls.map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${k} ↗</a>`).join("")}`:""}
+      <h3>Source</h3>${r.verified===false?`<span class="badge no">Still to verify</span>`:`<span class="badge ok">Verified</span>`}<div class="src">${esc(r.source||"")}</div>
+      ${it.kind!=="milestone"?`<p style="margin-top:16px"><a href="index.html#${id}">See its connections in the web →</a></p>`:""}`;
+    pbody.innerHTML = html; panel.classList.add("open"); panel.scrollTop = 0;
+    pbody.querySelectorAll("[data-go]").forEach(p => p.onclick = () => { go(p.dataset.go); open(p.dataset.go); });
+    pbody.querySelectorAll("[data-follow]").forEach(p => p.onclick = () => { panel.classList.remove("open"); state.follow = p.dataset.follow; render(); ride.scrollTo({left:0}); });
+    history.replaceState(null, "", "#"+id);
+  }
 
   function go(id){
     let el = document.getElementById("t-"+id);

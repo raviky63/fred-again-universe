@@ -88,7 +88,12 @@
   .link{stroke:#3a3745;stroke-width:1;stroke-opacity:.55}
   .link.home{stroke-opacity:.9}
   .link.also{stroke:#7cc6ff;stroke-opacity:.45;stroke-dasharray:3 4}
-  g.node.dim{opacity:.18}
+  g.node.dim{opacity:.12}
+  g.node{transition:opacity .25s}
+  .link{transition:stroke-opacity .25s}
+  .link.hot{stroke:#f3efe7;stroke-opacity:.95;stroke-width:1.8}
+  .link.also.hot{stroke:#7cc6ff;stroke-opacity:1}
+  .link.dim{stroke-opacity:.05}
   #story{position:fixed;left:50%;bottom:76px;transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:all .35s ease;z-index:8;width:min(560px,calc(100% - 32px));max-height:42vh;overflow-y:auto;background:#141320f2;backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
   #story.open{opacity:1;transform:translate(-50%,0);pointer-events:auto}
   #story h3{margin:0;font-family:"Space Grotesk";font-size:22px;letter-spacing:-.01em}
@@ -117,7 +122,8 @@
 </header>
 
 <div class="legend" id="legend">
-  <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="#d9a44133" stroke="#d9a441" stroke-dasharray="3 2"/></svg>Era (click to open)</div>
+  <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="#1b1a24" stroke="#f3efe7" stroke-dasharray="3 2"/></svg>Singles / Live (click to open)</div>
+  <div><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="1" fill="none" stroke="#d9a441" stroke-width="2"/></svg>Outline colour = era (time)</div>
   <div><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="1" fill="#ffd166"/></svg>Album / single / track</div>
   <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="#15141c" stroke="#fff" stroke-dasharray="2 2"/></svg>Tour / year of shows</div>
   <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" fill="#c8102e" stroke="#fff" transform="rotate(45 8 8)"/></svg>Show (flag = country)</div>
