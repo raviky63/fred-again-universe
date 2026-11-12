@@ -61,6 +61,14 @@
   ul.awards{margin:0;padding-left:18px;font-size:13.5px;line-height:1.6}
 
   .node text{pointer-events:none;font-family:Inter;fill:var(--ink)}
+  #svg{user-select:none;-webkit-user-select:none;cursor:grab}
+  #svg:active{cursor:grabbing}
+  .node{animation:pop .7s ease backwards;animation-delay:var(--d,0s)}
+  .node > *{transition:transform .25s ease}
+  .node:hover > *{transform:scale(1.12)}
+  @keyframes pop{from{opacity:0}}
+  .link{animation:fadeLine 1.6s ease both}
+  @keyframes fadeLine{from{opacity:0}}
   .dim{opacity:.12}
   .link{stroke:#3a3745;stroke-width:1}
   .link.hot{stroke:#bdb8c9;stroke-width:1.6}

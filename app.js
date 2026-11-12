@@ -1,5 +1,5 @@
 // The Fred again.. Universe — reads the data/ folder and draws the web.
-const COLORS = {fred:"#ff5a36", artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", merch:"#d7ff5e"};
+const COLORS = {fred:"#ff5a36", artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", merch:"#d7ff5e", fest:"#ffd166"};
 const LABELS = {artist:"Artists", album:"Albums & EPs", single:"Singles", track:"Tracks", feature:"Features", event:"Shows & sets", merch:"Merch"};
 const KIND_NAME = {hub:"Year of shows", artist:"Artist", crew:"Crew", album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single / collab", feature:"Feature", track:"Track", event:"Show / moment", mix:"DJ mix / radio", upcoming:"Upcoming show", merch:"Merch", fred:"The centre"};
 const FILES = ["meta","center","artists","releases","tracks","events","crew","merch"];
@@ -9,7 +9,7 @@ const hue = s => { let h=0; for (const c of s) h=(h*31+c.charCodeAt(0))%360; ret
 const initials = n => n.replace(/[^A-Za-z0-9 ]/g,"").split(" ").filter(Boolean).slice(0,2).map(w=>w[0]).join("").toUpperCase();
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const yearOf = d => { const m = String(d || "").match(/(19|20)\d\d/); return m ? +m[0] : null; };
-const flagUrl = cc => `https://flagcdn.com/h20/${cc.toLowerCase()}.png`;
+const flagUrl = (cc,w=40) => `https://flagcdn.com/w${w}/${cc.toLowerCase()}.png`;
 const flagsHtml = cs => (cs||[]).map(cc=>`<img src="${flagUrl(cc)}" alt="${cc}" title="${cc}" style="height:11px;border-radius:2px;margin-left:5px;vertical-align:-1px">`).join("");
 const shortTitle = t => { t = t.replace(/\s*\(.*\)$/,""); return t.length>24 ? t.slice(0,22)+"…" : t; };
 
@@ -70,7 +70,9 @@ function build(data){
     <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="${COLORS.artist}"/></svg>Artist / person</div>
     <div><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="1" fill="${COLORS.album}"/></svg>Release (cover)</div>
     <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" rx="1" fill="${COLORS.track}"/></svg>Track</div>
-    <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" fill="#fff" transform="rotate(45 8 8)"/></svg>Show / set</div>
+    <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" fill="#c8102e" stroke="#fff" transform="rotate(45 8 8)"/></svg>Own show (flag = country)</div>
+    <div><svg viewBox="0 0 16 16"><rect x="4.5" y="4.5" width="7" height="7" fill="#c8102e" stroke="#ffd166" transform="rotate(45 8 8)"/><rect x="2.5" y="2.5" width="11" height="11" fill="none" stroke="#ffd166" transform="rotate(45 8 8)"/></svg>Festival</div>
+    <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" fill="#fff" transform="rotate(45 8 8)"/></svg>Online / DJ mix</div>
     <div><svg viewBox="0 0 16 16"><polygon points="13,8 10.5,12.3 5.5,12.3 3,8 5.5,3.7 10.5,3.7" fill="${COLORS.merch}"/></svg>Merch</div>
     <div><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="1" fill="none" stroke="#aaa" stroke-dasharray="2 2"/></svg>Still to verify</div>`;
   const yearSel=document.getElementById("year");
@@ -93,6 +95,7 @@ function build(data){
 
   const linkSel=world.append("g").selectAll("line").data(links).join("line").attr("class","link").attr("stroke-opacity",d=>d.main?.3:.7);
   const nodeSel=world.append("g").selectAll("g").data(nodes).join("g").attr("class","node").style("cursor","pointer")
+    .style("--d",d=>d.type==="fred"?"0s":`${Math.min(1.6,.15+Math.random()*1.4).toFixed(2)}s`)
     .on("click",(e,d)=>{ e.stopPropagation(); select(d.id); })
     .on("dblclick",(e,d)=>{ e.stopPropagation(); setFocus(d.id); })
     .on("mouseenter",(e,d)=>{ if(!state.selected) highlight(d.id); })
@@ -137,13 +140,16 @@ function build(data){
       g.append("circle").attr("r",d.r).attr("fill","none").attr("stroke",col).attr("stroke-width",2).attr("stroke-dasharray",unv?"3 3":null);
       g.append("text").attr("text-anchor","middle").attr("y",d.r+13).attr("font-size",11).attr("fill","#cfd8e3").text(d.name);
     } else if (d.type==="event"){
-      const s=d.s, pts=`0,${-s*.71} ${s*.71},0 0,${s*.71} ${-s*.71},0`;
-      g.append("polygon").attr("points",pts).attr("fill","#fff").attr("fill-opacity",unv?.5:1);
+      const s=d.s, pts=`0,${-s*.71} ${s*.71},0 0,${s*.71} ${-s*.71},0`, cc=(d.raw.country||[])[0], fest=d.raw.setting==="festival";
+      g.append("polygon").attr("points",pts).attr("fill",cc?"#222":"#fff").attr("fill-opacity",unv?.5:1);
+      // the flag of the country is the icon itself; a photo (if we have one) still wins
+      if (!d.img && cc){ const id="f"+d.id.replace(/[^a-z0-9]/gi,""); defs.append("clipPath").attr("id",id).append("polygon").attr("points",pts);
+        g.append("image").attr("href",flagUrl(cc,80)).attr("x",-s*.71).attr("y",-s*.71).attr("width",s*1.42).attr("height",s*1.42)
+          .attr("preserveAspectRatio","xMidYMid slice").attr("clip-path",`url(#${id})`).on("error",function(){ this.remove(); }); }
       photo(g,d,cp=>cp.append("polygon").attr("points",pts));
-      g.append("polygon").attr("points",pts).attr("fill","none").attr("stroke","#fff").attr("stroke-dasharray",unv?"3 3":null);
-      (d.raw.country||[]).slice(0,2).forEach((cc,i)=>g.append("image").attr("href",flagUrl(cc)).attr("x",s*.42+i*13).attr("y",-s*.78).attr("width",12).attr("height",8)
-        .attr("preserveAspectRatio","none").on("error",function(){ this.remove(); }));
-      g.append("text").attr("text-anchor","middle").attr("y",s+8).attr("font-size",10.5).attr("fill","#bbb").text(d.name.length>30?d.name.slice(0,28)+"…":d.name);
+      if (fest){ const o=s*.71+4; g.append("polygon").attr("points",`0,${-o} ${o},0 0,${o} ${-o},0`).attr("fill","none").attr("stroke",COLORS.fest).attr("stroke-width",1.4); }
+      g.append("polygon").attr("points",pts).attr("fill","none").attr("stroke",fest?COLORS.fest:"#fff").attr("stroke-width",1.2).attr("stroke-dasharray",unv?"3 3":null);
+      g.append("text").attr("text-anchor","middle").attr("y",s+(fest?12:8)).attr("font-size",10.5).attr("fill","#bbb").text(d.name.length>30?d.name.slice(0,28)+"…":d.name);
     } else {
       const s=d.s, h=hue(d.id), gid="g"+d.id.replace(/[^a-z0-9]/gi,"");
       const gr=defs.append("linearGradient").attr("id",gid).attr("x1",0).attr("y1",0).attr("x2",1).attr("y2",1);
@@ -271,7 +277,7 @@ function build(data){
       h+=hero(n)+`<div class="sub">${esc(r.date)}</div><p class="story">${esc(r.story)}</p>`;
       const w=linksOf(id); if (w.length) h+=`<div class="section"><h3>Tied to</h3>${pills(w)}</div>`;
     } else if (n.type==="event"){
-      h+=hero(n)+`<div class="sub">${esc(r.date)} · ${esc(r.location)}${flagsHtml(r.country)}</div>${r.story?`<p class="story">${esc(r.story)}</p>`:""}`;
+      h+=hero(n)+`<div class="sub">${esc(r.date)} · ${esc(r.location)}${flagsHtml(r.country)}${r.setting==="festival"?" · festival":r.setting==="own"?" · own show":""}</div>${r.story?`<p class="story">${esc(r.story)}</p>`:""}`;
       if (r.tracklist?.length) h+=`<div class="section"><h3>Tracklist</h3><ol class="awards">${r.tracklist.map(t=>`<li>${esc(t)}</li>`).join("")}</ol></div>`;
       if (r.tracklist_link) h+=`<div class="section links"><a href="${esc(r.tracklist_link)}" target="_blank" rel="noopener">Full tracklist ↗</a></div>`;
       const cw=ofType(id,["crew"]); if (cw.length) h+=`<div class="section"><h3>Crew</h3>${pills(cw)}</div>`;

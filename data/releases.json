@@ -280,15 +280,15 @@
     "id": "usb",
     "title": "USB / USB001 / USB002",
     "kind": "album",
-    "date": "2022-01-18",
+    "date": "2022-01-20",
     "with": [],
     "cover": "https://i.scdn.co/image/ab67616d00001e024018b70099d433d9c8aabb12",
-    "story": "His ongoing release project. During the phone-free USB002 tour (Oct–Dec 2025) every stop came with at least one new track, often with guests who also performed.",
+    "story": "Fred's never-ending album: tracks get added whenever they're ready. It started with Lights Out in January 2022 and grew as a playlist through 2022–2024 (first vinyl, USB001, in 2024). USB002 was ten songs in ten weeks with ten last-minute shows in ten cities from October 2025, with the artwork for each single shot at the shows; the full album and USB002 vinyl followed on 12 December 2025 and USB002 REMIXES on 6 March 2026. Spotify dates every track 2022, so the dates here come from press.",
     "links": {
       "spotify": "https://open.spotify.com/album/2ClZ9xWAYg1BH8zkR96dJo",
       "youtube": ""
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true,
     "tracks": [
       "lights-burn-dimmer",
@@ -305,6 +305,7 @@
       "facilita",
       "the-floor-fred-remix",
       "ok-ok",
+      "ogdub",
       "you-re-a-star",
       "last-1s-left",
       "back-2-back",

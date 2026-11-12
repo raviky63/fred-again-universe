@@ -56,7 +56,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2021-05-08-rinse-fm",
@@ -131,7 +132,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2021-09-07-village-underground-lond",
@@ -148,7 +150,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2021-09-12-parklife-2021",
@@ -165,7 +168,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2021-10-21-studio-live-2-london",
@@ -182,7 +186,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2021-11-15-mixmag-the-cover-mix",
@@ -213,7 +218,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2021-11-23-motion-bristol-bristol",
@@ -230,7 +236,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2021-11-24-islington-assembly-hall-",
@@ -247,7 +254,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2021-12-05-music-hall-of-williamsbu",
@@ -264,7 +272,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2021-12-06-the-lot-radio-nyc",
@@ -281,7 +290,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2021-12-18-1live-dj-session-best-of-2021-",
@@ -355,7 +365,8 @@
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
     "verified": true,
-    "country": []
+    "country": [],
+    "setting": "own"
   },
   {
     "id": "show-2022-03-21-albert-hall-manchester",
@@ -372,7 +383,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-03-22-swg3-glasgow-scotland",
@@ -389,7 +401,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-03-24-roundhouse-london",
@@ -406,7 +419,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-04-06-melkweg-amsterdam-nether",
@@ -423,7 +437,8 @@
     "verified": true,
     "country": [
       "NL"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-04-07-le-botanique-brussels-be",
@@ -440,7 +455,8 @@
     "verified": true,
     "country": [
       "BE"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-04-14-great-american-music-hall-san-",
@@ -457,7 +473,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-04-17-mojave-tent-coachella-weekend-",
@@ -474,7 +491,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-04-24-coachella-festival-2022-",
@@ -491,7 +509,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-04-26-the-fonda-theatre-los-an",
@@ -508,7 +527,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-06-02-primavera-sound-2022",
@@ -525,7 +545,8 @@
     "verified": true,
     "country": [
       "ES"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-06-10-melt-festival-2022",
@@ -542,7 +563,8 @@
     "verified": true,
     "country": [
       "DE"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-06-11-primavera-sound-2022",
@@ -559,7 +581,8 @@
     "verified": true,
     "country": [
       "ES"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-06-12-parklife-2022",
@@ -576,7 +599,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2022-06-18-corsica-studios-london",
@@ -593,7 +617,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-06-24-sherwood-court-electric-forest",
@@ -610,7 +635,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-06-25-disneyland-anaheim-ca",
@@ -627,7 +653,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-07-02-roskilde-festival-2022",
@@ -644,7 +671,8 @@
     "verified": true,
     "country": [
       "DK"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-07-09-montreux-jazz-festival-2",
@@ -661,7 +689,8 @@
     "verified": true,
     "country": [
       "CH"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "boiler-room-2022",
@@ -698,7 +727,8 @@
     ],
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "shm-b2b-2022",
@@ -717,7 +747,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-08-13-way-out-west-2022",
@@ -734,7 +765,8 @@
     "verified": true,
     "country": [
       "SE"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-08-14-flow-festival-2022",
@@ -751,7 +783,8 @@
     "verified": true,
     "country": [
       "FI"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-08-20-lowlands-festival-2022",
@@ -768,7 +801,8 @@
     "verified": true,
     "country": [
       "NL"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-08-21-pukkelpop-2022",
@@ -785,7 +819,8 @@
     "verified": true,
     "country": [
       "BE"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2022-08-27-all-points-east-london",
@@ -802,7 +837,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-08-28-rock-en-seine-2022",
@@ -819,7 +855,8 @@
     "verified": true,
     "country": [
       "FR"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-09-02-electric-picnic-2022",
@@ -836,7 +873,8 @@
     "verified": true,
     "country": [
       "IE"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-09-03-forwards-2022",
@@ -853,7 +891,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-09-10-repercussion-2022",
@@ -870,7 +909,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2022-09-23-portola-pre-party-the-warfield",
@@ -887,7 +927,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-09-24-portola-music-festival-pier-80",
@@ -904,7 +945,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2022-09-24-ocean-view-crssd-festival-san-",
@@ -921,7 +963,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-09-25-crssd-festival-2022",
@@ -938,7 +981,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2022-09-28-hollywood-forever-cemete",
@@ -955,7 +999,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-09-29-hollywood-forever-cemete",
@@ -972,7 +1017,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-09-30-hollywood-forever-cemetery-los",
@@ -989,7 +1035,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-10-01-the-gorge-amphitheatre-g",
@@ -1006,7 +1053,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-10-02-mission-ballroom-denver-",
@@ -1023,7 +1071,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-10-05-riviera-theatre-chicago",
@@ -1040,7 +1089,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-10-06-history-toronto",
@@ -1057,7 +1107,8 @@
     "verified": true,
     "country": [
       "CA"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-10-08-9-30-club-washington-dc",
@@ -1074,7 +1125,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-10-11-roadrunner-boston-ma",
@@ -1091,7 +1143,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-10-13-terminal-5-new-york-ny",
@@ -1108,7 +1161,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-10-14-terminal-5-new-york-ny",
@@ -1125,7 +1179,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-10-16-terminal-5-new-york",
@@ -1142,7 +1197,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-11-09-studio-live-3-london",
@@ -1159,7 +1215,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-11-22-3olympia-theatre-dublin-",
@@ -1176,7 +1233,8 @@
     "verified": true,
     "country": [
       "IE"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-11-25-afas-live-amsterdam",
@@ -1193,7 +1251,8 @@
     "verified": true,
     "country": [
       "NL"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-11-27-ufo-velodrom-berlin",
@@ -1210,7 +1269,8 @@
     "verified": true,
     "country": [
       "DE"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-11-28-ubel-and-gefahrlich-muster-ham",
@@ -1227,7 +1287,8 @@
     "verified": true,
     "country": [
       "DE"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-11-30-carlswerk-victoria-colog",
@@ -1244,7 +1305,8 @@
     "verified": true,
     "country": [
       "DE"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-12-01-ancienne-belgique-brusse",
@@ -1261,7 +1323,8 @@
     "verified": true,
     "country": [
       "BE"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-12-03-elysee-montmartre-paris-",
@@ -1278,7 +1341,8 @@
     "verified": true,
     "country": [
       "FR"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-12-07-o2-academy-brixton-londo",
@@ -1295,7 +1359,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2022-12-08-o2-academy-brixton-londo",
@@ -1312,7 +1377,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-12-09-o2-academy-brixton-london",
@@ -1329,7 +1395,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2022-12-22-actual-life-3-piano-live",
@@ -1344,7 +1411,8 @@
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
     "verified": true,
-    "country": []
+    "country": [],
+    "setting": "own"
   },
   {
     "id": "set-2023-01-05-electric-ballroom-london",
@@ -1364,7 +1432,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-01-06-electric-brixton-london",
@@ -1384,7 +1453,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-01-07-troxy-london",
@@ -1404,7 +1474,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-01-28-shed-6-wellington-new-ze",
@@ -1421,7 +1492,8 @@
     "verified": true,
     "country": [
       "NZ"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-02-01-forum-theatre-melbourne-",
@@ -1438,7 +1510,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-02-03-the-thornbury-3071-melbo",
@@ -1455,7 +1528,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-02-04-laneway-festival-brisban",
@@ -1472,7 +1546,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-02-05-laneway-festival-sydney-",
@@ -1489,7 +1564,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-02-07-enmore-theatre-sydney-au",
@@ -1506,7 +1582,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-02-08-hordern-pavilion-sydney-",
@@ -1523,7 +1600,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-02-10-laneway-festival-adelaid",
@@ -1540,7 +1618,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-02-11-laneway-festival-melbour",
@@ -1557,7 +1636,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-02-12-laneway-festival-perth-2",
@@ -1574,7 +1654,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2023-02-14-good-room-nyc",
@@ -1594,7 +1675,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-02-16-le-poisson-rouge-nyc",
@@ -1614,7 +1696,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-02-17-the-lot-radio-times-square-tra",
@@ -1634,7 +1717,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "msg-2023",
@@ -1654,7 +1738,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-03-17-c-complejo-art-media-bue",
@@ -1671,7 +1756,8 @@
     "verified": true,
     "country": [
       "AR"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-03-18-perry-s-stage-lollapalooza-arg",
@@ -1688,7 +1774,8 @@
     "verified": true,
     "country": [
       "AR"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2023-03-19-lollapalooza-chile",
@@ -1705,7 +1792,8 @@
     "verified": true,
     "country": [
       "CL"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2023-03-24-adidas-stage-estereo-picnic-bo",
@@ -1722,7 +1810,8 @@
     "verified": true,
     "country": [
       "CO"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2023-03-26-perry-s-stage-lollapalooza-bra",
@@ -1739,7 +1828,8 @@
     "verified": true,
     "country": [
       "BR"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-03-27-zig-studio-sao-paulo-bra",
@@ -1756,7 +1846,8 @@
     "verified": true,
     "country": [
       "BR"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-03-30-parque-bicentenario-mexi",
@@ -1773,7 +1864,8 @@
     "verified": true,
     "country": [
       "MX"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-03-31-tecate-pa-l-norte-2023",
@@ -1790,7 +1882,8 @@
     "verified": true,
     "country": [
       "MX"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2023-04-01-axe-ceremonia-parque-bicentena",
@@ -1807,7 +1900,8 @@
     "verified": true,
     "country": [
       "MX"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "tiny-desk-2023",
@@ -1824,7 +1918,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "coachella-2023",
@@ -1844,7 +1939,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2023-05-03-nts-radio-secret-life-album-mi",
@@ -1877,7 +1973,8 @@
     "verified": true,
     "country": [
       "ES"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-06-08-primavera-sound-porto-20",
@@ -1894,7 +1991,8 @@
     "verified": true,
     "country": [
       "PT"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-06-09-primavera-sound-madrid-2",
@@ -1911,7 +2009,8 @@
     "verified": true,
     "country": [
       "ES"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-06-10-parklife-2023",
@@ -1928,7 +2027,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "glastonbury-2023",
@@ -1945,7 +2045,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2023-06-30-bbc-radio-1-worthy-farm-glasto",
@@ -1962,7 +2063,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-07-01-rock-werchter-2023",
@@ -1979,7 +2081,8 @@
     "verified": true,
     "country": [
       "BE"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-07-02-garorock-2023",
@@ -1996,7 +2099,8 @@
     "verified": true,
     "country": [
       "FR"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2023-08-04-t-mobile-stage-lollapalooza-ch",
@@ -2013,7 +2117,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-08-05-lollapalooza-2023-afters",
@@ -2030,7 +2135,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-08-06-montagne-stage-osheaga-montrea",
@@ -2047,7 +2153,8 @@
     "verified": true,
     "country": [
       "CA"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-08-26-connect-festival-2023",
@@ -2064,7 +2171,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-09-02-electric-picnic-2023",
@@ -2081,7 +2189,8 @@
     "verified": true,
     "country": [
       "IE"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-09-04-alexandra-palace-london",
@@ -2098,7 +2207,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-09-05-alexandra-palace-london",
@@ -2115,7 +2225,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-09-06-alexandra-palace-london",
@@ -2132,7 +2243,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-09-08-alexandra-palace-london",
@@ -2149,7 +2261,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-09-09-alexandra-palace-london",
@@ -2166,7 +2279,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-09-12-mercedes-benz-arena-berl",
@@ -2183,7 +2297,8 @@
     "verified": true,
     "country": [
       "DE"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-09-14-ziggo-dome-amsterdam",
@@ -2200,7 +2315,8 @@
     "verified": true,
     "country": [
       "NL"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-09-15-ziggo-dome-amsterdam-net",
@@ -2217,7 +2333,8 @@
     "verified": true,
     "country": [
       "NL"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-09-16-ing-arena-brussels-belgi",
@@ -2234,7 +2351,8 @@
     "verified": true,
     "country": [
       "BE"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-09-20-zenith-paris-la-villette",
@@ -2251,7 +2369,8 @@
     "verified": true,
     "country": [
       "FR"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-09-21-le-zenith-paris-france",
@@ -2268,7 +2387,8 @@
     "verified": true,
     "country": [
       "FR"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-10-12-forest-hills-stadium-new-york",
@@ -2285,7 +2405,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-10-13-forest-hills-stadium-que",
@@ -2302,7 +2423,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-10-14-fine-and-raw-chocolate-f",
@@ -2319,7 +2441,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-10-14-forest-hills-stadium-que",
@@ -2336,7 +2459,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-10-20-mind-melt-iii-points-festival-",
@@ -2353,7 +2477,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2023-10-24-shrine-exposition-hall-l",
@@ -2370,7 +2495,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-10-25-shrine-expo-hall-los-angeles",
@@ -2387,7 +2513,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-10-27-shrine-expo-hall-los-angeles",
@@ -2404,7 +2531,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-10-28-shrine-exposition-hall-l",
@@ -2421,7 +2549,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-10-29-shrine-exposition-hall-l",
@@ -2438,7 +2567,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-10-31-shrine-exposition-hall-l",
@@ -2455,7 +2585,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-11-01-shrine-exposition-hall-l",
@@ -2472,7 +2603,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2023-11-02-shrine-exposition-hall-l",
@@ -2489,7 +2621,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-11-03-shrine-expo-hall-los-angeles",
@@ -2506,7 +2639,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2023-11-18-depot-mayfield-warehouse-proje",
@@ -2526,7 +2660,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-01-05-club-77-sydney",
@@ -2543,7 +2678,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-02-08-knockdown-center-nyc",
@@ -2562,7 +2698,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-02-21-the-lot-radio-nyc",
@@ -2582,7 +2719,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-02-26-sydney-opera-house-sydne",
@@ -2599,7 +2737,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-02-27-sydney-opera-house",
@@ -2616,7 +2755,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-02-revolver-upstairs-melbou",
@@ -2633,7 +2773,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-02-the-timber-yard-melbourn",
@@ -2650,7 +2791,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-03-04-rod-laver-arena-melbourne",
@@ -2667,7 +2809,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-05-rod-laver-arena-melbourn",
@@ -2684,7 +2827,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-06-rod-laver-arena-melbourn",
@@ -2701,7 +2845,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-08-hotel-brunswick-brunswic",
@@ -2718,7 +2863,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-03-09-doug-jennings-park-australia",
@@ -2735,7 +2881,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-12-qudos-bank-arena-sydney-",
@@ -2752,7 +2899,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-13-qudos-bank-arena-sydney-",
@@ -2769,7 +2917,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-14-qudos-bank-arena-sydney-",
@@ -2786,7 +2935,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-16-the-domain-sydney-austra",
@@ -2803,7 +2953,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-17-the-domain-sydney-austra",
@@ -2820,7 +2971,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-22-waitangi-park-wellington",
@@ -2837,7 +2989,8 @@
     "verified": true,
     "country": [
       "NZ"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-25-the-coroglen-tavern-coro",
@@ -2854,7 +3007,8 @@
     "verified": true,
     "country": [
       "NZ"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-26-spark-arena-auckland-new",
@@ -2871,7 +3025,8 @@
     "verified": true,
     "country": [
       "NZ"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-27-spark-arena-auckland-new",
@@ -2888,7 +3043,8 @@
     "verified": true,
     "country": [
       "NZ"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-03-30-langley-park-perth-austr",
@@ -2905,7 +3061,8 @@
     "verified": true,
     "country": [
       "AU"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-04-26-antro-juan-cdmx",
@@ -2922,7 +3079,8 @@
     "verified": true,
     "country": [
       "MX"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-05-12-bosque-de-chapultepec-cdmx",
@@ -2941,7 +3099,8 @@
     "verified": true,
     "country": [
       "MX"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-05-18-circuitground-edc-las-vegas",
@@ -2958,7 +3117,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2024-06-01-civic-center-san-francisco",
@@ -2977,7 +3137,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-06-04-frost-amphitheater-stanf",
@@ -2994,7 +3155,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-06-05-frost-amphitheater-stanford",
@@ -3011,7 +3173,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-06-06-frost-amphitheater-stanf",
@@ -3028,7 +3191,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-06-11-secret-life-la-memorial-colise",
@@ -3045,7 +3209,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "la-coliseum-2024",
@@ -3065,7 +3230,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-06-16-what-stage-bonnaroo",
@@ -3082,7 +3248,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2024-06-28-glastonbury-festival-202",
@@ -3099,7 +3266,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2024-07-28-rooftop-live-arun-s-roof-londo",
@@ -3116,7 +3284,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-08-08-syd-for-solen-valbyparken-cope",
@@ -3133,7 +3302,8 @@
     "verified": true,
     "country": [
       "DK"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2024-08-09-way-out-west-2024",
@@ -3150,7 +3320,8 @@
     "verified": true,
     "country": [
       "SE"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2024-08-10-flow-festival-helsinki",
@@ -3167,7 +3338,8 @@
     "verified": true,
     "country": [
       "FI"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2024-08-12-main-stage-sziget-festival-bud",
@@ -3184,7 +3356,8 @@
     "verified": true,
     "country": [
       "HU"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "set-2024-08-16-pukkelpop-festival-belgium",
@@ -3201,7 +3374,8 @@
     "verified": true,
     "country": [
       "BE"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "lowlands-2024",
@@ -3218,7 +3392,8 @@
     "verified": false,
     "country": [
       "NL"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2024-08-23-rock-en-seine-2024",
@@ -3235,7 +3410,8 @@
     "verified": true,
     "country": [
       "FR"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "reading-2024",
@@ -3252,7 +3428,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2024-08-25-leeds-festival-2024",
@@ -3269,7 +3446,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2024-09-02-lake-vouliagmeni-athens-",
@@ -3286,7 +3464,8 @@
     "verified": true,
     "country": [
       "GR"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-09-06-ten-days-release-party-alexand",
@@ -3303,7 +3482,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-09-09-places-we-ve-never-been-tour-k",
@@ -3320,7 +3500,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-09-09-radio-1-dance-morning",
@@ -3354,7 +3535,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-09-12-ball-arena-denver-co",
@@ -3372,7 +3554,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-09-15-utah-first-credit-union-",
@@ -3390,7 +3573,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-09-18-climate-pledge-arena-sea",
@@ -3408,7 +3592,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-09-19-climate-pledge-arena-sea",
@@ -3426,7 +3611,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-09-25-target-center-minneapoli",
@@ -3444,7 +3630,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-09-26-byline-bank-aragon-ballr",
@@ -3462,7 +3649,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-09-28-places-we-ve-never-been-tour-a",
@@ -3479,7 +3667,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-09-29-alpine-valley-music-thea",
@@ -3497,7 +3686,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-10-01-places-we-ve-never-been-tour-l",
@@ -3514,7 +3704,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-10-03-places-we-ve-never-been-tour-s",
@@ -3531,7 +3722,8 @@
     "verified": true,
     "country": [
       "CA"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-10-04-places-we-ve-never-been-tour-s",
@@ -3548,7 +3740,8 @@
     "verified": true,
     "country": [
       "CA"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-10-05-piknic-electronik-2024-m",
@@ -3566,7 +3759,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "CA"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2024-10-07-keybank-center-buffalo-n",
@@ -3584,7 +3778,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-10-09-state-farm-arena-atlanta",
@@ -3602,7 +3797,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-10-10-state-farm-arena-atlanta",
@@ -3620,7 +3816,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-10-13-places-we-ve-never-been-tour-d",
@@ -3637,7 +3834,8 @@
     "verified": true,
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2024-10-14-dickies-arena-fort-worth",
@@ -3655,7 +3853,8 @@
     "tour": "Places We've Never Been",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2024-10-17-nts-radio",
@@ -3703,7 +3902,8 @@
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
     "verified": true,
-    "country": []
+    "country": [],
+    "setting": "own"
   },
   {
     "id": "set-2025-05-28-twitch",
@@ -3718,7 +3918,8 @@
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
     "verified": true,
-    "country": []
+    "country": [],
+    "setting": "own"
   },
   {
     "id": "set-2025-05-29-latraac-skate-cafe-athens-twit",
@@ -3735,7 +3936,8 @@
     "verified": true,
     "country": [
       "GR"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2025-07-12-savaya-bali-indonesia",
@@ -3752,7 +3954,8 @@
     "verified": true,
     "country": [
       "ID"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2025-07-18-pasir-panjang-power-stat",
@@ -3769,7 +3972,8 @@
     "verified": true,
     "country": [
       "SG"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2025-07-19-pasir-panjang-power-stat",
@@ -3786,7 +3990,8 @@
     "verified": true,
     "country": [
       "SG"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2025-07-21-uob-live-bangkok-thailan",
@@ -3803,7 +4008,8 @@
     "verified": true,
     "country": [
       "TH"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2025-07-23-kintex-2-south-korea",
@@ -3820,7 +4026,8 @@
     "verified": true,
     "country": [
       "KR"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "asia-2025",
@@ -3838,7 +4045,8 @@
     "country": [
       "JP",
       "KR"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2025-07-29-tachikawa-stage-garden-japan",
@@ -3855,7 +4063,8 @@
     "verified": true,
     "country": [
       "JP"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2025-07-31-namba-hatch-osaka-japan",
@@ -3872,7 +4081,8 @@
     "verified": true,
     "country": [
       "JP"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2025-08-10-south-facing-big-smoke-2",
@@ -3889,7 +4099,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2025-08-21-forge-warehouse-sheffiel",
@@ -3906,7 +4117,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2025-08-29-skepta-fred-full-tape-mix",
@@ -3937,7 +4149,8 @@
     "verified": true,
     "country": [
       "IT"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2025-09-05-castello-scaligero-villafranca",
@@ -3954,7 +4167,8 @@
     "verified": true,
     "country": [
       "IT"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2025-09-07-piazza-del-plebiscito-na",
@@ -3971,7 +4185,8 @@
     "verified": true,
     "country": [
       "IT"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2025-09-08-roma-summer-fest-2025",
@@ -3988,7 +4203,8 @@
     "verified": true,
     "country": [
       "IT"
-    ]
+    ],
+    "setting": "festival"
   },
   {
     "id": "show-2025-09-12-parco-archeologico-di-eg",
@@ -4005,7 +4221,8 @@
     "verified": true,
     "country": [
       "IT"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2025-09-14-rooftop-live-fede-s-roof-naple",
@@ -4022,7 +4239,8 @@
     "verified": true,
     "country": [
       "IT"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2025-09-18-ambers-manchester",
@@ -4039,7 +4257,8 @@
     "verified": true,
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2025-09-25-green-room-set-maka-s-birthday",
@@ -4056,7 +4275,8 @@
     "verified": true,
     "country": [
       "IT"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "usb002-glasgow",
@@ -4078,7 +4298,8 @@
     "tour": "USB002",
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2025-10-09-gimic-radio-bar-brussels",
@@ -4099,7 +4320,8 @@
     "verified": true,
     "country": [
       "BE"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "usb002-brussels",
@@ -4119,7 +4341,8 @@
     "tour": "USB002",
     "country": [
       "BE"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "usb002-madrid",
@@ -4139,7 +4362,8 @@
     "tour": "USB002",
     "country": [
       "ES"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2025-10-22-nts-radio-drumless-mix",
@@ -4180,7 +4404,8 @@
     "tour": "USB002",
     "country": [
       "FR"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2025-10-25-centre-pompidou-paris",
@@ -4201,7 +4426,8 @@
     "verified": true,
     "country": [
       "FR"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "usb002-dublin",
@@ -4222,7 +4448,8 @@
     "tour": "USB002",
     "country": [
       "IE"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "usb002-toronto",
@@ -4242,7 +4469,8 @@
     "tour": "USB002",
     "country": [
       "CA"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "usb002-chicago",
@@ -4264,7 +4492,8 @@
     "tour": "USB002",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2025-11-26-twitch-canada",
@@ -4281,7 +4510,8 @@
     "verified": true,
     "country": [
       "CA"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "usb002-vancouver",
@@ -4305,7 +4535,8 @@
     "tour": "USB002",
     "country": [
       "CA"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "usb002-san-francisco",
@@ -4328,7 +4559,8 @@
     "tour": "USB002",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2025-12-11-under-the-fabric-cdmx",
@@ -4347,7 +4579,8 @@
     "verified": true,
     "country": [
       "MX"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "usb002-mexico-city",
@@ -4367,7 +4600,8 @@
     "tour": "USB002",
     "country": [
       "MX"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "usb002-nyc-residency",
@@ -4388,7 +4622,8 @@
     "tour": "USB002",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2026-01-16-east-end-studios-queens-",
@@ -4406,7 +4641,8 @@
     "tour": "USB002",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2026-01-17-east-end-studios-queens-",
@@ -4424,7 +4660,8 @@
     "tour": "USB002",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2026-01-23-east-end-studios-queens-",
@@ -4442,7 +4679,8 @@
     "tour": "USB002",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2026-01-24-east-end-studios-queens-",
@@ -4460,7 +4698,8 @@
     "tour": "USB002",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2026-01-30-east-end-studios-queens-",
@@ -4478,7 +4717,8 @@
     "tour": "USB002",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2026-01-31-east-end-studios-queens-",
@@ -4496,7 +4736,8 @@
     "tour": "USB002",
     "country": [
       "US"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "usb002-london-residency",
@@ -4518,7 +4759,8 @@
     "tour": "USB002",
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2026-02-12-alexandra-palace-london",
@@ -4536,7 +4778,8 @@
     "tour": "USB002",
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2026-02-13-alexandra-palace-london",
@@ -4554,7 +4797,8 @@
     "tour": "USB002",
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2026-02-19-corsica-studios-london",
@@ -4572,7 +4816,8 @@
     "tour": "USB002",
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "show-2026-02-26-alexandra-palace-london",
@@ -4590,7 +4835,8 @@
     "tour": "USB002",
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "bangalter-2026",
@@ -4610,7 +4856,8 @@
     "tracklist_link": "https://mixmag.net/feature/this-is-the-full-tracklist-from-fred-again-and-thomas-bangalters-b2b-at-alexandra-palace",
     "country": [
       "GB"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "set-2026-06-09-young-nation-show-300",
@@ -4663,7 +4910,8 @@
     "verified": true,
     "country": [
       "MX"
-    ]
+    ],
+    "setting": "own"
   },
   {
     "id": "india-2026",

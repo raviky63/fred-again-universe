@@ -546,7 +546,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2022",
+    "date": "2022-01-20",
     "with": [
       "romy",
       "haai"
@@ -556,7 +556,7 @@
       "spotify": "https://open.spotify.com/album/4100xNB13LVcbjmnjOSUrL",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -565,7 +565,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2022-01-18",
+    "date": "2026-03-06",
     "with": [
       "oppidan",
       "bia"
@@ -575,7 +575,7 @@
       "spotify": "https://open.spotify.com/album/3RHHWTV841eOr2bHvVWuNR",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -584,7 +584,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2022-01-18",
+    "date": "",
     "with": [
       "daphni",
       "ca7riel-paco"
@@ -594,8 +594,8 @@
       "spotify": "https://open.spotify.com/album/7j2Yq6tgXlbDiT6IiJZVuu",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
-    "verified": true
+    "source": "Release date still to find (Spotify shows the USB album date)",
+    "verified": false
   },
   {
     "id": "hardstyle-2-lou-nour-remix",
@@ -603,7 +603,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2022-01-18",
+    "date": "2026-03-06",
     "with": [
       "lou-nour",
       "sicaria",
@@ -615,7 +615,7 @@
       "spotify": "https://open.spotify.com/album/1OjzEERJmfHygMXeM9pu5L",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -624,7 +624,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2022-01-18",
+    "date": "2024-04-09",
     "with": [
       "duoteque",
       "orion-sun"
@@ -634,7 +634,7 @@
       "spotify": "https://open.spotify.com/album/0SfG1s1g2Mlz9yQehczBaI",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -643,7 +643,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2022-01-18",
+    "date": "2026-03-06",
     "with": [
       "lil-silva",
       "sammy-virji",
@@ -654,7 +654,7 @@
       "spotify": "https://open.spotify.com/album/3WcrusXbjgEKmk3V4yr1cY",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -663,7 +663,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2022-01-18",
+    "date": "2024-08-12",
     "with": [
       "joy-orbison",
       "lil-yachty",
@@ -675,7 +675,7 @@
       "spotify": "",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -684,7 +684,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2022-01-18",
+    "date": "2024-07-19",
     "with": [
       "anderson-paak",
       "chika",
@@ -695,7 +695,7 @@
       "spotify": "",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -704,7 +704,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2022-01-18",
+    "date": "2026-03-06",
     "with": [
       "kettama",
       "blanco"
@@ -714,7 +714,7 @@
       "spotify": "https://open.spotify.com/album/1P3t63miBEpa4OqlIipdSB",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -723,7 +723,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2022-01-18",
+    "date": "2025-10-17",
     "with": [
       "skin-on-skin",
       "beam"
@@ -733,7 +733,7 @@
       "spotify": "",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -760,14 +760,14 @@
     "releases": [
       "usb"
     ],
-    "date": "2022-06-29",
+    "date": "2022-06",
     "with": [],
     "cover": "https://i.scdn.co/image/ab67616d00001e0235bae471c1b8b904cd293052",
     "links": {
       "spotify": "https://open.spotify.com/album/3iDLGLmecmdkmdxYmuol5d",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -776,7 +776,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2022-07-29",
+    "date": "2022-07",
     "with": [
       "swedish-house-mafia",
       "future"
@@ -786,7 +786,7 @@
       "spotify": "https://open.spotify.com/album/2jiMeC1iUWVYmvXSIiO8ks",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true,
     "story": "Released the same week as his Boiler Room set; built on Future's 2012 song."
   },
@@ -1299,7 +1299,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2024",
+    "date": "2024-04-09",
     "with": [
       "berwyn"
     ],
@@ -1308,7 +1308,7 @@
       "spotify": "https://open.spotify.com/album/6Bj8Hc5tGT3Pcvabv39amL",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1778,7 +1778,7 @@
       "spotify": "https://open.spotify.com/album/0d9SgHDCP04wphWMeEMArX",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1796,7 +1796,7 @@
       "spotify": "https://open.spotify.com/album/3dmu97DsoFpSptXPtJEzCJ",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1814,7 +1814,7 @@
       "spotify": "https://open.spotify.com/album/1QjKKOhJCJL5W0KcZ7Y6LY",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1833,7 +1833,7 @@
       "spotify": "https://open.spotify.com/album/3WmLwaeaQ07qodXo5Cmel0",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1852,7 +1852,7 @@
       "spotify": "https://open.spotify.com/album/4K3sHV7n2hdD8JtkMHCd9U",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1861,7 +1861,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2025-10-31",
+    "date": "2025-11-04",
     "with": [
       "sammy-virji",
       "reggie"
@@ -1871,7 +1871,7 @@
       "spotify": "https://open.spotify.com/album/7qjrNDFT178bazNZiASRBU",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1889,7 +1889,7 @@
       "spotify": "https://open.spotify.com/album/4CC0Q6wTtZ15OWHtNTGvnU",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1908,7 +1908,7 @@
       "spotify": "https://open.spotify.com/album/63ITryjqkiwjmk3GABslAj",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1926,7 +1926,7 @@
       "spotify": "https://open.spotify.com/album/4XZZAJujVu3Li8LiiNB6vk",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1944,7 +1944,7 @@
       "spotify": "https://open.spotify.com/album/13SCTBQPaOWQWtUe1v9cNt",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1962,7 +1962,7 @@
       "spotify": "https://open.spotify.com/album/1FdXEZw2E4Z7HBsmhkV5E7",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -1980,7 +1980,7 @@
       "spotify": "https://open.spotify.com/album/5TMeo9RZrBOvQXDXt8EFsm",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -2025,7 +2025,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2026-02-13",
+    "date": "2026-02-16",
     "with": [
       "jamie-t"
     ],
@@ -2034,7 +2034,7 @@
       "spotify": "https://open.spotify.com/album/0OrWX0oW2b94MfnA1dSeov",
       "youtube": ""
     },
-    "source": "Spotify album tracklist",
+    "source": "Press, see research/usb-release-dates.md",
     "verified": true
   },
   {
@@ -2278,5 +2278,26 @@
     },
     "source": "Spotify album tracklist",
     "verified": true
+  },
+  {
+    "id": "ogdub",
+    "title": "OGdub",
+    "releases": [
+      "usb"
+    ],
+    "date": "2025-10-10",
+    "with": [
+      "danny-brown",
+      "beam",
+      "parisi"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Press, see research/usb-release-dates.md",
+    "verified": true,
+    "story": "Week two of USB002."
   }
 ]

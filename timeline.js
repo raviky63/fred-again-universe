@@ -3,7 +3,7 @@
 const COLORS = {artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", ep:"#ffd166", mixtape:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", mix:"#9a97a6", upcoming:"#ff5a36", merch:"#d7ff5e"};
 const GROUP = {album:"releases", ep:"releases", mixtape:"releases", single:"releases", feature:"releases", track:"tracks", event:"shows", upcoming:"shows", mix:"mixes", merch:"merch"};
 const LABEL = {releases:"Releases", tracks:"Tracks", shows:"Shows & moments", mixes:"DJ mixes & radio", merch:"Merch"};
-const NAME = {album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single", feature:"Feature", track:"Track", event:"Show", upcoming:"Upcoming", mix:"DJ mix / radio", merch:"Merch"};
+const NAME = {album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single", feature:"Feature", track:"Track", event:"Show", festival:"Festival", upcoming:"Upcoming", mix:"DJ mix / radio", merch:"Merch"};
 const FILES = ["meta","center","artists","releases","tracks","events","crew","merch","eras"];
 const state = {hidden:new Set(["tracks"]), q:"", follow:null};
 
@@ -12,8 +12,14 @@ const hue = s => { let h=0; for (const c of s) h=(h*31+c.charCodeAt(0))%360; ret
 const initials = n => n.replace(/[^A-Za-z0-9 ]/g,"").split(" ").filter(Boolean).slice(0,2).map(w=>w[0]).join("").toUpperCase();
 const fmt = d => { if(!d) return "date to add"; const [y,m,dd]=d.split("-"); const M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; return [dd&&+dd, m&&M[+m-1], y].filter(Boolean).join(" "); };
 const flags = cs => (cs||[]).map(c=>`<img class="flag" src="https://flagcdn.com/h20/${c.toLowerCase()}.png" alt="${c}" title="${c}" loading="lazy">`).join("");
-function pin(kind){
-  const c = COLORS[kind]||"#fff";
+function pin(kind, raw){
+  const c = COLORS[kind]||"#fff", cc = (raw && raw.country||[])[0];
+  if (kind==="event" && cc){
+    const fest = raw.setting==="festival", id = "fp"+raw.id.replace(/[^a-z0-9]/gi,"");
+    return `<svg class="pin flagpin" viewBox="0 0 20 20"><defs><clipPath id="${id}"><polygon points="10,3 17,10 10,17 3,10"/></clipPath></defs>
+      <polygon points="10,3 17,10 10,17 3,10" fill="#222"/><image href="https://flagcdn.com/w40/${cc.toLowerCase()}.png" x="3" y="3" width="14" height="14" preserveAspectRatio="xMidYMid slice" clip-path="url(#${id})"/>
+      <polygon points="10,3 17,10 10,17 3,10" fill="none" stroke="${fest?"#ffd166":"#fff"}" stroke-width="1"/>${fest?`<polygon points="10,.5 19.5,10 10,19.5 .5,10" fill="none" stroke="#ffd166" stroke-width="1"/>`:""}</svg>`;
+  }
   if (["event","upcoming","mix"].includes(kind)) return `<svg class="pin" viewBox="0 0 14 14"><rect x="3" y="3" width="8" height="8" fill="${c}" transform="rotate(45 7 7)"/></svg>`;
   if (kind==="merch") return `<svg class="pin" viewBox="0 0 14 14"><polygon points="13,7 10,12.2 4,12.2 1,7 4,1.8 10,1.8" fill="${c}"/></svg>`;
   return `<svg class="pin" viewBox="0 0 14 14"><rect x="1.5" y="1.5" width="11" height="11" rx="1.5" fill="${c}"/></svg>`;
@@ -97,7 +103,7 @@ function build(data){
     const where = r.location && r.location!=="Radio / online mix" ? `<div class="where">${r.location!==it.title?esc(r.location):""}${flags(r.country)}</div>` : "";
     return `<article class="item ${mini?"mini":""} ${r.verified===false?"unv":""}" id="t-${it.id}">
         ${thumb}
-        <div class="meta" style="color:${c}">${NAME[it.kind]||it.kind} <span class="date">· ${fmt(it.date)}</span></div>
+        <div class="meta" style="color:${r.setting==="festival"?"#ffd166":c}">${r.setting==="festival"?NAME.festival:NAME[it.kind]||it.kind} <span class="date">· ${fmt(it.date)}</span></div>
         <div class="title">${esc(it.title)}</div>${where}
         ${r.story?`<p class="story">${esc(r.story)}</p>`:""}${tracklist}
         ${(who.length||back.length||fwd.length||same.length)?`<div class="pills">${who.map(person).join("")}${back.map(x=>pill(x,"back")).join("")}${same.slice(0,8).map(x=>pill(x)).join("")}${fwd.map(x=>pill(x,"fwd")).join("")}</div>`:""}
@@ -121,7 +127,7 @@ function build(data){
         era = e; year = null;
       }
       if (y !== year){ html += `<div class="year"><span>${y}</span></div>`; year = y; }
-      html += `<div class="col ${i%2?"down":"up"}"><div class="stem"></div>${pin(it.kind)}<div class="slot">${card(it)}</div></div>`;
+      html += `<div class="col ${i%2?"down":"up"}"><div class="stem"></div>${pin(it.kind, it.raw)}<div class="slot">${card(it)}</div></div>`;
       i++; shown++;
     });
     if (era) html += `</section>`;
@@ -129,8 +135,38 @@ function build(data){
     document.getElementById("empty").style.display = shown ? "none" : "block";
     track.querySelectorAll("[data-go]").forEach(p => p.onclick = () => go(p.dataset.go));
     track.querySelectorAll("[data-follow]").forEach(p => p.onclick = () => { state.follow = p.dataset.follow; render(); ride.scrollTo({left:0}); });
+    observe();
     onScroll();
   }
+
+  // cards pop in as they ride into view
+  let io;
+  function observe(){
+    io && io.disconnect();
+    io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add("seen"); io.unobserve(e.target); } }), {root: ride, rootMargin: "0px 80px 0px 0px", threshold: .05});
+    track.querySelectorAll(".col,.era,.year").forEach(el => io.observe(el));
+  }
+
+  // grab anywhere and throw: drag to ride, with a bit of momentum
+  let down = null, moved = false, v = 0, raf = 0;
+  ride.addEventListener("pointerdown", e => {
+    if (e.button !== 0 || e.target.closest("a,summary,details")) return;
+    cancelAnimationFrame(raf); down = {x: e.clientX, left: ride.scrollLeft, t: performance.now(), lx: e.clientX}; moved = false; v = 0;
+  });
+  addEventListener("pointermove", e => {
+    if (!down) return;
+    const dx = e.clientX - down.x;
+    if (!moved && Math.abs(dx) > 5){ moved = true; ride.classList.add("dragging"); }
+    if (!moved) return;
+    const now = performance.now(); v = (e.clientX - down.lx) / Math.max(1, now - down.t); down.lx = e.clientX; down.t = now;
+    ride.scrollLeft = down.left - dx;
+  });
+  addEventListener("pointerup", () => {
+    if (!down) return; down = null;
+    if (moved){ setTimeout(()=>ride.classList.remove("dragging"), 0);
+      let vel = -v * 16; const glide = () => { if (Math.abs(vel) < .5) return; ride.scrollLeft += vel; vel *= .94; raf = requestAnimationFrame(glide); }; glide(); }
+  });
+  ride.addEventListener("click", e => { if (moved){ e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
 
   // which era is in the middle of the screen → colour the page and light up its button
   let current = null;
