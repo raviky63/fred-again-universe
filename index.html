@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Fred again.. Universe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+  :root{
+    --bg:#08080c; --ink:#f3efe7; --muted:#8d8a95; --line:#2a2833;
+    --fred:#ff5a36; --artist:#7cc6ff; --album:#ffd166; --single:#ff9ecb; --credit:#9b8cff; --feature:#5ee3b0; --event:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;overflow:hidden}
+  #stage{position:fixed;inset:0}
+  svg{width:100%;height:100%;display:block;cursor:grab}
+  svg:active{cursor:grabbing}
+
+  header{position:fixed;top:0;left:0;right:0;padding:18px 22px;display:flex;gap:16px;align-items:flex-start;justify-content:space-between;pointer-events:none;z-index:5}
+  header > *{pointer-events:auto}
+  .brand h1{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:26px;letter-spacing:-.02em;margin:0;line-height:1}
+  .brand h1 span{color:var(--fred)}
+  .brand p{margin:6px 0 0;color:var(--muted);font-size:13px}
+  .controls{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+  #search{background:#13121a;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:9px 14px;font:inherit;font-size:14px;width:240px;outline:none}
+  #search:focus{border-color:#4a4757}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;max-width:520px}
+  .chip{border:1px solid var(--line);background:#13121a;color:var(--ink);border-radius:999px;padding:5px 11px;font-size:12px;cursor:pointer;display:flex;align-items:center;gap:6px;user-select:none}
+  .chip i{width:9px;height:9px;display:inline-block}
+  .chip.off{opacity:.35}
+
+  .bar{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#13121acc;backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;padding:8px 12px;display:flex;align-items:center;gap:10px;z-index:5;font-size:13px}
+  .bar select,.bar button{background:#1c1a24;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
+  #focusInfo{color:var(--fred)}
+
+  .legend{position:fixed;left:22px;bottom:20px;font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:6px;z-index:5}
+  .legend div{display:flex;align-items:center;gap:8px}
+  .legend svg{width:16px;height:16px;cursor:default}
+
+  #panel{position:fixed;top:0;right:0;height:100%;width:380px;max-width:100%;background:#111017f2;backdrop-filter:blur(12px);border-left:1px solid var(--line);transform:translateX(105%);transition:transform .28s ease;z-index:10;overflow-y:auto;padding:26px 24px 40px}
+  #panel.open{transform:none}
+  #close{position:absolute;top:14px;right:14px;background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;width:32px;height:32px;cursor:pointer;font-size:16px}
+  .kind{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+  #panel h2{font-family:"Space Grotesk";font-size:28px;line-height:1.05;margin:8px 0 6px;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:16px}
+  .cover{width:100%;aspect-ratio:1;border-radius:6px;margin-bottom:16px;position:relative;overflow:hidden}
+  .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  #panel p.story{line-height:1.55;font-size:14.5px;margin:0 0 16px}
+  .section{margin-top:18px}
+  .section h3{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:500}
+  .pills{display:flex;flex-wrap:wrap;gap:6px}
+  .pill{background:#1c1a24;border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:13px;cursor:pointer;color:var(--ink)}
+  .pill:hover{border-color:#5a5668}
+  .links a{color:var(--ink);font-size:13px;margin-right:12px}
+  .badge{display:inline-block;font-size:11px;padding:3px 8px;border-radius:999px;margin-top:4px}
+  .badge.ok{background:#173a2b;color:#7be3b0}
+  .badge.no{background:#3a2a13;color:#ffc46b}
+  .src{font-size:12px;color:var(--muted);margin-top:6px}
+  ul.awards{margin:0;padding-left:18px;font-size:13.5px;line-height:1.6}
+
+  .node text{pointer-events:none;font-family:Inter;fill:var(--ink)}
+  .dim{opacity:.12}
+  .link{stroke:#3a3745;stroke-width:1}
+  .link.hot{stroke:#bdb8c9;stroke-width:1.6}
+  .faded{opacity:.06 !important}
+
+  @media (max-width:720px){
+    header{flex-direction:column;padding:14px}
+    .controls{align-items:stretch;width:100%}
+    #search{width:100%}
+    .chips{justify-content:flex-start}
+    .legend{display:none}
+    .bar{bottom:12px;width:calc(100% - 24px);flex-wrap:wrap}
+    #panel{top:auto;bottom:0;height:72%;width:100%;border-left:0;border-top:1px solid var(--line);border-radius:16px 16px 0 0;transform:translateY(105%)}
+  }
+</style>
+</head>
+<body>
+<div id="stage"><svg id="svg"></svg></div>
+
+<header>
+  <div class="brand">
+    <h1>The <span>Fred again..</span> Universe</h1>
+    <p>Every collab, record and moment, mapped. Click anything.</p>
+  </div>
+  <div class="controls">
+    <input id="search" placeholder="Search an artist or track…" autocomplete="off">
+    <div class="chips" id="chips"></div>
+  </div>
+</header>
+
+<div class="legend" id="legend"></div>
+
+<div class="bar">
+  <label>Year <select id="year"><option value="">All</option></select></label>
+  <span id="focusInfo"></span>
+  <button id="reset" style="display:none">Show everything</button>
+</div>
+
+<aside id="panel"><button id="close" aria-label="Close">✕</button><div id="panelBody"></div></aside>
+
+<script src="app.js"></script>
+</body>
+</html>

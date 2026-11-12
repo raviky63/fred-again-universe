@@ -1,0 +1,425 @@
+[
+  {
+    "id": "brian-eno",
+    "name": "Brian Eno",
+    "bio": "Ambient pioneer and producer. Fred's mentor since his teens.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "skrillex",
+    "name": "Skrillex",
+    "bio": "American producer. Part of the Fred / Skrillex / Four Tet trio that took over 2023.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "four-tet",
+    "name": "Four Tet",
+    "bio": "London producer (Kieran Hebden). The third member of the 2023 trio shows.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "flowdan",
+    "name": "Flowdan",
+    "bio": "London grime MC, the voice on Rumble.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "skepta",
+    "name": "Skepta",
+    "bio": "Grime icon from Tottenham. One of Fred's most frequent collaborators in 2025.",
+    "verified": true,
+    "source": "Wikipedia / Spotify",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "plaqueboymax",
+    "name": "PlaqueBoyMax",
+    "bio": "Streamer and rapper. Victory Lap grew out of a streamed studio session.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "denzel-curry",
+    "name": "Denzel Curry",
+    "bio": "Florida rapper, on a Victory Lap remix.",
+    "verified": true,
+    "source": "Wikipedia (Billboard)",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "hanumankind",
+    "name": "Hanumankind",
+    "bio": "Indian rapper, on a Victory Lap remix.",
+    "verified": true,
+    "source": "Wikipedia (Billboard)",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "that-mexican-ot",
+    "name": "That Mexican OT",
+    "bio": "Texas rapper, on a Victory Lap remix.",
+    "verified": true,
+    "source": "Wikipedia (Uproxx)",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "d-double-e",
+    "name": "D Double E",
+    "bio": "Grime pioneer, on Victory Lap 5.",
+    "verified": true,
+    "source": "Wikipedia (GRM Daily)",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "obongjayar",
+    "name": "Obongjayar",
+    "bio": "Nigerian-British singer, the voice of adore u.",
+    "verified": true,
+    "source": "Spotify / New Statesman",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "baby-keem",
+    "name": "Baby Keem",
+    "bio": "American rapper, on leavemealone.",
+    "verified": true,
+    "source": "Wikipedia / Spotify",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "anderson-paak",
+    "name": "Anderson .Paak",
+    "bio": "American singer, drummer and rapper.",
+    "verified": true,
+    "source": "Wikipedia / Spotify",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "chika",
+    "name": "CHIKA",
+    "bio": "American rapper, on places to be.",
+    "verified": true,
+    "source": "Wikipedia / Spotify",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "lil-yachty",
+    "name": "Lil Yachty",
+    "bio": "Atlanta rapper, on stayinit.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "overmono",
+    "name": "Overmono",
+    "bio": "Welsh electronic duo (brothers Tom and Ed Russell).",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "romy",
+    "name": "Romy",
+    "bio": "Singer from The xx.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "sampha",
+    "name": "Sampha",
+    "bio": "London singer-songwriter, featured on Ten Days.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "duskus",
+    "name": "Duskus",
+    "bio": "Producer, featured on Ten Days.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "angie-mcmahon",
+    "name": "Angie McMahon",
+    "bio": "Australian singer-songwriter, on light dark light.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "john-martyn",
+    "name": "John Martyn",
+    "bio": "Late British folk legend, sampled/featured on little mystery.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "sammy-virji",
+    "name": "Sammy Virji",
+    "bio": "UK garage DJ and producer.",
+    "verified": true,
+    "source": "Wikipedia / Spotify",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "reggie",
+    "name": "Reggie",
+    "bio": "Featured on Talk of the Town.",
+    "verified": true,
+    "source": "Spotify",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "jamie-t",
+    "name": "Jamie T",
+    "bio": "London singer-songwriter.",
+    "verified": true,
+    "source": "Spotify",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "jozzy",
+    "name": "Jozzy",
+    "bio": "Singer-songwriter, on ten.",
+    "verified": true,
+    "source": "Spotify",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "swedish-house-mafia",
+    "name": "Swedish House Mafia",
+    "bio": "Swedish house trio. Also did a B2B with Fred at a NYC pop-up in 2022.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "future",
+    "name": "Future",
+    "bio": "Atlanta rapper. His 2012 track Turn On the Lights is sampled.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "the-blessed-madonna",
+    "name": "The Blessed Madonna",
+    "bio": "American DJ and producer.",
+    "verified": true,
+    "source": "Spotify",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "amyl-and-the-sniffers",
+    "name": "Amyl and the Sniffers",
+    "bio": "Australian punk band. Opened the USB002 tour in Glasgow with Fred.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "caribou",
+    "name": "Caribou",
+    "bio": "Canadian producer (Dan Snaith).",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "floating-points",
+    "name": "Floating Points",
+    "bio": "UK producer (Sam Shepherd).",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "ca7riel-paco",
+    "name": "CA7RIEL & Paco Amoroso",
+    "bio": "Argentinian duo.",
+    "verified": true,
+    "source": "Wikipedia / Spotify",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "pinkpantheress",
+    "name": "PinkPantheress",
+    "bio": "UK singer-producer.",
+    "verified": true,
+    "source": "Spotify",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "thomas-bangalter",
+    "name": "Thomas Bangalter",
+    "bio": "Former Daft Punk member.",
+    "verified": true,
+    "source": "Wikipedia (Consequence)",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "latin-mafia",
+    "name": "LATIN MAFIA",
+    "bio": "Mexican group. Appears with Fred on Spotify; details still to check.",
+    "verified": false,
+    "source": "Spotify only",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "headie-one",
+    "name": "Headie One",
+    "bio": "London drill rapper. Made the GANG project with Fred.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "fka-twigs",
+    "name": "FKA twigs",
+    "bio": "On Don't Judge Me with Fred and Headie One.",
+    "verified": true,
+    "source": "Wikipedia",
+    "photo": "",
+    "photo_credit": ""
+  },
+  {
+    "id": "parisi",
+    "name": "Parisi",
+    "bio": "Producer duo, on OGdub (USB002).",
+    "photo": "",
+    "photo_credit": "",
+    "source": "Wikipedia (USB002 Tour table)",
+    "verified": true
+  },
+  {
+    "id": "beam",
+    "name": "Beam",
+    "bio": "On OGdub (USB002).",
+    "photo": "",
+    "photo_credit": "",
+    "source": "Wikipedia (USB002 Tour table)",
+    "verified": true
+  },
+  {
+    "id": "danny-brown",
+    "name": "Danny Brown",
+    "bio": "Detroit rapper, on OGdub (USB002).",
+    "photo": "",
+    "photo_credit": "",
+    "source": "Wikipedia (USB002 Tour table)",
+    "verified": true
+  },
+  {
+    "id": "skin-on-skin",
+    "name": "Skin On Skin",
+    "bio": "On The Floor remixes (USB002).",
+    "photo": "",
+    "photo_credit": "",
+    "source": "Wikipedia (USB002 Tour table)",
+    "verified": true
+  },
+  {
+    "id": "kettama",
+    "name": "Kettama",
+    "bio": "Irish producer, on Hardstyle 2 (USB002).",
+    "photo": "",
+    "photo_credit": "",
+    "source": "Wikipedia (USB002 Tour table)",
+    "verified": true
+  },
+  {
+    "id": "shady-nasty",
+    "name": "Shady Nasty",
+    "bio": "On Hardstyle 2 (USB002).",
+    "photo": "",
+    "photo_credit": "",
+    "source": "Wikipedia (USB002 Tour table)",
+    "verified": true
+  },
+  {
+    "id": "winny",
+    "name": "Winny",
+    "bio": "On Winny (USB002).",
+    "photo": "",
+    "photo_credit": "",
+    "source": "Wikipedia (USB002 Tour table)",
+    "verified": true
+  },
+  {
+    "id": "bia",
+    "name": "Bia",
+    "bio": "On Icey.. and Feisty.. (USB002).",
+    "photo": "",
+    "photo_credit": "",
+    "source": "Wikipedia (USB002 Tour table)",
+    "verified": true
+  },
+  {
+    "id": "blanco",
+    "name": "Blanco",
+    "bio": "On solo (USB002).",
+    "photo": "",
+    "photo_credit": "",
+    "source": "Wikipedia (USB002 Tour table)",
+    "verified": true
+  },
+  {
+    "id": "wallfacer",
+    "name": "Wallfacer",
+    "bio": "On I Luv U (USB002).",
+    "photo": "",
+    "photo_credit": "",
+    "source": "Wikipedia (USB002 Tour table)",
+    "verified": true
+  }
+]
