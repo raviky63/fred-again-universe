@@ -63,3 +63,10 @@ python -m http.server
 ```
 
 then visit http://localhost:8000.
+
+## Checklist before adding more data
+`CHECKLIST.md` lists everything that still needs a human check (unverified items, fan-reported facts, missing dates or sources, open questions).
+It is generated: run `python3 tools/verify_list.py` after every data change. Manual questions go in `research/open-questions.md`.
+
+## Prototypes
+`prototypes.html` lets you switch the readability ideas for the web on and off (open & close, names on zoom, shows per tour, size by collabs, story mode, era colours).

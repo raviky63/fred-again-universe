@@ -1,0 +1,10 @@
+- [ ] Rinse FM 26 Sep 2019: only on 1001Tracklists, no upload found. Keep or remove?
+- [ ] Guest mixes in someone else's show (Dance Department 812, Sunshine Live Mix Mission, Young Nation Show #300, FAZEmag In The Mix 118): is Fred's own mix in them, or just his tracks?
+- [ ] Which of the three London nights (5–7 Jan 2023) the USB went to a fan.
+- [ ] Era boundaries in data/eras.json: do they match how fans see the eras?
+- [ ] Festival vs own show is guessed from the name (tools/show_type.py): spot-check a few.
+- [ ] Country per show is guessed from the location text (tools/countries.py): spot-check online / multi-country items.
+- [ ] Early singles (Julie, Octavian, Eazi, Kyren, Actual Life EP): exact release dates and covers.
+- [ ] 'Secret Life, LA Memorial Coliseum' set: 1001Tracklists said 11 June 2024, Fred's own video says 12 June 2024 (now 12 June).
+- [ ] Artists without a free photo: find one with a clear license, or keep initials.
+- [ ] Merch: images with a clear right to use.
