@@ -1,6 +1,6 @@
 // The Fred again.. Universe — reads the data/ folder and draws the web.
 const COLORS = {fred:"#ff5a36", artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", merch:"#d7ff5e"};
-const LABELS = {artist:"Artists", crew:"Crew", album:"Albums & EPs", single:"Singles", track:"Tracks", feature:"Features", event:"Shows & sets", merch:"Merch"};
+const LABELS = {artist:"Artists", album:"Albums & EPs", single:"Singles", track:"Tracks", feature:"Features", event:"Shows & sets", merch:"Merch"};
 const KIND_NAME = {hub:"Year of shows", artist:"Artist", crew:"Crew", album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single / collab", feature:"Feature", track:"Track", event:"Show / moment", mix:"DJ mix / radio", upcoming:"Upcoming show", merch:"Merch", fred:"The centre"};
 const FILES = ["meta","center","artists","releases","tracks","events","crew","merch"];
 const state = {hidden:new Set(), year:"", selected:null, query:"", focus:null};
@@ -28,13 +28,13 @@ function build(data){
   data.releases.forEach(r => { const t=["ep","mixtape"].includes(r.kind)?"album":r.kind; add({id:r.id, type:t, kind:r.kind, name:r.title, raw:r, year:yearOf(r.date), s:r.kind==="album"?34:r.kind==="single"?22:28, img:r.cover}); });
   data.tracks.forEach(t => add({id:t.id, type:"track", name:t.title, raw:t, year:yearOf(t.date), s:13, img:t.cover}));
   data.events.forEach(e => add({id:e.id, type:"event", kind:e.kind, name:e.title, raw:e, year:yearOf(e.date), s:e.kind==="mix"?11:16, img:e.thumbnail}));
-  (data.crew||[]).forEach(c => add({id:c.id, type:"crew", name:c.name, raw:c, r:12, img:c.photo}));
+  // crew stays in data/crew.json for a future crew page, but is left out of the web for now
   (data.merch||[]).forEach(m => add({id:m.id, type:"merch", name:m.title, raw:m, year:yearOf(m.date), s:15, img:m.image}));
 
   data.releases.forEach(r => { link(c.id, r.id, true); (r.with||[]).forEach(w=>link(r.id,w)); (r.tracks||[]).forEach(t=>link(r.id,t)); });
   data.tracks.forEach(t => (t.with||[]).forEach(w=>link(t.id,w)));
   // shows with no other connection hang on a year node, so the web stays readable
-  const linkedByOthers = new Set([...(data.crew||[]), ...(data.merch||[])].flatMap(x=>x.links_to||[]));
+  const linkedByOthers = new Set((data.merch||[]).flatMap(x=>x.links_to||[]));
   data.events.forEach(e => {
     const plain = !(e.with||[]).length && !(e.tracks||[]).length && !e.story && !linkedByOthers.has(e.id);
     const y = yearOf(e.date);
@@ -46,7 +46,7 @@ function build(data){
     (e.with||[]).forEach(w=>link(e.id,w)); (e.tracks||[]).forEach(t=>link(e.id,t));
   });
   nodes.filter(n=>n.type==="hub").forEach(n=>{ n.name=`${n.year} · ${n.count} shows`; });
-  [...(data.crew||[]), ...(data.merch||[])].forEach(x => { const l=(x.links_to||[]).filter(i=>byId[i]); if(!l.length) link(c.id, x.id, true); l.forEach(i=>link(x.id,i)); });
+  (data.merch||[]).forEach(x => { const l=(x.links_to||[]).filter(i=>byId[i]); if(!l.length) link(c.id, x.id, true); l.forEach(i=>link(x.id,i)); });
 
   const nb = {};
   links.forEach(l => { (nb[l.source]??=new Set()).add(l.target); (nb[l.target]??=new Set()).add(l.source); });
@@ -67,7 +67,6 @@ function build(data){
     <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="${COLORS.artist}"/></svg>Artist / person</div>
     <div><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="1" fill="${COLORS.album}"/></svg>Release (cover)</div>
     <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" rx="1" fill="${COLORS.track}"/></svg>Track</div>
-    <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="${COLORS.crew}"/></svg>Crew</div>
     <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" fill="#fff" transform="rotate(45 8 8)"/></svg>Show / set</div>
     <div><svg viewBox="0 0 16 16"><polygon points="13,8 10.5,12.3 5.5,12.3 3,8 5.5,3.7 10.5,3.7" fill="${COLORS.merch}"/></svg>Merch</div>
     <div><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="1" fill="none" stroke="#aaa" stroke-dasharray="2 2"/></svg>Still to verify</div>`;
