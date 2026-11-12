@@ -83,6 +83,21 @@
     .bar{bottom:12px;width:calc(100% - 24px);flex-wrap:wrap}
     #panel{top:auto;bottom:0;height:72%;width:100%;border-left:0;border-top:1px solid var(--line);border-radius:16px 16px 0 0;transform:translateY(105%)}
   }
+  .lab{font-size:11px;fill:#f3efe7;pointer-events:none;font-family:Inter}
+  .lbg{fill:#08080cd9;pointer-events:none}
+  .link{stroke:#3a3745;stroke-width:1;stroke-opacity:.55}
+  .link.home{stroke-opacity:.9}
+  g.node.dim{opacity:.18}
+  #story{position:fixed;left:50%;bottom:76px;transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:all .35s ease;z-index:8;width:min(560px,calc(100% - 32px));max-height:42vh;overflow-y:auto;background:#141320f2;backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+  #story.open{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+  #story h3{margin:0;font-family:"Space Grotesk";font-size:22px;letter-spacing:-.01em}
+  #story .d{font-size:12px;color:var(--muted);margin:2px 0 8px}
+  #story p{margin:0 0 12px;font-size:15px;line-height:1.55;color:#e4dfd6}
+  #story .nav{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted)}
+  #story button{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer;font:inherit;font-size:13px}
+  #sClose{position:absolute;top:10px;right:10px;padding:2px 9px !important}
+  #search{width:260px}
+  @media (max-width:720px){ #story{bottom:84px} }
 </style>
 </head>
 <body>
@@ -91,25 +106,32 @@
 <header>
   <div class="brand">
     <h1>The <span>Fred again..</span> Universe</h1>
-    <p>Every collab, record and moment, mapped. Click anything.</p>
+    <p>Every collab, record and moment, mapped. Click a circle to open it.</p>
     <nav style="margin-top:8px;font-size:14px"><a href="index.html" style="color:#f3efe7;border-bottom:2px solid #ff5a36;text-decoration:none;margin-right:12px">Web</a><a href="timeline.html" style="color:#8d8a95;text-decoration:none">Timeline</a></nav>
   </div>
   <div class="controls">
-    <input id="search" placeholder="Search an artist or track…" autocomplete="off">
-    <div class="chips" id="chips"></div>
+    <input id="search" placeholder="Search, then press Enter…" autocomplete="off">
+    
   </div>
 </header>
 
-<div class="legend" id="legend"></div>
+<div class="legend" id="legend">
+  <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="#d9a44133" stroke="#d9a441" stroke-dasharray="3 2"/></svg>Era (click to open)</div>
+  <div><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="1" fill="#ffd166"/></svg>Album / single / track</div>
+  <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="#15141c" stroke="#fff" stroke-dasharray="2 2"/></svg>Tour / year of shows</div>
+  <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" fill="#c8102e" stroke="#fff" transform="rotate(45 8 8)"/></svg>Show (flag = country)</div>
+  <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="#0f1620" stroke="#7cc6ff" stroke-width="1.5"/></svg>Artist (bigger = more together)</div>
+</div>
 
 <div class="bar">
-  <label>Year <select id="year"><option value="">All</option></select></label>
-  <span id="focusInfo"></span>
-  <button id="reset" style="display:none">Show everything</button>
+  <button id="storyBtn">▶ Tell me the story</button>
+  <button id="closeAll">Close everything</button>
 </div>
+<div id="story"><button id="sClose" aria-label="Close">✕</button><h3 id="sT"></h3><div class="d" id="sD"></div><p id="sP"></p>
+  <div class="nav"><button id="prev">← back</button><span id="sN"></span><button id="next">next →</button></div></div>
 
 <aside id="panel"><button id="close" aria-label="Close">✕</button><div id="panelBody"></div></aside>
 
-<script src="app.js"></script>
+<script src="web.js"></script>
 </body>
 </html>
