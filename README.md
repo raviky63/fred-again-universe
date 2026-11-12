@@ -37,6 +37,16 @@ Add an id to one of those lists and a new line appears on the map.
 python tools/build_from_research.py
 ```
 
+## Privacy & ethics (non-negotiable)
+
+Community sources (Discord, Reddit, fan messages) are handled like this:
+
+- **No personal data, ever.** Usernames, @mentions, user IDs, emails, phone numbers, personal social links, photos or videos of fans are stripped before anything is used. `tools/clean_export.py` does this automatically.
+- **Raw exports never go into this repo** (`raw-exports/` is git-ignored). Only cleaned, anonymous text lands in `research/community/`.
+- **Facts first.** From community sources we take dates, setlists, venues, releases and moments, and check them against a second source before they go on the site.
+- **Personal stories** (who someone went with, what they went through) only go on the site when the person who wrote them says yes.
+- Anyone can ask for something to be removed, and it gets removed.
+
 ## Rules for content
 
 - Every item has a `source` and `verified` (`false` = shown with a dashed outline until checked).
