@@ -103,20 +103,20 @@ function build(data){
     const back = linked.filter(x => byId[x].date && byId[x].date.slice(0,4) < year);
     const fwd = linked.filter(x => byId[x].date && byId[x].date.slice(0,4) > year);
     const same = linked.filter(x => !back.includes(x) && !fwd.includes(x));
-    const mini = it.kind==="mix" || (it.kind==="event" && !r.story && !it.img && !who.length) || (it.kind==="track" && !r.story && !it.img);
+    const mini = it.kind==="mix" || (it.kind==="event" && !r.story && !it.img && !who.length && !r.support) || (it.kind==="track" && !r.story && !it.img);
     const h = hue(it.id);
     const thumb = mini ? "" : `<div class="thumb" style="background:linear-gradient(135deg,hsl(${h},55%,42%),hsl(${(h+50)%360},60%,18%))">${initials(it.title)}${it.img?`<img src="${esc(it.img)}" alt="" loading="lazy" onerror="this.remove()">`:""}</div>`;
     const pill = (x, cls="") => { const o = byId[x]; return `<span class="pill ${cls}" data-go="${x}">${cls==="back"?"↩ ":cls==="fwd"?"↪ ":""}${o.date?o.date.slice(0,4)+" · ":""}${esc(o.title.replace(/\s*\(.*\)$/,""))}</span>`; };
     const person = x => `<span class="pill" data-follow="${x}" style="color:${COLORS[people[x].type]}">${esc(people[x].name)}</span>`;
     const tracklist = r.tracklist?.length ? `<details class="story"><summary>Tracklist (${r.tracklist.length})</summary><ol>${r.tracklist.map(t=>`<li>${esc(t)}</li>`).join("")}</ol></details>` : "";
     const L = r.links||{};
-    const acts = [`<a href="index.html#${it.id}">See in the web</a>`, L.spotify?`<a href="${esc(L.spotify)}" target="_blank" rel="noopener">Spotify ↗</a>`:"", r.tracklist_link?`<a href="${esc(r.tracklist_link)}" target="_blank" rel="noopener">Tracklist ↗</a>`:""].join("");
+    const acts = [`<a href="index.html#${it.id}">See in the web</a>`, L.spotify?`<a href="${esc(L.spotify)}" target="_blank" rel="noopener">Spotify ↗</a>`:"", L.youtube?`<a href="${esc(L.youtube)}" target="_blank" rel="noopener">Watch ↗</a>`:"", r.tracklist_link?`<a href="${esc(r.tracklist_link)}" target="_blank" rel="noopener">Tracklist ↗</a>`:""].join("");
     const where = r.location && r.location!=="Radio / online mix" ? `<div class="where">${r.location!==it.title?esc(r.location):""}${flags(r.country)}</div>` : "";
     return `<article class="item ${mini?"mini":""} ${r.verified===false?"unv":""}" id="t-${it.id}">
         ${thumb}
         <div class="meta" style="color:${r.setting==="festival"?"#ffd166":c}">${r.setting==="festival"?NAME.festival:NAME[it.kind]||it.kind} <span class="date">· ${fmt(it.date)}</span></div>
         <div class="title">${esc(it.title)}</div>${where}${r.part_of&&byId[r.part_of]?`<div class="where">Addition to <span class="pill" data-go="${r.part_of}">${esc(byId[r.part_of].title)}</span></div>`:""}
-        ${r.story?`<p class="story">${esc(r.story)}</p>`:""}${tracklist}
+        ${r.support?.length?`<div class="where">Support: ${r.support.map(esc).join(", ")}</div>`:""}${r.story?`<p class="story">${esc(r.story)}</p>`:""}${tracklist}
         ${(who.length||back.length||fwd.length||same.length)?`<div class="pills">${who.map(person).join("")}${back.map(x=>pill(x,"back")).join("")}${same.slice(0,8).map(x=>pill(x)).join("")}${fwd.map(x=>pill(x,"fwd")).join("")}</div>`:""}
         ${mini?"":`<div class="actions">${acts}</div>`}
       </article>`;

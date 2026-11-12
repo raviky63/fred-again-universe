@@ -259,7 +259,7 @@ function build(data){
     const n=byId[id], r=n.raw, col=COLORS[n.type]||COLORS.fred;
     let h=`<div class="kind" style="color:${col}">${KIND_NAME[n.kind]||KIND_NAME[n.type]||n.type}</div><h2>${esc(n.name)}</h2>`;
     if (n.type==="fred"){
-      h+=hero(n)+`<div class="sub">${esc(r.real_name)} · born ${esc(r.born)}</div><p class="story">${esc(r.bio)}</p><p class="story">${esc(r.story)}</p>${r.story_name?`<div class="section"><h3>Where the name comes from</h3><p class="story">${esc(r.story_name)}</p></div>`:""}
+      h+=hero(n)+(r.photo_credit?`<div class="src">Photo: ${esc(r.photo_credit)}</div>`:"")+`<div class="sub">${esc(r.real_name)} · born ${esc(r.born)}</div><p class="story">${esc(r.bio)}</p><p class="story">${esc(r.story)}</p>${r.story_name?`<div class="section"><h3>Where the name comes from</h3><p class="story">${esc(r.story_name)}</p></div>`:""}
         <div class="section"><h3>Awards</h3><ul class="awards">${r.awards.map(a=>`<li>${esc(a)}</li>`).join("")}</ul></div>`;
     } else if (n.type==="artist"){
       h+=hero(n)+`<p class="story">${esc(r.bio)}</p>`;
@@ -281,6 +281,7 @@ function build(data){
       if (r.tracklist_link) h+=`<div class="section links"><a href="${esc(r.tracklist_link)}" target="_blank" rel="noopener">Full tracklist ↗</a></div>`;
       const cw=ofType(id,["crew"]); if (cw.length) h+=`<div class="section"><h3>Crew</h3>${pills(cw)}</div>`;
       if (r.with?.length) h+=`<div class="section"><h3>On stage with</h3>${pills(r.with)}</div>`;
+      if (r.support?.length) h+=`<div class="section"><h3>Support / opening</h3><p class="story">${r.support.map(esc).join(", ")}</p><div class="src">${esc(r.support_source||"")}</div></div>`;
       if (r.tracks?.length) h+=`<div class="section"><h3>Tracks tied to this moment</h3>${pills(r.tracks)}</div>`;
       h+=media(r.media);
     } else if (n.type==="track"){

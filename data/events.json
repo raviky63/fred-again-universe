@@ -66,7 +66,7 @@
     "kind": "show",
     "with": [],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/H2I6V0NlaHg/hqdefault.jpg",
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
@@ -74,7 +74,10 @@
     "country": [
       "GB"
     ],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=H2I6V0NlaHg"
+    }
   },
   {
     "id": "set-2021-05-08-rinse-fm",
@@ -211,7 +214,7 @@
     "kind": "show",
     "with": [],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/bZH9U1efx1c/hqdefault.jpg",
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
@@ -219,7 +222,10 @@
     "country": [
       "GB"
     ],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=bZH9U1efx1c"
+    }
   },
   {
     "id": "set-2021-11-15-mixmag-the-cover-mix",
@@ -392,13 +398,16 @@
     "kind": "show",
     "with": [],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/XpBRuwK5aN4/hqdefault.jpg",
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
     "verified": true,
     "country": [],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=XpBRuwK5aN4"
+    }
   },
   {
     "id": "show-2022-03-21-albert-hall-manchester",
@@ -696,7 +705,7 @@
     "kind": "show",
     "with": [],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/c0-hvjV2A5Y/hqdefault.jpg",
     "story": "Played in London on 29 June 2022 (fans saw it announced as live that night); the full video went up a month later, on 29 July, and blew him up worldwide. It became the third most-watched set on Boiler Room's YouTube channel.",
     "media": [],
     "source": "r/fredagain posts 29 Jun and 29 Jul 2022; Dancing Astronaut (Aug 2022); Apple Music 'Boiler Room: Fred again.. in London, Jul 29, 2022'",
@@ -724,7 +733,10 @@
     "country": [
       "GB"
     ],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=c0-hvjV2A5Y"
+    }
   },
   {
     "id": "show-2022-07-02-roskilde-festival-2022",
@@ -1140,7 +1152,11 @@
     "country": [
       "CA"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "r/fredagain (Oct 2022) (fan report, to verify)"
   },
   {
     "id": "show-2022-10-08-9-30-club-washington-dc",
@@ -1194,7 +1210,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "EDMTunes review of the Terminal 5 run (Oct 2022)"
   },
   {
     "id": "show-2022-10-14-terminal-5-new-york-ny",
@@ -1212,7 +1232,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "EDMTunes review of the Terminal 5 run (Oct 2022)"
   },
   {
     "id": "set-2022-10-16-terminal-5-new-york",
@@ -1230,7 +1254,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "EDMTunes review of the Terminal 5 run (Oct 2022)"
   },
   {
     "id": "set-2022-11-09-studio-live-3-london",
@@ -1240,7 +1268,7 @@
     "kind": "show",
     "with": [],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/O3OrcOr67sM/hqdefault.jpg",
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
@@ -1248,7 +1276,10 @@
     "country": [
       "GB"
     ],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=O3OrcOr67sM"
+    }
   },
   {
     "id": "show-2022-11-22-3olympia-theatre-dublin-",
@@ -1392,7 +1423,11 @@
     "country": [
       "GB"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "Gigwise review (12 Dec 2022)"
   },
   {
     "id": "show-2022-12-08-o2-academy-brixton-londo",
@@ -1438,13 +1473,16 @@
     "kind": "show",
     "with": [],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/rTbIQ5sZrDg/hqdefault.jpg",
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
     "verified": true,
     "country": [],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=rTbIQ5sZrDg"
+    }
   },
   {
     "id": "set-2023-01-05-electric-ballroom-london",
@@ -1962,7 +2000,7 @@
     "kind": "show",
     "with": [],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/4iQmPv_dTI0/hqdefault.jpg",
     "story": "His stripped-back Tiny Desk session.",
     "media": [],
     "source": "Wikipedia",
@@ -1970,7 +2008,10 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=4iQmPv_dTI0"
+    }
   },
   {
     "id": "coachella-2023",
@@ -2259,7 +2300,11 @@
     "country": [
       "GB"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "University of Lincoln student review (Sep 2023)"
   },
   {
     "id": "show-2023-09-05-alexandra-palace-london",
@@ -2882,7 +2927,11 @@
     "country": [
       "AU"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "Concrete Playground, Beat (Feb 2024): Joy Anonymous on all seven arena shows"
   },
   {
     "id": "show-2024-03-05-rod-laver-arena-melbourn",
@@ -2900,7 +2949,11 @@
     "country": [
       "AU"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "Concrete Playground, Beat (Feb 2024)"
   },
   {
     "id": "show-2024-03-06-rod-laver-arena-melbourn",
@@ -2918,7 +2971,11 @@
     "country": [
       "AU"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "Concrete Playground, Beat (Feb 2024)"
   },
   {
     "id": "show-2024-03-08-hotel-brunswick-brunswic",
@@ -2954,7 +3011,11 @@
     "country": [
       "AU"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "Concrete Playground, Beat (Feb 2024)"
   },
   {
     "id": "show-2024-03-12-qudos-bank-arena-sydney-",
@@ -2972,7 +3033,11 @@
     "country": [
       "AU"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "Concrete Playground, Beat (Feb 2024)"
   },
   {
     "id": "show-2024-03-13-qudos-bank-arena-sydney-",
@@ -2990,7 +3055,11 @@
     "country": [
       "AU"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "Concrete Playground, Beat (Feb 2024)"
   },
   {
     "id": "show-2024-03-14-qudos-bank-arena-sydney-",
@@ -3008,7 +3077,11 @@
     "country": [
       "AU"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "Concrete Playground, Beat (Feb 2024)"
   },
   {
     "id": "show-2024-03-16-the-domain-sydney-austra",
@@ -3026,7 +3099,13 @@
     "country": [
       "AU"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous",
+      "Dameeeela",
+      "Sam Alfred"
+    ],
+    "support_source": "Concrete Playground (13 Mar 2024)"
   },
   {
     "id": "show-2024-03-17-the-domain-sydney-austra",
@@ -3044,7 +3123,13 @@
     "country": [
       "AU"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous",
+      "Dameeeela",
+      "Sam Alfred"
+    ],
+    "support_source": "Concrete Playground (13 Mar 2024)"
   },
   {
     "id": "show-2024-03-22-waitangi-park-wellington",
@@ -3134,7 +3219,12 @@
     "country": [
       "AU"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous",
+      "MESSIE"
+    ],
+    "support_source": "Perth Is OK (Mar 2024)"
   },
   {
     "id": "set-2024-04-26-antro-juan-cdmx",
@@ -3269,12 +3359,12 @@
   {
     "id": "set-2024-06-11-secret-life-la-memorial-colise",
     "title": "Secret Life, LA Memorial Coliseum (49m)",
-    "date": "2024-06-11",
+    "date": "2024-06-12",
     "location": "Secret Life, LA Memorial Coliseum (49m)",
     "kind": "show",
     "with": [],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/baxOzJW6K1s/hqdefault.jpg",
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
@@ -3282,7 +3372,10 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=baxOzJW6K1s"
+    }
   },
   {
     "id": "la-coliseum-2024",
@@ -3349,7 +3442,7 @@
     "kind": "show",
     "with": [],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/6MAzUT1YhWE/hqdefault.jpg",
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
@@ -3357,7 +3450,10 @@
     "country": [
       "GB"
     ],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=6MAzUT1YhWE"
+    }
   },
   {
     "id": "set-2024-08-08-syd-for-solen-valbyparken-cope",
@@ -3608,7 +3704,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Justin Jay"
+    ],
+    "support_source": "r/fredagain (Sep 2024); local openers each night per EDMTunes (fan report, to verify)"
   },
   {
     "id": "show-2024-09-12-ball-arena-denver-co",
@@ -3646,7 +3746,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Keenan Mathias"
+    ],
+    "support_source": "r/fredagain (Sep 2024) (fan report, to verify)"
   },
   {
     "id": "show-2024-09-18-climate-pledge-arena-sea",
@@ -3740,7 +3844,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Stresshead"
+    ],
+    "support_source": "r/fredagain (Sep 2024) (fan report, to verify)"
   },
   {
     "id": "show-2024-09-29-alpine-valley-music-thea",
@@ -3759,7 +3867,12 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Asher Gray",
+      "Greyhound"
+    ],
+    "support_source": "r/fredagain (Sep 2024), posted by the openers themselves (fan report, to verify)"
   },
   {
     "id": "set-2024-10-01-places-we-ve-never-been-tour-l",
@@ -3795,7 +3908,11 @@
     "country": [
       "CA"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Loukeman"
+    ],
+    "support_source": "r/fredagain (Oct 2024) (fan report, to verify)"
   },
   {
     "id": "set-2024-10-04-places-we-ve-never-been-tour-s",
@@ -3851,7 +3968,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Jason Kendig"
+    ],
+    "support_source": "r/fredagain (Oct 2024) (fan report, to verify)"
   },
   {
     "id": "show-2024-10-09-state-farm-arena-atlanta",
@@ -3870,7 +3991,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Leonce"
+    ],
+    "support_source": "r/fredagain (Oct 2024) (fan report, to verify)"
   },
   {
     "id": "show-2024-10-10-state-farm-arena-atlanta",
@@ -3889,7 +4014,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Leonce"
+    ],
+    "support_source": "r/fredagain (Oct 2024) (fan report, to verify)"
   },
   {
     "id": "set-2024-10-13-places-we-ve-never-been-tour-d",
@@ -4326,7 +4455,7 @@
     "kind": "show",
     "with": [],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/o_N5JQYHJXk/hqdefault.jpg",
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
@@ -4334,7 +4463,10 @@
     "country": [
       "IT"
     ],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=o_N5JQYHJXk"
+    }
   },
   {
     "id": "usb002-glasgow",
@@ -4915,7 +5047,7 @@
       "thomas-bangalter"
     ],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/gfF8jzBVWvM/hqdefault.jpg",
     "story": "The last night of the USB002 run at Alexandra Palace. Daft Punk's Thomas Bangalter was revealed as the surprise guest only hours before doors: his first DJ set in the UK in almost 19 years. They opened and closed with One More Time.",
     "media": [],
     "source": "Mixmag (full tracklist); Electronic Groove",
@@ -4924,14 +5056,19 @@
     "country": [
       "GB"
     ],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=gfF8jzBVWvM"
+    }
   },
   {
     "with": [],
     "tracks": [],
-    "thumbnail": "",
+    "thumbnail": "https://i.ytimg.com/vi/GiXKukOtmeE/hqdefault.jpg",
     "media": [],
-    "links": {},
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=GiXKukOtmeE"
+    },
     "id": "usb002-every-show",
     "title": "USB002 EVERY SHOW (108 hours)",
     "date": "2026-04-30",

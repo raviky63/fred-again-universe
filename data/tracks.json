@@ -584,7 +584,7 @@
     "releases": [
       "usb"
     ],
-    "date": "",
+    "date": "2026-03-05",
     "with": [
       "daphni",
       "ca7riel-paco"
@@ -594,8 +594,9 @@
       "spotify": "https://open.spotify.com/album/7j2Yq6tgXlbDiT6IiJZVuu",
       "youtube": ""
     },
-    "source": "Release date still to find (Spotify shows the USB album date)",
-    "verified": false
+    "source": "Spotify, Deezer, Apple Music",
+    "verified": true,
+    "story": "Out as a single on 5 March 2026, a day before it landed on USB002 REMIXES."
   },
   {
     "id": "hardstyle-2-lou-nour-remix",
@@ -1766,7 +1767,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2025-10",
+    "date": "2025-10-10",
     "with": [
       "danny-brown",
       "beam",
@@ -1778,8 +1779,9 @@
       "spotify": "https://open.spotify.com/album/0d9SgHDCP04wphWMeEMArX",
       "youtube": ""
     },
-    "source": "Press, see research/usb-release-dates.md",
-    "verified": true
+    "source": "Apple Music, Spotify, Album of the Year; Fred again.. YouTube 'USB002, WEEK 2/10'",
+    "verified": true,
+    "story": "USB002 week 2: out on 10 October 2025, the night of the Brussels show."
   },
   {
     "id": "you-re-a-star",
@@ -2315,7 +2317,7 @@
       "youtube": ""
     },
     "story": "A vinyl-only track on USB002 (12 December 2025). Fans later found it on Spotify under another name.",
-    "source": "r/fredagain (Aug 2026, May 2026)",
-    "verified": false
+    "source": "USB002 tracklist (Album of the Year); r/fredagain",
+    "verified": true
   }
 ]

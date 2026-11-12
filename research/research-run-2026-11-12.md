@@ -35,3 +35,15 @@ The scrubbed Reddit text stays local (research/community/ is git-ignored); only 
 - Two Grammys, 4 Feb 2024 (The FADER, RA, Recording Academy).
 - A USB handed to a fan at one of the 5–7 Jan 2023 London shows (rova). Night not confirmed.
 - USB002 EVERY SHOW, 108-hour video, 30 Apr 2026 (Hot Press, Rolling Stone AU).
+
+## Second pass (same night)
+- OK OK: 10 Oct 2025, USB002 week 2 (Apple Music, Spotify, Album of the Year, Fred's own YouTube upload "USB002, WEEK 2/10").
+- Beto's Horns (Daphni remix): single 5 Mar 2026 (Spotify, Deezer), on USB002 REMIXES 6 Mar 2026 (Apple Music).
+- piccolo: on the USB002 tracklist (Album of the Year).
+- Photos: 56 artists + Fred got a freely licensed photo from Wikimedia Commons (see research/artist-photos.md, with photographer and license). The rest keep initials.
+- Video thumbnails (official uploads by Fred again.., Boiler Room, NPR) on 12 key moments, with a Watch link.
+- Support acts (field "support" on shows):
+  - Joy Anonymous: Terminal 5 Oct 2022 (EDMTunes), Brixton Dec 2022 (Gigwise), Ally Pally 4 Sep 2023, all 2024 AU arena shows (Concrete Playground, Beat)
+  - The Domain Sydney Mar 2024: Joy Anonymous, Dameeeela, Sam Alfred (Concrete Playground); Perth Langley Park: Joy Anonymous + MESSIE (Perth Is OK)
+  - Places We've Never Been 2024: local openers each night (EDMTunes). Names from r/fredagain fan reports, marked "to verify":
+    Denver Justin Jay, Salt Lake City Keenan Mathias, Alpine Valley Stresshead / Asher Gray & Greyhound, Toronto Loukeman, Buffalo Jason Kendig, Atlanta Leonce
