@@ -241,6 +241,14 @@ function build(D){
   document.getElementById("sClose").onclick=()=>{ card.classList.remove("open"); hover=null; labels(); };
   document.getElementById("next").onclick=()=>{ si=(si+1)%steps.length; step(); };
   document.getElementById("prev").onclick=()=>{ si=(si-1+steps.length)%steps.length; step(); };
+  // open everything, era by era, so it unfolds like a big bang
+  document.getElementById("openAll").onclick=()=>{
+    select(null);
+    const order=[...eras.map(e=>"era-"+e.id), ...Object.values(all).filter(n=>n.type==="release").map(n=>n.id), ...Object.values(all).filter(n=>n.type==="group").map(n=>n.id)];
+    const waves=[order.filter(id=>id.startsWith("era-")), order.filter(id=>all[id].type==="release"), order.filter(id=>all[id].type==="group")];
+    waves.forEach((ids,i)=>setTimeout(()=>{ ids.forEach(id=>expanded.add(id)); render(); },i*900));
+    setTimeout(()=>svg.transition().duration(1600).call(zoom.transform,d3.zoomIdentity.translate(W()/2,H()/2+20).scale(.32)),2400);
+  };
   document.getElementById("closeAll").onclick=()=>{ expanded.clear(); select(null); render(); svg.transition().duration(700).call(zoom.transform,d3.zoomIdentity.translate(W()/2,H()/2+30).scale(.75)); };
 
   // ---------- search ----------
