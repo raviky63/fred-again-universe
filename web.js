@@ -70,7 +70,7 @@ function build(D){
       const p=parent[n.id]; if(p && expanded.has(p) && (n.type!=="event"||expanded.has(n.group))) v.add(n.id);
     }
     for(const n of Object.values(all)) if(n.type==="artist")
-      if([...(nb[n.id]||[])].some(id=>v.has(id) && (expanded.has(id) || all[id].type==="event"))) v.add(n.id);
+      if([...(nb[n.id]||[])].some(id=>v.has(id) && (all[id].type!=="release" || expanded.has(id) || expanded.has(parent[id])))) v.add(n.id);
     return v;
   }
   const homeOf=(n,v)=>{ if(n.type==="era") return c.id; const p=parent[n.id]; if(p&&v.has(p)) return p; return c.id; };
@@ -81,13 +81,14 @@ function build(D){
   const showsLabel = (d,kk=k) => {
     if(d.id===hover||d.id===selected) return true;
     if(["fred","era","group"].includes(d.type)) return true;
-    if(d.type==="release" && (d.big||expanded.has(parent[d.id]))) return kk>.45;
-    if(d.type==="artist") return d.deg>=4 ? kk>.6 : kk>1.5;
-    return kk>1.5;
+    if(d.type==="release" && (d.big||expanded.has(parent[d.id]))) return true;
+    if(expanded.has(parent[d.id])) return true;           // children of something you opened
+    if(d.type==="artist") return true;
+    return kk>1.3;
   };
   const rad = d => d.type==="artist" ? 4+Math.min(d.deg,10)*1.6 : d.r;
   // nodes that carry a name get a wider "personal space", so names don't sit on top of each other
-  const space = d => showsLabel(d,1) ? Math.max(rad(d)+(d.type==="group"?16:8), labelW(d)/2+6) : rad(d)+6;
+  const space = d => { const sc=1/Math.min(Math.max(k,.35),2.2); return showsLabel(d) ? Math.max(rad(d)+(d.type==="group"?16:8), labelW(d)*sc/2+5) : rad(d)+6; };
 
   // ---------- svg ----------
   const svg=d3.select("#svg"), world=svg.append("g"), defs=svg.append("defs");
@@ -96,12 +97,13 @@ function build(D){
   glow.append("stop").attr("offset","100%").attr("stop-color",COLORS.fred).attr("stop-opacity",0);
   world.append("circle").attr("r",260).attr("fill","url(#glow)");
   const gL=world.append("g"), gN=world.append("g");
-  const zoom=d3.zoom().scaleExtent([.15,5]).on("zoom",e=>{ world.attr("transform",e.transform); const old=k; k=e.transform.k; if((old>1.5)!==(k>1.5)||(old>.6)!==(k>.6)||(old>.45)!==(k>.45)) labels(); });
+  let zt; const zoom=d3.zoom().scaleExtent([.15,5]).on("zoom",e=>{ world.attr("transform",e.transform); k=e.transform.k; labels();
+    clearTimeout(zt); zt=setTimeout(()=>{ sim.force("collide").radius(space); sim.alpha(Math.max(sim.alpha(),.15)).restart(); },250); });
   svg.call(zoom).on("dblclick.zoom",null);
   svg.on("click",e=>{ if(e.target===svg.node()) select(null); });
   const sim=d3.forceSimulation()
     .force("charge",d3.forceManyBody().strength(d=>d.type==="fred"?-1100:d.type==="era"?-700:d.type==="group"?-320:-150))
-    .force("link",d3.forceLink().id(d=>d.id).distance(l=>l.kind==="home"?(l.target.type==="era"?260:l.target.type==="group"?110:80):90).strength(l=>l.kind==="home"?.6:.12))
+    .force("link",d3.forceLink().id(d=>d.id).distance(l=>l.kind==="also"?160:l.kind==="home"?(l.target.type==="era"?260:l.target.type==="group"?110:80):90).strength(l=>l.kind==="home"?.6:l.kind==="also"?.02:.12))
     .force("collide",d3.forceCollide().radius(space).strength(.9).iterations(2))
     .force("x",d3.forceX(0).strength(.03)).force("y",d3.forceY(0).strength(.03));
   all[c.id].fx=0; all[c.id].fy=0;
@@ -110,6 +112,16 @@ function build(D){
     const v=visible(), nodes=[...v].map(id=>all[id]), links=[];
     nodes.forEach(n=>{ const h=homeOf(n,v); if(h&&v.has(h)&&h!==n.id) links.push({source:h,target:n.id,kind:"home"}); });
     edges.forEach(([a,b])=>{ if(v.has(a)&&v.has(b)) links.push({source:a,target:b,kind:"with"}); });
+    const seen=new Set(links.map(l=>(l.source.id||l.source)+">"+(l.target.id||l.target)));
+    nodes.filter(n=>n.type==="artist").forEach(a=>{
+      (nb[a.id]||new Set()).forEach(id=>{
+        if(v.has(id)) return;
+        let p=id; while(p && !v.has(p)) p=parent[p];          // walk up to whatever is visible (album, tour, era)
+        if(!p || p===c.id) return;
+        const key=a.id+">"+p; if(seen.has(key)) return; seen.add(key);
+        links.push({source:a.id,target:p,kind:"also"});
+      });
+    });
     nodes.forEach(n=>{ if(n.x==null){ const h=all[homeOf(n,v)]||all[c.id]; n.x=(h.x||0)+(Math.random()-.5)*40; n.y=(h.y||0)+(Math.random()-.5)*40; } });
     const ls=gL.selectAll("line").data(links,d=>(d.source.id||d.source)+">"+(d.target.id||d.target));
     ls.exit().remove(); ls.enter().append("line").attr("class","link");
@@ -150,18 +162,31 @@ function build(D){
     else { s.append("rect").attr("x",-r).attr("y",-r).attr("width",2*r).attr("height",2*r).attr("rx",2).attr("fill",`hsl(${hue(d.id)},45%,30%)`);
       img(d.img,cp=>cp.append("rect").attr("x",-r).attr("y",-r).attr("width",2*r).attr("height",2*r).attr("rx",2),r);
       s.append("rect").attr("x",-r).attr("y",-r).attr("width",2*r).attr("height",2*r).attr("rx",2).attr("fill","none").attr("stroke",col).attr("stroke-width",expanded.has(d.id)?2.5:1.3); }
-    const off = d.type==="group" ? r+20 : d.type==="event" ? r+14 : r+13;
-    const t=g.select(".lab").attr("y",off).text(d.label||short(d.name));
-    const w=labelW(d);
-    g.select(".lbg").attr("x",-w/2).attr("y",off-11).attr("width",w).attr("height",15).attr("rx",4);
+    g.select(".lab").text(d.label||short(d.name));
   }
+  // most important names first; a name is skipped if it would sit on top of one already placed
+  const prio = d => d.id===selected||d.id===hover?0 : d.type==="fred"?1 : d.type==="era"?2 : d.type==="release"&&d.big?3 : d.type==="group"?4 : d.type==="artist"?5-Math.min(d.deg,8)/10 : d.type==="release"?6 : 7;
   function labels(){
-    gN.selectAll("g.node").each(function(d){ const on=showsLabel(d); d3.select(this).select(".lab").style("display",on?null:"none"); d3.select(this).select(".lbg").style("display",on?null:"none"); });
+    const fs=11.5/Math.min(Math.max(k,.35),2.2), placed=[];
+    const items=[]; gN.selectAll("g.node").each(function(d){ items.push([d,this]); });
+    items.sort((a,b)=>prio(a[0])-prio(b[0]));
+    for(const [d,el] of items){
+      const g=d3.select(el), r=rad(d), off=(d.type==="group"?r+8:r+3)+fs*1.05;
+      const w=labelW(d)*fs/11.5, h=fs*1.45;
+      let on=showsLabel(d);
+      const box={x1:(d.x||0)-w/2,x2:(d.x||0)+w/2,y1:(d.y||0)+off-h/2,y2:(d.y||0)+off+h/2};
+      if(on && prio(d)>2 && placed.some(b=>box.x1<b.x2&&box.x2>b.x1&&box.y1<b.y2&&box.y2>b.y1)) on=false;
+      if(on) placed.push(box);
+      g.select(".lab").style("display",on?null:"none").attr("y",off).style("font-size",fs+"px");
+      g.select(".lbg").style("display",on?null:"none").attr("x",-w/2).attr("y",off-h/2).attr("width",w).attr("height",h).attr("rx",3);
+    }
   }
   sim.on("tick",()=>{
-    gL.selectAll("line").attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y).attr("class",d=>"link"+(d.kind==="home"?" home":""));
+    gL.selectAll("line").attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y).attr("class",d=>"link"+(d.kind==="home"?" home":d.kind==="also"?" also":""));
     gN.selectAll("g.node").attr("transform",d=>`translate(${d.x},${d.y})`);
+    if(++tickN%8===0) labels();
   });
+  let tickN=0; sim.on("end",labels);
   const W=()=>svg.node().clientWidth, H=()=>svg.node().clientHeight;
   svg.call(zoom.transform,d3.zoomIdentity.translate(W()/2,H()/2+30).scale(.75));
   const reveal = id => { let p=parent[id]; while(p&&p!==c.id){ expanded.add(p); p=parent[p]; } if(all[id].group) expanded.add(all[id].group); };

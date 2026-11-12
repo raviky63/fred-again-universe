@@ -83,10 +83,11 @@
     .bar{bottom:12px;width:calc(100% - 24px);flex-wrap:wrap}
     #panel{top:auto;bottom:0;height:72%;width:100%;border-left:0;border-top:1px solid var(--line);border-radius:16px 16px 0 0;transform:translateY(105%)}
   }
-  .lab{font-size:11px;fill:#f3efe7;pointer-events:none;font-family:Inter}
+  .lab{fill:#f3efe7;pointer-events:none;font-family:Inter;dominant-baseline:middle;transform:translateY(-.1em)}
   .lbg{fill:#08080cd9;pointer-events:none}
   .link{stroke:#3a3745;stroke-width:1;stroke-opacity:.55}
   .link.home{stroke-opacity:.9}
+  .link.also{stroke:#7cc6ff;stroke-opacity:.45;stroke-dasharray:3 4}
   g.node.dim{opacity:.18}
   #story{position:fixed;left:50%;bottom:76px;transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:all .35s ease;z-index:8;width:min(560px,calc(100% - 32px));max-height:42vh;overflow-y:auto;background:#141320f2;backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
   #story.open{opacity:1;transform:translate(-50%,0);pointer-events:auto}
@@ -121,6 +122,7 @@
   <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="#15141c" stroke="#fff" stroke-dasharray="2 2"/></svg>Tour / year of shows</div>
   <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" fill="#c8102e" stroke="#fff" transform="rotate(45 8 8)"/></svg>Show (flag = country)</div>
   <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="#0f1620" stroke="#7cc6ff" stroke-width="1.5"/></svg>Artist (bigger = more together)</div>
+  <div><svg viewBox="0 0 16 16"><line x1="1" y1="8" x2="15" y2="8" stroke="#7cc6ff" stroke-dasharray="2 2"/></svg>Also worked with Fred here (still closed)</div>
 </div>
 
 <div class="bar">
