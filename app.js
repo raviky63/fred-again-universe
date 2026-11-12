@@ -216,7 +216,7 @@ function build(data){
   const linksOf = id => [...(nb[id]||[])].filter(x=>x!==c.id);
   const ofType = (id,types) => linksOf(id).filter(x=>types.includes(byId[x].type));
   function hero(n){
-    const hh=hue(n.id), round=n.type==="artist"||n.type==="fred";
+    const hh=hue(n.id), round=["artist","fred","crew"].includes(n.type);
     return `<div class="cover" style="${round?"border-radius:50%;width:60%;margin-left:20%;":""}background:linear-gradient(135deg,hsl(${hh},55%,42%),hsl(${(hh+50)%360},60%,18%))">
       <div style="position:absolute;inset:0;display:grid;place-items:center;font-family:Space Grotesk;font-weight:700;font-size:56px;opacity:.85">${initials(n.name)}</div>
       ${n.img?`<img src="${esc(n.img)}" alt="" onerror="this.remove()">`:""}</div>`;
