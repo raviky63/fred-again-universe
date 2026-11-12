@@ -194,7 +194,7 @@ def ev(id, title, date, location, with_=(), story="", source="", kind="show", tr
 
 # curated events from the first version keep their ids and stories
 for o in old_events.values():
-    if o["id"].startswith(("usb002-", "set-")):
+    if o["id"].startswith(("usb002-", "set-", "show-")):
         continue  # rebuilt below
     ev(o["id"], o["title"], o["date"], o["location"], o.get("with", []), o.get("story", ""), o.get("source", ""),
        kind=o.get("kind", "show"), tracks_=o.get("tracks", []), verified=o.get("verified", True))
@@ -257,6 +257,20 @@ for line in (R / "dj-sets-1001tracklists.md").read_text().splitlines():
     nice = where or re.sub(r"^.*? – ", "", who)
     ev(f"set-{d}-{slug(nice)[:30]}", nice, d, where or "Radio / online mix", with_,
        "", "1001Tracklists (fan-made tracklist)", kind=kind)
+
+
+# shows from setlist.fm that 1001Tracklists didn't have
+SKIP = {"230624", "251101", "251115"}  # same show already in data under a slightly different date
+for line in (R / "setlistfm-shows.md").read_text().splitlines():
+    m = re.match(r"^(\d{6})\|([^|]+)(?:\|([PU]))?$", line.strip())
+    if not m or m.group(1) in SKIP: continue
+    ymd, venue, tour = m.groups()
+    d = f"20{ymd[:2]}-{ymd[2:4]}-{ymd[4:]}"
+    extra = {"tour": {"P": "Places We've Never Been", "U": "USB002"}[tour]} if tour else {}
+    if d.startswith("2026-01") or d.startswith("2026-02"):
+        extra["tour"] = "USB002"
+    title = re.sub(r",\s*(CA|NY|WA|CO|DC|MA|UT|MN|IL|WI|GA|TX|ON)$", "", venue)
+    ev(f"show-{d}-{slug(venue)[:24]}", title, d, venue, [], "", "setlist.fm", kind="show", **extra)
 
 # ---------------------------------------------------------------- crew & merch
 crew = [

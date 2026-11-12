@@ -1,7 +1,7 @@
 // The Fred again.. Universe — reads the data/ folder and draws the web.
 const COLORS = {fred:"#ff5a36", artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", merch:"#d7ff5e"};
 const LABELS = {artist:"Artists", crew:"Crew", album:"Albums & EPs", single:"Singles", track:"Tracks", feature:"Features", event:"Shows & sets", merch:"Merch"};
-const KIND_NAME = {artist:"Artist", crew:"Crew", album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single / collab", feature:"Feature", track:"Track", event:"Show / moment", mix:"DJ mix / radio", upcoming:"Upcoming show", merch:"Merch", fred:"The centre"};
+const KIND_NAME = {hub:"Year of shows", artist:"Artist", crew:"Crew", album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single / collab", feature:"Feature", track:"Track", event:"Show / moment", mix:"DJ mix / radio", upcoming:"Upcoming show", merch:"Merch", fred:"The centre"};
 const FILES = ["meta","center","artists","releases","tracks","events","crew","merch"];
 const state = {hidden:new Set(), year:"", selected:null, query:"", focus:null};
 
@@ -33,7 +33,19 @@ function build(data){
 
   data.releases.forEach(r => { link(c.id, r.id, true); (r.with||[]).forEach(w=>link(r.id,w)); (r.tracks||[]).forEach(t=>link(r.id,t)); });
   data.tracks.forEach(t => (t.with||[]).forEach(w=>link(t.id,w)));
-  data.events.forEach(e => { link(c.id, e.id, true); (e.with||[]).forEach(w=>link(e.id,w)); (e.tracks||[]).forEach(t=>link(e.id,t)); });
+  // shows with no other connection hang on a year node, so the web stays readable
+  const linkedByOthers = new Set([...(data.crew||[]), ...(data.merch||[])].flatMap(x=>x.links_to||[]));
+  data.events.forEach(e => {
+    const plain = !(e.with||[]).length && !(e.tracks||[]).length && !e.story && !linkedByOthers.has(e.id);
+    const y = yearOf(e.date);
+    if (plain && y){
+      const hid = "year-"+y;
+      if (!byId[hid]){ add({id:hid, type:"hub", name:`${y} · shows`, raw:{story:"", source:"setlist.fm / 1001Tracklists"}, year:y, r:15}); link(c.id, hid, true); }
+      byId[hid].count = (byId[hid].count||0)+1; link(hid, e.id);
+    } else link(c.id, e.id, true);
+    (e.with||[]).forEach(w=>link(e.id,w)); (e.tracks||[]).forEach(t=>link(e.id,t));
+  });
+  nodes.filter(n=>n.type==="hub").forEach(n=>{ n.name=`${n.year} · ${n.count} shows`; });
   [...(data.crew||[]), ...(data.merch||[])].forEach(x => { const l=(x.links_to||[]).filter(i=>byId[i]); if(!l.length) link(c.id, x.id, true); l.forEach(i=>link(x.id,i)); });
 
   const nb = {};
@@ -106,6 +118,10 @@ function build(data){
       g.append("text").attr("text-anchor","middle").attr("dy","1.1em").attr("font-family","Space Grotesk").attr("font-weight",700).attr("font-size",15).attr("fill","#000").text("again..");
       photo(g,d,cp=>cp.append("circle").attr("r",d.r));
       g.append("circle").attr("r",d.r).attr("fill","none").attr("stroke",COLORS.fred).attr("stroke-width",3);
+    } else if (d.type==="hub"){
+      g.append("circle").attr("r",d.r).attr("fill","#111").attr("stroke","#fff").attr("stroke-dasharray","2 3").attr("stroke-width",1.5);
+      g.append("text").attr("text-anchor","middle").attr("dy",".35em").attr("font-size",10).attr("font-family","Space Grotesk").attr("font-weight",700).attr("fill","#fff").text(d.year);
+      g.append("text").attr("text-anchor","middle").attr("y",d.r+12).attr("font-size",10).attr("fill","#bbb").text(d.name);
     } else if (d.type==="merch"){
       const s=d.s, pts=[0,1,2,3,4,5].map(i=>{const a=Math.PI/3*i+Math.PI/6; return `${(Math.cos(a)*s*.62).toFixed(1)},${(Math.sin(a)*s*.62).toFixed(1)}`}).join(" ");
       g.append("polygon").attr("points",pts).attr("fill","#1a1f0c");
@@ -145,7 +161,7 @@ function build(data){
       .strength(l=>l.main?.2:.6))
     .force("charge",d3.forceManyBody().strength(d=>d.type==="fred"?-900:d.type==="track"?-70:d.type==="artist"?-150:-240))
     .force("collide",d3.forceCollide().radius(d=>(d.r||d.s*.75)+9))
-    .force("radial",d3.forceRadial(d=>({artist:420,crew:330,event:560,track:300,merch:360}[d.type]||220),0,0).strength(.1));
+    .force("radial",d3.forceRadial(d=>({artist:420,crew:330,event:560,track:300,merch:360,hub:520}[d.type]||220),0,0).strength(.1));
   byId[c.id].fx=0; byId[c.id].fy=0;
   sim.on("tick",()=>{
     linkSel.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
@@ -178,7 +194,7 @@ function build(data){
   let focusSet=null;
   function visibleBase(d){
     if (d.type==="fred") return true;
-    if (state.hidden.has(d.type)) return false;
+    if (state.hidden.has(d.type==="hub"?"event":d.type)) return false;
     if (focusSet && !focusSet.has(d.id)) return false;
     return true;
   }
@@ -242,6 +258,8 @@ function build(data){
       if (rel.length) h+=`<div class="section"><h3>With Fred on</h3>${pills(rel)}</div>`;
       if (ev.length) h+=`<div class="section"><h3>On stage together</h3>${pills(ev)}</div>`;
       if (r.photo_credit) h+=`<div class="src">Photo: ${esc(r.photo_credit)}</div>`;
+    } else if (n.type==="hub"){
+      h+=`<p class="story">Every show in ${n.year} that has no extra story or collaborators yet. Open the timeline to walk through them one by one.</p><div class="section"><h3>Shows</h3>${pills(linksOf(id).filter(x=>byId[x].type==="event"))}</div>`;
     } else if (n.type==="crew"){
       h+=hero(n)+`<div class="sub">${esc(r.role)}</div><p class="story">${esc(r.bio)}</p>`;
       const w=linksOf(id); if (w.length) h+=`<div class="section"><h3>Worked on</h3>${pills(w)}</div>`;
