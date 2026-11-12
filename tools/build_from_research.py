@@ -194,9 +194,10 @@ def ev(id, title, date, location, with_=(), story="", source="", kind="show", tr
 
 # curated events from the first version keep their ids and stories
 for o in old_events.values():
-    if o["id"].startswith("usb002-"):
+    if o["id"].startswith(("usb002-", "set-")):
         continue  # rebuilt below
-    ev(o["id"], o["title"], o["date"], o["location"], o.get("with", []), o.get("story", ""), o.get("source", ""), verified=o.get("verified", True))
+    ev(o["id"], o["title"], o["date"], o["location"], o.get("with", []), o.get("story", ""), o.get("source", ""),
+       kind=o.get("kind", "show"), tracks_=o.get("tracks", []), verified=o.get("verified", True))
 
 BR = [l.split(". ", 1)[1] for l in (R / "set-tracklists.md").read_text().split("## Fred again.. b2b")[0].splitlines() if re.match(r"^\d+\. ", l)]
 events["boiler-room-2022"].update(date="2022-07-29", tracklist=BR)

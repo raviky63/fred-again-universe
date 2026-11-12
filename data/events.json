@@ -4,7 +4,7 @@
     "title": "Rinse FM",
     "date": "2019-09-26",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -18,7 +18,7 @@
     "title": "Energy Crew minimix",
     "date": "2019-12-13",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -32,7 +32,7 @@
     "title": "Highsnobiety Soundsystem Guest Mix 013",
     "date": "2020-05-06",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -60,7 +60,7 @@
     "title": "Rinse FM",
     "date": "2021-05-08",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -74,7 +74,7 @@
     "title": "Dance Department 812",
     "date": "2021-05-19",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [
       "ivo-van-breukelen"
     ],
@@ -90,7 +90,7 @@
     "title": "1LIVE DJ Session",
     "date": "2021-05-22",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -104,7 +104,7 @@
     "title": "SiriusXM Dance Again Virtual Festival",
     "date": "2021-05-29",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -132,7 +132,7 @@
     "title": "Mixmag The Cover Mix",
     "date": "2021-11-15",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -160,7 +160,7 @@
     "title": "1LIVE DJ Session, Best of 2021 pt 1",
     "date": "2021-12-18",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [
       "shouse",
       "fisher"
@@ -177,7 +177,7 @@
     "title": "Apple Music Mixes NYE 2022 DJ mix",
     "date": "2021-12-24",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -191,7 +191,7 @@
     "title": "FAZEmag In The Mix 118",
     "date": "2022-01-12",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -205,7 +205,7 @@
     "title": "Triple J Friday Mix",
     "date": "2022-02-25",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -755,7 +755,7 @@
     "title": "NTS Radio Secret Life album mix",
     "date": "2023-05-03",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [
       "brian-eno"
     ],
@@ -1276,7 +1276,7 @@
     "title": "Radio 1 Dance Morning",
     "date": "2024-09-09",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [
       "arielle-free"
     ],
@@ -1362,7 +1362,7 @@
     "title": "NTS Radio",
     "date": "2024-10-17",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [
       "jim-legxacy"
     ],
@@ -1378,7 +1378,7 @@
     "title": "Sunshine Live Mix Mission",
     "date": "2024-12-25",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -1394,8 +1394,8 @@
     "location": "Twitch",
     "kind": "show",
     "with": [
-      "ca7riel",
-      "paco-amoroso"
+      "ca7riel-paco",
+      "ca7riel-paco"
     ],
     "tracks": [],
     "thumbnail": "",
@@ -1479,7 +1479,7 @@
     "title": "Skepta .. Fred (full tape mix)",
     "date": "2025-08-29",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
@@ -1557,7 +1557,7 @@
       "you-re-a-star"
     ],
     "thumbnail": "",
-    "story": "Phone-free show. Only official footage gets linked here. The tour's identity was one black-and-grey flag; here a giant version wrapped the venue entrance.",
+    "story": "Phone-free show. Only official footage gets linked here. The tour's identity was one black-and-grey flag; here a giant version wrapped the venue entrance. The tour's identity was one black-and-grey flag; here a giant version wrapped the venue entrance.",
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
@@ -1620,7 +1620,7 @@
     "title": "NTS Radio Drumless Mix",
     "date": "2025-10-22",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [
       "caribou",
       "floating-points"
@@ -1647,7 +1647,7 @@
       "ambery"
     ],
     "thumbnail": "",
-    "story": "Phone-free show. Only official footage gets linked here. The tour flag was adapted to an old cathedral facade.",
+    "story": "Phone-free show. Only official footage gets linked here. The tour flag was adapted to an old cathedral facade. The tour flag was adapted to an old cathedral facade.",
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
@@ -1872,7 +1872,7 @@
     "title": "Young Nation Show #300",
     "date": "2026-06-09",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [
       "chester-young"
     ],
@@ -1888,7 +1888,7 @@
     "title": "Dior Summer 2027 Men's Show",
     "date": "2026-06-24",
     "location": "Radio / online mix",
-    "kind": "show",
+    "kind": "mix",
     "with": [],
     "tracks": [],
     "thumbnail": "",
