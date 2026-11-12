@@ -88,7 +88,10 @@ function build(D){
   };
   const rad = d => d.type==="artist" ? 4+Math.min(d.deg,10)*1.6 : d.r;
   // nodes that carry a name get a wider "personal space", so names don't sit on top of each other
-  const space = d => { const sc=1/Math.min(Math.max(k,.35),2.2); return showsLabel(d) ? Math.max(rad(d)+(d.type==="group"?16:8), labelW(d)*sc/2+5) : rad(d)+6; };
+  // label room only for the important names, and never more than the name needs at normal zoom (otherwise "open everything" explodes)
+  let crowd=0;
+  const space = d => { const sc=1/Math.min(Math.max(k,.8),2.2); const important = crowd<160 || prio(d)<=4 || (d.type==="artist"&&d.deg>=4);
+    return showsLabel(d) && important ? Math.max(rad(d)+(d.type==="group"?16:8), labelW(d)*sc/2+5) : rad(d)+6; };
 
   // ---------- svg ----------
   const svg=d3.select("#svg"), world=svg.append("g"), defs=svg.append("defs");
@@ -135,6 +138,7 @@ function build(D){
     ne.transition().duration(450).style("opacity",1);
     ne.each(function(){ const g=d3.select(this); g.append("g").attr("class","shape"); g.append("rect").attr("class","lbg"); g.append("text").attr("class","lab").attr("text-anchor","middle"); });
     gN.selectAll("g.node").each(function(d){ draw(d3.select(this),d); });
+    crowd=nodes.length;
     sim.nodes(nodes); sim.force("link").links(links); sim.force("collide").radius(space); sim.alpha(.8).restart();
     labels();
   }
@@ -272,7 +276,11 @@ function build(D){
     const order=[...eras.map(e=>"era-"+e.id), ...Object.values(all).filter(n=>n.type==="release").map(n=>n.id), ...Object.values(all).filter(n=>n.type==="group").map(n=>n.id)];
     const waves=[order.filter(id=>id.startsWith("era-")), order.filter(id=>all[id].type==="release"), order.filter(id=>all[id].type==="group")];
     waves.forEach((ids,i)=>setTimeout(()=>{ ids.forEach(id=>expanded.add(id)); render(); },i*900));
-    setTimeout(()=>svg.transition().duration(1600).call(zoom.transform,d3.zoomIdentity.translate(W()/2,H()/2+20).scale(.32)),2400);
+    const fit=()=>{ const ns=sim.nodes(); const xs=ns.map(n=>n.x), ys=ns.map(n=>n.y);
+      const x0=Math.min(...xs)-40,x1=Math.max(...xs)+40,y0=Math.min(...ys)-40,y1=Math.max(...ys)+40;
+      const sc=Math.min(W()/(x1-x0),(H()-160)/(y1-y0),1);
+      svg.transition().duration(1400).call(zoom.transform,d3.zoomIdentity.translate(W()/2,H()/2+30).scale(sc).translate(-(x0+x1)/2,-(y0+y1)/2)); };
+    setTimeout(fit,2600); setTimeout(fit,5200);
   };
   document.getElementById("closeAll").onclick=()=>{ expanded.clear(); select(null); render(); svg.transition().duration(700).call(zoom.transform,d3.zoomIdentity.translate(W()/2,H()/2+30).scale(.75)); };
 
