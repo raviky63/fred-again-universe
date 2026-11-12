@@ -7,52 +7,77 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{ --bg:#08080c; --ink:#f3efe7; --muted:#8d8a95; --line:#2a2833; --card:#121119; --fred:#ff5a36; }
+  :root{ --bg:#08080c; --ink:#f3efe7; --muted:#8d8a95; --line:#2a2833; --card:#121119; --fred:#ff5a36; --era:#5b6475; }
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif}
-  header{position:sticky;top:0;z-index:10;background:#08080ce8;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 22px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+  html,body{height:100%;overflow:hidden}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;display:flex;flex-direction:column}
+  #glow{position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 50% 55%, color-mix(in srgb,var(--era) 22%,transparent), transparent 70%);transition:background 1.2s}
+  header{position:relative;z-index:10;background:#08080cd0;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 22px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
   .brand{display:flex;align-items:baseline;gap:16px}
   .brand h1{font-family:"Space Grotesk";font-size:22px;margin:0;letter-spacing:-.02em}
   .brand h1 span{color:var(--fred)}
   nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-right:12px}
   nav a.on{color:var(--ink);border-bottom:2px solid var(--fred);padding-bottom:2px}
   .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-  #search{background:#13121a;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;font-size:14px;width:220px;outline:none}
+  #search{background:#13121a;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;font-size:14px;width:200px;outline:none}
   .chip{border:1px solid var(--line);background:#13121a;color:var(--ink);border-radius:999px;padding:5px 11px;font-size:12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;user-select:none}
   .chip.off{opacity:.35}
   .chip i{width:9px;height:9px;display:inline-block}
-  #follow{display:none;margin:14px auto 0;max-width:900px;padding:10px 16px;border:1px solid var(--line);border-radius:12px;background:#17151f;font-size:14px}
+
+  /* era strip: where you are + jump to an era */
+  #eras{position:relative;z-index:9;display:flex;gap:6px;padding:10px 22px;overflow-x:auto;scrollbar-width:none}
+  .erabtn{flex:none;display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:4px 12px 4px 4px;background:#100f16;font-size:12px;cursor:pointer;color:var(--muted);transition:all .4s}
+  .erabtn img,.erabtn b{width:22px;height:22px;border-radius:50%;object-fit:cover;background:var(--c)}
+  .erabtn.on{color:var(--ink);border-color:var(--c);background:color-mix(in srgb,var(--c) 18%,#100f16)}
+  #follow{display:none;position:relative;z-index:9;margin:0 22px 6px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:#17151f;font-size:13px}
   #follow button{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:3px 10px;margin-left:8px;cursor:pointer}
-  main{max-width:900px;margin:0 auto;padding:10px 22px 120px;position:relative}
-  .year{font-family:"Space Grotesk";font-size:64px;font-weight:700;letter-spacing:-.04em;color:#26242f;margin:56px 0 8px;position:sticky;top:64px;z-index:1;pointer-events:none}
-  .year span{color:var(--ink);opacity:.9}
-  .rail{position:relative;padding-left:34px}
-  .rail::before{content:"";position:absolute;left:11px;top:0;bottom:0;width:2px;background:linear-gradient(var(--line),#3a3745,var(--line))}
-  .item{position:relative;margin:14px 0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;grid-template-columns:auto 1fr;gap:14px;transition:border-color .3s, box-shadow .3s}
+
+  /* the horizontal ride */
+  #ride{position:relative;flex:1;overflow-x:auto;overflow-y:hidden;scrollbar-color:#3a3745 transparent}
+  #track{position:relative;height:100%;display:flex;align-items:stretch;padding:0 45vw 0 8vw;min-width:max-content}
+  #track::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:linear-gradient(90deg,transparent,#3a3745 4%,#3a3745 96%,transparent)}
+  .era{position:relative;display:flex;align-items:stretch;padding:0 60px 0 20px;border-left:1px solid color-mix(in srgb,var(--c) 45%,transparent);background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--c) 7%,transparent) 50%,transparent)}
+  .eratitle{position:absolute;top:14px;left:22px;font-family:"Space Grotesk";font-weight:700;font-size:40px;letter-spacing:-.03em;color:var(--c);opacity:.9;white-space:nowrap;pointer-events:none}
+  .eratitle small{display:block;font-family:Inter;font-weight:400;font-size:12px;letter-spacing:0;color:var(--muted);max-width:340px;white-space:normal;margin-top:2px}
+  .eraspace{flex:none;width:360px}
+  .year{position:relative;flex:none;width:90px;display:flex;align-items:center;justify-content:center}
+  .year span{font-family:"Space Grotesk";font-weight:700;font-size:30px;background:var(--bg);padding:2px 8px;border-radius:8px;border:1px solid var(--line);z-index:1}
+  .col{position:relative;flex:none;width:230px;margin-right:-105px;height:100%;display:flex;flex-direction:column}
+  .col .slot{height:50%;display:flex;flex-direction:column;padding:0 0 22px}
+  .col.up .slot{justify-content:flex-end}
+  .col.down .slot{margin-top:auto;justify-content:flex-start;padding:22px 0 0}
+  .col .stem{position:absolute;left:18px;width:1px;background:#3a3745}
+  .col.up .stem{top:calc(50% - 22px);height:22px}
+  .col.down .stem{top:50%;height:22px}
+  .col .pin{position:absolute;left:12px;top:calc(50% - 6px);width:13px;height:13px;z-index:2}
+  .item{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:13px;transition:border-color .3s, box-shadow .3s, transform .2s;max-height:calc(50vh - 120px);overflow:auto;scrollbar-width:none}
+  .item:hover{transform:translateY(-2px);border-color:#4a4656;z-index:3}
   .item.flash{border-color:var(--fred);box-shadow:0 0 0 3px #ff5a3633}
-  .item.mini{padding:8px 14px;grid-template-columns:1fr;border-radius:10px;background:#0f0e15}
-  .item .dot{position:absolute;left:-30px;top:18px;width:14px;height:14px}
-  .thumb{width:84px;height:84px;border-radius:6px;position:relative;overflow:hidden;display:grid;place-items:center;font-family:"Space Grotesk";font-weight:700;font-size:22px}
+  .item.mini{padding:6px 10px;border-radius:9px;background:#0f0e15}
+  .thumb{width:100%;aspect-ratio:1;max-height:150px;border-radius:7px;position:relative;overflow:hidden;display:grid;place-items:center;font-family:"Space Grotesk";font-weight:700;font-size:26px;margin-bottom:8px}
   .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .meta{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
-  .title{font-family:"Space Grotesk";font-size:20px;font-weight:700;margin:2px 0 4px;letter-spacing:-.01em}
-  .mini .title{font-size:15px;display:inline;margin-right:8px}
-  .date{color:var(--muted);font-size:12px}
-  .story{font-size:14px;line-height:1.5;margin:6px 0 4px;color:#d9d4cc}
-  .pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-  .pill{background:#1c1a24;border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:12px;cursor:pointer;color:var(--ink)}
+  .meta{font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+  .title{font-family:"Space Grotesk";font-size:16px;font-weight:700;margin:2px 0 3px;letter-spacing:-.01em;line-height:1.2}
+  .mini .title{font-size:13px}
+  .date{color:var(--muted)}
+  .flag{height:10px;border-radius:2px;vertical-align:-1px;margin-left:4px;box-shadow:0 0 0 1px #0006}
+  .where{color:var(--muted);font-size:11.5px;margin-top:1px}
+  .story{font-size:12.5px;line-height:1.45;margin:6px 0 2px;color:#d9d4cc}
+  .pills{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+  .pill{background:#1c1a24;border:1px solid var(--line);border-radius:999px;padding:3px 8px;font-size:11px;cursor:pointer;color:var(--ink)}
   .pill:hover{border-color:#5a5668}
   .pill.back{border-style:dashed;color:#e9c8ff}
   .pill.fwd{border-style:dashed;color:#bfe7ff}
-  .actions{margin-top:8px;font-size:12px}
-  .actions a{color:var(--muted);margin-right:12px}
+  .actions{margin-top:6px;font-size:11px}
+  .actions a{color:var(--muted);margin-right:10px}
   .unv{border-style:dashed}
-  #empty{color:var(--muted);text-align:center;margin-top:80px;display:none}
-  @media(max-width:640px){.year{font-size:44px;top:110px}.thumb{width:60px;height:60px}#search{width:100%}}
+  #empty{position:fixed;top:50%;width:100%;color:var(--muted);text-align:center;display:none}
+  #hint{position:fixed;bottom:14px;right:22px;font-size:12px;color:var(--muted);z-index:9;pointer-events:none}
+  @media(max-width:640px){#search{width:100%}.eratitle{font-size:28px}.col{width:200px;margin-right:-90px}}
 </style>
 </head>
 <body>
+<div id="glow"></div>
 <header>
   <div class="brand">
     <h1>The <span>Fred again..</span> Universe</h1>
@@ -63,9 +88,11 @@
     <span id="chips"></span>
   </div>
 </header>
+<div id="eras"></div>
 <div id="follow"></div>
-<main id="main"></main>
+<div id="ride"><div id="track"></div></div>
 <p id="empty">Nothing matches these filters.</p>
+<div id="hint">scroll to ride through time →</div>
 <script src="timeline.js"></script>
 </body>
 </html>

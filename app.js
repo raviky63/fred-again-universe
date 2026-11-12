@@ -9,6 +9,8 @@ const hue = s => { let h=0; for (const c of s) h=(h*31+c.charCodeAt(0))%360; ret
 const initials = n => n.replace(/[^A-Za-z0-9 ]/g,"").split(" ").filter(Boolean).slice(0,2).map(w=>w[0]).join("").toUpperCase();
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const yearOf = d => { const m = String(d || "").match(/(19|20)\d\d/); return m ? +m[0] : null; };
+const flagUrl = cc => `https://flagcdn.com/h20/${cc.toLowerCase()}.png`;
+const flagsHtml = cs => (cs||[]).map(cc=>`<img src="${flagUrl(cc)}" alt="${cc}" title="${cc}" style="height:11px;border-radius:2px;margin-left:5px;vertical-align:-1px">`).join("");
 const shortTitle = t => { t = t.replace(/\s*\(.*\)$/,""); return t.length>24 ? t.slice(0,22)+"…" : t; };
 
 Promise.all(FILES.map(f => fetch(`data/${f}.json`).then(r => r.json())))
@@ -26,7 +28,8 @@ function build(data){
   add({id:c.id, type:"fred", name:c.name, raw:c, r:46, img:c.photo});
   data.artists.forEach(a => add({id:a.id, type:"artist", name:a.name, raw:a, r:13, img:a.photo}));
   data.releases.forEach(r => { const t=["ep","mixtape"].includes(r.kind)?"album":r.kind; add({id:r.id, type:t, kind:r.kind, name:r.title, raw:r, year:yearOf(r.date), s:r.kind==="album"?34:r.kind==="single"?22:28, img:r.cover}); });
-  data.tracks.forEach(t => add({id:t.id, type:"track", name:t.title, raw:t, year:yearOf(t.date), s:13, img:t.cover}));
+  const relCover = Object.fromEntries(data.releases.map(r=>[r.id,r.cover]));
+  data.tracks.forEach(t => add({id:t.id, type:"track", name:t.title, raw:t, year:yearOf(t.date), s:13, img:t.cover||relCover[(t.releases||[])[0]]}));
   data.events.forEach(e => add({id:e.id, type:"event", kind:e.kind, name:e.title, raw:e, year:yearOf(e.date), s:e.kind==="mix"?11:16, img:e.thumbnail}));
   // crew stays in data/crew.json for a future crew page, but is left out of the web for now
   (data.merch||[]).forEach(m => add({id:m.id, type:"merch", name:m.title, raw:m, year:yearOf(m.date), s:15, img:m.image}));
@@ -138,6 +141,8 @@ function build(data){
       g.append("polygon").attr("points",pts).attr("fill","#fff").attr("fill-opacity",unv?.5:1);
       photo(g,d,cp=>cp.append("polygon").attr("points",pts));
       g.append("polygon").attr("points",pts).attr("fill","none").attr("stroke","#fff").attr("stroke-dasharray",unv?"3 3":null);
+      (d.raw.country||[]).slice(0,2).forEach((cc,i)=>g.append("image").attr("href",flagUrl(cc)).attr("x",s*.42+i*13).attr("y",-s*.78).attr("width",12).attr("height",8)
+        .attr("preserveAspectRatio","none").on("error",function(){ this.remove(); }));
       g.append("text").attr("text-anchor","middle").attr("y",s+8).attr("font-size",10.5).attr("fill","#bbb").text(d.name.length>30?d.name.slice(0,28)+"…":d.name);
     } else {
       const s=d.s, h=hue(d.id), gid="g"+d.id.replace(/[^a-z0-9]/gi,"");
@@ -266,7 +271,7 @@ function build(data){
       h+=hero(n)+`<div class="sub">${esc(r.date)}</div><p class="story">${esc(r.story)}</p>`;
       const w=linksOf(id); if (w.length) h+=`<div class="section"><h3>Tied to</h3>${pills(w)}</div>`;
     } else if (n.type==="event"){
-      h+=hero(n)+`<div class="sub">${esc(r.date)} · ${esc(r.location)}</div>${r.story?`<p class="story">${esc(r.story)}</p>`:""}`;
+      h+=hero(n)+`<div class="sub">${esc(r.date)} · ${esc(r.location)}${flagsHtml(r.country)}</div>${r.story?`<p class="story">${esc(r.story)}</p>`:""}`;
       if (r.tracklist?.length) h+=`<div class="section"><h3>Tracklist</h3><ol class="awards">${r.tracklist.map(t=>`<li>${esc(t)}</li>`).join("")}</ol></div>`;
       if (r.tracklist_link) h+=`<div class="section links"><a href="${esc(r.tracklist_link)}" target="_blank" rel="noopener">Full tracklist ↗</a></div>`;
       const cw=ofType(id,["crew"]); if (cw.length) h+=`<div class="section"><h3>Crew</h3>${pills(cw)}</div>`;

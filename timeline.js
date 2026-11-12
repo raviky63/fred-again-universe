@@ -1,34 +1,36 @@
-// Timeline view of the Fred again.. Universe — same data/ folder as the web.
+// Timeline view of the Fred again.. Universe — a horizontal ride through time, era by era.
+// Same data/ folder as the web; eras come from data/eras.json.
 const COLORS = {artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", ep:"#ffd166", mixtape:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", mix:"#9a97a6", upcoming:"#ff5a36", merch:"#d7ff5e"};
 const GROUP = {album:"releases", ep:"releases", mixtape:"releases", single:"releases", feature:"releases", track:"tracks", event:"shows", upcoming:"shows", mix:"mixes", merch:"merch"};
 const LABEL = {releases:"Releases", tracks:"Tracks", shows:"Shows & moments", mixes:"DJ mixes & radio", merch:"Merch"};
-const NAME = {album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single", feature:"Feature", track:"Track", event:"Show / moment", upcoming:"Upcoming", mix:"DJ mix / radio", merch:"Merch"};
-const FILES = ["meta","center","artists","releases","tracks","events","crew","merch"];
+const NAME = {album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single", feature:"Feature", track:"Track", event:"Show", upcoming:"Upcoming", mix:"DJ mix / radio", merch:"Merch"};
+const FILES = ["meta","center","artists","releases","tracks","events","crew","merch","eras"];
 const state = {hidden:new Set(["tracks"]), q:"", follow:null};
 
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const hue = s => { let h=0; for (const c of s) h=(h*31+c.charCodeAt(0))%360; return h; };
 const initials = n => n.replace(/[^A-Za-z0-9 ]/g,"").split(" ").filter(Boolean).slice(0,2).map(w=>w[0]).join("").toUpperCase();
 const fmt = d => { if(!d) return "date to add"; const [y,m,dd]=d.split("-"); const M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; return [dd&&+dd, m&&M[+m-1], y].filter(Boolean).join(" "); };
-function shape(kind){
+const flags = cs => (cs||[]).map(c=>`<img class="flag" src="https://flagcdn.com/h20/${c.toLowerCase()}.png" alt="${c}" title="${c}" loading="lazy">`).join("");
+function pin(kind){
   const c = COLORS[kind]||"#fff";
-  if (["event","upcoming","mix"].includes(kind)) return `<svg class="dot" viewBox="0 0 14 14"><rect x="3" y="3" width="8" height="8" fill="${c}" transform="rotate(45 7 7)"/></svg>`;
-  if (kind==="merch") return `<svg class="dot" viewBox="0 0 14 14"><polygon points="13,7 10,12.2 4,12.2 1,7 4,1.8 10,1.8" fill="${c}"/></svg>`;
-  return `<svg class="dot" viewBox="0 0 14 14"><rect x="1.5" y="1.5" width="11" height="11" rx="1.5" fill="${c}"/></svg>`;
+  if (["event","upcoming","mix"].includes(kind)) return `<svg class="pin" viewBox="0 0 14 14"><rect x="3" y="3" width="8" height="8" fill="${c}" transform="rotate(45 7 7)"/></svg>`;
+  if (kind==="merch") return `<svg class="pin" viewBox="0 0 14 14"><polygon points="13,7 10,12.2 4,12.2 1,7 4,1.8 10,1.8" fill="${c}"/></svg>`;
+  return `<svg class="pin" viewBox="0 0 14 14"><rect x="1.5" y="1.5" width="11" height="11" rx="1.5" fill="${c}"/></svg>`;
 }
 
 Promise.all(FILES.map(f => fetch(`data/${f}.json`).then(r => r.json())))
   .then(parts => build(Object.fromEntries(FILES.map((f,i)=>[f,parts[i]]))));
 
 function build(data){
-  const byId = {}, nb = {};
-  const people = {};
+  const byId = {}, nb = {}, people = {};
   data.artists.forEach(a => people[a.id] = {...a, type:"artist"});
   data.crew.forEach(c => people[c.id] = {...c, type:"crew"});
+  const releaseCover = {}; data.releases.forEach(r => releaseCover[r.id] = r.cover);
   const items = [];
   const add = (raw, kind, title, date, img) => { const it = {id:raw.id, raw, kind, title, date:date||"", img, group:GROUP[kind]}; items.push(it); byId[it.id]=it; };
   data.releases.forEach(r => add(r, r.kind, r.title, r.date, r.cover));
-  data.tracks.forEach(t => add(t, "track", t.title, t.date, t.cover));
+  data.tracks.forEach(t => add(t, "track", t.title, t.date, t.cover || releaseCover[(t.releases||[])[0]]));
   data.events.forEach(e => add(e, e.kind==="mix"?"mix":e.kind==="upcoming"?"upcoming":"event", e.title, e.date, e.thumbnail));
   data.merch.forEach(m => add(m, "merch", m.title, m.date, m.image));
   const link = (a,b) => { if(!a||!b||a===b) return; (nb[a]??=new Set()).add(b); (nb[b]??=new Set()).add(a); };
@@ -37,6 +39,11 @@ function build(data){
   data.events.forEach(e => { (e.with||[]).forEach(w=>link(e.id,w)); (e.tracks||[]).forEach(t=>link(e.id,t)); });
   [...data.crew, ...data.merch].forEach(x => (x.links_to||[]).forEach(t=>link(x.id,t)));
   items.sort((a,b) => (a.date||"9999").localeCompare(b.date||"9999"));
+
+  // eras, newest start date wins
+  const eras = data.eras.slice().sort((a,b)=>a.start.localeCompare(b.start));
+  eras.forEach(e => e.cover = releaseCover[e.release] || "");
+  const eraOf = d => { let e = eras[0]; for (const x of eras) if ((d||"9999") >= x.start) e = x; return e; };
 
   // chips
   const chips = document.getElementById("chips");
@@ -49,7 +56,13 @@ function build(data){
   });
   document.getElementById("search").oninput = e => { state.q = e.target.value.trim().toLowerCase(); render(); };
 
-  // a person's whole path through time (artists and crew, plus via tracks for album items)
+  // era buttons
+  const eraBar = document.getElementById("eras");
+  eraBar.innerHTML = eras.map(e => `<span class="erabtn" data-era="${e.id}" style="--c:${e.color}">${e.cover?`<img src="${esc(e.cover)}" alt="">`:`<b></b>`}${esc(e.name)}</span>`).join("");
+  eraBar.querySelectorAll(".erabtn").forEach(b => b.onclick = () => {
+    const el = document.getElementById("era-"+b.dataset.era); if (el) ride.scrollTo({left: el.offsetLeft - 20, behavior:"smooth"});
+  });
+
   function touches(it, pid){
     const n = nb[it.id]||new Set();
     if (n.has(pid)) return true;
@@ -73,48 +86,75 @@ function build(data){
     const back = linked.filter(x => byId[x].date && byId[x].date.slice(0,4) < year);
     const fwd = linked.filter(x => byId[x].date && byId[x].date.slice(0,4) > year);
     const same = linked.filter(x => !back.includes(x) && !fwd.includes(x));
-    const mini = it.kind==="mix" || (it.kind==="track" && !r.story && !it.img);
+    const mini = it.kind==="mix" || (it.kind==="event" && !r.story && !it.img && !who.length) || (it.kind==="track" && !r.story && !it.img);
     const h = hue(it.id);
-    const thumb = mini ? "" : `<div class="thumb" style="background:linear-gradient(135deg,hsl(${h},55%,42%),hsl(${(h+50)%360},60%,18%));${["event","upcoming"].includes(it.kind)?"border-radius:50% 6px":""}">${initials(it.title)}${it.img?`<img src="${esc(it.img)}" alt="" loading="lazy" onerror="this.remove()">`:""}</div>`;
+    const thumb = mini ? "" : `<div class="thumb" style="background:linear-gradient(135deg,hsl(${h},55%,42%),hsl(${(h+50)%360},60%,18%))">${initials(it.title)}${it.img?`<img src="${esc(it.img)}" alt="" loading="lazy" onerror="this.remove()">`:""}</div>`;
     const pill = (x, cls="") => { const o = byId[x]; return `<span class="pill ${cls}" data-go="${x}">${cls==="back"?"↩ ":cls==="fwd"?"↪ ":""}${o.date?o.date.slice(0,4)+" · ":""}${esc(o.title.replace(/\s*\(.*\)$/,""))}</span>`; };
     const person = x => `<span class="pill" data-follow="${x}" style="color:${COLORS[people[x].type]}">${esc(people[x].name)}</span>`;
     const tracklist = r.tracklist?.length ? `<details class="story"><summary>Tracklist (${r.tracklist.length})</summary><ol>${r.tracklist.map(t=>`<li>${esc(t)}</li>`).join("")}</ol></details>` : "";
     const L = r.links||{};
-    const acts = [`<a href="index.html#${it.id}">See in the web</a>`, L.spotify?`<a href="${esc(L.spotify)}" target="_blank" rel="noopener">Spotify ↗</a>`:"", r.tracklist_link?`<a href="${esc(r.tracklist_link)}" target="_blank" rel="noopener">Full tracklist ↗</a>`:""].join("");
+    const acts = [`<a href="index.html#${it.id}">See in the web</a>`, L.spotify?`<a href="${esc(L.spotify)}" target="_blank" rel="noopener">Spotify ↗</a>`:"", r.tracklist_link?`<a href="${esc(r.tracklist_link)}" target="_blank" rel="noopener">Tracklist ↗</a>`:""].join("");
+    const where = r.location && r.location!=="Radio / online mix" ? `<div class="where">${r.location!==it.title?esc(r.location):""}${flags(r.country)}</div>` : "";
     return `<article class="item ${mini?"mini":""} ${r.verified===false?"unv":""}" id="t-${it.id}">
-      ${shape(it.kind)}${thumb}
-      <div>
-        <div class="meta" style="color:${c}">${NAME[it.kind]||it.kind} <span class="date">· ${fmt(it.date)}${r.location&&!["Radio / online mix"].includes(r.location)?" · "+esc(r.location):""}</span></div>
-        <div class="title">${esc(it.title)}</div>
+        ${thumb}
+        <div class="meta" style="color:${c}">${NAME[it.kind]||it.kind} <span class="date">· ${fmt(it.date)}</span></div>
+        <div class="title">${esc(it.title)}</div>${where}
         ${r.story?`<p class="story">${esc(r.story)}</p>`:""}${tracklist}
-        ${(who.length||back.length||fwd.length||same.length)?`<div class="pills">${who.map(person).join("")}${back.map(x=>pill(x,"back")).join("")}${same.slice(0,12).map(x=>pill(x)).join("")}${fwd.map(x=>pill(x,"fwd")).join("")}</div>`:""}
+        ${(who.length||back.length||fwd.length||same.length)?`<div class="pills">${who.map(person).join("")}${back.map(x=>pill(x,"back")).join("")}${same.slice(0,8).map(x=>pill(x)).join("")}${fwd.map(x=>pill(x,"fwd")).join("")}</div>`:""}
         ${mini?"":`<div class="actions">${acts}</div>`}
-      </div></article>`;
+      </article>`;
   }
 
+  const ride = document.getElementById("ride"), track = document.getElementById("track");
   function render(){
-    const main = document.getElementById("main"), fb = document.getElementById("follow");
+    const fb = document.getElementById("follow");
     if (state.follow){ const p = people[state.follow];
       fb.style.display="block"; fb.innerHTML = `Following <b style="color:${COLORS[p.type]}">${esc(p.name)}</b> through time${p.role?` · ${esc(p.role)}`:""}. ${esc(p.bio||"")}<button id="unfollow">Show everything</button>`;
       document.getElementById("unfollow").onclick = () => { state.follow=null; render(); };
     } else fb.style.display="none";
-    let html = "", year = null, shown = 0;
+    let html = "", era = null, year = null, i = 0, shown = 0;
     items.filter(visible).forEach(it => {
-      const y = (it.date||"").slice(0,4) || "Undated";
-      if (y !== year){ if (year!==null) html += `</div>`; html += `<div class="year"><span>${y}</span></div><div class="rail">`; year = y; }
-      html += card(it); shown++;
+      const e = eraOf(it.date), y = (it.date||"").slice(0,4) || "?";
+      if (e !== era){
+        if (era) html += `</section>`;
+        html += `<section class="era" id="era-${e.id}" data-era="${e.id}" style="--c:${e.color}"><div class="eratitle">${esc(e.name)}<small>${esc(e.note||"")}</small></div><div class="eraspace"></div>`;
+        era = e; year = null;
+      }
+      if (y !== year){ html += `<div class="year"><span>${y}</span></div>`; year = y; }
+      html += `<div class="col ${i%2?"down":"up"}"><div class="stem"></div>${pin(it.kind)}<div class="slot">${card(it)}</div></div>`;
+      i++; shown++;
     });
-    if (year!==null) html += `</div>`;
-    main.innerHTML = html;
+    if (era) html += `</section>`;
+    track.innerHTML = html;
     document.getElementById("empty").style.display = shown ? "none" : "block";
-    main.querySelectorAll("[data-go]").forEach(p => p.onclick = () => go(p.dataset.go));
-    main.querySelectorAll("[data-follow]").forEach(p => p.onclick = () => { state.follow = p.dataset.follow; render(); scrollTo({top:0}); });
+    track.querySelectorAll("[data-go]").forEach(p => p.onclick = () => go(p.dataset.go));
+    track.querySelectorAll("[data-follow]").forEach(p => p.onclick = () => { state.follow = p.dataset.follow; render(); ride.scrollTo({left:0}); });
+    onScroll();
   }
+
+  // which era is in the middle of the screen → colour the page and light up its button
+  let current = null;
+  function onScroll(){
+    const mid = ride.scrollLeft + ride.clientWidth/2;
+    let id = null;
+    track.querySelectorAll(".era").forEach(s => { if (s.offsetLeft <= mid) id = s.dataset.era; });
+    if (!id){ const f = track.querySelector(".era"); id = f && f.dataset.era; }
+    if (id === current) return; current = id;
+    const e = eras.find(x=>x.id===id); if (!e) return;
+    document.documentElement.style.setProperty("--era", e.color);
+    eraBar.querySelectorAll(".erabtn").forEach(b => { const on = b.dataset.era===id; b.classList.toggle("on", on); if (on) b.scrollIntoView({inline:"center", block:"nearest", behavior:"smooth"}); });
+  }
+  ride.addEventListener("scroll", () => { onScroll(); document.getElementById("hint").style.opacity = ride.scrollLeft > 200 ? 0 : 1; }, {passive:true});
+  // a normal mouse wheel rides sideways
+  ride.addEventListener("wheel", e => { if (Math.abs(e.deltaY) > Math.abs(e.deltaX) && !e.target.closest(".item")){ ride.scrollLeft += e.deltaY; e.preventDefault(); } }, {passive:false});
+  addEventListener("keydown", e => { if (e.key==="ArrowRight") ride.scrollBy({left:400, behavior:"smooth"}); if (e.key==="ArrowLeft") ride.scrollBy({left:-400, behavior:"smooth"}); });
+
   function go(id){
     let el = document.getElementById("t-"+id);
     if (!el){ state.hidden.delete(byId[id].group); document.querySelectorAll(".chip").forEach((c,i)=>{ if(Object.keys(LABEL)[i]===byId[id].group) c.classList.remove("off"); }); state.q=""; document.getElementById("search").value=""; state.follow=null; render(); el = document.getElementById("t-"+id); }
     if (!el) return;
-    el.scrollIntoView({behavior:"smooth", block:"center"});
+    const col = el.closest(".col");
+    ride.scrollTo({left: col.offsetLeft + col.closest(".era").offsetLeft - ride.clientWidth/2 + 115, behavior:"smooth"});
     el.classList.add("flash"); setTimeout(()=>el.classList.remove("flash"), 1800);
     history.replaceState(null, "", "#"+id);
   }

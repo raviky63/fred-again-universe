@@ -53,7 +53,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2021-05-08-rinse-fm",
@@ -125,7 +128,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2021-09-07-village-underground-lond",
@@ -139,7 +145,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2021-09-12-parklife-2021",
@@ -153,7 +162,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2021-10-21-studio-live-2-london",
@@ -167,7 +179,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2021-11-15-mixmag-the-cover-mix",
@@ -195,7 +210,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2021-11-23-motion-bristol-bristol",
@@ -209,7 +227,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2021-11-24-islington-assembly-hall-",
@@ -223,7 +244,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2021-12-05-music-hall-of-williamsbu",
@@ -237,7 +261,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2021-12-06-the-lot-radio-nyc",
@@ -251,7 +278,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2021-12-18-1live-dj-session-best-of-2021-",
@@ -324,7 +354,8 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": []
   },
   {
     "id": "show-2022-03-21-albert-hall-manchester",
@@ -338,7 +369,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2022-03-22-swg3-glasgow-scotland",
@@ -352,7 +386,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2022-03-24-roundhouse-london",
@@ -366,7 +403,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2022-04-06-melkweg-amsterdam-nether",
@@ -380,7 +420,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "NL"
+    ]
   },
   {
     "id": "show-2022-04-07-le-botanique-brussels-be",
@@ -394,7 +437,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "BE"
+    ]
   },
   {
     "id": "set-2022-04-14-great-american-music-hall-san-",
@@ -408,7 +454,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2022-04-17-mojave-tent-coachella-weekend-",
@@ -422,7 +471,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-04-24-coachella-festival-2022-",
@@ -436,7 +488,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-04-26-the-fonda-theatre-los-an",
@@ -450,7 +505,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-06-02-primavera-sound-2022",
@@ -464,7 +522,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "ES"
+    ]
   },
   {
     "id": "show-2022-06-10-melt-festival-2022",
@@ -478,7 +539,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "DE"
+    ]
   },
   {
     "id": "show-2022-06-11-primavera-sound-2022",
@@ -492,7 +556,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "ES"
+    ]
   },
   {
     "id": "show-2022-06-12-parklife-2022",
@@ -506,7 +573,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2022-06-18-corsica-studios-london",
@@ -520,7 +590,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2022-06-24-sherwood-court-electric-forest",
@@ -534,7 +607,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-06-25-disneyland-anaheim-ca",
@@ -548,7 +624,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-07-02-roskilde-festival-2022",
@@ -562,7 +641,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "DK"
+    ]
   },
   {
     "id": "show-2022-07-09-montreux-jazz-festival-2",
@@ -576,7 +658,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "CH"
+    ]
   },
   {
     "id": "boiler-room-2022",
@@ -610,6 +695,9 @@
       "ID",
       "Fred again.. – Angie (I've been lost)",
       "Fred again.. – Clara (the night is dark)"
+    ],
+    "country": [
+      "GB"
     ]
   },
   {
@@ -626,7 +714,10 @@
     "story": "A back-to-back set at a New York pop-up show.",
     "media": [],
     "source": "Wikipedia (We Rave You)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-08-13-way-out-west-2022",
@@ -640,7 +731,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "SE"
+    ]
   },
   {
     "id": "show-2022-08-14-flow-festival-2022",
@@ -654,7 +748,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "FI"
+    ]
   },
   {
     "id": "show-2022-08-20-lowlands-festival-2022",
@@ -668,7 +765,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "NL"
+    ]
   },
   {
     "id": "show-2022-08-21-pukkelpop-2022",
@@ -682,7 +782,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "BE"
+    ]
   },
   {
     "id": "set-2022-08-27-all-points-east-london",
@@ -696,7 +799,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2022-08-28-rock-en-seine-2022",
@@ -710,7 +816,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "FR"
+    ]
   },
   {
     "id": "show-2022-09-02-electric-picnic-2022",
@@ -724,7 +833,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "IE"
+    ]
   },
   {
     "id": "show-2022-09-03-forwards-2022",
@@ -738,7 +850,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2022-09-10-repercussion-2022",
@@ -752,7 +867,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2022-09-23-portola-pre-party-the-warfield",
@@ -766,7 +884,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2022-09-24-portola-music-festival-pier-80",
@@ -780,7 +901,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2022-09-24-ocean-view-crssd-festival-san-",
@@ -794,7 +918,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-09-25-crssd-festival-2022",
@@ -808,7 +935,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-09-28-hollywood-forever-cemete",
@@ -822,7 +952,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-09-29-hollywood-forever-cemete",
@@ -836,7 +969,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2022-09-30-hollywood-forever-cemetery-los",
@@ -850,7 +986,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-10-01-the-gorge-amphitheatre-g",
@@ -864,7 +1003,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-10-02-mission-ballroom-denver-",
@@ -878,7 +1020,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2022-10-05-riviera-theatre-chicago",
@@ -892,7 +1037,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2022-10-06-history-toronto",
@@ -906,7 +1054,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "CA"
+    ]
   },
   {
     "id": "show-2022-10-08-9-30-club-washington-dc",
@@ -920,7 +1071,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-10-11-roadrunner-boston-ma",
@@ -934,7 +1088,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-10-13-terminal-5-new-york-ny",
@@ -948,7 +1105,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2022-10-14-terminal-5-new-york-ny",
@@ -962,7 +1122,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2022-10-16-terminal-5-new-york",
@@ -976,7 +1139,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2022-11-09-studio-live-3-london",
@@ -990,7 +1156,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2022-11-22-3olympia-theatre-dublin-",
@@ -1004,7 +1173,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "IE"
+    ]
   },
   {
     "id": "set-2022-11-25-afas-live-amsterdam",
@@ -1018,7 +1190,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "NL"
+    ]
   },
   {
     "id": "set-2022-11-27-ufo-velodrom-berlin",
@@ -1032,7 +1207,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "DE"
+    ]
   },
   {
     "id": "set-2022-11-28-ubel-and-gefahrlich-muster-ham",
@@ -1046,7 +1224,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "DE"
+    ]
   },
   {
     "id": "show-2022-11-30-carlswerk-victoria-colog",
@@ -1060,7 +1241,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "DE"
+    ]
   },
   {
     "id": "show-2022-12-01-ancienne-belgique-brusse",
@@ -1074,7 +1258,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "BE"
+    ]
   },
   {
     "id": "show-2022-12-03-elysee-montmartre-paris-",
@@ -1088,7 +1275,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "FR"
+    ]
   },
   {
     "id": "show-2022-12-07-o2-academy-brixton-londo",
@@ -1102,7 +1292,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2022-12-08-o2-academy-brixton-londo",
@@ -1116,7 +1309,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2022-12-09-o2-academy-brixton-london",
@@ -1130,7 +1326,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2022-12-22-actual-life-3-piano-live",
@@ -1144,7 +1343,8 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": []
   },
   {
     "id": "set-2023-01-05-electric-ballroom-london",
@@ -1161,7 +1361,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2023-01-06-electric-brixton-london",
@@ -1178,7 +1381,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2023-01-07-troxy-london",
@@ -1195,7 +1401,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2023-01-28-shed-6-wellington-new-ze",
@@ -1209,7 +1418,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "NZ"
+    ]
   },
   {
     "id": "show-2023-02-01-forum-theatre-melbourne-",
@@ -1223,7 +1435,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2023-02-03-the-thornbury-3071-melbo",
@@ -1237,7 +1452,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2023-02-04-laneway-festival-brisban",
@@ -1251,7 +1469,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2023-02-05-laneway-festival-sydney-",
@@ -1265,7 +1486,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2023-02-07-enmore-theatre-sydney-au",
@@ -1279,7 +1503,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2023-02-08-hordern-pavilion-sydney-",
@@ -1293,7 +1520,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2023-02-10-laneway-festival-adelaid",
@@ -1307,7 +1537,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2023-02-11-laneway-festival-melbour",
@@ -1321,7 +1554,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2023-02-12-laneway-festival-perth-2",
@@ -1335,7 +1571,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "set-2023-02-14-good-room-nyc",
@@ -1352,7 +1591,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2023-02-16-le-poisson-rouge-nyc",
@@ -1369,7 +1611,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2023-02-17-the-lot-radio-times-square-tra",
@@ -1386,7 +1631,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "msg-2023",
@@ -1403,7 +1651,10 @@
     "story": "Announced the same week, sold out, with a warm-up set in Times Square the day before.",
     "media": [],
     "source": "Wikipedia (The New Yorker)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2023-03-17-c-complejo-art-media-bue",
@@ -1417,7 +1668,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AR"
+    ]
   },
   {
     "id": "set-2023-03-18-perry-s-stage-lollapalooza-arg",
@@ -1431,7 +1685,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AR"
+    ]
   },
   {
     "id": "set-2023-03-19-lollapalooza-chile",
@@ -1445,7 +1702,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "CL"
+    ]
   },
   {
     "id": "set-2023-03-24-adidas-stage-estereo-picnic-bo",
@@ -1459,7 +1719,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "CO"
+    ]
   },
   {
     "id": "set-2023-03-26-perry-s-stage-lollapalooza-bra",
@@ -1473,7 +1736,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "BR"
+    ]
   },
   {
     "id": "show-2023-03-27-zig-studio-sao-paulo-bra",
@@ -1487,7 +1753,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "BR"
+    ]
   },
   {
     "id": "show-2023-03-30-parque-bicentenario-mexi",
@@ -1501,7 +1770,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "MX"
+    ]
   },
   {
     "id": "show-2023-03-31-tecate-pa-l-norte-2023",
@@ -1515,7 +1787,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "MX"
+    ]
   },
   {
     "id": "set-2023-04-01-axe-ceremonia-parque-bicentena",
@@ -1529,7 +1804,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "MX"
+    ]
   },
   {
     "id": "tiny-desk-2023",
@@ -1543,7 +1821,10 @@
     "story": "His stripped-back Tiny Desk session.",
     "media": [],
     "source": "Wikipedia",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "coachella-2023",
@@ -1560,7 +1841,10 @@
     "story": "Listed only as 'TBA', the trio closed Coachella as a last-minute replacement after Frank Ocean dropped out.",
     "media": [],
     "source": "Wikipedia",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2023-05-03-nts-radio-secret-life-album-mi",
@@ -1590,7 +1874,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "ES"
+    ]
   },
   {
     "id": "show-2023-06-08-primavera-sound-porto-20",
@@ -1604,7 +1891,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "PT"
+    ]
   },
   {
     "id": "show-2023-06-09-primavera-sound-madrid-2",
@@ -1618,7 +1908,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "ES"
+    ]
   },
   {
     "id": "show-2023-06-10-parklife-2023",
@@ -1632,7 +1925,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "glastonbury-2023",
@@ -1646,7 +1942,10 @@
     "story": "His first Glastonbury appearance.",
     "media": [],
     "source": "Wikipedia",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2023-06-30-bbc-radio-1-worthy-farm-glasto",
@@ -1660,7 +1959,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2023-07-01-rock-werchter-2023",
@@ -1674,7 +1976,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "BE"
+    ]
   },
   {
     "id": "show-2023-07-02-garorock-2023",
@@ -1688,7 +1993,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "FR"
+    ]
   },
   {
     "id": "set-2023-08-04-t-mobile-stage-lollapalooza-ch",
@@ -1702,7 +2010,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2023-08-05-lollapalooza-2023-afters",
@@ -1716,7 +2027,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2023-08-06-montagne-stage-osheaga-montrea",
@@ -1730,7 +2044,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "CA"
+    ]
   },
   {
     "id": "show-2023-08-26-connect-festival-2023",
@@ -1744,7 +2061,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2023-09-02-electric-picnic-2023",
@@ -1758,7 +2078,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "IE"
+    ]
   },
   {
     "id": "show-2023-09-04-alexandra-palace-london",
@@ -1772,7 +2095,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2023-09-05-alexandra-palace-london",
@@ -1786,7 +2112,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2023-09-06-alexandra-palace-london",
@@ -1800,7 +2129,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2023-09-08-alexandra-palace-london",
@@ -1814,7 +2146,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2023-09-09-alexandra-palace-london",
@@ -1828,7 +2163,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2023-09-12-mercedes-benz-arena-berl",
@@ -1842,7 +2180,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "DE"
+    ]
   },
   {
     "id": "set-2023-09-14-ziggo-dome-amsterdam",
@@ -1856,7 +2197,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "NL"
+    ]
   },
   {
     "id": "show-2023-09-15-ziggo-dome-amsterdam-net",
@@ -1870,7 +2214,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "NL"
+    ]
   },
   {
     "id": "show-2023-09-16-ing-arena-brussels-belgi",
@@ -1884,7 +2231,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "BE"
+    ]
   },
   {
     "id": "set-2023-09-20-zenith-paris-la-villette",
@@ -1898,7 +2248,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "FR"
+    ]
   },
   {
     "id": "show-2023-09-21-le-zenith-paris-france",
@@ -1912,7 +2265,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "FR"
+    ]
   },
   {
     "id": "set-2023-10-12-forest-hills-stadium-new-york",
@@ -1926,7 +2282,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2023-10-13-forest-hills-stadium-que",
@@ -1940,7 +2299,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2023-10-14-fine-and-raw-chocolate-f",
@@ -1954,7 +2316,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2023-10-14-forest-hills-stadium-que",
@@ -1968,7 +2333,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2023-10-20-mind-melt-iii-points-festival-",
@@ -1982,7 +2350,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2023-10-24-shrine-exposition-hall-l",
@@ -1996,7 +2367,10 @@
     "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
     "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2023-10-25-shrine-expo-hall-los-angeles",
@@ -2010,7 +2384,10 @@
     "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
     "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2023-10-27-shrine-expo-hall-los-angeles",
@@ -2024,7 +2401,10 @@
     "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
     "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2023-10-28-shrine-exposition-hall-l",
@@ -2038,7 +2418,10 @@
     "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
     "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2023-10-29-shrine-exposition-hall-l",
@@ -2052,7 +2435,10 @@
     "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
     "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2023-10-31-shrine-exposition-hall-l",
@@ -2066,7 +2452,10 @@
     "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
     "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2023-11-01-shrine-exposition-hall-l",
@@ -2080,7 +2469,10 @@
     "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
     "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2023-11-02-shrine-exposition-hall-l",
@@ -2094,7 +2486,10 @@
     "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
     "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2023-11-03-shrine-expo-hall-los-angeles",
@@ -2108,7 +2503,10 @@
     "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
     "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2023-11-18-depot-mayfield-warehouse-proje",
@@ -2125,7 +2523,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2024-01-05-club-77-sydney",
@@ -2139,7 +2540,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "set-2024-02-08-knockdown-center-nyc",
@@ -2155,7 +2559,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2024-02-21-the-lot-radio-nyc",
@@ -2172,7 +2579,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-02-26-sydney-opera-house-sydne",
@@ -2186,7 +2596,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "set-2024-02-27-sydney-opera-house",
@@ -2200,7 +2613,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2024-03-02-revolver-upstairs-melbou",
@@ -2214,7 +2630,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2024-03-02-the-timber-yard-melbourn",
@@ -2228,7 +2647,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "set-2024-03-04-rod-laver-arena-melbourne",
@@ -2242,7 +2664,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2024-03-05-rod-laver-arena-melbourn",
@@ -2256,7 +2681,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2024-03-06-rod-laver-arena-melbourn",
@@ -2270,7 +2698,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2024-03-08-hotel-brunswick-brunswic",
@@ -2284,7 +2715,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "set-2024-03-09-doug-jennings-park-australia",
@@ -2298,7 +2732,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2024-03-12-qudos-bank-arena-sydney-",
@@ -2312,7 +2749,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2024-03-13-qudos-bank-arena-sydney-",
@@ -2326,7 +2766,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2024-03-14-qudos-bank-arena-sydney-",
@@ -2340,7 +2783,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2024-03-16-the-domain-sydney-austra",
@@ -2354,7 +2800,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2024-03-17-the-domain-sydney-austra",
@@ -2368,7 +2817,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "show-2024-03-22-waitangi-park-wellington",
@@ -2382,7 +2834,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "NZ"
+    ]
   },
   {
     "id": "show-2024-03-25-the-coroglen-tavern-coro",
@@ -2396,7 +2851,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "NZ"
+    ]
   },
   {
     "id": "show-2024-03-26-spark-arena-auckland-new",
@@ -2410,7 +2868,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "NZ"
+    ]
   },
   {
     "id": "show-2024-03-27-spark-arena-auckland-new",
@@ -2424,7 +2885,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "NZ"
+    ]
   },
   {
     "id": "show-2024-03-30-langley-park-perth-austr",
@@ -2438,7 +2902,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "AU"
+    ]
   },
   {
     "id": "set-2024-04-26-antro-juan-cdmx",
@@ -2452,7 +2919,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "MX"
+    ]
   },
   {
     "id": "set-2024-05-12-bosque-de-chapultepec-cdmx",
@@ -2468,7 +2938,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "MX"
+    ]
   },
   {
     "id": "set-2024-05-18-circuitground-edc-las-vegas",
@@ -2482,7 +2955,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2024-06-01-civic-center-san-francisco",
@@ -2498,7 +2974,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-06-04-frost-amphitheater-stanf",
@@ -2512,7 +2991,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2024-06-05-frost-amphitheater-stanford",
@@ -2526,7 +3008,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-06-06-frost-amphitheater-stanf",
@@ -2540,7 +3025,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2024-06-11-secret-life-la-memorial-colise",
@@ -2554,7 +3042,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "la-coliseum-2024",
@@ -2571,7 +3062,10 @@
     "story": "His first stadium show. Fred played from six spots and walked a moat around the field; Obongjayar sang from the stands among the fans, Romy and Fred started Strong facing each other, and he had an MPC battle with Tony across the moat. Sound engineer Jamie Tinsley picked a stadium without a roof, so the cheers would not bounce back, and ringed the stage with subs so nobody was more than 60 metres from a speaker.",
     "media": [],
     "source": "Rolling Stone; 1001Tracklists; Instagram",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2024-06-16-what-stage-bonnaroo",
@@ -2585,7 +3079,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-06-28-glastonbury-festival-202",
@@ -2599,7 +3096,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2024-07-28-rooftop-live-arun-s-roof-londo",
@@ -2613,7 +3113,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2024-08-08-syd-for-solen-valbyparken-cope",
@@ -2627,7 +3130,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "DK"
+    ]
   },
   {
     "id": "show-2024-08-09-way-out-west-2024",
@@ -2641,7 +3147,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "SE"
+    ]
   },
   {
     "id": "set-2024-08-10-flow-festival-helsinki",
@@ -2655,7 +3164,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "FI"
+    ]
   },
   {
     "id": "set-2024-08-12-main-stage-sziget-festival-bud",
@@ -2669,7 +3181,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "HU"
+    ]
   },
   {
     "id": "set-2024-08-16-pukkelpop-festival-belgium",
@@ -2683,7 +3198,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "BE"
+    ]
   },
   {
     "id": "lowlands-2024",
@@ -2697,7 +3215,10 @@
     "story": "Dutch festival show.",
     "media": [],
     "source": "Wikipedia (citation needed)",
-    "verified": false
+    "verified": false,
+    "country": [
+      "NL"
+    ]
   },
   {
     "id": "show-2024-08-23-rock-en-seine-2024",
@@ -2711,7 +3232,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "FR"
+    ]
   },
   {
     "id": "reading-2024",
@@ -2725,7 +3249,10 @@
     "story": "Described as the first electronic act to headline Reading & Leeds.",
     "media": [],
     "source": "Wikipedia / Savaya",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2024-08-25-leeds-festival-2024",
@@ -2739,7 +3266,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2024-09-02-lake-vouliagmeni-athens-",
@@ -2753,7 +3283,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GR"
+    ]
   },
   {
     "id": "set-2024-09-06-ten-days-release-party-alexand",
@@ -2767,7 +3300,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2024-09-09-places-we-ve-never-been-tour-k",
@@ -2781,7 +3317,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2024-09-09-radio-1-dance-morning",
@@ -2812,7 +3351,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-09-12-ball-arena-denver-co",
@@ -2827,7 +3369,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-09-15-utah-first-credit-union-",
@@ -2842,7 +3387,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-09-18-climate-pledge-arena-sea",
@@ -2857,7 +3405,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-09-19-climate-pledge-arena-sea",
@@ -2872,7 +3423,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-09-25-target-center-minneapoli",
@@ -2887,7 +3441,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-09-26-byline-bank-aragon-ballr",
@@ -2902,7 +3459,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2024-09-28-places-we-ve-never-been-tour-a",
@@ -2916,7 +3476,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-09-29-alpine-valley-music-thea",
@@ -2931,7 +3494,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2024-10-01-places-we-ve-never-been-tour-l",
@@ -2945,7 +3511,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2024-10-03-places-we-ve-never-been-tour-s",
@@ -2959,7 +3528,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "CA"
+    ]
   },
   {
     "id": "set-2024-10-04-places-we-ve-never-been-tour-s",
@@ -2973,7 +3545,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "CA"
+    ]
   },
   {
     "id": "show-2024-10-05-piknic-electronik-2024-m",
@@ -2988,7 +3563,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "CA"
+    ]
   },
   {
     "id": "show-2024-10-07-keybank-center-buffalo-n",
@@ -3003,7 +3581,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-10-09-state-farm-arena-atlanta",
@@ -3018,7 +3599,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-10-10-state-farm-arena-atlanta",
@@ -3033,7 +3617,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2024-10-13-places-we-ve-never-been-tour-d",
@@ -3047,7 +3634,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2024-10-14-dickies-arena-fort-worth",
@@ -3062,7 +3652,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "Places We've Never Been"
+    "tour": "Places We've Never Been",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2024-10-17-nts-radio",
@@ -3109,7 +3702,8 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": []
   },
   {
     "id": "set-2025-05-28-twitch",
@@ -3123,7 +3717,8 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": []
   },
   {
     "id": "set-2025-05-29-latraac-skate-cafe-athens-twit",
@@ -3137,7 +3732,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GR"
+    ]
   },
   {
     "id": "show-2025-07-12-savaya-bali-indonesia",
@@ -3151,7 +3749,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "ID"
+    ]
   },
   {
     "id": "show-2025-07-18-pasir-panjang-power-stat",
@@ -3165,7 +3766,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "SG"
+    ]
   },
   {
     "id": "show-2025-07-19-pasir-panjang-power-stat",
@@ -3179,7 +3783,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "SG"
+    ]
   },
   {
     "id": "show-2025-07-21-uob-live-bangkok-thailan",
@@ -3193,7 +3800,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "TH"
+    ]
   },
   {
     "id": "set-2025-07-23-kintex-2-south-korea",
@@ -3207,7 +3817,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "KR"
+    ]
   },
   {
     "id": "asia-2025",
@@ -3221,7 +3834,11 @@
     "story": "Fuji Rock (25 Jul), Tachikawa Stage Garden Tokyo (29 Jul) and KINTEX Seoul (23 Jul). Shot on film by Theo Batterham and Charlie Hutchins.",
     "media": [],
     "source": "1001Tracklists; Instagram (2025-07-25)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "JP",
+      "KR"
+    ]
   },
   {
     "id": "set-2025-07-29-tachikawa-stage-garden-japan",
@@ -3235,7 +3852,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "JP"
+    ]
   },
   {
     "id": "show-2025-07-31-namba-hatch-osaka-japan",
@@ -3249,7 +3869,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "JP"
+    ]
   },
   {
     "id": "show-2025-08-10-south-facing-big-smoke-2",
@@ -3263,7 +3886,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2025-08-21-forge-warehouse-sheffiel",
@@ -3277,7 +3903,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2025-08-29-skepta-fred-full-tape-mix",
@@ -3305,7 +3934,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "IT"
+    ]
   },
   {
     "id": "set-2025-09-05-castello-scaligero-villafranca",
@@ -3319,7 +3951,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "IT"
+    ]
   },
   {
     "id": "show-2025-09-07-piazza-del-plebiscito-na",
@@ -3333,7 +3968,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "IT"
+    ]
   },
   {
     "id": "show-2025-09-08-roma-summer-fest-2025",
@@ -3347,7 +3985,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "IT"
+    ]
   },
   {
     "id": "show-2025-09-12-parco-archeologico-di-eg",
@@ -3361,7 +4002,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "IT"
+    ]
   },
   {
     "id": "set-2025-09-14-rooftop-live-fede-s-roof-naple",
@@ -3375,7 +4019,10 @@
     "story": "After his open-air show in the city centre he went up to the roof of a fan, Fede, overlooking the piazza, and played an hour-long set for Fede and an older neighbour from the same building. He finds it hard to wind down after shows, so he played songs he was working on while the crowd went home.",
     "media": [],
     "source": "MusicRadar; YouTube (Rooftop Live, Fede's Roof)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "IT"
+    ]
   },
   {
     "id": "show-2025-09-18-ambers-manchester",
@@ -3389,7 +4036,10 @@
     "story": "",
     "media": [],
     "source": "setlist.fm",
-    "verified": true
+    "verified": true,
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2025-09-25-green-room-set-maka-s-birthday",
@@ -3403,7 +4053,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "IT"
+    ]
   },
   {
     "id": "usb002-glasgow",
@@ -3422,7 +4075,10 @@
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2025-10-09-gimic-radio-bar-brussels",
@@ -3440,7 +4096,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "BE"
+    ]
   },
   {
     "id": "usb002-brussels",
@@ -3457,7 +4116,10 @@
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "BE"
+    ]
   },
   {
     "id": "usb002-madrid",
@@ -3474,7 +4136,10 @@
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "ES"
+    ]
   },
   {
     "id": "set-2025-10-22-nts-radio-drumless-mix",
@@ -3512,7 +4177,10 @@
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "FR"
+    ]
   },
   {
     "id": "set-2025-10-25-centre-pompidou-paris",
@@ -3530,7 +4198,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "FR"
+    ]
   },
   {
     "id": "usb002-dublin",
@@ -3548,7 +4219,10 @@
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "IE"
+    ]
   },
   {
     "id": "usb002-toronto",
@@ -3565,7 +4239,10 @@
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "CA"
+    ]
   },
   {
     "id": "usb002-chicago",
@@ -3584,7 +4261,10 @@
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2025-11-26-twitch-canada",
@@ -3598,7 +4278,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "CA"
+    ]
   },
   {
     "id": "usb002-vancouver",
@@ -3619,7 +4302,10 @@
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "CA"
+    ]
   },
   {
     "id": "usb002-san-francisco",
@@ -3639,7 +4325,10 @@
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "set-2025-12-11-under-the-fabric-cdmx",
@@ -3655,7 +4344,10 @@
     "story": "",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "MX"
+    ]
   },
   {
     "id": "usb002-mexico-city",
@@ -3672,7 +4364,10 @@
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "MX"
+    ]
   },
   {
     "id": "usb002-nyc-residency",
@@ -3690,7 +4385,10 @@
     "media": [],
     "source": "Instagram (2026-02-09); 1001Tracklists; Milk Studios",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2026-01-16-east-end-studios-queens-",
@@ -3705,7 +4403,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2026-01-17-east-end-studios-queens-",
@@ -3720,7 +4421,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2026-01-23-east-end-studios-queens-",
@@ -3735,7 +4439,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2026-01-24-east-end-studios-queens-",
@@ -3750,7 +4457,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2026-01-30-east-end-studios-queens-",
@@ -3765,7 +4475,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "show-2026-01-31-east-end-studios-queens-",
@@ -3780,7 +4493,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "US"
+    ]
   },
   {
     "id": "usb002-london-residency",
@@ -3799,7 +4515,10 @@
     "media": [],
     "source": "Instagram (2025-12-13); Electronic Groove; 1001Tracklists",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2026-02-12-alexandra-palace-london",
@@ -3814,7 +4533,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2026-02-13-alexandra-palace-london",
@@ -3829,7 +4551,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2026-02-19-corsica-studios-london",
@@ -3844,7 +4569,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "show-2026-02-26-alexandra-palace-london",
@@ -3859,7 +4587,10 @@
     "media": [],
     "source": "setlist.fm",
     "verified": true,
-    "tour": "USB002"
+    "tour": "USB002",
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "bangalter-2026",
@@ -3876,7 +4607,10 @@
     "media": [],
     "source": "Mixmag (full tracklist); Electronic Groove",
     "verified": true,
-    "tracklist_link": "https://mixmag.net/feature/this-is-the-full-tracklist-from-fred-again-and-thomas-bangalters-b2b-at-alexandra-palace"
+    "tracklist_link": "https://mixmag.net/feature/this-is-the-full-tracklist-from-fred-again-and-thomas-bangalters-b2b-at-alexandra-palace",
+    "country": [
+      "GB"
+    ]
   },
   {
     "id": "set-2026-06-09-young-nation-show-300",
@@ -3926,7 +4660,10 @@
     "story": "Played the brand-new 9 Months & 50 Hours mixtape live with LATIN MAFIA a few hours after finishing it.",
     "media": [],
     "source": "Instagram; 1001Tracklists",
-    "verified": true
+    "verified": true,
+    "country": [
+      "MX"
+    ]
   },
   {
     "id": "india-2026",
@@ -3940,6 +4677,9 @@
     "story": "His first shows in India: Delhi (5 Dec), Mumbai (8–9 Dec) and Bengaluru (12–13 Dec 2026). Upcoming.",
     "media": [],
     "source": "fredagain.com tour dates; Instagram (2026-06-23)",
-    "verified": true
+    "verified": true,
+    "country": [
+      "IN"
+    ]
   }
 ]
