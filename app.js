@@ -60,7 +60,7 @@ function build(data){
   document.getElementById("reset").onclick=()=>setFocus(null);
 
   // ---------- SVG ----------
-  const svg=d3.select("#svg"), W=innerWidth, H=innerHeight;
+  const svg=d3.select("#svg"); let W=innerWidth, H=innerHeight;
   const defs=svg.append("defs");
   const glow=defs.append("radialGradient").attr("id","glow");
   glow.append("stop").attr("offset","0%").attr("stop-color",COLORS.fred).attr("stop-opacity",.5);
@@ -142,7 +142,21 @@ function build(data){
   });
 
   const zoom=d3.zoom().scaleExtent([.2,4]).on("zoom",e=>world.attr("transform",e.transform));
-  svg.call(zoom).call(zoom.transform,d3.zoomIdentity.translate(W/2,H/2+20).scale(Math.min(W,H)/1000)).on("dblclick.zoom",null);
+  svg.call(zoom).on("dblclick.zoom",null);
+  // fit the whole web on screen; keeps doing so until the visitor zooms or drags themselves
+  let userMoved=false;
+  svg.on("wheel.track mousedown.track touchstart.track",()=>{ userMoved=true; });
+  function fitView(ms=0){
+    W=svg.node().clientWidth; H=svg.node().clientHeight;
+    const xs=nodes.map(n=>n.x), ys=nodes.map(n=>n.y);
+    const x0=Math.min(...xs)-60, x1=Math.max(...xs)+60, y0=Math.min(...ys)-60, y1=Math.max(...ys)+60;
+    const k=Math.min(W/(x1-x0), (H-140)/(y1-y0), 1.5);
+    const t=d3.zoomIdentity.translate(W/2, H/2+30).scale(k).translate(-(x0+x1)/2, -(y0+y1)/2);
+    (ms?svg.transition().duration(ms):svg).call(zoom.transform,t);
+  }
+  sim.on("tick.fit",()=>{ if(!userMoved) fitView(); });
+  sim.on("end",()=>{ sim.on("tick.fit",null); });
+  let rt; addEventListener("resize",()=>{ clearTimeout(rt); rt=setTimeout(()=>{ if(!userMoved) fitView(400); },150); });
 
   // ---------- filtering ----------
   function within(id,depth){ const seen=new Set([id]); let f=[id];
@@ -180,7 +194,7 @@ function build(data){
     document.getElementById("focusInfo").textContent=id?`Starting from: ${byId[id].name.replace(/\s*\(.*\)$/,"")}`:"";
     document.getElementById("reset").style.display=id?"":"none";
     refresh();
-    if (id){ const n=byId[id]; svg.transition().duration(700).call(zoom.transform,d3.zoomIdentity.translate(W/2,H/2).scale(1.3).translate(-n.x,-n.y)); }
+    if (id){ const n=byId[id]; userMoved=true; W=svg.node().clientWidth; H=svg.node().clientHeight; svg.transition().duration(700).call(zoom.transform,d3.zoomIdentity.translate(W/2,H/2).scale(1.3).translate(-n.x,-n.y)); }
   }
 
   // ---------- side panel ----------
@@ -245,6 +259,6 @@ function build(data){
     state.query=e.target.value.trim(); refresh();
     const q=state.query.toLowerCase();
     const hit=q.length>2 && nodes.find(n=>n.name.toLowerCase().startsWith(q));
-    if (hit) svg.transition().duration(600).call(zoom.transform,d3.zoomIdentity.translate(W/2,H/2).scale(1.4).translate(-hit.x,-hit.y));
+    if (hit){ userMoved=true; W=svg.node().clientWidth; H=svg.node().clientHeight; } if (hit) svg.transition().duration(600).call(zoom.transform,d3.zoomIdentity.translate(W/2,H/2).scale(1.4).translate(-hit.x,-hit.y));
   });
 }
