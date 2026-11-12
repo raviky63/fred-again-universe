@@ -887,9 +887,9 @@
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "",
+    "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
     "verified": true
   },
   {
@@ -901,9 +901,9 @@
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "",
+    "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
     "verified": true
   },
   {
@@ -915,9 +915,9 @@
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "",
+    "story": "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born.",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "UCLA Radio; Rolling Stone; 1001Tracklists",
     "verified": true
   },
   {
@@ -1120,10 +1120,13 @@
     "date": "2024-06-14",
     "location": "Los Angeles",
     "kind": "show",
-    "with": [],
+    "with": [
+      "obongjayar",
+      "romy"
+    ],
     "tracks": [],
     "thumbnail": "",
-    "story": "His first-ever stadium show. Sound engineer Jamie Tinsley said the trick was finding a stadium without a roof.",
+    "story": "His first stadium show. Fred played from six spots and walked a moat around the field; Obongjayar sang from the stands among the fans, Romy and Fred started Strong facing each other, and he had an MPC battle with Tony across the moat. Sound engineer Jamie Tinsley picked a stadium without a roof, so the cheers would not bounce back, and ringed the stage with subs so nobody was more than 60 metres from a speaker.",
     "media": [],
     "source": "Rolling Stone; 1001Tracklists; Instagram",
     "verified": true
@@ -1522,9 +1525,9 @@
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "",
+    "story": "After his open-air show in the city centre he went up to the roof of a fan, Fede, overlooking the piazza, and played an hour-long set for Fede and an older neighbour from the same building. He finds it hard to wind down after shows, so he played songs he was working on while the crowd went home.",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "MusicRadar; YouTube (Rooftop Live, Fede's Roof)",
     "verified": true
   },
   {
@@ -1554,7 +1557,7 @@
       "you-re-a-star"
     ],
     "thumbnail": "",
-    "story": "Phone-free show. Only official footage gets linked here.",
+    "story": "Phone-free show. Only official footage gets linked here. The tour's identity was one black-and-grey flag; here a giant version wrapped the venue entrance.",
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
@@ -1644,7 +1647,7 @@
       "ambery"
     ],
     "thumbnail": "",
-    "story": "Phone-free show. Only official footage gets linked here.",
+    "story": "Phone-free show. Only official footage gets linked here. The tour flag was adapted to an old cathedral facade.",
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,

@@ -167,6 +167,8 @@ function build(data){
   }
   sim.on("tick.fit",()=>{ if(!userMoved) fitView(); });
   sim.on("end",()=>{ sim.on("tick.fit",null); });
+  const startId=decodeURIComponent(location.hash.slice(1));
+  if (startId && byId[startId]) setTimeout(()=>{ userMoved=true; select(startId); const n=byId[startId]; W=svg.node().clientWidth; H=svg.node().clientHeight; svg.transition().duration(800).call(zoom.transform,d3.zoomIdentity.translate(W/2-150,H/2).scale(1.4).translate(-n.x,-n.y)); }, 2500);
   let rt; addEventListener("resize",()=>{ clearTimeout(rt); rt=setTimeout(()=>{ if(!userMoved) fitView(400); },150); });
 
   // ---------- filtering ----------
@@ -232,7 +234,7 @@ function build(data){
     const n=byId[id], r=n.raw, col=COLORS[n.type]||COLORS.fred;
     let h=`<div class="kind" style="color:${col}">${KIND_NAME[n.kind]||KIND_NAME[n.type]||n.type}</div><h2>${esc(n.name)}</h2>`;
     if (n.type==="fred"){
-      h+=hero(n)+`<div class="sub">${esc(r.real_name)} · born ${esc(r.born)}</div><p class="story">${esc(r.bio)}</p><p class="story">${esc(r.story)}</p>
+      h+=hero(n)+`<div class="sub">${esc(r.real_name)} · born ${esc(r.born)}</div><p class="story">${esc(r.bio)}</p><p class="story">${esc(r.story)}</p>${r.story_name?`<div class="section"><h3>Where the name comes from</h3><p class="story">${esc(r.story_name)}</p></div>`:""}
         <div class="section"><h3>Awards</h3><ul class="awards">${r.awards.map(a=>`<li>${esc(a)}</li>`).join("")}</ul></div>`;
     } else if (n.type==="artist"){
       h+=hero(n)+`<p class="story">${esc(r.bio)}</p>`;
@@ -269,7 +271,7 @@ function build(data){
     const L=r.links||{};
     const ls=[["Spotify",L.spotify],["YouTube",L.youtube],["Instagram",L.instagram],["Website",L.website]].filter(x=>x[1]);
     if (ls.length) h+=`<div class="section links"><h3>Listen / watch</h3>${ls.map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${k} ↗</a>`).join("")}</div>`;
-    if (n.type!=="fred") h+=`<div class="section"><button class="pill" id="focusBtn">Start the web from here</button></div>`;
+    if (n.type!=="fred") h+=`<div class="section"><button class="pill" id="focusBtn">Start the web from here</button> <a class="pill" style="text-decoration:none" href="timeline.html#${id}">${["artist","crew"].includes(n.type)?"Follow through time":"See on the timeline"} →</a></div>`;
     h+=`<div class="section"><h3>Source</h3>${badge(r)}<div class="src">${esc(r.source||"")}</div></div>`;
     body.innerHTML=h; panel.classList.add("open"); panel.scrollTop=0;
     body.querySelectorAll(".pill[data-id]").forEach(p=>p.onclick=()=>select(p.dataset.id));

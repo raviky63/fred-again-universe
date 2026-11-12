@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timeline · The Fred again.. Universe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#08080c; --ink:#f3efe7; --muted:#8d8a95; --line:#2a2833; --card:#121119; --fred:#ff5a36; }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif}
+  header{position:sticky;top:0;z-index:10;background:#08080ce8;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 22px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:baseline;gap:16px}
+  .brand h1{font-family:"Space Grotesk";font-size:22px;margin:0;letter-spacing:-.02em}
+  .brand h1 span{color:var(--fred)}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-right:12px}
+  nav a.on{color:var(--ink);border-bottom:2px solid var(--fred);padding-bottom:2px}
+  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  #search{background:#13121a;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;font-size:14px;width:220px;outline:none}
+  .chip{border:1px solid var(--line);background:#13121a;color:var(--ink);border-radius:999px;padding:5px 11px;font-size:12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;user-select:none}
+  .chip.off{opacity:.35}
+  .chip i{width:9px;height:9px;display:inline-block}
+  #follow{display:none;margin:14px auto 0;max-width:900px;padding:10px 16px;border:1px solid var(--line);border-radius:12px;background:#17151f;font-size:14px}
+  #follow button{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:3px 10px;margin-left:8px;cursor:pointer}
+  main{max-width:900px;margin:0 auto;padding:10px 22px 120px;position:relative}
+  .year{font-family:"Space Grotesk";font-size:64px;font-weight:700;letter-spacing:-.04em;color:#26242f;margin:56px 0 8px;position:sticky;top:64px;z-index:1;pointer-events:none}
+  .year span{color:var(--ink);opacity:.9}
+  .rail{position:relative;padding-left:34px}
+  .rail::before{content:"";position:absolute;left:11px;top:0;bottom:0;width:2px;background:linear-gradient(var(--line),#3a3745,var(--line))}
+  .item{position:relative;margin:14px 0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;grid-template-columns:auto 1fr;gap:14px;transition:border-color .3s, box-shadow .3s}
+  .item.flash{border-color:var(--fred);box-shadow:0 0 0 3px #ff5a3633}
+  .item.mini{padding:8px 14px;grid-template-columns:1fr;border-radius:10px;background:#0f0e15}
+  .item .dot{position:absolute;left:-30px;top:18px;width:14px;height:14px}
+  .thumb{width:84px;height:84px;border-radius:6px;position:relative;overflow:hidden;display:grid;place-items:center;font-family:"Space Grotesk";font-weight:700;font-size:22px}
+  .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .meta{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+  .title{font-family:"Space Grotesk";font-size:20px;font-weight:700;margin:2px 0 4px;letter-spacing:-.01em}
+  .mini .title{font-size:15px;display:inline;margin-right:8px}
+  .date{color:var(--muted);font-size:12px}
+  .story{font-size:14px;line-height:1.5;margin:6px 0 4px;color:#d9d4cc}
+  .pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .pill{background:#1c1a24;border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:12px;cursor:pointer;color:var(--ink)}
+  .pill:hover{border-color:#5a5668}
+  .pill.back{border-style:dashed;color:#e9c8ff}
+  .pill.fwd{border-style:dashed;color:#bfe7ff}
+  .actions{margin-top:8px;font-size:12px}
+  .actions a{color:var(--muted);margin-right:12px}
+  .unv{border-style:dashed}
+  #empty{color:var(--muted);text-align:center;margin-top:80px;display:none}
+  @media(max-width:640px){.year{font-size:44px;top:110px}.thumb{width:60px;height:60px}#search{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>The <span>Fred again..</span> Universe</h1>
+    <nav><a href="index.html">Web</a><a href="timeline.html" class="on">Timeline</a></nav>
+  </div>
+  <div class="controls">
+    <input id="search" placeholder="Search…" autocomplete="off">
+    <span id="chips"></span>
+  </div>
+</header>
+<div id="follow"></div>
+<main id="main"></main>
+<p id="empty">Nothing matches these filters.</p>
+<script src="timeline.js"></script>
+</body>
+</html>

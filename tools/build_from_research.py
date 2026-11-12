@@ -292,6 +292,48 @@ merch = [
 merch_out = [{"id": i, "title": t, "date": d, "story": s, "links_to": [x for x in lt if x in tracks or x in events or x in releases],
               "image": "", "source": src, "verified": True} for i, t, d, s, lt, src in merch]
 
+
+# ---------------------------------------------------------------- stories from press & interviews (research/anecdotes-and-crew-stories.md)
+def by_date(d, contains=""):
+    return [e for e in events.values() if e["date"] == d and contains.lower() in (e["title"] + e["location"]).lower()]
+for e in by_date("2025-09-14", "naples"):
+    e["story"] = "After his open-air show in the city centre he went up to the roof of a fan, Fede, overlooking the piazza, and played an hour-long set for Fede and an older neighbour from the same building. He finds it hard to wind down after shows, so he played songs he was working on while the crowd went home."
+    e["source"] = "MusicRadar; YouTube (Rooftop Live, Fede's Roof)"
+for e in [x for x in events.values() if "Shrine" in x["location"]]:
+    e["story"] = "Part of a multi-night residency at the Shrine in LA. Night six fell on Halloween, with the crowd in costume and a huge LED video diary as the centrepiece. It was here the idea for a stadium show was born."
+    e["source"] = "UCLA Radio; Rolling Stone; 1001Tracklists"
+if "la-coliseum-2024" in events:
+    events["la-coliseum-2024"]["story"] = ("His first stadium show. Fred played from six spots and walked a moat around the field; Obongjayar sang from the stands among the fans, "
+        "Romy and Fred started Strong facing each other, and he had an MPC battle with Tony across the moat. Sound engineer Jamie Tinsley picked a stadium without a roof, "
+        "so the cheers would not bounce back, and ringed the stage with subs so nobody was more than 60 metres from a speaker.")
+    events["la-coliseum-2024"]["with"] = list(dict.fromkeys(events["la-coliseum-2024"]["with"] + ["obongjayar", "romy"]))
+    events["la-coliseum-2024"]["source"] = "Rolling Stone; 1001Tracklists; Instagram"
+if "usb002-glasgow" in events:
+    events["usb002-glasgow"]["story"] += " The tour's identity was one black-and-grey flag; here a giant version wrapped the venue entrance."
+if "usb002-lyon" in events:
+    events["usb002-lyon"]["story"] += " The tour flag was adapted to an old cathedral facade."
+center["story_name"] = "The 'again..' comes from the 2002 live-action Scooby-Doo film, where Daphne, stuck in Fred's body after a body swap, says \"I'm Fred again!\". He confirmed it by nodding along to a TikTok in 2023."
+
+CREW_EXTRA = {
+    "loose": "Fred calls her an absolutely mental human being who thinks like a very creative child. She tries bold ideas and treats the ones that fail as lessons. For the LA Coliseum she helped plan the moat around the field so every artist could reach the whole crowd.",
+    "theo-batterham": "His love of photography started when his older brother's school project turned their bathroom into a darkroom. He shoots from behind the decks and deep in the crowd, and cares more about the feeling around a moment than the picture itself.",
+    "jamie-tinsley": "For the LA Coliseum he picked a stadium without a roof, added speaker stacks halfway up the stands and a ring of subs around the stage, so nobody was further than 60 metres from a speaker.",
+    "explorers-club": "Built the whole USB002 look around one stark black-and-grey flag with a hand-cut typeface. Every city got its own version, from a flag wrapping the Glasgow venue to a cathedral facade in Lyon, and fans remixed their city's flag themselves.",
+    "rubberband": "Their trilogy (HARDSTYLE 2, scared, Lights Burn Dimmer) follows one character in black and white. Every scene is 10 to 13 seconds of real time, shot at 500 frames per second in a single take and stretched to about three and a half minutes.",
+    "boris-acket": "His kinetic fabric installation moved the USB002 flag above the crowd in time with the music.",
+}
+for c in crew_out:
+    if c["id"] in CREW_EXTRA:
+        c["bio"] = c["bio"] + " " + CREW_EXTRA[c["id"]]
+    if c["id"] == "rubberband" and "hardstyle-2" in tracks:
+        c["links_to"] = list(dict.fromkeys(["hardstyle-2"] + c["links_to"]))
+    if c["id"] == "boris-acket":
+        c["links_to"] = [x for x in ["usb002-london-residency", "usb"] if x in events or x in releases]
+crew_out.append({"id": "human-person", "name": "Human Person", "role": "Stage design", "bio": "Design team that worked with LOOSE on the stage for the LA Coliseum stadium show.",
+                 "links_to": ["la-coliseum-2024"], "photo": "", "photo_credit": "", "source": "Rolling Stone", "verified": True})
+for c in crew_out:
+    c["source"] = c["source"] + ("; research/anecdotes-and-crew-stories.md" if c["id"] in CREW_EXTRA else "")
+
 # ---------------------------------------------------------------- tidy & save
 used = set()
 for coll in (releases.values(), tracks.values(), events.values()):
@@ -308,6 +350,7 @@ save("releases", sorted(releases.values(), key=lambda r: r["date"]))
 save("tracks", sorted(tracks.values(), key=lambda t: (t["date"] or "", t["title"])))
 save("events", sorted(events.values(), key=lambda e: e["date"]))
 save("crew", crew_out)
+save("center", center)
 save("merch", merch_out)
 meta = load("meta"); meta["updated"] = "2026-11-12"; save("meta", meta)
 print(f"artists {len(artists_out)} | releases {len(releases)} | tracks {len(tracks)} | events {len(events)} | crew {len(crew_out)} | merch {len(merch_out)}")

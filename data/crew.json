@@ -3,7 +3,7 @@
     "id": "loose",
     "name": "LOOSE (Lucy Hickling)",
     "role": "Creative director",
-    "bio": "Fred's creative director and tour photographer. Directed the videos for Clara and places to be, co-directed stayinit, and filmed the early Actual Life videos.",
+    "bio": "Fred's creative director and tour photographer. Directed the videos for Clara and places to be, co-directed stayinit, and filmed the early Actual Life videos. Fred calls her an absolutely mental human being who thinks like a very creative child. She tries bold ideas and treats the ones that fail as lessons. For the LA Coliseum she helped plan the moat around the field so every artist could reach the whole crowd.",
     "links_to": [
       "clara-the-night-is-dark",
       "places-to-be",
@@ -13,14 +13,14 @@
     ],
     "photo": "",
     "photo_credit": "",
-    "source": "onepointfour.co; Rolling Stone; shots.net; Instagram",
+    "source": "onepointfour.co; Rolling Stone; shots.net; Instagram; research/anecdotes-and-crew-stories.md",
     "verified": true
   },
   {
     "id": "theo-batterham",
     "name": "Theo Batterham",
     "role": "Photographer",
-    "bio": "Has been photographing Fred's world for about five years, from the 2021 Mixmag cover shoot to the USB002 residencies and the first Asia shows.",
+    "bio": "Has been photographing Fred's world for about five years, from the 2021 Mixmag cover shoot to the USB002 residencies and the first Asia shows. His love of photography started when his older brother's school project turned their bathroom into a darkroom. He shoots from behind the decks and deep in the crowd, and cares more about the feeling around a moment than the picture itself.",
     "links_to": [
       "usb002-nyc-residency",
       "asia-2025",
@@ -28,7 +28,7 @@
     ],
     "photo": "",
     "photo_credit": "",
-    "source": "Milk Studios / The Agents Club; DJ Mag; Instagram (17 tags)",
+    "source": "Milk Studios / The Agents Club; DJ Mag; Instagram (17 tags); research/anecdotes-and-crew-stories.md",
     "verified": true
   },
   {
@@ -62,13 +62,13 @@
     "id": "jamie-tinsley",
     "name": "Jamie Tinsley",
     "role": "Front-of-house sound",
-    "bio": "Runs the sound at all of Fred's live shows.",
+    "bio": "Runs the sound at all of Fred's live shows. For the LA Coliseum he picked a stadium without a roof, added speaker stacks halfway up the stands and a ring of subs around the stage, so nobody was further than 60 metres from a speaker.",
     "links_to": [
       "la-coliseum-2024"
     ],
     "photo": "",
     "photo_credit": "",
-    "source": "Rolling Stone; TPi Magazine",
+    "source": "Rolling Stone; TPi Magazine; research/anecdotes-and-crew-stories.md",
     "verified": true
   },
   {
@@ -121,28 +121,29 @@
     "id": "explorers-club",
     "name": "Explorers Club (Aaron Skipper)",
     "role": "Tour identity design",
-    "bio": "LA studio behind the USB002 tour identity, built so fans could remix it themselves.",
+    "bio": "LA studio behind the USB002 tour identity, built so fans could remix it themselves. Built the whole USB002 look around one stark black-and-grey flag with a hand-cut typeface. Every city got its own version, from a flag wrapping the Glasgow venue to a cathedral facade in Lyon, and fans remixed their city's flag themselves.",
     "links_to": [
       "usb",
       "usb002-london-residency"
     ],
     "photo": "",
     "photo_credit": "",
-    "source": "Hypebot; Creative Bloq",
+    "source": "Hypebot; Creative Bloq; research/anecdotes-and-crew-stories.md",
     "verified": true
   },
   {
     "id": "rubberband",
     "name": "rubberband. (Jason Sondock & Simon Davis)",
     "role": "Music video directors",
-    "bio": "Directed the 2026 trilogy of black-and-white slow-motion videos, including Lights Burn Dimmer.",
+    "bio": "Directed the 2026 trilogy of black-and-white slow-motion videos, including Lights Burn Dimmer. Their trilogy (HARDSTYLE 2, scared, Lights Burn Dimmer) follows one character in black and white. Every scene is 10 to 13 seconds of real time, shot at 500 frames per second in a single take and stretched to about three and a half minutes.",
     "links_to": [
+      "hardstyle-2",
       "lights-burn-dimmer",
       "scared"
     ],
     "photo": "",
     "photo_credit": "",
-    "source": "Promonews; Hero Magazine; shots",
+    "source": "Promonews; Hero Magazine; shots; research/anecdotes-and-crew-stories.md",
     "verified": true
   },
   {
@@ -162,11 +163,27 @@
     "id": "boris-acket",
     "name": "Boris Acket",
     "role": "Kinetic installation artist",
-    "bio": "Made the moving kinetic systems for a recent Fred tour.",
-    "links_to": [],
+    "bio": "Made the moving kinetic systems for a recent Fred tour. His kinetic fabric installation moved the USB002 flag above the crowd in time with the music.",
+    "links_to": [
+      "usb002-london-residency",
+      "usb"
+    ],
     "photo": "",
     "photo_credit": "",
-    "source": "Hypebeast",
+    "source": "Hypebeast; research/anecdotes-and-crew-stories.md",
+    "verified": true
+  },
+  {
+    "id": "human-person",
+    "name": "Human Person",
+    "role": "Stage design",
+    "bio": "Design team that worked with LOOSE on the stage for the LA Coliseum stadium show.",
+    "links_to": [
+      "la-coliseum-2024"
+    ],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Rolling Stone",
     "verified": true
   }
 ]
