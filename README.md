@@ -14,7 +14,9 @@ An unofficial, fan-made interactive map of Fred again..'s world: every release, 
 | `artists.json` | collaborators | circles |
 | `releases.json` | albums, singles, features | square sleeves (with cover) |
 | `tracks.json` | individual songs, linked to releases and artists | small squares |
-| `events.json` | shows, sets and moments | diamonds |
+| `events.json` | shows, DJ sets, radio mixes and moments (with tracklists where known) | diamonds |
+| `crew.json` | the people behind the scenes: creative direction, photo, film, sound, lights | lavender circles |
+| `merch.json` | merch drops and physical releases | lime hexagons |
 | `meta.json` | site title, last update | – |
 
 ## Linking things together
@@ -26,6 +28,14 @@ Everything is connected through `id`s:
 - an event's `with` and `tracks` lists point to artist and track ids
 
 Add an id to one of those lists and a new line appears on the map.
+
+## Research
+
+`research/` holds the raw notes from each source (Spotify, Wikipedia, 1001Tracklists, Instagram, SoundCloud, press). `tools/build_from_research.py` turns them into the `data/` files:
+
+```
+python tools/build_from_research.py
+```
 
 ## Rules for content
 

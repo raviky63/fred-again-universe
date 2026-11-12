@@ -1,9 +1,201 @@
 [
   {
+    "id": "julie-stay",
+    "title": "Julie (Stay)",
+    "kind": "single",
+    "date": "2019",
+    "with": [],
+    "cover": "",
+    "story": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "octavian",
+    "title": "Octavian (MyOwnWorld)",
+    "kind": "single",
+    "date": "2019-09",
+    "with": [
+      "octavian"
+    ],
+    "cover": "",
+    "story": "Early SoundCloud upload (2019).",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "eazi",
+    "title": "Eazi (DoItNow)",
+    "kind": "single",
+    "date": "2019-10",
+    "with": [
+      "mr-eazi"
+    ],
+    "cover": "",
+    "story": "Early SoundCloud upload (2019).",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "jessie",
+    "title": "Jessie (I Miss You)",
+    "kind": "single",
+    "date": "2020",
+    "with": [],
+    "cover": "",
+    "story": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "gang",
+    "title": "GANG (with Headie One)",
+    "kind": "mixtape",
+    "date": "2020-04-03",
+    "with": [
+      "headie-one"
+    ],
+    "cover": "",
+    "story": "His project with Headie One. Gang and Don't Judge Me (with FKA twigs) both got Ivor Novello nominations. Exact year still to check.",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "kyren",
+    "title": "Kyren (My Son)",
+    "kind": "single",
+    "date": "2020-05",
+    "with": [],
+    "cover": "",
+    "story": "SoundCloud upload (2020).",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "actual-life-ep",
+    "title": "Actual Life (EP)",
+    "kind": "ep",
+    "date": "2020-05-15",
+    "with": [],
+    "cover": "",
+    "story": "The first Actual Life EP on his own Again.. Records.",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "dont-judge-me",
+    "title": "Don't Judge Me",
+    "kind": "single",
+    "date": "2021",
+    "with": [
+      "fka-twigs",
+      "headie-one"
+    ],
+    "cover": "",
+    "story": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "stay-high-again",
+    "title": "Stay High Again..",
+    "kind": "single",
+    "date": "2021",
+    "with": [
+      "brittany-howard",
+      "joy-anonymous"
+    ],
+    "cover": "",
+    "story": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "diana",
+    "title": "Diana (You Don't Even Know)",
+    "kind": "single",
+    "date": "2021",
+    "with": [
+      "jayda-g"
+    ],
+    "cover": "",
+    "story": "Released on Jayda G's DJ-Kicks.",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "baxter",
+    "title": "Baxter (These Are My Friends)",
+    "kind": "single",
+    "date": "2021",
+    "with": [
+      "baxter-dury"
+    ],
+    "cover": "",
+    "story": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": []
+  },
+  {
     "id": "actual-life",
     "title": "Actual Life (April 14 – December 17 2020)",
     "kind": "album",
-    "date": "2021",
+    "date": "2021-04-16",
     "with": [],
     "cover": "https://i.scdn.co/image/ab67616d00001e02723d4df900fd02eff83579d9",
     "story": "The first chapter of his 'collaborative diary': tracks built from voice memos, clips and samples collected during the pandemic.",
@@ -11,15 +203,33 @@
       "spotify": "https://open.spotify.com/album/6o86bV7TAt5x4exc2qLDqC",
       "youtube": ""
     },
-    "source": "Wikipedia / Spotify",
+    "source": "Wikipedia discography / Spotify",
     "verified": true,
-    "tracks": []
+    "tracks": [
+      "april-14th-2020",
+      "kyle-i-found-you",
+      "dermot-see-yourself-in-my-eyes",
+      "yasminah-see-your-face-again",
+      "hackney-interlude",
+      "julia-deep-diving",
+      "adam-interlude",
+      "me-heavy",
+      "big-hen-steal-my-joy",
+      "marnie-wish-i-had-u",
+      "sabrina-i-am-a-party",
+      "lydia-please-make-it-better",
+      "carlos-make-it-thru",
+      "angie-interlude",
+      "angie-i-ve-been-lost",
+      "december-17th-2020",
+      "marea-we-ve-lost-dancing"
+    ]
   },
   {
     "id": "actual-life-2",
     "title": "Actual Life 2 (February 2 – October 15 2021)",
     "kind": "album",
-    "date": "2021",
+    "date": "2021-11-19",
     "with": [],
     "cover": "https://i.scdn.co/image/ab67616d00001e02c506dbc3f05d3ce4daf355c4",
     "story": "The follow-up, released in November 2021.",
@@ -27,9 +237,96 @@
       "spotify": "https://open.spotify.com/album/0SFtIrRytNI4kcf93Tbhdf",
       "youtube": ""
     },
-    "source": "Wikipedia / Spotify",
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": [
+      "february-2nd-2021",
+      "catrin-the-city",
+      "roze-forgive",
+      "gigi-what-you-went-through",
+      "kahan-last-year",
+      "tate-how-i-feel",
+      "hannah-the-sun",
+      "carlos-interlude",
+      "faisal-envelops-me",
+      "tayla-every-night",
+      "tanya-maybe-life",
+      "marco-and-everyone",
+      "billie-loving-arms",
+      "billie-interlude",
+      "mollie-hear-your-name",
+      "october-15th-2021"
+    ]
+  },
+  {
+    "id": "strong",
+    "title": "Strong",
+    "kind": "single",
+    "date": "2022",
+    "with": [
+      "romy"
+    ],
+    "cover": "",
+    "story": "Grammy-nominated for Best Dance/Electronic Recording in 2024. Release year still to add.",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
     "verified": true,
     "tracks": []
+  },
+  {
+    "id": "usb",
+    "title": "USB / USB001 / USB002",
+    "kind": "album",
+    "date": "2022-01-18",
+    "with": [],
+    "cover": "https://i.scdn.co/image/ab67616d00001e024018b70099d433d9c8aabb12",
+    "story": "His ongoing release project. During the phone-free USB002 tour (Oct–Dec 2025) every stop came with at least one new track, often with guests who also performed.",
+    "links": {
+      "spotify": "https://open.spotify.com/album/2ClZ9xWAYg1BH8zkR96dJo",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": [
+      "lights-burn-dimmer",
+      "scared",
+      "i-luv-u",
+      "solo",
+      "icey",
+      "feisty",
+      "winny",
+      "beto-s-horns-fred-remix",
+      "talk-of-the-town",
+      "hardstyle-2",
+      "ambery",
+      "facilita",
+      "the-floor-fred-remix",
+      "ok-ok",
+      "you-re-a-star",
+      "last-1s-left",
+      "back-2-back",
+      "victory-lap",
+      "flex-fm-freddit",
+      "places-to-be-messie-remix",
+      "itsnotreeaallllllll",
+      "berwyngesaffneighbours",
+      "stayinit",
+      "leavemealone",
+      "baby-again",
+      "rumble",
+      "turn-on-the-lights-again-feat-future",
+      "jungle",
+      "admit-it-u-dont-want-2",
+      "lights-out",
+      "solo-kettama-remix",
+      "feisty-oppidan-remix",
+      "winny-lil-silva-remix",
+      "beto-s-horns-daphni-remix",
+      "hardstyle-2-lou-nour-remix"
+    ]
   },
   {
     "id": "actual-life-3",
@@ -43,81 +340,48 @@
       "spotify": "https://open.spotify.com/album/5q2iMctlDvEMYVIawF6Vop",
       "youtube": ""
     },
-    "source": "Wikipedia / Spotify",
+    "source": "Wikipedia discography / Spotify",
     "verified": true,
     "tracks": [
-      "danielle",
-      "bleu",
-      "kammy",
-      "delilah-track",
-      "clara"
+      "january-1st-2022",
+      "eyelar-shutters",
+      "delilah-pull-me-out-of-this",
+      "kammy-like-i-do",
+      "berwyn-all-that-i-got-is-you",
+      "bleu-better-with-time",
+      "nathan-still-breathing",
+      "danielle-smile-on-my-face",
+      "kelly-end-of-a-nightmare",
+      "mustafa-time-to-move-you",
+      "clara-the-night-is-dark",
+      "winnie-end-of-me",
+      "september-9th-2022"
     ]
   },
   {
-    "id": "delilah",
-    "title": "Delilah (pull me out of this)",
+    "id": "mike-desert-island-duvet",
+    "title": "Mike (Desert Island Duvet)",
     "kind": "single",
-    "date": "2022",
-    "with": [],
-    "cover": "https://i.scdn.co/image/ab67616d00001e02c652ae235973f4731ec6ac50",
-    "story": "One of the five singles leading up to Actual Life 3.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/24GbGX038jKJdzZ0KGAIxW",
-      "youtube": ""
-    },
-    "source": "Wikipedia / Spotify",
-    "verified": true,
-    "tracks": []
-  },
-  {
-    "id": "ten-days",
-    "title": "ten days",
-    "kind": "album",
-    "date": "2024-09-06",
+    "date": "2023-03",
     "with": [
-      "skrillex",
-      "four-tet",
-      "anderson-paak",
-      "sampha",
-      "duskus"
-    ],
-    "cover": "https://i.scdn.co/image/ab67616d00001e029574df129a4a2f4fa4990286",
-    "story": "Teased on Instagram in July 2024 and released 6 September 2024. Expanded in December with Two More Days. Grammy-nominated in 2026.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/3DQueEd1Ft9PHWgovDzPKh",
-      "youtube": ""
-    },
-    "source": "Wikipedia / Spotify",
-    "verified": true,
-    "tracks": []
-  },
-  {
-    "id": "two-more-days",
-    "title": "Two More Days (light dark light / little mystery)",
-    "kind": "single",
-    "date": "2024-12-13",
-    "with": [
-      "angie-mcmahon",
-      "john-martyn"
+      "the-streets",
+      "dermot-kennedy"
     ],
     "cover": "",
-    "story": "Two extra singles added to Ten Days on 13 December 2024.",
+    "story": "On Fabric Presents The Streets, with Mike Skinner.",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Wikipedia discography / Spotify",
     "verified": true,
-    "tracks": [
-      "light-dark-light",
-      "little-mystery"
-    ]
+    "tracks": []
   },
   {
     "id": "secret-life",
     "title": "Secret Life",
     "kind": "album",
-    "date": "2023",
+    "date": "2023-05-05",
     "with": [
       "brian-eno"
     ],
@@ -127,186 +391,101 @@
       "spotify": "https://open.spotify.com/album/1FJVbtVFLARPKbn1HepNh1",
       "youtube": ""
     },
-    "source": "Wikipedia / Spotify",
+    "source": "Wikipedia discography / Spotify",
     "verified": true,
-    "tracks": []
+    "tracks": [
+      "i-saw-you",
+      "secret",
+      "radio",
+      "follow",
+      "enough",
+      "pause",
+      "safety",
+      "cmon",
+      "trying",
+      "chest",
+      "come-on-home"
+    ]
   },
   {
-    "id": "rumble",
-    "title": "Rumble",
+    "id": "ten-days",
+    "title": "ten days",
+    "kind": "album",
+    "date": "2024-09-06",
+    "with": [],
+    "cover": "https://i.scdn.co/image/ab67616d00001e029574df129a4a2f4fa4990286",
+    "story": "Teased on Instagram in July 2024 and released 6 September 2024. Expanded in December with Two More Days. Grammy-nominated in 2026.",
+    "links": {
+      "spotify": "https://open.spotify.com/album/3DQueEd1Ft9PHWgovDzPKh",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": [
+      "one",
+      "adore-u",
+      "two",
+      "ten",
+      "three",
+      "fear-less",
+      "four",
+      "just-stand-there",
+      "five",
+      "places-to-be",
+      "six",
+      "glow",
+      "seven",
+      "i-saw-you",
+      "eight",
+      "where-will-i-be",
+      "nine",
+      "peace-u-need",
+      "backseat"
+    ]
+  },
+  {
+    "id": "two-more-days",
+    "title": "two more days",
+    "kind": "ep",
+    "date": "2024-12-13",
+    "with": [],
+    "cover": "https://i.scdn.co/image/ab67616d00001e022ba0b2f14c22b038bdb94c31",
+    "story": "Two extra singles added to Ten Days on 13 December 2024.",
+    "links": {
+      "spotify": "https://open.spotify.com/album/0tMLTrwCaJcqioPLMwxZBc",
+      "youtube": ""
+    },
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": [
+      "light-dark-light",
+      "little-mystery"
+    ]
+  },
+  {
+    "id": "air-maxes",
+    "title": "Air Maxes",
     "kind": "single",
-    "date": "2023-01-04",
+    "date": "2025",
     "with": [
-      "skrillex",
-      "flowdan"
+      "kettama",
+      "shady-nasty"
     ],
     "cover": "",
-    "story": "Released 4 January 2023, kicking off a run of surprise London shows with Skrillex and Four Tet. Won the Grammy for Best Dance/Electronic Recording.",
+    "story": "On Kettama's album Archangel.",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
-    "verified": true,
-    "tracks": []
-  },
-  {
-    "id": "turn-on-the-lights",
-    "title": "Turn On The Lights again.. (feat. Future)",
-    "kind": "single",
-    "date": "2022",
-    "with": [
-      "swedish-house-mafia",
-      "future"
-    ],
-    "cover": "https://i.scdn.co/image/ab67616d00001e02a5906c7ef4a19e3d394f732c",
-    "story": "Released the same week as his Boiler Room set, built on a sample of Future's 2012 song Turn On the Lights.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/2jiMeC1iUWVYmvXSIiO8ks",
-      "youtube": ""
-    },
-    "source": "Wikipedia / Spotify",
-    "verified": true,
-    "tracks": []
-  },
-  {
-    "id": "marea",
-    "title": "Marea (we've lost dancing)",
-    "kind": "single",
-    "date": "",
-    "with": [
-      "the-blessed-madonna"
-    ],
-    "cover": "https://i.scdn.co/image/ab67616d00001e02134819c325395725c3d2c612",
-    "story": "A lockdown-era dance track that showed up in Ruben Östlund's Palme d'Or winner Triangle of Sadness (2022). Release year still to add.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/3AAwKutHRWyftJ2GrFdPX9",
-      "youtube": ""
-    },
-    "source": "Wikipedia / Spotify",
-    "verified": true,
-    "tracks": []
-  },
-  {
-    "id": "strong",
-    "title": "Strong",
-    "kind": "single",
-    "date": "",
-    "with": [
-      "romy"
-    ],
-    "cover": "",
-    "story": "Grammy-nominated for Best Dance/Electronic Recording in 2024. Release year still to add.",
-    "links": {
-      "spotify": "",
-      "youtube": ""
-    },
-    "source": "Wikipedia",
-    "verified": true,
-    "tracks": []
-  },
-  {
-    "id": "adore-u",
-    "title": "adore u",
-    "kind": "single",
-    "date": "2023",
-    "with": [
-      "obongjayar"
-    ],
-    "cover": "https://i.scdn.co/image/ab67616d00001e024479a11bdcb4f531702459a4",
-    "story": "Often called one of his prettiest songs. Nominated for Song of the Year at the 2023 A&R Awards.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/7K3BWpksmH4L7BoqUdhZrL",
-      "youtube": ""
-    },
-    "source": "Wikipedia / Spotify / New Statesman",
-    "verified": true,
-    "tracks": []
-  },
-  {
-    "id": "leavemealone",
-    "title": "leavemealone",
-    "kind": "single",
-    "date": "2023-12-08",
-    "with": [
-      "baby-keem"
-    ],
-    "cover": "https://i.scdn.co/image/ab67616d00001e02b8214e85ae9938a8e2a54b19",
-    "story": "Released 8 December 2023. Grammy-nominated in 2025.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/3Tsut3cVOWP7AKAR4Dtmhb",
-      "youtube": ""
-    },
-    "source": "Wikipedia / Spotify",
-    "verified": true,
-    "tracks": []
-  },
-  {
-    "id": "stayinit",
-    "title": "stayinit",
-    "kind": "single",
-    "date": "2024-02-28",
-    "with": [
-      "lil-yachty",
-      "overmono"
-    ],
-    "cover": "",
-    "story": "Released 28 February 2024. Its video was nominated at the UK Music Video Awards.",
-    "links": {
-      "spotify": "",
-      "youtube": ""
-    },
-    "source": "Wikipedia",
-    "verified": true,
-    "tracks": []
-  },
-  {
-    "id": "places-to-be",
-    "title": "places to be",
-    "kind": "single",
-    "date": "2024-05-31",
-    "with": [
-      "anderson-paak",
-      "chika"
-    ],
-    "cover": "https://i.scdn.co/image/ab67616d00001e025471ed900dd21834e5fc90c8",
-    "story": "Released 31 May 2024. Won Best Live Video at the 2024 UK Music Video Awards.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/0M0iJGLagLtI4LlooOiiNZ",
-      "youtube": ""
-    },
-    "source": "Wikipedia / Spotify",
-    "verified": true,
-    "tracks": []
-  },
-  {
-    "id": "victory-lap",
-    "title": "Victory Lap",
-    "kind": "single",
-    "date": "2025-06-17",
-    "with": [
-      "skepta",
-      "plaqueboymax",
-      "denzel-curry",
-      "hanumankind",
-      "that-mexican-ot",
-      "d-double-e"
-    ],
-    "cover": "https://i.scdn.co/image/ab67616d00001e02f8180a86cd4256167720fc81",
-    "story": "Released 17 June 2025 and followed by a chain of remixes that kept adding rappers, ending in Victory Lap 5. Grammy-nominated in 2026.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/1I9H3LIuf4zobz8RcUBIif",
-      "youtube": ""
-    },
-    "source": "Wikipedia / Spotify",
+    "source": "Wikipedia discography / Spotify",
     "verified": true,
     "tracks": []
   },
   {
     "id": "skepta-fred",
     "title": "Skepta .. Fred",
-    "kind": "album",
-    "date": "2025",
+    "kind": "ep",
+    "date": "2025-08-29",
     "with": [
       "skepta"
     ],
@@ -316,74 +495,25 @@
       "spotify": "https://open.spotify.com/album/7x9gF8DtACwxkejv2xBndT",
       "youtube": ""
     },
-    "source": "Wikipedia / Spotify",
-    "verified": false,
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
     "tracks": [
       "back-2-back",
-      "21-years",
+      "london",
       "last-1s-left",
-      "london"
-    ]
-  },
-  {
-    "id": "usb",
-    "title": "USB / USB002",
-    "kind": "album",
-    "date": "2025",
-    "with": [],
-    "cover": "https://i.scdn.co/image/ab67616d00001e024018b70099d433d9c8aabb12",
-    "story": "His ongoing release project. During the phone-free USB002 tour (Oct–Dec 2025) every stop came with at least one new track, often with guests who also performed.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/2ClZ9xWAYg1BH8zkR96dJo",
-      "youtube": ""
-    },
-    "source": "Wikipedia / Spotify",
-    "verified": true,
-    "tracks": [
-      "youre-a-star-t",
-      "ogdub",
-      "the-floor",
-      "facilita",
-      "ambery",
-      "hardstyle-2",
-      "talk-of-the-town-t",
-      "betos-horns-t",
-      "winny-t",
-      "icey",
-      "feisty",
-      "solo",
-      "i-luv-u"
-    ]
-  },
-  {
-    "id": "talk-of-the-town",
-    "title": "Talk of the Town",
-    "kind": "single",
-    "date": "2025",
-    "with": [
-      "sammy-virji",
-      "reggie"
-    ],
-    "cover": "https://i.scdn.co/image/ab67616d00001e02230ac2e6b2aed68a8f8373fe",
-    "story": "Also released as a standalone single; on Spotify with its own cover.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/7qjrNDFT178bazNZiASRBU",
-      "youtube": ""
-    },
-    "source": "Wikipedia / Spotify",
-    "verified": true,
-    "tracks": [
-      "talk-of-the-town-t"
+      "21-years",
+      "victory-lap"
     ]
   },
   {
     "id": "sexy-magic",
-    "title": "Sexy Magic (from GTA VI: The Album)",
+    "title": "Sexy Magic (from Grand Theft Auto VI: The Album)",
     "kind": "feature",
-    "date": "",
+    "date": "2026",
     "with": [
       "ca7riel-paco",
-      "pinkpantheress"
+      "pinkpantheress",
+      "etienne-de-crecy"
     ],
     "cover": "https://i.scdn.co/image/ab67616d00001e02428173abda5ff463c0a8c27d",
     "story": "A soundtrack single credited to four acts, including Fred. Not one of his own albums.",
@@ -391,51 +521,15 @@
       "spotify": "https://open.spotify.com/album/0CkBYPmr1j7EEWSQMHDBLg",
       "youtube": ""
     },
-    "source": "Spotify",
-    "verified": false,
-    "tracks": []
-  },
-  {
-    "id": "lights-burn-dimmer",
-    "title": "Lights Burn Dimmer",
-    "kind": "single",
-    "date": "",
-    "with": [
-      "jamie-t"
-    ],
-    "cover": "https://i.scdn.co/image/ab67616d00001e02f890bbb2cc4c116ea0c8b87a",
-    "story": "Year and background still to add.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/0OrWX0oW2b94MfnA1dSeov",
-      "youtube": ""
-    },
-    "source": "Spotify",
-    "verified": false,
-    "tracks": []
-  },
-  {
-    "id": "ten",
-    "title": "ten",
-    "kind": "single",
-    "date": "",
-    "with": [
-      "jozzy"
-    ],
-    "cover": "https://i.scdn.co/image/ab67616d00001e02bcf3b3664ace77b5cd718d1f",
-    "story": "Year and background still to add.",
-    "links": {
-      "spotify": "https://open.spotify.com/album/0GuEvq4vzB9QqUaU8lVL0F",
-      "youtube": ""
-    },
-    "source": "Spotify",
-    "verified": false,
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
     "tracks": []
   },
   {
     "id": "nine-months",
-    "title": "9 months & 50 hours",
-    "kind": "album",
-    "date": "",
+    "title": "9 Months & 50 Hours",
+    "kind": "mixtape",
+    "date": "2026-07-31",
     "with": [
       "latin-mafia"
     ],
@@ -445,27 +539,23 @@
       "spotify": "https://open.spotify.com/album/4HZ3fF1dwSZLwztlLwoDYA",
       "youtube": ""
     },
-    "source": "Spotify only",
-    "verified": false,
-    "tracks": []
-  },
-  {
-    "id": "gang",
-    "title": "GANG / Don't Judge Me",
-    "kind": "single",
-    "date": "2020",
-    "with": [
-      "headie-one",
-      "fka-twigs"
-    ],
-    "cover": "",
-    "story": "His project with Headie One. Gang and Don't Judge Me (with FKA twigs) both got Ivor Novello nominations. Exact year still to check.",
-    "links": {
-      "spotify": "",
-      "youtube": ""
-    },
-    "source": "Wikipedia",
-    "verified": false,
-    "tracks": []
+    "source": "Wikipedia discography / Spotify",
+    "verified": true,
+    "tracks": [
+      "hey-hey",
+      "alvafro",
+      "bonita",
+      "benjy-chord",
+      "cmon-latin-mafia-and-fred-edit",
+      "quiereme",
+      "casino143-rue-de-la-fortuna-remix",
+      "film-scene-soundtrack",
+      "open-eye-signal-under-the-fabric",
+      "piensas-en-mi",
+      "halo",
+      "te-estoy-correteando",
+      "mabe",
+      "i-wish-it-wasnt"
+    ]
   }
 ]

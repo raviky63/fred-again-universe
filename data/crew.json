@@ -1,0 +1,172 @@
+[
+  {
+    "id": "loose",
+    "name": "LOOSE (Lucy Hickling)",
+    "role": "Creative director",
+    "bio": "Fred's creative director and tour photographer. Directed the videos for Clara and places to be, co-directed stayinit, and filmed the early Actual Life videos.",
+    "links_to": [
+      "clara-the-night-is-dark",
+      "places-to-be",
+      "stayinit",
+      "julia-deep-diving",
+      "la-coliseum-2024"
+    ],
+    "photo": "",
+    "photo_credit": "",
+    "source": "onepointfour.co; Rolling Stone; shots.net; Instagram",
+    "verified": true
+  },
+  {
+    "id": "theo-batterham",
+    "name": "Theo Batterham",
+    "role": "Photographer",
+    "bio": "Has been photographing Fred's world for about five years, from the 2021 Mixmag cover shoot to the USB002 residencies and the first Asia shows.",
+    "links_to": [
+      "usb002-nyc-residency",
+      "asia-2025",
+      "usb002-london-residency"
+    ],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Milk Studios / The Agents Club; DJ Mag; Instagram (17 tags)",
+    "verified": true
+  },
+  {
+    "id": "charlie-hutchins",
+    "name": "Charlie Hutchins",
+    "role": "Camera / film",
+    "bio": "Behind the camera on early videos (2021), the fan-made Hannah (the sun) video, and a film-camera photo series from the first Asia shows.",
+    "links_to": [
+      "hannah-the-sun",
+      "asia-2025"
+    ],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Instagram (2021-05-04, 2021-10-21, 2025-07-25)",
+    "verified": true
+  },
+  {
+    "id": "donny-dop",
+    "name": "Donny Dop",
+    "role": "Camera",
+    "bio": "Filmed the Julia video (2020) and the 2021 Actual Life videos with LOOSE.",
+    "links_to": [
+      "julia-deep-diving"
+    ],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Instagram",
+    "verified": true
+  },
+  {
+    "id": "jamie-tinsley",
+    "name": "Jamie Tinsley",
+    "role": "Front-of-house sound",
+    "bio": "Runs the sound at all of Fred's live shows.",
+    "links_to": [
+      "la-coliseum-2024"
+    ],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Rolling Stone; TPi Magazine",
+    "verified": true
+  },
+  {
+    "id": "matt-pittman",
+    "name": "Matt Pittman",
+    "role": "Production & lighting designer",
+    "bio": "Production and lighting design for the live show.",
+    "links_to": [],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Visual Endeavors",
+    "verified": true
+  },
+  {
+    "id": "grant-draper",
+    "name": "Grant Draper",
+    "role": "Tour director",
+    "bio": "Tour director.",
+    "links_to": [],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Visual Endeavors",
+    "verified": true
+  },
+  {
+    "id": "dermot-lynch",
+    "name": "Dermot Lynch",
+    "role": "Production manager",
+    "bio": "Production manager on tour.",
+    "links_to": [],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Visual Endeavors",
+    "verified": true
+  },
+  {
+    "id": "ed-warren",
+    "name": "Ed Warren",
+    "role": "Lighting & lasers",
+    "bio": "Designed the lighting and lasers for the Skrillex / Fred / Four Tet Madison Square Garden rave.",
+    "links_to": [
+      "msg-2023"
+    ],
+    "photo": "",
+    "photo_credit": "",
+    "source": "EDM.com interview",
+    "verified": true
+  },
+  {
+    "id": "explorers-club",
+    "name": "Explorers Club (Aaron Skipper)",
+    "role": "Tour identity design",
+    "bio": "LA studio behind the USB002 tour identity, built so fans could remix it themselves.",
+    "links_to": [
+      "usb",
+      "usb002-london-residency"
+    ],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Hypebot; Creative Bloq",
+    "verified": true
+  },
+  {
+    "id": "rubberband",
+    "name": "rubberband. (Jason Sondock & Simon Davis)",
+    "role": "Music video directors",
+    "bio": "Directed the 2026 trilogy of black-and-white slow-motion videos, including Lights Burn Dimmer.",
+    "links_to": [
+      "lights-burn-dimmer",
+      "scared"
+    ],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Promonews; Hero Magazine; shots",
+    "verified": true
+  },
+  {
+    "id": "2ms-studio",
+    "name": "2ms studio",
+    "role": "Live visuals",
+    "bio": "Worked with Fred on the first live show from February 2020 and the Angie video.",
+    "links_to": [
+      "angie-i-ve-been-lost"
+    ],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Creative Commission; Instagram",
+    "verified": true
+  },
+  {
+    "id": "boris-acket",
+    "name": "Boris Acket",
+    "role": "Kinetic installation artist",
+    "bio": "Made the moving kinetic systems for a recent Fred tour.",
+    "links_to": [],
+    "photo": "",
+    "photo_credit": "",
+    "source": "Hypebeast",
+    "verified": true
+  }
+]

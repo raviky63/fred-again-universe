@@ -1,8 +1,8 @@
 // The Fred again.. Universe — reads the data/ folder and draws the web.
-const COLORS = {fred:"#ff5a36", artist:"#7cc6ff", album:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff"};
-const LABELS = {artist:"Artists", album:"Albums", single:"Singles", track:"Tracks", feature:"Features", event:"Moments"};
-const KIND_NAME = {artist:"Artist", album:"Album", single:"Single / collab", feature:"Feature", track:"Track", event:"Moment", fred:"The centre"};
-const FILES = ["meta","center","artists","releases","tracks","events"];
+const COLORS = {fred:"#ff5a36", artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", merch:"#d7ff5e"};
+const LABELS = {artist:"Artists", crew:"Crew", album:"Albums & EPs", single:"Singles", track:"Tracks", feature:"Features", event:"Shows & sets", merch:"Merch"};
+const KIND_NAME = {artist:"Artist", crew:"Crew", album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single / collab", feature:"Feature", track:"Track", event:"Show / moment", mix:"DJ mix / radio", upcoming:"Upcoming show", merch:"Merch", fred:"The centre"};
+const FILES = ["meta","center","artists","releases","tracks","events","crew","merch"];
 const state = {hidden:new Set(), year:"", selected:null, query:"", focus:null};
 
 const hue = s => { let h=0; for (const c of s) h=(h*31+c.charCodeAt(0))%360; return h; };
@@ -25,13 +25,16 @@ function build(data){
 
   add({id:c.id, type:"fred", name:c.name, raw:c, r:46, img:c.photo});
   data.artists.forEach(a => add({id:a.id, type:"artist", name:a.name, raw:a, r:13, img:a.photo}));
-  data.releases.forEach(r => add({id:r.id, type:r.kind, name:r.title, raw:r, year:yearOf(r.date), s:r.kind==="album"?34:24, img:r.cover}));
+  data.releases.forEach(r => { const t=["ep","mixtape"].includes(r.kind)?"album":r.kind; add({id:r.id, type:t, kind:r.kind, name:r.title, raw:r, year:yearOf(r.date), s:r.kind==="album"?34:r.kind==="single"?22:28, img:r.cover}); });
   data.tracks.forEach(t => add({id:t.id, type:"track", name:t.title, raw:t, year:yearOf(t.date), s:13, img:t.cover}));
-  data.events.forEach(e => add({id:e.id, type:"event", name:e.title, raw:e, year:yearOf(e.date), s:16, img:e.thumbnail}));
+  data.events.forEach(e => add({id:e.id, type:"event", kind:e.kind, name:e.title, raw:e, year:yearOf(e.date), s:e.kind==="mix"?11:16, img:e.thumbnail}));
+  (data.crew||[]).forEach(c => add({id:c.id, type:"crew", name:c.name, raw:c, r:12, img:c.photo}));
+  (data.merch||[]).forEach(m => add({id:m.id, type:"merch", name:m.title, raw:m, year:yearOf(m.date), s:15, img:m.image}));
 
   data.releases.forEach(r => { link(c.id, r.id, true); (r.with||[]).forEach(w=>link(r.id,w)); (r.tracks||[]).forEach(t=>link(r.id,t)); });
   data.tracks.forEach(t => (t.with||[]).forEach(w=>link(t.id,w)));
   data.events.forEach(e => { link(c.id, e.id, true); (e.with||[]).forEach(w=>link(e.id,w)); (e.tracks||[]).forEach(t=>link(e.id,t)); });
+  [...(data.crew||[]), ...(data.merch||[])].forEach(x => { const l=(x.links_to||[]).filter(i=>byId[i]); if(!l.length) link(c.id, x.id, true); l.forEach(i=>link(x.id,i)); });
 
   const nb = {};
   links.forEach(l => { (nb[l.source]??=new Set()).add(l.target); (nb[l.target]??=new Set()).add(l.source); });
@@ -43,7 +46,7 @@ function build(data){
   const chips=document.getElementById("chips");
   Object.entries(LABELS).forEach(([k,label])=>{
     const el=document.createElement("div"); el.className="chip";
-    const shape = k==="artist"?"border-radius:50%":k==="event"?"transform:rotate(45deg) scale(.8)":"border-radius:2px";
+    const shape = (k==="artist"||k==="crew")?"border-radius:50%":k==="event"?"transform:rotate(45deg) scale(.8)":"border-radius:2px";
     el.innerHTML=`<i style="background:${COLORS[k]};${shape}"></i>${label}`;
     el.onclick=()=>{ state.hidden.has(k)?state.hidden.delete(k):state.hidden.add(k); el.classList.toggle("off"); refresh(); };
     chips.appendChild(el);
@@ -52,7 +55,9 @@ function build(data){
     <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="${COLORS.artist}"/></svg>Artist / person</div>
     <div><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="1" fill="${COLORS.album}"/></svg>Release (cover)</div>
     <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" rx="1" fill="${COLORS.track}"/></svg>Track</div>
-    <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" fill="#fff" transform="rotate(45 8 8)"/></svg>Moment</div>
+    <div><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="${COLORS.crew}"/></svg>Crew</div>
+    <div><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" fill="#fff" transform="rotate(45 8 8)"/></svg>Show / set</div>
+    <div><svg viewBox="0 0 16 16"><polygon points="13,8 10.5,12.3 5.5,12.3 3,8 5.5,3.7 10.5,3.7" fill="${COLORS.merch}"/></svg>Merch</div>
     <div><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="1" fill="none" stroke="#aaa" stroke-dasharray="2 2"/></svg>Still to verify</div>`;
   const yearSel=document.getElementById("year");
   [...new Set(nodes.map(n=>n.year).filter(Boolean))].sort().forEach(y=>yearSel.insertAdjacentHTML("beforeend",`<option>${y}</option>`));
@@ -101,7 +106,13 @@ function build(data){
       g.append("text").attr("text-anchor","middle").attr("dy","1.1em").attr("font-family","Space Grotesk").attr("font-weight",700).attr("font-size",15).attr("fill","#000").text("again..");
       photo(g,d,cp=>cp.append("circle").attr("r",d.r));
       g.append("circle").attr("r",d.r).attr("fill","none").attr("stroke",COLORS.fred).attr("stroke-width",3);
-    } else if (d.type==="artist"){
+    } else if (d.type==="merch"){
+      const s=d.s, pts=[0,1,2,3,4,5].map(i=>{const a=Math.PI/3*i+Math.PI/6; return `${(Math.cos(a)*s*.62).toFixed(1)},${(Math.sin(a)*s*.62).toFixed(1)}`}).join(" ");
+      g.append("polygon").attr("points",pts).attr("fill","#1a1f0c");
+      photo(g,d,cp=>cp.append("polygon").attr("points",pts));
+      g.append("polygon").attr("points",pts).attr("fill","none").attr("stroke",col).attr("stroke-width",1.8);
+      g.append("text").attr("text-anchor","middle").attr("y",s*.62+11).attr("font-size",10).attr("fill",col).text(shortTitle(d.name));
+    } else if (d.type==="artist" || d.type==="crew"){
       g.append("circle").attr("r",d.r).attr("fill","#0f1620");
       g.append("text").attr("text-anchor","middle").attr("dy",".35em").attr("font-size",Math.max(9,d.r*.7)).attr("font-weight",500).attr("fill",col).text(initials(d.name));
       photo(g,d,cp=>cp.append("circle").attr("r",d.r));
@@ -134,7 +145,7 @@ function build(data){
       .strength(l=>l.main?.2:.6))
     .force("charge",d3.forceManyBody().strength(d=>d.type==="fred"?-900:d.type==="track"?-70:d.type==="artist"?-150:-240))
     .force("collide",d3.forceCollide().radius(d=>(d.r||d.s*.75)+9))
-    .force("radial",d3.forceRadial(d=>({artist:380,event:280,track:300}[d.type]||200),0,0).strength(.1));
+    .force("radial",d3.forceRadial(d=>({artist:420,crew:330,event:560,track:300,merch:360}[d.type]||220),0,0).strength(.1));
   byId[c.id].fx=0; byId[c.id].fy=0;
   sim.on("tick",()=>{
     linkSel.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
@@ -219,7 +230,7 @@ function build(data){
     state.selected=id; highlight(id||state.focus);
     if (!id){ panel.classList.remove("open"); return; }
     const n=byId[id], r=n.raw, col=COLORS[n.type]||COLORS.fred;
-    let h=`<div class="kind" style="color:${col}">${KIND_NAME[n.type]||n.type}</div><h2>${esc(n.name)}</h2>`;
+    let h=`<div class="kind" style="color:${col}">${KIND_NAME[n.kind]||KIND_NAME[n.type]||n.type}</div><h2>${esc(n.name)}</h2>`;
     if (n.type==="fred"){
       h+=hero(n)+`<div class="sub">${esc(r.real_name)} · born ${esc(r.born)}</div><p class="story">${esc(r.bio)}</p><p class="story">${esc(r.story)}</p>
         <div class="section"><h3>Awards</h3><ul class="awards">${r.awards.map(a=>`<li>${esc(a)}</li>`).join("")}</ul></div>`;
@@ -229,20 +240,31 @@ function build(data){
       if (rel.length) h+=`<div class="section"><h3>With Fred on</h3>${pills(rel)}</div>`;
       if (ev.length) h+=`<div class="section"><h3>On stage together</h3>${pills(ev)}</div>`;
       if (r.photo_credit) h+=`<div class="src">Photo: ${esc(r.photo_credit)}</div>`;
+    } else if (n.type==="crew"){
+      h+=hero(n)+`<div class="sub">${esc(r.role)}</div><p class="story">${esc(r.bio)}</p>`;
+      const w=linksOf(id); if (w.length) h+=`<div class="section"><h3>Worked on</h3>${pills(w)}</div>`;
+    } else if (n.type==="merch"){
+      h+=hero(n)+`<div class="sub">${esc(r.date)}</div><p class="story">${esc(r.story)}</p>`;
+      const w=linksOf(id); if (w.length) h+=`<div class="section"><h3>Tied to</h3>${pills(w)}</div>`;
     } else if (n.type==="event"){
-      h+=hero(n)+`<div class="sub">${esc(r.date)} · ${esc(r.location)}</div><p class="story">${esc(r.story)}</p>`;
+      h+=hero(n)+`<div class="sub">${esc(r.date)} · ${esc(r.location)}</div>${r.story?`<p class="story">${esc(r.story)}</p>`:""}`;
+      if (r.tracklist?.length) h+=`<div class="section"><h3>Tracklist</h3><ol class="awards">${r.tracklist.map(t=>`<li>${esc(t)}</li>`).join("")}</ol></div>`;
+      if (r.tracklist_link) h+=`<div class="section links"><a href="${esc(r.tracklist_link)}" target="_blank" rel="noopener">Full tracklist ↗</a></div>`;
+      const cw=ofType(id,["crew"]); if (cw.length) h+=`<div class="section"><h3>Crew</h3>${pills(cw)}</div>`;
       if (r.with?.length) h+=`<div class="section"><h3>On stage with</h3>${pills(r.with)}</div>`;
       if (r.tracks?.length) h+=`<div class="section"><h3>Tracks tied to this moment</h3>${pills(r.tracks)}</div>`;
       h+=media(r.media);
     } else if (n.type==="track"){
-      h+=`<div class="sub">${esc(r.date||"Date to add")}</div>`;
+      h+=(n.img?hero(n):"")+`<div class="sub">${esc(r.date||"Date to add")}</div>${r.story?`<p class="story">${esc(r.story)}</p>`:""}`;
       h+=`<div class="section"><h3>Appears on</h3>${pills(r.releases||[])}</div>`;
       if (r.with?.length) h+=`<div class="section"><h3>With</h3>${pills(r.with)}</div>`;
       const ev=ofType(id,["event"]); if (ev.length) h+=`<div class="section"><h3>Moments</h3>${pills(ev)}</div>`;
+      const cw=ofType(id,["crew"]); if (cw.length) h+=`<div class="section"><h3>Crew</h3>${pills(cw)}</div>`;
     } else {
       h+=hero(n)+`<div class="sub">${esc(r.date||"Date to add")}</div><p class="story">${esc(r.story)}</p>`;
       if (r.with?.length) h+=`<div class="section"><h3>Featuring</h3>${pills(r.with)}</div>`;
       if (r.tracks?.length) h+=`<div class="section"><h3>Tracks</h3>${pills(r.tracks)}</div>`;
+      const mm=ofType(id,["merch"]); if (mm.length) h+=`<div class="section"><h3>Merch</h3>${pills(mm)}</div>`;
     }
     const L=r.links||{};
     const ls=[["Spotify",L.spotify],["YouTube",L.youtube],["Instagram",L.instagram],["Website",L.website]].filter(x=>x[1]);

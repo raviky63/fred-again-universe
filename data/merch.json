@@ -1,0 +1,97 @@
+[
+  {
+    "id": "merch-store-2022",
+    "title": "First merch store + Actual Life 2 vinyl",
+    "date": "2022-03-14",
+    "story": "Clothing and the Actual Life 2 vinyl went on sale.",
+    "links_to": [
+      "actual-life-2"
+    ],
+    "image": "",
+    "source": "Instagram",
+    "verified": true
+  },
+  {
+    "id": "tiny-desk-vinyl",
+    "title": "Tiny Desk vinyl",
+    "date": "2023-12-28",
+    "story": "A very limited vinyl run of the full NPR Tiny Desk set.",
+    "links_to": [
+      "tiny-desk-2023"
+    ],
+    "image": "",
+    "source": "Instagram",
+    "verified": true
+  },
+  {
+    "id": "usb-vol1-vinyl",
+    "title": "USB Vol. 1 vinyl",
+    "date": "2024-04-10",
+    "story": "Pre-order of the first USB collection on vinyl.",
+    "links_to": [
+      "usb"
+    ],
+    "image": "",
+    "source": "Instagram",
+    "verified": true
+  },
+  {
+    "id": "mschf-cloud-tee",
+    "title": "MSCHF x Fred again.. Cloud Tee",
+    "date": "2024-10",
+    "story": "A plain white tee that reveals a blue sky with clouds in sunlight, a nod to the ten days cover.",
+    "links_to": [
+      "ten-days"
+    ],
+    "image": "",
+    "source": "Hypebeast",
+    "verified": true
+  },
+  {
+    "id": "irl-vinyl-series",
+    "title": "IRL vinyl series",
+    "date": "2024-11-14",
+    "story": "A series of limited vinyl runs.",
+    "links_to": [],
+    "image": "",
+    "source": "Instagram",
+    "verified": true
+  },
+  {
+    "id": "usb002-usb-stick",
+    "title": "Handmade 128GB USB stick",
+    "date": "2025-12-03",
+    "story": "A handmade USB stick made for the USB002 tour.",
+    "links_to": [
+      "usb"
+    ],
+    "image": "",
+    "source": "Instagram",
+    "verified": true
+  },
+  {
+    "id": "usb002-vinyl",
+    "title": "USB002 vinyl",
+    "date": "2025-12-16",
+    "story": "The USB002 collection on vinyl.",
+    "links_to": [
+      "usb"
+    ],
+    "image": "",
+    "source": "Instagram; shop.fredagain.com",
+    "verified": true
+  },
+  {
+    "id": "cpfm-usb002",
+    "title": "Cactus Plant Flea Market x USB002",
+    "date": "2026-02-28",
+    "story": "Tour merch with CPFM: puff prints, green jerseys, retro desktop graphics and city pieces like a 101010 New York hoodie.",
+    "links_to": [
+      "usb002-london-residency",
+      "usb002-nyc-residency"
+    ],
+    "image": "",
+    "source": "Complex; Hypebeast",
+    "verified": true
+  }
+]

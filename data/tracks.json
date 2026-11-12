@@ -1,77 +1,1627 @@
 [
   {
-    "id": "danielle",
-    "title": "Danielle (smile on my face)",
+    "id": "adam-interlude",
+    "title": "Adam (interlude)",
     "releases": [
-      "actual-life-3"
+      "actual-life"
     ],
-    "date": "2022",
+    "date": "2021-04-16",
     "with": [],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
-    "id": "bleu",
+    "id": "angie-i-ve-been-lost",
+    "title": "Angie (i've been lost)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [
+      "angie-mcmahon"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true,
+    "story": "Angie McMahon, who sings here in 2020, came back for light dark light in 2024."
+  },
+  {
+    "id": "angie-interlude",
+    "title": "Angie (interlude)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "april-14th-2020",
+    "title": "April 14th 2020",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "big-hen-steal-my-joy",
+    "title": "Big Hen (steal my joy)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "carlos-make-it-thru",
+    "title": "Carlos (make it thru)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "december-17th-2020",
+    "title": "December 17th 2020",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "dermot-see-yourself-in-my-eyes",
+    "title": "Dermot (see yourself in my eyes)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [
+      "dermot-kennedy"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "hackney-interlude",
+    "title": "Hackney (interlude)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "julia-deep-diving",
+    "title": "Julia (deep diving)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "kyle-i-found-you",
+    "title": "Kyle (i found you)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "lydia-please-make-it-better",
+    "title": "Lydia (please make it better)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "marea-we-ve-lost-dancing",
+    "title": "Marea (we've lost dancing)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [
+      "the-blessed-madonna"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true,
+    "story": "A lockdown song about missing the dance floor. It later appeared in the Palme d'Or winner Triangle of Sadness."
+  },
+  {
+    "id": "marnie-wish-i-had-u",
+    "title": "Marnie (wish i had u)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "me-heavy",
+    "title": "Me (heavy)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "sabrina-i-am-a-party",
+    "title": "Sabrina (i am a party)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "yasminah-see-your-face-again",
+    "title": "Yasminah (see your face again)",
+    "releases": [
+      "actual-life"
+    ],
+    "date": "2021-04-16",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "billie-interlude",
+    "title": "Billie (interlude)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "billie-loving-arms",
+    "title": "Billie (loving arms)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "carlos-interlude",
+    "title": "Carlos (interlude)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "catrin-the-city",
+    "title": "Catrin (the city)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "faisal-envelops-me",
+    "title": "Faisal (envelops me)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "february-2nd-2021",
+    "title": "February 2nd 2021",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "gigi-what-you-went-through",
+    "title": "Gigi (what you went through)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "hannah-the-sun",
+    "title": "Hannah (the sun)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true,
+    "story": "Its video was made from clips fans sent in from 96 countries."
+  },
+  {
+    "id": "kahan-last-year",
+    "title": "Kahan (last year)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [
+      "kodak-black"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "marco-and-everyone",
+    "title": "Marco (and everyone)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "mollie-hear-your-name",
+    "title": "Mollie (hear your name)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "october-15th-2021",
+    "title": "October 15th 2021",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "roze-forgive",
+    "title": "Roze (forgive)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [
+      "roze"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "tanya-maybe-life",
+    "title": "Tanya (maybe life)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "tate-how-i-feel",
+    "title": "Tate (how i feel)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "tayla-every-night",
+    "title": "Tayla (every night)",
+    "releases": [
+      "actual-life-2"
+    ],
+    "date": "2021-11-19",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "lights-out",
+    "title": "Lights Out",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022",
+    "with": [
+      "romy",
+      "haai"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "feisty-oppidan-remix",
+    "title": "..FEISTY - Oppidan remix",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-01-18",
+    "with": [
+      "oppidan",
+      "bia"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "beto-s-horns-daphni-remix",
+    "title": "Beto's Horns - Daphni remix",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-01-18",
+    "with": [
+      "daphni",
+      "ca7riel-paco"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "hardstyle-2-lou-nour-remix",
+    "title": "HARDSTYLE 2 - Lou Nour remix",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-01-18",
+    "with": [
+      "lou-nour",
+      "sicaria",
+      "kettama",
+      "shady-nasty"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "itsnotreeaallllllll",
+    "title": "ItsNotREEAALLLLLLLL",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-01-18",
+    "with": [
+      "duoteque",
+      "orion-sun"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "winny-lil-silva-remix",
+    "title": "Winny - Lil Silva remix",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-01-18",
+    "with": [
+      "lil-silva",
+      "sammy-virji",
+      "winny"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "flex-fm-freddit",
+    "title": "flex fm (freddit)",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-01-18",
+    "with": [
+      "joy-orbison",
+      "lil-yachty",
+      "future",
+      "playboi-carti"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "places-to-be-messie-remix",
+    "title": "places to be - MESSIE remix",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-01-18",
+    "with": [
+      "anderson-paak",
+      "chika",
+      "messie"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "solo-kettama-remix",
+    "title": "solo - KETTAMA remix",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-01-18",
+    "with": [
+      "kettama",
+      "blanco"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "the-floor-fred-remix",
+    "title": "the floor - fred remix",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-01-18",
+    "with": [
+      "skin-on-skin",
+      "beam"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "admit-it-u-dont-want-2",
+    "title": "Admit It (u dont want 2)",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-02-10",
+    "with": [
+      "india-jordan"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "jungle",
+    "title": "Jungle",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-06-29",
+    "with": [],
+    "cover": "https://i.scdn.co/image/ab67616d00001e0235bae471c1b8b904cd293052",
+    "links": {
+      "spotify": "https://open.spotify.com/album/3iDLGLmecmdkmdxYmuol5d",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "turn-on-the-lights-again-feat-future",
+    "title": "Turn On The Lights again.. (feat. Future)",
+    "releases": [
+      "usb"
+    ],
+    "date": "2022-07-29",
+    "with": [
+      "swedish-house-mafia",
+      "future"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true,
+    "story": "Released the same week as his Boiler Room set; built on Future's 2012 song."
+  },
+  {
+    "id": "berwyn-all-that-i-got-is-you",
+    "title": "Berwyn (all that i got is you)",
+    "releases": [
+      "actual-life-3"
+    ],
+    "date": "2022-10-28",
+    "with": [
+      "berwyn",
+      "dermot-kennedy",
+      "guante"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "bleu-better-with-time",
     "title": "Bleu (better with time)",
     "releases": [
       "actual-life-3"
     ],
-    "date": "2022",
-    "with": [],
-    "links": {
-      "spotify": "",
-      "youtube": ""
-    },
-    "source": "Wikipedia",
-    "verified": true
-  },
-  {
-    "id": "kammy",
-    "title": "Kammy (like I do)",
-    "releases": [
-      "actual-life-3"
+    "date": "2022-10-28",
+    "with": [
+      "yung-bleu"
     ],
-    "date": "2022",
-    "with": [],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
-    "id": "delilah-track",
-    "title": "Delilah (pull me out of this)",
-    "releases": [
-      "actual-life-3"
-    ],
-    "date": "2022",
-    "with": [],
-    "links": {
-      "spotify": "",
-      "youtube": ""
-    },
-    "source": "Wikipedia",
-    "verified": true
-  },
-  {
-    "id": "clara",
+    "id": "clara-the-night-is-dark",
     "title": "Clara (the night is dark)",
     "releases": [
       "actual-life-3"
     ],
-    "date": "2022",
-    "with": [],
+    "date": "2022-10-28",
+    "with": [
+      "clara-ward"
+    ],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "danielle-smile-on-my-face",
+    "title": "Danielle (smile on my face)",
+    "releases": [
+      "actual-life-3"
+    ],
+    "date": "2022-10-28",
+    "with": [
+      "070-shake"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "delilah-pull-me-out-of-this",
+    "title": "Delilah (pull me out of this)",
+    "releases": [
+      "actual-life-3"
+    ],
+    "date": "2022-10-28",
+    "with": [
+      "delilah-montagu"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "eyelar-shutters",
+    "title": "Eyelar (shutters)",
+    "releases": [
+      "actual-life-3"
+    ],
+    "date": "2022-10-28",
+    "with": [
+      "eyelar"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "january-1st-2022",
+    "title": "January 1st 2022",
+    "releases": [
+      "actual-life-3"
+    ],
+    "date": "2022-10-28",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "kammy-like-i-do",
+    "title": "Kammy (like i do)",
+    "releases": [
+      "actual-life-3"
+    ],
+    "date": "2022-10-28",
+    "with": [
+      "kamille"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "kelly-end-of-a-nightmare",
+    "title": "Kelly (end of a nightmare)",
+    "releases": [
+      "actual-life-3"
+    ],
+    "date": "2022-10-28",
+    "with": [
+      "wet"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "mustafa-time-to-move-you",
+    "title": "Mustafa (time to move you)",
+    "releases": [
+      "actual-life-3"
+    ],
+    "date": "2022-10-28",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "nathan-still-breathing",
+    "title": "Nathan (still breathing)",
+    "releases": [
+      "actual-life-3"
+    ],
+    "date": "2022-10-28",
+    "with": [
+      "nathan-archie"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "september-9th-2022",
+    "title": "September 9th 2022",
+    "releases": [
+      "actual-life-3"
+    ],
+    "date": "2022-10-28",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "winnie-end-of-me",
+    "title": "Winnie (end of me)",
+    "releases": [
+      "actual-life-3"
+    ],
+    "date": "2022-10-28",
+    "with": [
+      "winnie-raeder"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "adore-u",
+    "title": "adore u",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2023",
+    "with": [
+      "obongjayar"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "rumble",
+    "title": "Rumble",
+    "releases": [
+      "usb"
+    ],
+    "date": "2023-01-04",
+    "with": [
+      "skrillex",
+      "flowdan"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true,
+    "story": "Won the Grammy for Best Dance/Electronic Recording."
+  },
+  {
+    "id": "baby-again",
+    "title": "Baby again..",
+    "releases": [
+      "usb"
+    ],
+    "date": "2023-03-17",
+    "with": [
+      "skrillex",
+      "four-tet"
+    ],
+    "cover": "https://i.scdn.co/image/ab67616d00001e02479a2e72d1ae8abaf4178bb5",
+    "links": {
+      "spotify": "https://open.spotify.com/album/7J7redEXgOUEsUBXukhkUF",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "chest",
+    "title": "Chest",
+    "releases": [
+      "secret-life"
+    ],
+    "date": "2023-05-05",
+    "with": [
+      "brian-eno"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "cmon",
+    "title": "Cmon",
+    "releases": [
+      "secret-life"
+    ],
+    "date": "2023-05-05",
+    "with": [
+      "brian-eno"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "come-on-home",
+    "title": "Come On Home",
+    "releases": [
+      "secret-life"
+    ],
+    "date": "2023-05-05",
+    "with": [
+      "brian-eno"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "enough",
+    "title": "Enough",
+    "releases": [
+      "secret-life"
+    ],
+    "date": "2023-05-05",
+    "with": [
+      "brian-eno"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "follow",
+    "title": "Follow",
+    "releases": [
+      "secret-life"
+    ],
+    "date": "2023-05-05",
+    "with": [
+      "brian-eno"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "pause",
+    "title": "Pause",
+    "releases": [
+      "secret-life"
+    ],
+    "date": "2023-05-05",
+    "with": [
+      "brian-eno"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "radio",
+    "title": "Radio",
+    "releases": [
+      "secret-life"
+    ],
+    "date": "2023-05-05",
+    "with": [
+      "brian-eno"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "safety",
+    "title": "Safety",
+    "releases": [
+      "secret-life"
+    ],
+    "date": "2023-05-05",
+    "with": [
+      "brian-eno"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "secret",
+    "title": "Secret",
+    "releases": [
+      "secret-life"
+    ],
+    "date": "2023-05-05",
+    "with": [
+      "brian-eno"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "trying",
+    "title": "Trying",
+    "releases": [
+      "secret-life"
+    ],
+    "date": "2023-05-05",
+    "with": [
+      "brian-eno"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "ten",
+    "title": "ten",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2023-10-13",
+    "with": [
+      "jozzy"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "leavemealone",
+    "title": "leavemealone",
+    "releases": [
+      "usb"
+    ],
+    "date": "2023-12-08",
+    "with": [
+      "baby-keem"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "berwyngesaffneighbours",
+    "title": "BerwynGesaffNeighbours",
+    "releases": [
+      "usb"
+    ],
+    "date": "2024",
+    "with": [
+      "berwyn"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "stayinit",
+    "title": "stayinit",
+    "releases": [
+      "usb"
+    ],
+    "date": "2024-02-28",
+    "with": [
+      "lil-yachty",
+      "overmono"
+    ],
+    "cover": "https://i.scdn.co/image/ab67616d00001e02591a9aec98af75664276eecf",
+    "links": {
+      "spotify": "https://open.spotify.com/album/0DeGmYq33W6Svw1eTgnxDF",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "places-to-be",
+    "title": "places to be",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-05-31",
+    "with": [
+      "anderson-paak",
+      "chika"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "eight",
+    "title": ".eight",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "five",
+    "title": ".five",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "four",
+    "title": ".four",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "nine",
+    "title": ".nine",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "one",
+    "title": ".one",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "seven",
+    "title": ".seven",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "six",
+    "title": ".six",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "three",
+    "title": ".three",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "two",
+    "title": ".two",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "backseat",
+    "title": "backseat",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [
+      "the-japanese-house",
+      "scott-hardkiss"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "fear-less",
+    "title": "fear less",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [
+      "sampha"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "glow",
+    "title": "glow",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [
+      "duskus",
+      "four-tet",
+      "joy-anonymous",
+      "skrillex"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "i-saw-you",
+    "title": "i saw you",
+    "releases": [
+      "ten-days",
+      "secret-life"
+    ],
+    "date": "2024-09-06",
+    "with": [
+      "brian-eno"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "just-stand-there",
+    "title": "just stand there",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [
+      "soak"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "peace-u-need",
+    "title": "peace u need",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [
+      "joy-anonymous"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "where-will-i-be",
+    "title": "where will i be",
+    "releases": [
+      "ten-days"
+    ],
+    "date": "2024-09-06",
+    "with": [
+      "emmylou-harris"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
@@ -84,11 +1634,12 @@
     "with": [
       "angie-mcmahon"
     ],
+    "cover": "https://i.scdn.co/image/ab67616d00001e028017c1a5e9b88af1ef620047",
     "links": {
-      "spotify": "",
+      "spotify": "https://open.spotify.com/album/1IEciM4FXTPO7mdfKuOCIB",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
@@ -101,29 +1652,39 @@
     "with": [
       "john-martyn"
     ],
+    "cover": "https://i.scdn.co/image/ab67616d00001e028f1b9d4ecf5b3f01b0b41fa3",
     "links": {
-      "spotify": "",
+      "spotify": "https://open.spotify.com/album/7qKbSNVGjmSyprfPLGMG33",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
-    "id": "back-2-back",
-    "title": "Back 2 Back",
+    "id": "victory-lap",
+    "title": "Victory Lap",
     "releases": [
+      "usb",
       "skepta-fred"
     ],
-    "date": "2025-08",
+    "date": "2025-06-17",
     "with": [
-      "skepta"
+      "skepta",
+      "plaqueboymax",
+      "denzel-curry",
+      "hanumankind",
+      "that-mexican-ot",
+      "d-double-e",
+      "lyny"
     ],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
-    "verified": true
+    "source": "Spotify album tracklist",
+    "verified": true,
+    "story": "Grew out of a streamed studio session with PlaqueBoyMax. Followed by remixes adding Denzel Curry, Hanumankind, That Mexican OT, D Double E and LYNY."
   },
   {
     "id": "21-years",
@@ -135,28 +1696,50 @@
     "with": [
       "skepta"
     ],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
-    "id": "last-1s-left",
-    "title": "Last 1s Left",
+    "id": "back-2-back",
+    "title": "Back 2 Back",
     "releases": [
+      "usb",
       "skepta-fred"
     ],
     "date": "2025-08",
     "with": [
       "skepta"
     ],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "last-1s-left",
+    "title": "Last 1s Left",
+    "releases": [
+      "usb",
+      "skepta-fred"
+    ],
+    "date": "2025-08",
+    "with": [
+      "skepta"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
@@ -169,16 +1752,38 @@
     "with": [
       "skepta"
     ],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
-    "id": "youre-a-star-t",
-    "title": "You're a Star",
+    "id": "ok-ok",
+    "title": "OK OK",
+    "releases": [
+      "usb"
+    ],
+    "date": "2025-10",
+    "with": [
+      "danny-brown",
+      "beam",
+      "parisi",
+      "jpegmafia"
+    ],
+    "cover": "https://i.scdn.co/image/ab67616d00001e02dbd77ed6012bfa6573c72276",
+    "links": {
+      "spotify": "https://open.spotify.com/album/0d9SgHDCP04wphWMeEMArX",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "you-re-a-star",
+    "title": "you're a star",
     "releases": [
       "usb"
     ],
@@ -186,64 +1791,12 @@
     "with": [
       "amyl-and-the-sniffers"
     ],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
-    "verified": true
-  },
-  {
-    "id": "ogdub",
-    "title": "OGdub",
-    "releases": [
-      "usb"
-    ],
-    "date": "2025-10-10",
-    "with": [
-      "parisi",
-      "beam",
-      "danny-brown"
-    ],
-    "links": {
-      "spotify": "",
-      "youtube": ""
-    },
-    "source": "Wikipedia",
-    "verified": true
-  },
-  {
-    "id": "the-floor",
-    "title": "The Floor (Fred again.. Remix / Skin On Skin Remix)",
-    "releases": [
-      "usb"
-    ],
-    "date": "2025-10-17",
-    "with": [
-      "skin-on-skin"
-    ],
-    "links": {
-      "spotify": "",
-      "youtube": ""
-    },
-    "source": "Wikipedia",
-    "verified": true
-  },
-  {
-    "id": "facilita",
-    "title": "Facilita",
-    "releases": [
-      "usb"
-    ],
-    "date": "2025-10-24",
-    "with": [
-      "caribou"
-    ],
-    "links": {
-      "spotify": "",
-      "youtube": ""
-    },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
@@ -256,53 +1809,74 @@
     "with": [
       "floating-points"
     ],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "facilita",
+    "title": "Facilita",
+    "releases": [
+      "usb"
+    ],
+    "date": "2025-10-24",
+    "with": [
+      "caribou",
+      "menor-teteu"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
     "id": "hardstyle-2",
-    "title": "Hardstyle 2",
+    "title": "HARDSTYLE 2",
     "releases": [
       "usb"
     ],
-    "date": "2025-10-30",
+    "date": "2025-10-31",
     "with": [
       "kettama",
       "shady-nasty"
     ],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
-    "id": "talk-of-the-town-t",
+    "id": "talk-of-the-town",
     "title": "Talk of the Town",
     "releases": [
-      "usb",
-      "talk-of-the-town"
+      "usb"
     ],
     "date": "2025-10-31",
     "with": [
       "sammy-virji",
       "reggie"
     ],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
-    "id": "betos-horns-t",
-    "title": "Beto's Horns",
+    "id": "beto-s-horns-fred-remix",
+    "title": "Beto's Horns - fred remix",
     "releases": [
       "usb"
     ],
@@ -310,15 +1884,16 @@
     "with": [
       "ca7riel-paco"
     ],
+    "cover": "https://i.scdn.co/image/ab67616d00001e027cad32f23c5af8d22f184fab",
     "links": {
-      "spotify": "",
+      "spotify": "https://open.spotify.com/album/4CC0Q6wTtZ15OWHtNTGvnU",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
-    "id": "winny-t",
+    "id": "winny",
     "title": "Winny",
     "releases": [
       "usb"
@@ -328,33 +1903,17 @@
       "sammy-virji",
       "winny"
     ],
+    "cover": "https://i.scdn.co/image/ab67616d00001e02b33612692e5bfd24060e634b",
     "links": {
-      "spotify": "",
+      "spotify": "https://open.spotify.com/album/63ITryjqkiwjmk3GABslAj",
       "youtube": ""
     },
-    "source": "Wikipedia",
-    "verified": true
-  },
-  {
-    "id": "icey",
-    "title": "Icey..",
-    "releases": [
-      "usb"
-    ],
-    "date": "2025-11-28",
-    "with": [
-      "bia"
-    ],
-    "links": {
-      "spotify": "",
-      "youtube": ""
-    },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
     "id": "feisty",
-    "title": "Feisty..",
+    "title": "..FEISTY",
     "releases": [
       "usb"
     ],
@@ -362,11 +1921,30 @@
     "with": [
       "bia"
     ],
+    "cover": "https://i.scdn.co/image/ab67616d00001e0230963ea5204f1a9e17899430",
+    "links": {
+      "spotify": "https://open.spotify.com/album/4XZZAJujVu3Li8LiiNB6vk",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "icey",
+    "title": "ICEY..",
+    "releases": [
+      "usb"
+    ],
+    "date": "2025-11-28",
+    "with": [
+      "bia"
+    ],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
@@ -379,11 +1957,12 @@
     "with": [
       "blanco"
     ],
+    "cover": "https://i.scdn.co/image/ab67616d00001e02a558e977ecdbbe6e5a447795",
     "links": {
-      "spotify": "",
+      "spotify": "https://open.spotify.com/album/1FdXEZw2E4Z7HBsmhkV5E7",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
     "verified": true
   },
   {
@@ -396,11 +1975,308 @@
     "with": [
       "wallfacer"
     ],
+    "cover": "https://i.scdn.co/image/ab67616d00001e0211e3c1daf378abe0b819de9d",
+    "links": {
+      "spotify": "https://open.spotify.com/album/5TMeo9RZrBOvQXDXt8EFsm",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "te-estoy-correteando",
+    "title": "Te Estoy Correteando",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026",
+    "with": [
+      "latin-mafia"
+    ],
+    "cover": "",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia",
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "scared",
+    "title": "scared",
+    "releases": [
+      "usb"
+    ],
+    "date": "2026-01-23",
+    "with": [
+      "young-thug"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "lights-burn-dimmer",
+    "title": "Lights Burn Dimmer",
+    "releases": [
+      "usb"
+    ],
+    "date": "2026-02-13",
+    "with": [
+      "jamie-t"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "alvafro",
+    "title": "Alvafro",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "latin-mafia"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "bonita",
+    "title": "Bonita",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "latin-mafia"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "cmon-latin-mafia-and-fred-edit",
+    "title": "Cmon (LATIN MAFIA & Fred edit)",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "brian-eno",
+      "latin-mafia"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true,
+    "story": "A LATIN MAFIA edit of 'Cmon' from Secret Life, so Brian Eno shows up on a 2026 mixtape too."
+  },
+  {
+    "id": "film-scene-soundtrack",
+    "title": "Film Scene Soundtrack",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "latin-mafia",
+      "katzpascale"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "halo",
+    "title": "Halo",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "latin-mafia",
+      "lil-yachty"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "hey-hey",
+    "title": "Hey Hey",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "latin-mafia"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "i-wish-it-wasnt",
+    "title": "I wish it wasnt",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "latin-mafia"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "mabe",
+    "title": "Mabe",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "latin-mafia",
+      "mabe-fratti"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "open-eye-signal-under-the-fabric",
+    "title": "Open Eye Signal (under the fabric)",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "jon-hopkins"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "piensas-en-mi",
+    "title": "Piensas En Mi",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "latin-mafia"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "quiereme",
+    "title": "Quiereme",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "latin-mafia",
+      "bby"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "benjy-chord",
+    "title": "benjy chord",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "latin-mafia"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
+    "verified": true
+  },
+  {
+    "id": "casino143-rue-de-la-fortuna-remix",
+    "title": "casino143 (Rue De La Fortuna Remix)",
+    "releases": [
+      "nine-months"
+    ],
+    "date": "2026-07-31",
+    "with": [
+      "ivoxygen",
+      "latin-mafia",
+      "rue-de-la-fortuna"
+    ],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "source": "Spotify album tracklist",
     "verified": true
   }
 ]
