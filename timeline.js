@@ -119,6 +119,7 @@ function build(data){
         ${r.support?.length?`<div class="where">Support: ${r.support.map(esc).join(", ")}</div>`:""}${r.story?`<p class="story">${esc(r.story)}</p>`:""}${tracklist}
         ${(who.length||back.length||fwd.length||same.length)?`<div class="pills">${who.map(person).join("")}${back.map(x=>pill(x,"back")).join("")}${same.slice(0,8).map(x=>pill(x)).join("")}${fwd.map(x=>pill(x,"fwd")).join("")}</div>`:""}
         ${mini?"":`<div class="actions">${acts}</div>`}
+        <div class="more"></div>
       </article>`;
   }
 
@@ -199,31 +200,34 @@ function build(data){
 
   // ---------- click a card: details in a side panel ----------
   const dragMoved = () => false; // a drag never ends in a click (see the capture handler below)
-  const panel = document.getElementById("panel"), pbody = document.getElementById("pbody");
-  document.getElementById("pclose").onclick = () => panel.classList.remove("open");
-  addEventListener("keydown", e => { if (e.key === "Escape") panel.classList.remove("open"); });
-  function open(id){
-    const it = byId[id]; if (!it) return; const r = it.raw, e = eraOf(it.date), h = hue(id);
-    const n = [...(nb[id]||[])];
-    const who = n.filter(x => people[x]), linked = n.filter(x => byId[x]);
+  addEventListener("keydown", e => { if (e.key === "Escape") track.querySelectorAll(".item.open").forEach(x => open(x.id.slice(2))); });
+  // ---------- click a card: it moves away from the line and unfolds in place ----------
+  function details(id){
+    const it = byId[id], r = it.raw;
+    const n = [...(nb[id]||[])], linked = n.filter(x => byId[x]);
     const L = r.links||{};
     const ls = [["Spotify",L.spotify],["YouTube",L.youtube],["SoundCloud",L.soundcloud],["Instagram",L.instagram]].filter(x=>x[1]);
-    let html = `<div class="kind" style="color:${e.color}">${r.setting==="festival"?"Festival":NAME[it.kind]||it.kind} · ${esc(e.name)} era</div>
-      <h2>${esc(it.title)}</h2>
-      <div class="sub">${fmt(it.date)}${r.location&&r.location!==it.title?" · "+esc(r.location):""}${flags(r.country)}</div>
-      <div class="cover" style="background:linear-gradient(135deg,hsl(${h},55%,42%),hsl(${(h+50)%360},60%,18%))">${initials(it.title)}${it.img?`<img src="${esc(it.img)}" alt="" onerror="this.remove()">`:""}</div>
-      ${r.story||r.text?`<p>${esc(r.story||r.text)}</p>`:""}
-      ${r.part_of&&byId[r.part_of]?`<h3>Addition to</h3><div class="pills"><span class="pill" data-go="${r.part_of}">${esc(byId[r.part_of].title)}</span></div>`:""}
-      ${r.support?.length?`<h3>Support / opening</h3><p>${r.support.map(esc).join(", ")}</p><div class="src">${esc(r.support_source||"")}</div>`:""}
-      ${who.length?`<h3>With</h3><div class="pills">${who.map(x=>`<span class="pill" data-follow="${x}" style="color:${COLORS[people[x].type]}">${esc(people[x].name)}</span>`).join("")}</div>`:""}
-      ${linked.length?`<h3>Connected</h3><div class="pills">${linked.slice(0,30).map(x=>`<span class="pill" data-go="${x}">${byId[x].date?byId[x].date.slice(0,4)+" · ":""}${esc(byId[x].title.replace(/\s*\(.*\)$/,""))}</span>`).join("")}</div>`:""}
-      ${r.tracklist?.length?`<h3>Tracklist</h3><ol>${r.tracklist.map(t=>`<li>${esc(t)}</li>`).join("")}</ol>`:""}
-      ${ls.length?`<h3>Listen / watch</h3>${ls.map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${k} ↗</a>`).join("")}`:""}
-      <h3>Source</h3>${r.verified===false?`<span class="badge no">Still to verify</span>`:`<span class="badge ok">Verified</span>`}<div class="src">${esc(r.source||"")}</div>
-      ${it.kind!=="milestone"?`<p style="margin-top:16px"><a href="index.html#${id}">See its connections in the web →</a></p>`:""}`;
-    pbody.innerHTML = html; panel.classList.add("open"); panel.scrollTop = 0;
-    pbody.querySelectorAll("[data-go]").forEach(p => p.onclick = () => { go(p.dataset.go); open(p.dataset.go); });
-    pbody.querySelectorAll("[data-follow]").forEach(p => p.onclick = () => { panel.classList.remove("open"); state.follow = p.dataset.follow; render(); ride.scrollTo({left:0}); });
+    return `${r.support?.length?`<h4>Support / opening</h4><div class="mt">${r.support.map(esc).join(", ")}<div class="src">${esc(r.support_source||"")}</div></div>`:""}
+      ${r.part_of&&byId[r.part_of]?`<h4>Addition to</h4><div class="pills"><span class="pill" data-go="${r.part_of}">${esc(byId[r.part_of].title)}</span></div>`:""}
+      ${linked.length?`<h4>Connected</h4><div class="pills">${linked.slice(0,30).map(x=>`<span class="pill" data-go="${x}">${byId[x].date?byId[x].date.slice(0,4)+" · ":""}${esc(byId[x].title.replace(/\s*\(.*\)$/,""))}</span>`).join("")}</div>`:""}
+      ${r.tracklist?.length?`<h4>Tracklist</h4><ol>${r.tracklist.map(t=>`<li>${esc(t)}</li>`).join("")}</ol>`:""}
+      ${ls.length?`<h4>Listen / watch</h4><div class="mt">${ls.map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${k} ↗</a>`).join(" ")}</div>`:""}
+      <h4>Source</h4><div class="mt">${r.verified===false?`<span class="badge no">Still to verify</span>`:`<span class="badge ok">Verified</span>`} <span class="src">${esc(r.source||"")}</span></div>
+      ${it.kind!=="milestone"?`<div class="mt"><a href="index.html#${id}">See its connections in the web →</a></div>`:""}`;
+  }
+  function open(id){
+    const el = document.getElementById("t-"+id); if (!el) return;
+    const was = el.classList.contains("open");
+    track.querySelectorAll(".item.open").forEach(x => { x.classList.remove("open"); x.style.maxHeight=""; x.closest(".col").classList.remove("open"); });
+    if (was){ history.replaceState(null,"",location.pathname); return; }
+    const more = el.querySelector(".more");
+    more.innerHTML = details(id);
+    more.querySelectorAll("[data-go]").forEach(p => p.onclick = e => { e.stopPropagation(); go(p.dataset.go); setTimeout(()=>open(p.dataset.go), 650); });
+    el.classList.add("open"); el.closest(".col").classList.add("open"); el.scrollTop = 0;
+    const r = ride.getBoundingClientRect(), line = r.top + r.height/2, up = el.closest(".col").classList.contains("up");
+    el.style.maxHeight = Math.max(220, (up ? line - r.top : r.bottom - line) - 70) + "px";
+    const col = el.closest(".col"), left = col.offsetLeft + col.closest(".era").offsetLeft;
+    if (left < ride.scrollLeft + 40 || left + 400 > ride.scrollLeft + ride.clientWidth) ride.scrollTo({left: left - ride.clientWidth/2 + 190, behavior:"smooth"});
     history.replaceState(null, "", "#"+id);
   }
 

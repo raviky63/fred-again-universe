@@ -12,7 +12,7 @@ const TOURS = [
   ["USB002","2025-10-03","2026-02-27"]
 ];
 const STORY = ["actual-life","boiler-room-2022","actual-life-3","msg-2023","grammys-2024","la-coliseum-2024","ten-days","usb002-glasgow","bangalter-2026","nine-months"];
-const FILES = ["center","artists","releases","tracks","events","eras","merch"];
+const FILES = ["center","artists","releases","tracks","events","eras","merch","milestones"];
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const flagUrl = (cc,w=40) => `https://flagcdn.com/w${w}/${cc.toLowerCase()}.png`;
 const flagsHtml = cs => (cs||[]).map(cc=>`<img src="${flagUrl(cc)}" alt="${cc}" title="${cc}" style="height:11px;border-radius:2px;margin-left:5px;vertical-align:-1px">`).join("");
@@ -263,23 +263,45 @@ function build(D){
   }
   function goTo(id){ if(!all[id]) return; reveal(id); render(); select(id); setTimeout(()=>focusOn(id),500); setTimeout(()=>focusOn(id),1700); }
 
-  // ---------- story ----------
-  const steps=STORY.filter(id=>all[id]); let si=0;
-  const card=document.getElementById("story");
+  // ---------- story: the bridge between the timeline and the web ----------
+  // Three lengths, all built from the timeline data (releases, moments, milestones, shows with a story), always in time order.
+  const MS = D.milestones||[];
+  const stepOf = id => { const n=all[id], r=n.raw||{}; return {focus:id, title:n.type==="group"?n.label:n.name, date:r.date||"", era:n.era?.name, text:r.story||""}; };
+  const msStep = m => ({focus:m.release, title:m.title, date:m.date, era:all[m.release]?.era?.name, text:m.text});
+  const byDate = (a,b)=>(a.date||"").localeCompare(b.date||"");
+  const STORIES = {
+    short: () => STORY.filter(id=>all[id]).map(stepOf),
+    medium: () => [
+      ...D.releases.filter(r=>["album","mixtape"].includes(r.kind) && !r.part_of).map(r=>stepOf(r.id)),
+      ...MS.filter(m=>all[m.release]).map(msStep),
+      ...D.events.filter(e=>e.kind==="moment" || (e.story && (e.thumbnail || (e.with||[]).length>=2))).map(e=>stepOf(e.id))
+    ].sort(byDate),
+    long: () => [
+      ...D.releases.filter(r=>r.story && !/early soundcloud upload/i.test(r.story)).map(r=>stepOf(r.id)),
+      ...MS.filter(m=>all[m.release]).map(msStep),
+      ...D.events.filter(e=>e.story).map(e=>stepOf(e.id))
+    ].sort(byDate)
+  };
+  let steps=[], si=0;
+  const card=document.getElementById("story"), pick=document.getElementById("storyPick");
+  pick.querySelectorAll("[data-len]").forEach(b=>{ b.querySelector("small").textContent=`${STORIES[b.dataset.len]().length} stops`; });
   function step(){
-    const id=steps[si], n=all[id], r=n.raw||{};
-    reveal(id); expanded.add(id); render();
-    document.getElementById("sT").textContent=n.name;
-    document.getElementById("sD").textContent=[r.date, n.era?.name+" era"].filter(Boolean).join(" · ");
-    document.getElementById("sP").textContent=r.story||n.era?.note||"";
+    const st=steps[si], id=st.focus;
+    reveal(id); if(all[id].type!=="event") expanded.add(id); render();
+    document.getElementById("sT").textContent=st.title;
+    document.getElementById("sD").textContent=[st.date, st.era&&st.era+" era"].filter(Boolean).join(" · ");
+    document.getElementById("sP").textContent=st.text;
     document.getElementById("sN").textContent=`${si+1} / ${steps.length}`;
-    hover=id; labels();
+    document.getElementById("sTl").href="timeline.html#"+id;
+    selected=id; highlight(id); hover=id; labels();
     setTimeout(()=>focusOn(id,1.5),500); setTimeout(()=>focusOn(id,1.5),1700);
   }
-  document.getElementById("storyBtn").onclick=()=>{ select(null); card.classList.add("open"); si=0; step(); };
-  document.getElementById("sClose").onclick=()=>{ card.classList.remove("open"); hover=null; labels(); };
+  document.getElementById("storyBtn").onclick=()=>{ select(null); card.classList.remove("open"); pick.classList.toggle("open"); };
+  pick.querySelectorAll("[data-len]").forEach(b=>b.onclick=()=>{ steps=STORIES[b.dataset.len](); si=0; pick.classList.remove("open"); card.classList.add("open"); step(); });
+  document.getElementById("sClose").onclick=()=>{ card.classList.remove("open"); hover=null; selected=null; highlight(null); labels(); };
   document.getElementById("next").onclick=()=>{ si=(si+1)%steps.length; step(); };
   document.getElementById("prev").onclick=()=>{ si=(si-1+steps.length)%steps.length; step(); };
+  addEventListener("keydown",e=>{ if(!card.classList.contains("open")) return; if(e.key==="ArrowRight") document.getElementById("next").click(); if(e.key==="ArrowLeft") document.getElementById("prev").click(); if(e.key==="Escape") document.getElementById("sClose").click(); });
   // open everything, era by era, so it unfolds like a big bang
   document.getElementById("openAll").onclick=()=>{
     select(null);
