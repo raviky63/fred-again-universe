@@ -20,7 +20,7 @@ const hue = s => { let h=0; for (const c of s) h=(h*31+c.charCodeAt(0))%360; ret
 const initials = n => n.replace(/[^A-Za-z0-9 ]/g,"").split(" ").filter(Boolean).slice(0,2).map(w=>w[0]).join("").toUpperCase();
 const short = (t,n=26) => { t=t.replace(/\s*\(.*\)$/,""); return t.length>n ? t.slice(0,n-1)+"…" : t; };
 
-Promise.all(FILES.map(f=>fetch(`data/${f}.json`).then(r=>r.json())))
+Promise.all(FILES.map(f=>fetch(`data/${f}.json`, {cache:"no-cache"}).then(r=>r.json())))
   .then(p=>build(Object.fromEntries(FILES.map((f,i)=>[f,p[i]]))))
   .catch(e=>{ console.error(e); document.body.insertAdjacentHTML("beforeend",`<p style="position:fixed;top:45%;width:100%;text-align:center;color:#999">Could not load the data folder.</p>`); });
 

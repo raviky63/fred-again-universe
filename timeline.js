@@ -27,7 +27,7 @@ function pin(kind, raw){
   return `<svg class="pin" viewBox="0 0 14 14"><rect x="1.5" y="1.5" width="11" height="11" rx="1.5" fill="${c}"/></svg>`;
 }
 
-Promise.all(FILES.map(f => fetch(`data/${f}.json`).then(r => r.json())))
+Promise.all(FILES.map(f => fetch(`data/${f}.json`, {cache:"no-cache"}).then(r => r.json())))
   .then(parts => build(Object.fromEntries(FILES.map((f,i)=>[f,parts[i]]))));
 
 function build(data){

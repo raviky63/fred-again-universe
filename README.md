@@ -71,3 +71,5 @@ It is generated: run `python3 tools/verify_list.py` after every data change. Man
 ## Prototypes
 The web (`index.html` + `web.js`) uses the chosen combo: open & close, names only where there is room, shows per tour, size by collabs, era colours, and a story mode. The old web is kept as `app-classic.js`.
 `prototypes.html` lets you switch the readability ideas for the web on and off (open & close, names on zoom, shows per tour, size by collabs, story mode, era colours).
+
+See [ROADMAP.md](ROADMAP.md) for the plan ahead.

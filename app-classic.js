@@ -13,7 +13,7 @@ const flagUrl = (cc,w=40) => `https://flagcdn.com/w${w}/${cc.toLowerCase()}.png`
 const flagsHtml = cs => (cs||[]).map(cc=>`<img src="${flagUrl(cc)}" alt="${cc}" title="${cc}" style="height:11px;border-radius:2px;margin-left:5px;vertical-align:-1px">`).join("");
 const shortTitle = t => { t = t.replace(/\s*\(.*\)$/,""); return t.length>24 ? t.slice(0,22)+"…" : t; };
 
-Promise.all(FILES.map(f => fetch(`data/${f}.json`).then(r => r.json())))
+Promise.all(FILES.map(f => fetch(`data/${f}.json`, {cache:"no-cache"}).then(r => r.json())))
   .then(parts => build(Object.fromEntries(FILES.map((f,i)=>[f,parts[i]]))))
   .catch(() => document.body.insertAdjacentHTML("beforeend",
     `<p style="position:fixed;top:45%;width:100%;text-align:center;color:#999">Could not load the data folder.</p>`));
