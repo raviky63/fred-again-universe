@@ -1,7 +1,7 @@
 // The Fred again.. Universe — reads the data/ folder and draws the web.
 const COLORS = {fred:"#ff5a36", artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", merch:"#d7ff5e", fest:"#ffd166"};
 const LABELS = {artist:"Artists", album:"Albums & EPs", single:"Singles", track:"Tracks", feature:"Features", event:"Shows & sets", merch:"Merch"};
-const KIND_NAME = {hub:"Year of shows", artist:"Artist", crew:"Crew", album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single / collab", feature:"Feature", track:"Track", event:"Show / moment", mix:"DJ mix / radio", upcoming:"Upcoming show", merch:"Merch", fred:"The centre"};
+const KIND_NAME = {hub:"Year of shows", artist:"Artist", crew:"Crew", album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single / collab", feature:"Feature", track:"Track", event:"Show / moment", mix:"DJ mix / radio", upcoming:"Upcoming show", moment:"Moment", merch:"Merch", fred:"The centre"};
 const FILES = ["meta","center","artists","releases","tracks","events","crew","merch"];
 const state = {hidden:new Set(), year:"", selected:null, query:"", focus:null};
 

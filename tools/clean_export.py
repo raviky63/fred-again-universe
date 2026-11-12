@@ -52,7 +52,7 @@ def reddit(rows, name):
             from datetime import datetime, timezone
             d = datetime.fromtimestamp(int(r.get("created_utc", 0)), timezone.utc).strftime("%Y-%m-%d")
             yield {"date": d, "source": "reddit", "where": "r/" + (r.get("subreddit") or name), "text": t,
-                   "kind": "post" if "title" in r else "comment", "score": r.get("score")}
+                   "kind": "post" if "title" in r else "comment", "score": r.get("score"), "flair": r.get("link_flair_text"), "url": r.get("url") if r.get("url") and "reddit.com" not in str(r.get("url")) else None}
 
 def load(path):
     raw = path.read_text(encoding="utf-8")

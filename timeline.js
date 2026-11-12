@@ -1,9 +1,9 @@
 // Timeline view of the Fred again.. Universe — a horizontal ride through time, era by era.
 // Same data/ folder as the web; eras come from data/eras.json.
-const COLORS = {artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", ep:"#ffd166", mixtape:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", mix:"#9a97a6", upcoming:"#ff5a36", merch:"#d7ff5e", milestone:"#5ee3b0"};
-const GROUP = {album:"releases", ep:"releases", mixtape:"releases", single:"releases", feature:"releases", track:"tracks", event:"shows", upcoming:"shows", mix:"mixes", merch:"merch", milestone:"milestones"};
+const COLORS = {artist:"#7cc6ff", crew:"#c3a6ff", album:"#ffd166", ep:"#ffd166", mixtape:"#ffd166", single:"#ff9ecb", feature:"#5ee3b0", track:"#ffb38a", event:"#ffffff", mix:"#9a97a6", upcoming:"#ff5a36", moment:"#ffd166", merch:"#d7ff5e", milestone:"#5ee3b0"};
+const GROUP = {album:"releases", ep:"releases", mixtape:"releases", single:"releases", feature:"releases", track:"tracks", event:"shows", upcoming:"shows", moment:"shows", mix:"mixes", merch:"merch", milestone:"milestones"};
 const LABEL = {releases:"Releases", tracks:"Tracks", shows:"Shows & moments", mixes:"DJ mixes & radio", merch:"Merch"};
-const NAME = {album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single", feature:"Feature", track:"Track", event:"Show", festival:"Festival", upcoming:"Upcoming", mix:"DJ mix / radio", merch:"Merch"};
+const NAME = {album:"Album", ep:"EP", mixtape:"Mixtape", single:"Single", feature:"Feature", track:"Track", event:"Show", festival:"Festival", upcoming:"Upcoming", moment:"Moment", mix:"DJ mix / radio", merch:"Merch"};
 const FILES = ["meta","center","artists","releases","tracks","events","crew","merch","eras","milestones"];
 const state = {hidden:new Set(["tracks"]), q:"", follow:null};
 
@@ -21,6 +21,7 @@ function pin(kind, raw){
       <polygon points="10,3 17,10 10,17 3,10" fill="none" stroke="${fest?"#ffd166":"#fff"}" stroke-width="1"/>${fest?`<polygon points="10,.5 19.5,10 10,19.5 .5,10" fill="none" stroke="#ffd166" stroke-width="1"/>`:""}</svg>`;
   }
   if (["event","upcoming","mix"].includes(kind)) return `<svg class="pin" viewBox="0 0 14 14"><rect x="3" y="3" width="8" height="8" fill="${c}" transform="rotate(45 7 7)"/></svg>`;
+  if (kind==="moment") return `<svg class="pin" viewBox="0 0 14 14" style="filter:drop-shadow(0 0 4px #ffd166)"><polygon points="7,1 8.8,5.2 13,5.4 9.7,8.2 10.8,12.6 7,10.2 3.2,12.6 4.3,8.2 1,5.4 5.2,5.2" fill="#ffd166"/></svg>`;
   if (kind==="milestone") return `<svg class="pin" viewBox="0 0 14 14" style="filter:drop-shadow(0 0 4px #5ee3b0)"><circle cx="7" cy="7" r="5" fill="#5ee3b0"/><circle cx="7" cy="7" r="2" fill="#08080c"/></svg>`;
   if (kind==="merch") return `<svg class="pin" viewBox="0 0 14 14"><polygon points="13,7 10,12.2 4,12.2 1,7 4,1.8 10,1.8" fill="${c}"/></svg>`;
   return `<svg class="pin" viewBox="0 0 14 14"><rect x="1.5" y="1.5" width="11" height="11" rx="1.5" fill="${c}"/></svg>`;
@@ -38,7 +39,7 @@ function build(data){
   const add = (raw, kind, title, date, img) => { const it = {id:raw.id, raw, kind, title, date:date||"", img, group:GROUP[kind]}; items.push(it); byId[it.id]=it; };
   data.releases.forEach(r => add(r, r.kind, r.title, r.date, r.cover));
   data.tracks.forEach(t => add(t, "track", t.title, t.date, t.cover || releaseCover[(t.releases||[])[0]]));
-  data.events.forEach(e => add(e, e.kind==="mix"?"mix":e.kind==="upcoming"?"upcoming":"event", e.title, e.date, e.thumbnail));
+  data.events.forEach(e => add(e, e.kind==="mix"?"mix":e.kind==="upcoming"?"upcoming":e.kind==="moment"?"moment":"event", e.title, e.date, e.thumbnail));
   data.merch.forEach(m => add(m, "merch", m.title, m.date, m.image));
   (data.milestones||[]).forEach(m => add({...m, story:m.text}, "milestone", m.title, m.date, releaseCover[m.release]));
   const link = (a,b) => { if(!a||!b||a===b) return; (nb[a]??=new Set()).add(b); (nb[b]??=new Set()).add(a); };

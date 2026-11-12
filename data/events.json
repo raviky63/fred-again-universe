@@ -189,6 +189,21 @@
     "setting": "festival"
   },
   {
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "media": [],
+    "links": {},
+    "id": "set-2021-10-04-kexp-midnight",
+    "title": "KEXP Midnight In A Perfect World",
+    "date": "2021-10-04",
+    "location": "KEXP (Seattle), guest mix",
+    "kind": "mix",
+    "story": "A guest mix he made on the long train from London up to Scotland.",
+    "source": "KEXP (4 Oct 2021)",
+    "verified": true
+  },
+  {
     "id": "set-2021-10-21-studio-live-2-london",
     "title": "Studio Live 2, London",
     "date": "2021-10-21",
@@ -215,9 +230,9 @@
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "",
+    "story": "His Mixmag Cover Mix, out with his Mixmag cover. Almost entirely bootlegs and exclusives, in his words.",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "Mixmag (15 Nov 2021, 20 Dec 2021)",
     "verified": true
   },
   {
@@ -674,6 +689,44 @@
     "setting": "own"
   },
   {
+    "id": "boiler-room-2022",
+    "title": "Boiler Room London",
+    "date": "2022-06-29",
+    "location": "London",
+    "kind": "show",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Played in London on 29 June 2022 (fans saw it announced as live that night); the full video went up a month later, on 29 July, and blew him up worldwide. It became the third most-watched set on Boiler Room's YouTube channel.",
+    "media": [],
+    "source": "r/fredagain posts 29 Jun and 29 Jul 2022; Dancing Astronaut (Aug 2022); Apple Music 'Boiler Room: Fred again.. in London, Jul 29, 2022'",
+    "verified": true,
+    "tracklist": [
+      "Tassilo Hagström – Berlin",
+      "Fred again.. – Kammy (like i do)",
+      "Fred again.. – Danielle (smile on my face)",
+      "Fred again.. – Tanya (maybe life)",
+      "Fred again.. – Delilah (pull me out of this)",
+      "mason messiah – BBY vs. Real As It Gets",
+      "Skrillex – Stay With Me",
+      "Matt Jam Lamont, Echelon & Smokey Bubblin' B – Haribo",
+      "(unreadable/unknown ID)",
+      "Romy & Fred again.. – Strong",
+      "Fred again.. & Swedish House Mafia – Turn On The Lights again.. (feat. Future)",
+      "Fred again.. – Jungle",
+      "Fred again.., Romy & HAAi – Lights Out (HAAi remix)",
+      "Fred again.., Skrillex & Four Tet – Baby again..",
+      "Skrillex, Fred again.. & Flowdan – Rumble",
+      "ID",
+      "Fred again.. – Angie (I've been lost)",
+      "Fred again.. – Clara (the night is dark)"
+    ],
+    "country": [
+      "GB"
+    ],
+    "setting": "own"
+  },
+  {
     "id": "show-2022-07-02-roskilde-festival-2022",
     "title": "Roskilde Festival 2022",
     "date": "2022-07-02",
@@ -708,44 +761,6 @@
       "CH"
     ],
     "setting": "festival"
-  },
-  {
-    "id": "boiler-room-2022",
-    "title": "Boiler Room London",
-    "date": "2022-07-29",
-    "location": "London",
-    "kind": "show",
-    "with": [],
-    "tracks": [],
-    "thumbnail": "",
-    "story": "The set that blew him up worldwide. It became the third most-watched set on Boiler Room's YouTube channel.",
-    "media": [],
-    "source": "Wikipedia",
-    "verified": true,
-    "tracklist": [
-      "Tassilo Hagström – Berlin",
-      "Fred again.. – Kammy (like i do)",
-      "Fred again.. – Danielle (smile on my face)",
-      "Fred again.. – Tanya (maybe life)",
-      "Fred again.. – Delilah (pull me out of this)",
-      "mason messiah – BBY vs. Real As It Gets",
-      "Skrillex – Stay With Me",
-      "Matt Jam Lamont, Echelon & Smokey Bubblin' B – Haribo",
-      "(unreadable/unknown ID)",
-      "Romy & Fred again.. – Strong",
-      "Fred again.. & Swedish House Mafia – Turn On The Lights again.. (feat. Future)",
-      "Fred again.. – Jungle",
-      "Fred again.., Romy & HAAi – Lights Out (HAAi remix)",
-      "Fred again.., Skrillex & Four Tet – Baby again..",
-      "Skrillex, Fred again.. & Flowdan – Rumble",
-      "ID",
-      "Fred again.. – Angie (I've been lost)",
-      "Fred again.. – Clara (the night is dark)"
-    ],
-    "country": [
-      "GB"
-    ],
-    "setting": "own"
   },
   {
     "id": "shm-b2b-2022",
@@ -1481,11 +1496,12 @@
     "kind": "show",
     "with": [
       "skrillex",
-      "four-tet"
+      "four-tet",
+      "flowdan"
     ],
     "tracks": [],
     "thumbnail": "",
-    "story": "",
+    "story": "Third of three last-minute London shows with Skrillex and Four Tet, days after Rumble came out. Flowdan came up from the crowd to do his part live.",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
     "verified": true,
@@ -1493,6 +1509,24 @@
       "GB"
     ],
     "setting": "own"
+  },
+  {
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "media": [],
+    "links": {},
+    "id": "usb-handed-out-2023",
+    "title": "A USB handed to a fan",
+    "date": "2023-01-07",
+    "location": "London",
+    "kind": "moment",
+    "country": [
+      "GB"
+    ],
+    "story": "At one of the three last-minute London shows with Skrillex and Four Tet (5–7 January 2023) a USB with Fred's live edits was handed to a fan, who put them online for free. Exact night not confirmed.",
+    "source": "rova (12 Jan 2023)",
+    "verified": false
   },
   {
     "id": "show-2023-01-28-shed-6-wellington-new-ze",
@@ -2699,6 +2733,27 @@
     "setting": "own"
   },
   {
+    "with": [
+      "skrillex",
+      "flowdan"
+    ],
+    "tracks": [],
+    "thumbnail": "",
+    "media": [],
+    "links": {},
+    "id": "grammys-2024",
+    "title": "Two Grammys",
+    "date": "2024-02-04",
+    "location": "Grammy Awards, Los Angeles",
+    "kind": "moment",
+    "country": [
+      "US"
+    ],
+    "story": "Actual Life 3 wins Best Dance/Electronic Album and Rumble (with Skrillex and Flowdan) wins Best Dance/Electronic Recording at the 66th Grammys. His first Grammy wins.",
+    "source": "The FADER (4 Feb 2024), Resident Advisor, Recording Academy",
+    "verified": true
+  },
+  {
     "id": "set-2024-02-08-knockdown-center-nyc",
     "title": "Knockdown Center, NYC",
     "date": "2024-02-08",
@@ -3403,10 +3458,10 @@
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "Dutch festival show.",
+    "story": "Headlined Saturday night in the Alpha tent, two years after a packed Heineken tent in 2022.",
     "media": [],
-    "source": "Wikipedia (citation needed)",
-    "verified": false,
+    "source": "festivalinfo.nl review Lowlands 2024 Saturday; JamBase line-up per day",
+    "verified": true,
     "country": [
       "NL"
     ],
@@ -4691,7 +4746,10 @@
     "date": "2026-01-24",
     "location": "East End Studios, Queens, NY",
     "kind": "show",
-    "with": [],
+    "with": [
+      "brux",
+      "caribou"
+    ],
     "tracks": [],
     "thumbnail": "",
     "story": "",
@@ -4771,7 +4829,10 @@
     "date": "2026-02-12",
     "location": "Alexandra Palace, London",
     "kind": "show",
-    "with": [],
+    "with": [
+      "berwyn",
+      "ezra-collective"
+    ],
     "tracks": [],
     "thumbnail": "",
     "story": "",
@@ -4790,7 +4851,10 @@
     "date": "2026-02-13",
     "location": "Alexandra Palace, London",
     "kind": "show",
-    "with": [],
+    "with": [
+      "joy-anonymous",
+      "ezra-collective"
+    ],
     "tracks": [],
     "thumbnail": "",
     "story": "",
@@ -4861,6 +4925,21 @@
       "GB"
     ],
     "setting": "own"
+  },
+  {
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "media": [],
+    "links": {},
+    "id": "usb002-every-show",
+    "title": "USB002 EVERY SHOW (108 hours)",
+    "date": "2026-04-30",
+    "location": "YouTube",
+    "kind": "mix",
+    "story": "Every set from all 21 USB002 shows (3 Oct 2025 – 27 Feb 2026) as one continuous 108-hour video.",
+    "source": "Hot Press (30 Apr 2026), Rolling Stone AU, Mixmag Asia",
+    "verified": true
   },
   {
     "id": "set-2026-06-09-young-nation-show-300",

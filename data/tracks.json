@@ -1692,7 +1692,7 @@
     "releases": [
       "skepta-fred"
     ],
-    "date": "2025-08",
+    "date": "2025-08-29",
     "with": [
       "skepta"
     ],
@@ -1711,7 +1711,7 @@
       "usb",
       "skepta-fred"
     ],
-    "date": "2025-08",
+    "date": "2025-08-21",
     "with": [
       "skepta"
     ],
@@ -1730,7 +1730,7 @@
       "usb",
       "skepta-fred"
     ],
-    "date": "2025-08",
+    "date": "2025-08-29",
     "with": [
       "skepta"
     ],
@@ -1748,7 +1748,7 @@
     "releases": [
       "skepta-fred"
     ],
-    "date": "2025-08",
+    "date": "2025-08-29",
     "with": [
       "skepta"
     ],
@@ -1861,7 +1861,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2025-11-04",
+    "date": "2025-11-03",
     "with": [
       "sammy-virji",
       "reggie"
@@ -2035,7 +2035,8 @@
       "youtube": ""
     },
     "source": "Press, see research/usb-release-dates.md",
-    "verified": true
+    "verified": true,
+    "story": "First out on the USB002 vinyl (12 December 2025), before it came to streaming."
   },
   {
     "id": "alvafro",
@@ -2299,5 +2300,22 @@
     "source": "Press, see research/usb-release-dates.md",
     "verified": true,
     "story": "Week two of USB002."
+  },
+  {
+    "id": "piccolo",
+    "title": "piccolo",
+    "releases": [
+      "usb"
+    ],
+    "date": "2025-12-12",
+    "with": [],
+    "cover": "",
+    "links": {
+      "spotify": "",
+      "youtube": ""
+    },
+    "story": "A vinyl-only track on USB002 (12 December 2025). Fans later found it on Spotify under another name.",
+    "source": "r/fredagain (Aug 2026, May 2026)",
+    "verified": false
   }
 ]
