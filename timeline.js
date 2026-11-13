@@ -124,7 +124,9 @@ function build(data){
   }
 
   const ride = document.getElementById("ride"), track = document.getElementById("track");
+  let cur = null; // the card that has the stage
   function render(){
+    if (cur) closeFocus();
     const fb = document.getElementById("follow");
     if (state.follow){ const p = people[state.follow];
       fb.style.display="block"; fb.innerHTML = `Following <b style="color:${COLORS[p.type]}">${esc(p.name)}</b> through time${p.role?` · ${esc(p.role)}`:""}. ${esc(p.bio||"")}<button id="unfollow">Show everything</button>`;
@@ -169,7 +171,7 @@ function build(data){
   addEventListener("pointermove", e => {
     if (!down) return;
     const dx = e.clientX - down.x;
-    if (!moved && Math.abs(dx) > 5){ moved = true; ride.classList.add("dragging"); }
+    if (!moved && Math.abs(dx) > 5){ moved = true; ride.classList.add("dragging"); if (cur) closeFocus(); }
     if (!moved) return;
     const now = performance.now(); v = (e.clientX - down.lx) / Math.max(1, now - down.t); down.lx = e.clientX; down.t = now;
     ride.scrollLeft = down.left - dx;
@@ -195,43 +197,106 @@ function build(data){
   }
   ride.addEventListener("scroll", () => { onScroll(); document.getElementById("hint").style.opacity = ride.scrollLeft > 200 ? 0 : 1; }, {passive:true});
   // a normal mouse wheel rides sideways
-  ride.addEventListener("wheel", e => { if (Math.abs(e.deltaY) > Math.abs(e.deltaX) && !e.target.closest(".item")){ ride.scrollLeft += e.deltaY; e.preventDefault(); } }, {passive:false});
+  ride.addEventListener("wheel", e => { if (cur){ closeFocus(); e.preventDefault(); return; } if (Math.abs(e.deltaY) > Math.abs(e.deltaX) && !e.target.closest(".item")){ ride.scrollLeft += e.deltaY; e.preventDefault(); } }, {passive:false});
   addEventListener("keydown", e => { if (e.key==="ArrowRight") ride.scrollBy({left:400, behavior:"smooth"}); if (e.key==="ArrowLeft") ride.scrollBy({left:-400, behavior:"smooth"}); });
 
-  // ---------- click a card: details in a side panel ----------
-  const dragMoved = () => false; // a drag never ends in a click (see the capture handler below)
-  addEventListener("keydown", e => { if (e.key === "Escape") track.querySelectorAll(".item.open").forEach(x => open(x.id.slice(2))); });
-  // ---------- click a card: it moves away from the line and unfolds in place ----------
+  const dragMoved = () => false; // a drag never ends in a click (see the capture handler on #ride)
+  // ---------- click a card: the timeline shrinks away and the card gets its own big page ----------
+  const focusEl = document.getElementById("focus"), fstem = document.getElementById("fstem");
   function details(id){
     const it = byId[id], r = it.raw;
-    const n = [...(nb[id]||[])], linked = n.filter(x => byId[x]);
+    const n = [...(nb[id]||[])], linked = n.filter(x => byId[x]), who = n.filter(x => people[x]);
     const L = r.links||{};
-    const ls = [["Spotify",L.spotify],["YouTube",L.youtube],["SoundCloud",L.soundcloud],["Instagram",L.instagram]].filter(x=>x[1]);
-    return `${r.support?.length?`<h4>Support / opening</h4><div class="mt">${r.support.map(esc).join(", ")}<div class="src">${esc(r.support_source||"")}</div></div>`:""}
-      ${r.part_of&&byId[r.part_of]?`<h4>Addition to</h4><div class="pills"><span class="pill" data-go="${r.part_of}">${esc(byId[r.part_of].title)}</span></div>`:""}
-      ${linked.length?`<h4>Connected</h4><div class="pills">${linked.slice(0,30).map(x=>`<span class="pill" data-go="${x}">${byId[x].date?byId[x].date.slice(0,4)+" · ":""}${esc(byId[x].title.replace(/\s*\(.*\)$/,""))}</span>`).join("")}</div>`:""}
+    const ls = [["Spotify",L.spotify],["YouTube",L.youtube],["SoundCloud",L.soundcloud],["Instagram",L.instagram],["Tracklist",r.tracklist_link]].filter(x=>x[1]);
+    const year = (it.date||"").slice(0,4);
+    const pill = x => { const o = byId[x], cls = o.date && o.date.slice(0,4) < year ? "back" : o.date && o.date.slice(0,4) > year ? "fwd" : ""; return `<span class="pill ${cls}" data-go="${x}">${cls==="back"?"↩ ":cls==="fwd"?"↪ ":""}${o.date?o.date.slice(0,4)+" · ":""}${esc(o.title.replace(/\s*\(.*\)$/,""))}</span>`; };
+    return `${who.length?`<h4>With</h4><div class="pills">${who.map(x=>`<span class="pill" data-follow="${x}" style="color:${COLORS[people[x].type]}">${esc(people[x].name)}</span>`).join("")}</div>`:""}
+      ${r.support?.length?`<h4>Support / opening</h4><div class="mt">${r.support.map(esc).join(", ")}<div class="src">${esc(r.support_source||"")}</div></div>`:""}
+      ${r.part_of&&byId[r.part_of]?`<h4>Addition to</h4><div class="pills">${pill(r.part_of)}</div>`:""}
+      ${linked.length?`<h4>Connected</h4><div class="pills">${linked.slice(0,40).map(pill).join("")}</div>`:""}
       ${r.tracklist?.length?`<h4>Tracklist</h4><ol>${r.tracklist.map(t=>`<li>${esc(t)}</li>`).join("")}</ol>`:""}
-      ${ls.length?`<h4>Listen / watch</h4><div class="mt">${ls.map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${k} ↗</a>`).join(" ")}</div>`:""}
+      ${ls.length?`<h4>Listen / watch</h4><div class="mt links">${ls.map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${k} ↗</a>`).join("")}</div>`:""}
       <h4>Source</h4><div class="mt">${r.verified===false?`<span class="badge no">Still to verify</span>`:`<span class="badge ok">Verified</span>`} <span class="src">${esc(r.source||"")}</span></div>
-      ${it.kind!=="milestone"?`<div class="mt"><a href="index.html#${id}">See its connections in the web →</a></div>`:""}`;
+      ${it.kind!=="milestone"?`<div class="mt web"><a href="index.html#${id}">See its connections in the web →</a></div>`:""}`;
+  }
+  // how much is there to show? → small / medium / large page
+  function sizeOf(it){
+    const r = it.raw, n = [...(nb[it.id]||[])].length;
+    const score = (it.img?2:0) + ((r.story||r.text||"").length/140) + n/5 + (r.tracklist?.length?3:0) + Object.keys(r.links||{}).length*.5 + (r.support?.length?1:0);
+    return score < 2.2 ? "s" : score < 5 ? "m" : "l";
+  }
+  function focusHTML(it){
+    const r = it.raw, c = it.kind==="milestone" ? "#5ee3b0" : r.setting==="festival" ? "#ffd166" : COLORS[it.kind]||"#fff", h = hue(it.id);
+    const label = it.kind==="milestone" ? "USB moment" : r.setting==="festival" ? NAME.festival : NAME[it.kind]||it.kind;
+    const img = it.img ? `<div class="fimg" style="background:linear-gradient(135deg,hsl(${h},55%,42%),hsl(${(h+50)%360},60%,18%))"><img src="${esc(it.img)}" alt="" onerror="this.remove()"></div>` : "";
+    const where = r.location && r.location!=="Radio / online mix" && r.location!==it.title ? `<div class="fwhere">${esc(r.location)}${flags(r.country)}</div>` : (r.country?.length?`<div class="fwhere">${flags(r.country)}</div>`:"");
+    return `<button class="fx" title="Close (Esc)">✕</button>
+      <div class="fgrid">${img}<div class="fbody">
+        <div class="meta" style="color:${c}">${label} <span class="date">· ${fmt(it.date)}</span></div>
+        <div class="ftitle">${esc(it.title)}</div>${where}
+        ${(r.story||r.text)?`<p class="fstory">${esc(r.story||r.text)}</p>`:""}
+        ${details(it.id)}
+      </div></div>`;
+  }
+  const S = .34, LINE = .84; // shrunken timeline: its scale, and where its line ends up (fraction of the ride's height)
+  function place(){
+    if (!cur) return;
+    const el = document.getElementById("t-"+cur); if (!el){ closeFocus(); return; }
+    const col = el.closest(".col"), up = col.classList.contains("up");
+    const pinX = col.closest(".era").offsetLeft + col.offsetLeft + 18;
+    const cw = ride.clientWidth, H = ride.clientHeight, R = ride.getBoundingClientRect();
+    const target = Math.max(0, Math.min(pinX - cw/2, ride.scrollWidth - cw));
+    const dx = cw/2 - (pinX - target), lineFrac = up ? LINE : 1 - LINE, dy = (lineFrac - .5) * H;
+    ride.scrollTo({left: target, behavior: "smooth"});
+    track.style.transformOrigin = `${pinX}px 50%`;
+    track.style.transform = `translate(${dx}px, ${dy}px) scale(${S})`;
+    const lineY = R.top + lineFrac*H, reach = S*H/2 + 14; // the shrunken cards take up this much on each side of the line
+    const w = Math.min({s:420, m:660, l:880}[focusEl.dataset.size], innerWidth - 32);
+    const cx = R.left + cw/2;
+    focusEl.style.width = w + "px";
+    focusEl.style.left = Math.max(16, Math.min(cx - w/2, innerWidth - 16 - w)) + "px";
+    if (up){ const bottom = lineY - reach; focusEl.style.top = ""; focusEl.style.bottom = (innerHeight - bottom) + "px"; focusEl.style.maxHeight = (bottom - R.top - 14) + "px";
+      Object.assign(fstem.style, {left: cx-1+"px", top: bottom+"px", height: (lineY - bottom - 8)+"px", transformOrigin: "bottom"}); }
+    else { const top = lineY + reach; focusEl.style.bottom = ""; focusEl.style.top = top + "px"; focusEl.style.maxHeight = (R.bottom - top - 14) + "px";
+      Object.assign(fstem.style, {left: cx-1+"px", top: lineY+8+"px", height: (top - lineY - 8)+"px", transformOrigin: "top"}); }
+    focusEl.classList.toggle("from-up", up);
   }
   function open(id){
-    const el = document.getElementById("t-"+id); if (!el) return;
-    const was = el.classList.contains("open");
-    track.querySelectorAll(".item.open").forEach(x => { x.classList.remove("open"); x.style.maxHeight=""; x.closest(".col").classList.remove("open"); });
-    if (was){ history.replaceState(null,"",location.pathname); return; }
-    const more = el.querySelector(".more");
-    more.innerHTML = details(id);
-    more.querySelectorAll("[data-go]").forEach(p => p.onclick = e => { e.stopPropagation(); go(p.dataset.go); setTimeout(()=>open(p.dataset.go), 650); });
-    el.classList.add("open"); el.closest(".col").classList.add("open"); el.scrollTop = 0;
-    const r = ride.getBoundingClientRect(), line = r.top + r.height/2, up = el.closest(".col").classList.contains("up");
-    el.style.maxHeight = Math.max(220, (up ? line - r.top : r.bottom - line) - 70) + "px";
-    const col = el.closest(".col"), left = col.offsetLeft + col.closest(".era").offsetLeft;
-    if (left < ride.scrollLeft + 40 || left + 400 > ride.scrollLeft + ride.clientWidth) ride.scrollTo({left: left - ride.clientWidth/2 + 190, behavior:"smooth"});
+    if (cur === id){ closeFocus(); return; }
+    let el = document.getElementById("t-"+id);
+    if (!el && byId[id]){ closeFocus(); state.hidden.delete(byId[id].group); document.querySelectorAll(".chip").forEach((c,i)=>{ if(Object.keys(LABEL)[i]===byId[id].group) c.classList.remove("off"); }); state.q=""; document.getElementById("search").value=""; state.follow=null; render(); el = document.getElementById("t-"+id); }
+    if (!el) return;
+    track.querySelectorAll(".col.cur").forEach(c => c.classList.remove("cur"));
+    el.closest(".col").classList.add("cur");
+    cur = id;
+    const it = byId[id], size = sizeOf(it);
+    focusEl.className = "fsize-" + size; focusEl.dataset.size = size;
+    focusEl.innerHTML = focusHTML(it); focusEl.scrollTop = 0;
+    fstem.classList.remove("on");
+    focusEl.querySelector(".fx").onclick = closeFocus;
+    focusEl.querySelectorAll("[data-go]").forEach(p => p.onclick = () => open(p.dataset.go));
+    focusEl.querySelectorAll("[data-follow]").forEach(p => p.onclick = () => { closeFocus(); state.follow = p.dataset.follow; render(); ride.scrollTo({left:0}); });
+    ride.classList.add("focus"); document.body.classList.add("focusing");
+    place();
+    requestAnimationFrame(() => requestAnimationFrame(() => { focusEl.classList.add("on"); fstem.classList.add("on"); }));
     history.replaceState(null, "", "#"+id);
   }
+  function closeFocus(){
+    if (!cur) return;
+    cur = null;
+    focusEl.classList.remove("on"); fstem.classList.remove("on");
+    ride.classList.remove("focus"); document.body.classList.remove("focusing");
+    track.style.transform = "";
+    setTimeout(() => { if (!cur) track.querySelectorAll(".col.cur").forEach(c => c.classList.remove("cur")); }, 500);
+    history.replaceState(null, "", location.pathname);
+  }
+  addEventListener("keydown", e => { if (e.key === "Escape") closeFocus(); });
+  addEventListener("resize", () => place());
+  // click the empty space of the shrunken timeline → back to riding
+  ride.addEventListener("click", e => { if (cur && !e.target.closest("article.item")) closeFocus(); });
 
   function go(id){
+    if (cur){ open(id); return; }
     let el = document.getElementById("t-"+id);
     if (!el){ state.hidden.delete(byId[id].group); document.querySelectorAll(".chip").forEach((c,i)=>{ if(Object.keys(LABEL)[i]===byId[id].group) c.classList.remove("off"); }); state.q=""; document.getElementById("search").value=""; state.follow=null; render(); el = document.getElementById("t-"+id); }
     if (!el) return;
@@ -242,6 +307,6 @@ function build(data){
   }
   render();
   const start = decodeURIComponent(location.hash.slice(1));
-  if (start && byId[start]) setTimeout(()=>go(start), 200);
+  if (start && byId[start]) setTimeout(()=>{ go(start); setTimeout(()=>open(start), 700); }, 200);
   else if (start && people[start]) { state.follow = start; render(); }
 }
