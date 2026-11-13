@@ -1,10 +1,11 @@
-- [ ] Rinse FM 26 Sep 2019: only on 1001Tracklists, no upload found. Keep or remove?
-- [ ] Guest mixes in someone else's show (Dance Department 812, Sunshine Live Mix Mission, Young Nation Show #300, FAZEmag In The Mix 118): is Fred's own mix in them, or just his tracks?
-- [ ] Which of the three London nights (5–7 Jan 2023) the USB went to a fan.
 - [ ] Era boundaries in data/eras.json: do they match how fans see the eras?
 - [ ] Festival vs own show is guessed from the name (tools/show_type.py): spot-check a few.
 - [ ] Country per show is guessed from the location text (tools/countries.py): spot-check online / multi-country items.
-- [ ] Early singles (Julie, Octavian, Eazi, Kyren, Actual Life EP): exact release dates and covers.
-- [ ] 'Secret Life, LA Memorial Coliseum' set: 1001Tracklists said 11 June 2024, Fred's own video says 12 June 2024 (now 12 June).
 - [ ] Artists without a free photo: find one with a clear license, or keep initials.
 - [ ] Merch: images with a clear right to use.
+- [ ] USB track dates where press and SoundCloud differ: ItsNotREEAALLLLLLLL + BerwynGesaffNeighbours (press 9 Apr 2024, SoundCloud upload 21 Mar 2024), stayinit (28 Feb vs upload 15 Feb 2024), Lights Burn Dimmer (16 Feb vs SoundCloud release 13 Feb 2026, DIY Mag also 13 Feb), Ambery/Facilita (24 vs 23 Oct 2025), Beto's Horns (7 vs 6 Nov 2025).
+- [ ] Places We've Never Been 2024 local openers (Justin Jay, Keenan Mathias, Stresshead, Asher Gray/Greyhound, Loukeman, Jason Kendig, Leonce): only fan reports; no press, venue or setlist.fm source found (13 Nov 2026). Check the openers' own Instagram posts.
+- [ ] GANG: the old story said GANG and Don't Judge Me got Ivor Novello nominations. Wikipedia lists Don't Judge Me (Best Contemporary Song); GANG's nomination is unconfirmed, so it was left out.
+- [ ] New from SoundCloud, not in the data yet: early 2019 uploads (Antonio, Valentina, Janelle, Billie (I'm Not Okay)), Kyle / Me (sorry) / Marnie / Chika / Adam / Julia singles, the Mixmag Cover Mix date (12 vs 15 Nov 2021), Detroit afters with Sammy Virji (Russell Industrial Center, 1 Oct 2024), USB002 SoundCloud week edits (14 Nov 2025).
+- [ ] Date conflicts 1001Tracklists vs setlist.fm: CRSSD Festival 2022 (24 vs 25 Sep), Sydney Opera House (27 vs 26 Feb 2024). The Coliseum listening party is 11 Jun on setlist.fm, 12 Jun per Fred's video and We Rave You ("last night" on 13 Jun): kept 12 Jun.
+- [ ] 26 sets still only on 1001Tracklists (studio lives, The Lot Radio, Twitch streams, small club shows like Good Room / Le Poisson Rouge / Club 77 / Antro Juan, Centre Pompidou, Maka's birthday). Rooftop Live and Latraac now also have Fred's own SoundCloud upload.

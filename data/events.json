@@ -8,10 +8,47 @@
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "Listed on 1001Tracklists, but no Rinse FM upload found for this date. The Rinse FM show that can be checked is from 4 April 2020.",
+    "story": "His first show of a monthly Rinse FM residency that ran until May 2021.",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
-    "verified": false
+    "source": "Rinse FM on SoundCloud (uploaded 26 Sep 2019); 1001Tracklists",
+    "verified": true,
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain260919"
+    }
+  },
+  {
+    "id": "set-2019-10-31-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2019-10-31",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Monthly show from his Rinse FM residency.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain311019"
+    },
+    "source": "Rinse FM on SoundCloud (fredagain311019)",
+    "verified": true
+  },
+  {
+    "id": "set-2019-11-30-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2019-11-30",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Monthly show from his Rinse FM residency.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain301119"
+    },
+    "source": "Rinse FM on SoundCloud (fredagain301119)",
+    "verified": true
   },
   {
     "id": "set-2019-12-13-energy-crew-minimix",
@@ -25,6 +62,23 @@
     "story": "His first Radio 1 Mini Mix, made to celebrate Stormzy's album Heavy Is the Head, which Fred worked on a lot.",
     "media": [],
     "source": "BBC Radio 1 Mini Mix (13 Dec 2019); 1001Tracklists",
+    "verified": true
+  },
+  {
+    "id": "set-2020-03-07-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2020-03-07",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Monthly show from his Rinse FM residency.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain070320"
+    },
+    "source": "Rinse FM on SoundCloud (fredagain070320)",
     "verified": true
   },
   {
@@ -45,6 +99,40 @@
     "verified": true
   },
   {
+    "id": "set-2020-04-11-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2020-04-11",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Lockdown Live 002, a live lockdown broadcast.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain110420"
+    },
+    "source": "Rinse FM on SoundCloud (fredagain110420)",
+    "verified": true
+  },
+  {
+    "id": "set-2020-05-02-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2020-05-02",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Monthly show from his Rinse FM residency.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain020520"
+    },
+    "source": "Rinse FM on SoundCloud (fredagain020520)",
+    "verified": true
+  },
+  {
     "id": "set-2020-05-06-highsnobiety-soundsystem-guest",
     "title": "Highsnobiety Soundsystem Guest Mix 013",
     "date": "2020-05-06",
@@ -55,7 +143,112 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); Highsnobiety Soundsystem on SoundCloud (uploaded 14 May 2020)",
+    "verified": true,
+    "links": {
+      "soundcloud": "https://soundcloud.com/highsnobiety_soundsystem/fred-again-highsnobiety-guest-mix-013"
+    }
+  },
+  {
+    "id": "set-2020-06-06-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2020-06-06",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "A special built around D'Angelo (Live) and Cornel West.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain060620"
+    },
+    "source": "Rinse FM on SoundCloud (fredagain060620)",
+    "verified": true
+  },
+  {
+    "id": "set-2020-07-07-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2020-07-07",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Monthly show from his Rinse FM residency.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain070720"
+    },
+    "source": "Rinse FM on SoundCloud (fredagain070720)",
+    "verified": true
+  },
+  {
+    "id": "set-2020-10-17-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2020-10-17",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Monthly show from his Rinse FM residency.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain171020"
+    },
+    "source": "Rinse FM on SoundCloud (fredagain171020)",
+    "verified": true
+  },
+  {
+    "id": "set-2020-11-14-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2020-11-14",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Monthly show from his Rinse FM residency.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain141120"
+    },
+    "source": "Rinse FM on SoundCloud (fredagain141120)",
+    "verified": true
+  },
+  {
+    "id": "set-2021-03-06-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2021-03-06",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Monthly show from his Rinse FM residency.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain060321"
+    },
+    "source": "Rinse FM on SoundCloud (fredagain060321)",
+    "verified": true
+  },
+  {
+    "id": "set-2021-04-10-rinse-fm",
+    "title": "Rinse FM",
+    "date": "2021-04-10",
+    "location": "Rinse FM, London",
+    "kind": "mix",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "Monthly show from his Rinse FM residency.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain100421"
+    },
+    "source": "Rinse FM on SoundCloud (fredagain100421)",
     "verified": true
   },
   {
@@ -88,26 +281,13 @@
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "",
+    "story": "The last show of his Rinse FM residency.",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
-    "verified": true
-  },
-  {
-    "id": "set-2021-05-19-dance-department-812",
-    "title": "Dance Department 812",
-    "date": "2021-05-19",
-    "location": "Dance Department radio show, hosted by Ivo van Breukelen (NL)",
-    "kind": "mix",
-    "with": [
-      "ivo-van-breukelen"
-    ],
-    "tracks": [],
-    "thumbnail": "",
-    "story": "",
-    "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
-    "verified": false
+    "source": "Rinse FM on SoundCloud (uploaded 9 May 2021); 1001Tracklists",
+    "verified": true,
+    "links": {
+      "soundcloud": "https://soundcloud.com/rinsefm/fredagain080521"
+    }
   },
   {
     "id": "set-2021-05-22-1live-dj-session",
@@ -239,7 +419,10 @@
     "story": "His Mixmag Cover Mix, out with his Mixmag cover. Almost entirely bootlegs and exclusives, in his words.",
     "media": [],
     "source": "Mixmag (15 Nov 2021, 20 Dec 2021)",
-    "verified": true
+    "verified": true,
+    "links": {
+      "soundcloud": "https://soundcloud.com/mixmag-1/the-cover-mix-fred-again"
+    }
   },
   {
     "id": "show-2021-11-22-manchester-academy-manch",
@@ -361,20 +544,6 @@
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
     "verified": true
-  },
-  {
-    "id": "set-2022-01-12-fazemag-in-the-mix-118",
-    "title": "FAZEmag In The Mix 118",
-    "date": "2022-01-12",
-    "location": "FAZEmag (online)",
-    "kind": "mix",
-    "with": [],
-    "tracks": [],
-    "thumbnail": "",
-    "story": "",
-    "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
-    "verified": false
   },
   {
     "id": "set-2022-02-25-triple-j-friday-mix",
@@ -510,7 +679,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Great American Music Hall, San Francisco)",
     "verified": true,
     "country": [
       "US"
@@ -528,7 +697,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Coachella Festival 2022)",
     "verified": true,
     "country": [
       "US"
@@ -672,7 +841,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Electric Forest 2022)",
     "verified": true,
     "country": [
       "US"
@@ -877,7 +1046,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (All Points East 2022)",
     "verified": true,
     "country": [
       "GB"
@@ -967,7 +1136,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (The Warfield, San Francisco)",
     "verified": true,
     "country": [
       "US"
@@ -985,7 +1154,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Portola Music Festival 2022)",
     "verified": true,
     "country": [
       "US"
@@ -1044,7 +1213,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "Concert Archives (28 Sep 2022); Joy Anonymous supported Fred's 2022 tour (Mixmag, Rinse FM)"
   },
   {
     "id": "show-2022-09-29-hollywood-forever-cemete",
@@ -1062,7 +1235,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "Bandsintown (29 Sep 2022); Joy Anonymous supported Fred's 2022 tour (Mixmag, Rinse FM)"
   },
   {
     "id": "set-2022-09-30-hollywood-forever-cemetery-los",
@@ -1075,7 +1252,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Hollywood Forever Cemetery, Los Angeles)",
     "verified": true,
     "country": [
       "US"
@@ -1134,7 +1311,11 @@
     "country": [
       "US"
     ],
-    "setting": "own"
+    "setting": "own",
+    "support": [
+      "Joy Anonymous"
+    ],
+    "support_source": "Concert Archives (5 Oct 2022); Joy Anonymous supported Fred's 2022 tour (Mixmag, Rinse FM)"
   },
   {
     "id": "set-2022-10-06-history-toronto",
@@ -1147,7 +1328,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (History, Toronto)",
     "verified": true,
     "country": [
       "CA"
@@ -1156,7 +1337,7 @@
     "support": [
       "Joy Anonymous"
     ],
-    "support_source": "r/fredagain (Oct 2022) (fan report, to verify)"
+    "support_source": "Concert Archives (Fred again.. / Joy (Anonymous), History Toronto, 6 Oct 2022); Mixmag and Rinse FM on Joy Anonymous supporting Fred's 2022 tour"
   },
   {
     "id": "show-2022-10-08-9-30-club-washington-dc",
@@ -1249,7 +1430,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Terminal 5, New York)",
     "verified": true,
     "country": [
       "US"
@@ -1310,7 +1491,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (AFAS Live, Amsterdam)",
     "verified": true,
     "country": [
       "NL"
@@ -1328,7 +1509,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (UFO im Velodrom, Berlin)",
     "verified": true,
     "country": [
       "DE"
@@ -1458,7 +1639,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (O2 Academy Brixton, London)",
     "verified": true,
     "country": [
       "GB"
@@ -1498,7 +1679,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Electric Ballroom, London)",
     "verified": true,
     "country": [
       "GB"
@@ -1519,7 +1700,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Electric Brixton, London)",
     "verified": true,
     "country": [
       "GB"
@@ -1541,7 +1722,7 @@
     "thumbnail": "",
     "story": "Third of three last-minute London shows with Skrillex and Four Tet, days after Rumble came out. Flowdan came up from the crowd to do his part live.",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Troxy, London)",
     "verified": true,
     "country": [
       "GB"
@@ -1556,14 +1737,14 @@
     "links": {},
     "id": "usb-handed-out-2023",
     "title": "A USB handed to a fan",
-    "date": "2023-01-07",
-    "location": "London",
+    "date": "2023-01-06",
+    "location": "Electric Brixton, London",
     "kind": "moment",
     "country": [
       "GB"
     ],
-    "story": "At one of the three last-minute London shows with Skrillex and Four Tet (5–7 January 2023) a USB with Fred's live edits was handed to a fan, who put them online for free. Exact night not confirmed.",
-    "source": "rova (12 Jan 2023)",
+    "story": "During the three last-minute London shows with Skrillex and Four Tet (5–7 January 2023), USB sticks with Fred's live edits were handed to fans in the crowd. One fan got one at Electric Brixton on 6 January and put the edits online for free; a friend of his got one at Electric Ballroom the night before.",
+    "source": "rova (12 Jan 2023); the fan's own r/fredagain post (7 Jan 2023, before the Troxy show) for which night",
     "verified": false
   },
   {
@@ -1859,7 +2040,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Lollapalooza Argentina 2023)",
     "verified": true,
     "country": [
       "AR"
@@ -1877,7 +2058,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Lollapalooza Chile 2023)",
     "verified": true,
     "country": [
       "CL"
@@ -1895,7 +2076,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Estéreo Picnic 2023)",
     "verified": true,
     "country": [
       "CO"
@@ -1913,7 +2094,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Lollapalooza Brazil 2023)",
     "verified": true,
     "country": [
       "BR"
@@ -1985,7 +2166,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Ceremonia 2023)",
     "verified": true,
     "country": [
       "MX"
@@ -2205,7 +2386,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Lollapalooza 2023)",
     "verified": true,
     "country": [
       "US"
@@ -2241,7 +2422,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Osheaga Festival 2023)",
     "verified": true,
     "country": [
       "CA"
@@ -2407,7 +2588,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Ziggo Dome, Amsterdam)",
     "verified": true,
     "country": [
       "NL"
@@ -2461,7 +2642,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Le Zénith, Paris)",
     "verified": true,
     "country": [
       "FR"
@@ -2497,7 +2678,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Forest Hills Stadium, Queens)",
     "verified": true,
     "country": [
       "US"
@@ -2569,7 +2750,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (III Points 2023)",
     "verified": true,
     "country": [
       "US"
@@ -2752,7 +2933,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Depot Mayfield, Manchester)",
     "verified": true,
     "country": [
       "GB"
@@ -2811,7 +2992,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Knockdown Center, Queens)",
     "verified": true,
     "country": [
       "US"
@@ -2922,7 +3103,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Rod Laver Arena, Melbourne)",
     "verified": true,
     "country": [
       "AU"
@@ -3006,7 +3187,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Doug Jennings Park, Gold Coast)",
     "verified": true,
     "country": [
       "AU"
@@ -3275,7 +3456,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Electric Daisy Carnival (Las Vegas) 2024)",
     "verified": true,
     "country": [
       "US"
@@ -3331,7 +3512,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Frost Amphitheater, Stanford)",
     "verified": true,
     "country": [
       "US"
@@ -3409,7 +3590,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Bonnaroo 2024)",
     "verified": true,
     "country": [
       "US"
@@ -3445,14 +3626,15 @@
     "thumbnail": "https://i.ytimg.com/vi/6MAzUT1YhWE/hqdefault.jpg",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); Fred's own SoundCloud upload",
     "verified": true,
     "country": [
       "GB"
     ],
     "setting": "own",
     "links": {
-      "youtube": "https://www.youtube.com/watch?v=6MAzUT1YhWE"
+      "youtube": "https://www.youtube.com/watch?v=6MAzUT1YhWE",
+      "soundcloud": "https://soundcloud.com/fredagain/rooftop-live-aruns-roof-london"
     }
   },
   {
@@ -3466,7 +3648,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Syd For Solen 2024)",
     "verified": true,
     "country": [
       "DK"
@@ -3502,7 +3684,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Flow Festival 2024)",
     "verified": true,
     "country": [
       "FI"
@@ -3520,7 +3702,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Sziget Festival 2024)",
     "verified": true,
     "country": [
       "HU"
@@ -3538,7 +3720,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Pukkelpop 2024)",
     "verified": true,
     "country": [
       "BE"
@@ -3646,7 +3828,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Alexandra Palace, London)",
     "verified": true,
     "country": [
       "GB"
@@ -3664,7 +3846,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Mishawaka Amphitheatre, Bellvue)",
     "verified": true,
     "country": [
       "US"
@@ -3839,7 +4021,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Alpine Valley Music Theatre, East Troy)",
     "verified": true,
     "country": [
       "US"
@@ -3885,7 +4067,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Russell Industrial Center, Detroit)",
     "verified": true,
     "country": [
       "US"
@@ -3903,7 +4085,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Scotiabank Arena, Toronto)",
     "verified": true,
     "country": [
       "CA"
@@ -3925,7 +4107,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Scotiabank Arena, Toronto)",
     "verified": true,
     "country": [
       "CA"
@@ -4031,7 +4213,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Dickies Arena, Fort Worth)",
     "verified": true,
     "country": [
       "US"
@@ -4071,21 +4253,10 @@
     "story": "Fred and Jim Legxacy made this guest show for NTS at Fred's flat.",
     "media": [],
     "source": "NTS (17 Oct 2024); 1001Tracklists",
-    "verified": true
-  },
-  {
-    "id": "set-2024-12-25-sunshine-live-mix-mission",
-    "title": "Sunshine Live Mix Mission",
-    "date": "2024-12-25",
-    "location": "Sunshine Live, Germany",
-    "kind": "mix",
-    "with": [],
-    "tracks": [],
-    "thumbnail": "",
-    "story": "",
-    "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
-    "verified": false
+    "verified": true,
+    "links": {
+      "soundcloud": "https://soundcloud.com/user-643553014/fred-again-jim-legxacy-171024"
+    }
   },
   {
     "id": "set-2025-05-21-twitch",
@@ -4133,12 +4304,15 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); Fred's own SoundCloud upload",
     "verified": true,
     "country": [
       "GR"
     ],
-    "setting": "own"
+    "setting": "own",
+    "links": {
+      "soundcloud": "https://soundcloud.com/fredagain/latraac-skate-cafe-athens-29th-may-2025"
+    }
   },
   {
     "id": "show-2025-07-12-savaya-bali-indonesia",
@@ -4223,7 +4397,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (KINTEX, Goyang-si)",
     "verified": true,
     "country": [
       "KR"
@@ -4241,7 +4415,7 @@
     "thumbnail": "",
     "story": "Fuji Rock (25 Jul), Tachikawa Stage Garden Tokyo (29 Jul) and KINTEX Seoul (23 Jul). Shot on film by Theo Batterham and Charlie Hutchins.",
     "media": [],
-    "source": "1001Tracklists; Instagram (2025-07-25)",
+    "source": "1001Tracklists; Instagram (2025-07-25); setlist.fm (FUJI ROCK FESTIVAL '25)",
     "verified": true,
     "country": [
       "JP",
@@ -4260,7 +4434,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (TACHIKAWA STAGE GARDEN, Tachikawa)",
     "verified": true,
     "country": [
       "JP"
@@ -4332,7 +4506,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Aria - Ex Macello, Milan)",
     "verified": true,
     "country": [
       "IT"
@@ -4350,7 +4524,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Castello Scaligero, Villafranca di Verona)",
     "verified": true,
     "country": [
       "IT"
@@ -5077,22 +5251,6 @@
     "story": "Every set from all 21 USB002 shows (3 Oct 2025 – 27 Feb 2026) as one continuous 108-hour video.",
     "source": "Hot Press (30 Apr 2026), Rolling Stone AU, Mixmag Asia",
     "verified": true
-  },
-  {
-    "id": "set-2026-06-09-young-nation-show-300",
-    "title": "Young Nation Show #300",
-    "date": "2026-06-09",
-    "location": "Young Nation Show, hosted by Chester Young",
-    "kind": "mix",
-    "with": [
-      "chester-young"
-    ],
-    "tracks": [],
-    "thumbnail": "",
-    "story": "",
-    "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
-    "verified": false
   },
   {
     "id": "set-2026-06-24-dior-summer-2027-men-s-show",

@@ -1,0 +1,218 @@
+2026-07-30|Palacio de los Deportes, Mexico City
+2026-02-27|Alexandra Palace, London
+2026-02-26|Alexandra Palace, London
+2026-02-19|Corsica Studios, London
+2026-02-13|Alexandra Palace, London
+2026-02-12|Alexandra Palace, London
+2026-01-31|East End Studios, Queens
+2026-01-30|East End Studios, Queens
+2026-01-24|East End Studios, Queens
+2026-01-23|East End Studios, Queens
+2026-01-17|East End Studios, Queens
+2026-01-16|East End Studios, Queens
+2025-12-12|Expo Santa Fe, Mexico City
+2025-12-05|Cow Palace, Daly City
+2025-11-28|Vancouver Convention Centre, Vancouver
+2025-11-15|Hangar 5, YZD, Toronto
+2025-11-14|Hangar 5, YZD, Toronto
+2025-11-01|RDS Simmonscourt, Dublin
+2025-10-24|Halle Tony Garnier, Lyon
+2025-10-17|IFEMA, Madrid
+2025-10-10|Gare Maritime, Brussels
+2025-10-03|SEC Centre, Glasgow
+2025-09-18|Ambers, Manchester
+2025-09-12|Parco Archeologico di Egnazia, Fasano
+2025-09-08|Roma Summer Fest 2025
+2025-09-07|Piazza del Plebiscito, Naples
+2025-09-05|Castello Scaligero, Villafranca di Verona
+2025-09-04|Aria - Ex Macello, Milan
+2025-08-21|FORGE Warehouse, Sheffield
+2025-08-10|South Facing: Big Smoke 2025
+2025-07-31|Nanba Hatch, Osaka
+2025-07-29|TACHIKAWA STAGE GARDEN, Tachikawa
+2025-07-25|FUJI ROCK FESTIVAL '25
+2025-07-23|KINTEX, Goyang-si
+2025-07-21|UOB LIVE, Bangkok
+2025-07-19|Pasir Panjang Power Station, Singapore
+2025-07-18|Pasir Panjang Power Station, Singapore
+2025-07-12|Savaya, Bali
+2024-10-14|Dickies Arena, Fort Worth
+2024-10-13|Dickies Arena, Fort Worth
+2024-10-10|State Farm Arena, Atlanta
+2024-10-09|State Farm Arena, Atlanta
+2024-10-07|KeyBank Center, Buffalo
+2024-10-05|Piknic Électronik 2024
+2024-10-04|Scotiabank Arena, Toronto
+2024-10-03|Scotiabank Arena, Toronto
+2024-10-01|Russell Industrial Center, Detroit
+2024-10-01|Little Caesars Arena, Detroit
+2024-09-29|Alpine Valley Music Theatre, East Troy
+2024-09-28|Alpine Valley Music Theatre, East Troy
+2024-09-26|Byline Bank Aragon Ballroom, Chicago
+2024-09-25|Target Center, Minneapolis
+2024-09-19|Climate Pledge Arena, Seattle
+2024-09-18|Climate Pledge Arena, Seattle
+2024-09-15|Utah First Credit Union Amphitheatre, West Valley City
+2024-09-12|Ball Arena, Denver
+2024-09-11|Ball Arena, Denver
+2024-09-09|Mishawaka Amphitheatre, Bellvue
+2024-09-06|Alexandra Palace, London
+2024-09-02|Lake Vouliagmeni, Athens
+2024-08-25|Leeds Festival 2024
+2024-08-24|Reading Festival 2024
+2024-08-23|Rock en Seine 2024
+2024-08-17|Lowlands Festival 2024
+2024-08-16|Pukkelpop 2024
+2024-08-12|Sziget Festival 2024
+2024-08-10|Flow Festival 2024
+2024-08-09|Way Out West 2024
+2024-08-08|Syd For Solen 2024
+2024-06-28|Glastonbury Festival 2024
+2024-06-16|Bonnaroo 2024
+2024-06-14|Los Angeles Memorial Coliseum
+2024-06-11|Los Angeles Memorial Coliseum
+2024-06-06|Frost Amphitheater, Stanford
+2024-06-05|Frost Amphitheater, Stanford
+2024-06-04|Frost Amphitheater, Stanford
+2024-05-18|Electric Daisy Carnival (Las Vegas) 2024
+2024-05-12|Parque de Cultura Urbana, Mexico City
+2024-03-30|Langley Park, Perth
+2024-03-27|Spark Arena, Auckland
+2024-03-26|Spark Arena, Auckland
+2024-03-25|The Coroglen Tavern, Coromandel
+2024-03-22|Waitangi Park, Wellington
+2024-03-17|The Domain, Sydney
+2024-03-16|The Domain, Sydney
+2024-03-14|Qudos Bank Arena, Sydney
+2024-03-13|Qudos Bank Arena, Sydney
+2024-03-12|Qudos Bank Arena, Sydney
+2024-03-09|Doug Jennings Park, Gold Coast
+2024-03-08|Hotel Brunswick, Brunswick Heads
+2024-03-06|Rod Laver Arena, Melbourne
+2024-03-05|Rod Laver Arena, Melbourne
+2024-03-04|Rod Laver Arena, Melbourne
+2024-03-02|Revolver Upstairs, Melbourne
+2024-03-02|The Timber Yard, Melbourne
+2024-02-26|Sydney Opera House, Sydney
+2024-02-08|Knockdown Center, Queens
+2024-01-05|Corsica Studios, London
+2023-11-18|Depot Mayfield, Manchester
+2023-11-03|Shrine Exposition Hall, Los Angeles
+2023-11-02|Shrine Exposition Hall, Los Angeles
+2023-11-01|Shrine Exposition Hall, Los Angeles
+2023-10-31|Shrine Exposition Hall, Los Angeles
+2023-10-29|Shrine Exposition Hall, Los Angeles
+2023-10-28|Shrine Exposition Hall, Los Angeles
+2023-10-27|Shrine Exposition Hall, Los Angeles
+2023-10-25|Shrine Exposition Hall, Los Angeles
+2023-10-24|Shrine Exposition Hall, Los Angeles
+2023-10-20|III Points 2023
+2023-10-14|Fine & Raw Chocolate Factory, New York
+2023-10-14|Forest Hills Stadium, Queens
+2023-10-13|Forest Hills Stadium, Queens
+2023-10-12|Forest Hills Stadium, Queens
+2023-09-21|Le Zénith, Paris
+2023-09-20|Le Zénith, Paris
+2023-09-16|ING Arena, Brussels
+2023-09-15|Ziggo Dome, Amsterdam
+2023-09-14|Ziggo Dome, Amsterdam
+2023-09-12|Mercedes-Benz Arena, Berlin
+2023-09-09|Alexandra Palace, London
+2023-09-08|Alexandra Palace, London
+2023-09-06|Alexandra Palace, London
+2023-09-05|Alexandra Palace, London
+2023-09-04|Alexandra Palace, London
+2023-09-02|Electric Picnic 2023
+2023-08-26|Connect Festival 2023
+2023-08-06|Osheaga Festival 2023
+2023-08-05|Lollapalooza 2023 Aftershows
+2023-08-04|Lollapalooza 2023
+2023-07-02|Garorock 2023
+2023-07-01|Rock Werchter 2023
+2023-06-30|Down the Rabbit Hole 2023
+2023-06-24|Glastonbury Festival 2023
+2023-06-23|Glastonbury Festival 2023
+2023-06-10|Parklife 2023
+2023-06-09|Primavera Sound Madrid 2023
+2023-06-08|Primavera Sound Porto 2023
+2023-06-02|Primavera Sound Barcelona 2023
+2023-04-10|Tiny Desk Concerts, Washington
+2023-04-01|Ceremonia 2023
+2023-03-31|Tecate Pa'l Norte 2023
+2023-03-30|Parque Bicentenario, Mexico City
+2023-03-27|Zig Studio, São Paulo
+2023-03-26|Lollapalooza Brazil 2023
+2023-03-24|Estéreo Picnic 2023
+2023-03-19|Lollapalooza Chile 2023
+2023-03-18|Lollapalooza Argentina 2023
+2023-03-17|C Complejo Art Media, Buenos Aires
+2023-02-12|Laneway Festival Perth 2023
+2023-02-11|Laneway Festival Melbourne 2023
+2023-02-10|Laneway Festival Adelaide 2023
+2023-02-08|Hordern Pavilion, Sydney
+2023-02-07|Enmore Theatre, Sydney
+2023-02-05|Laneway Festival Sydney 2023
+2023-02-04|Laneway Festival Brisbane 2023
+2023-02-03|The Thorn 3071, Melbourne
+2023-02-01|Forum Theatre, Melbourne
+2023-01-28|Shed 6, Wellington
+2023-01-07|Troxy, London
+2023-01-06|Electric Brixton, London
+2023-01-05|Electric Ballroom, London
+2022-12-09|O2 Academy Brixton, London
+2022-12-08|O2 Academy Brixton, London
+2022-12-07|O2 Academy Brixton, London
+2022-12-03|Élysée Montmartre, Paris
+2022-12-01|Ancienne Belgique, Brussels
+2022-11-30|Carlswerk Victoria, Cologne
+2022-11-27|UFO im Velodrom, Berlin
+2022-11-25|AFAS Live, Amsterdam
+2022-11-22|3Olympia Theatre, Dublin
+2022-10-16|Terminal 5, New York
+2022-10-14|Terminal 5, New York
+2022-10-13|Terminal 5, New York
+2022-10-11|Roadrunner, Boston
+2022-10-08|9:30 Club, Washington
+2022-10-06|History, Toronto
+2022-10-02|Mission Ballroom, Denver
+2022-10-01|The Gorge Amphitheatre, George
+2022-09-30|Hollywood Forever Cemetery, Los Angeles
+2022-09-29|Hollywood Forever Cemetery, Los Angeles
+2022-09-28|Hollywood Forever Cemetery, Los Angeles
+2022-09-25|CRSSD Festival 2022
+2022-09-24|Portola Music Festival 2022
+2022-09-23|The Warfield, San Francisco
+2022-09-10|Repercussion 2022
+2022-09-03|Forwards 2022
+2022-09-02|Electric Picnic 2022
+2022-08-28|Rock en Seine 2022
+2022-08-27|All Points East 2022
+2022-08-21|Pukkelpop 2022
+2022-08-20|Lowlands Festival 2022
+2022-08-14|Flow Festival 2022
+2022-08-13|Way Out West 2022
+2022-07-09|Montreux Jazz Festival 2022
+2022-07-02|Roskilde Festival 2022
+2022-06-29|Boiler Room, London
+2022-06-25|Disneyland, Anaheim
+2022-06-24|Electric Forest 2022
+2022-06-12|Parklife 2022
+2022-06-11|Primavera Sound 2022
+2022-06-10|Melt! Festival 2022
+2022-06-02|Primavera Sound 2022
+2022-04-26|The Fonda Theatre, Los Angeles
+2022-04-24|Coachella Festival 2022
+2022-04-17|Coachella Festival 2022
+2022-04-14|Great American Music Hall, San Francisco
+2022-04-07|Le Botanique, Brussels
+2022-04-06|Melkweg, Amsterdam
+2022-03-24|Roundhouse, London
+2022-03-22|SWG3, Glasgow
+2022-03-21|Albert Hall, Manchester
+2021-12-05|Music Hall of Williamsburg, Brooklyn
+2021-11-24|Islington Assembly Hall, London
+2021-11-23|Motion Bristol, Bristol
+2021-11-22|Manchester Academy, Manchester
+2021-09-12|Parklife 2021
+2021-09-07|Village Underground, London
+2021-08-28|All Points East 2021

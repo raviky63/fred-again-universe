@@ -561,8 +561,8 @@
     "id": "latin-mafia",
     "name": "LATIN MAFIA",
     "bio": "Mexican group. Appears with Fred on Spotify; details still to check.",
-    "verified": false,
-    "source": "Spotify only",
+    "verified": true,
+    "source": "Spotify; SoundCloud credits on all 14 tracks of 9 months & 50 hours (2026)",
     "photo": "",
     "photo_credit": ""
   },

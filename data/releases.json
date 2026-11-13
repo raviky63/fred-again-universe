@@ -3,15 +3,16 @@
     "id": "julie-stay",
     "title": "Julie (Stay)",
     "kind": "single",
-    "date": "2019",
+    "date": "2019-10-14",
     "with": [],
-    "cover": "",
-    "story": "",
+    "cover": "https://i1.sndcdn.com/artworks-OnBhVTUxsI8t-0-t500x500.jpg",
+    "story": "Released 14 October 2019 (on SoundCloud from 25 September), built from Julie Adenuga singing in a car.",
     "links": {
       "spotify": "",
-      "youtube": ""
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/julie-stay"
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia discography / Spotify; SoundCloud (fredagain, read 13 Nov 2026)",
     "verified": true,
     "tracks": []
   },
@@ -19,17 +20,18 @@
     "id": "octavian-myownworld",
     "title": "Octavian (MyOwnWorld)",
     "kind": "single",
-    "date": "2019-09",
+    "date": "2019-09-11",
     "with": [
       "octavian"
     ],
-    "cover": "",
-    "story": "Early SoundCloud upload (2019).",
+    "cover": "https://i1.sndcdn.com/artworks-000596201399-ked6d7-t500x500.jpg",
+    "story": "Early SoundCloud upload (11 September 2019), built around Octavian talking about making his own world.",
     "links": {
       "spotify": "",
-      "youtube": ""
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/octavian-myownworld"
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia discography / Spotify; SoundCloud (fredagain, read 13 Nov 2026)",
     "verified": true,
     "tracks": []
   },
@@ -37,17 +39,18 @@
     "id": "eazi",
     "title": "Eazi (DoItNow)",
     "kind": "single",
-    "date": "2019-10",
+    "date": "2019-10-10",
     "with": [
       "mr-eazi"
     ],
-    "cover": "",
-    "story": "Early SoundCloud upload (2019).",
+    "cover": "https://i1.sndcdn.com/artworks-000610502311-fmyf5e-t500x500.jpg",
+    "story": "Early SoundCloud upload (10 October 2019): an inspirational speech from Mr Eazi turned into a song.",
     "links": {
       "spotify": "",
-      "youtube": ""
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/eazi-doitnow"
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia discography / Spotify; SoundCloud (fredagain, read 13 Nov 2026)",
     "verified": true,
     "tracks": []
   },
@@ -55,7 +58,7 @@
     "id": "jessie",
     "title": "Jessie (I Miss You)",
     "kind": "single",
-    "date": "2020",
+    "date": "2020-10-12",
     "with": [],
     "cover": "https://i.scdn.co/image/ab67616d00001e026e38dd04496d42ef2b346994",
     "story": "",
@@ -63,7 +66,7 @@
       "spotify": "https://open.spotify.com/album/3EKtYw5CKxZD4B0lXizamQ",
       "youtube": ""
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia discography / Spotify; SoundCloud (fredagain, read 13 Nov 2026)",
     "verified": true,
     "tracks": []
   },
@@ -75,13 +78,14 @@
     "with": [
       "headie-one"
     ],
-    "cover": "",
-    "story": "His project with Headie One. Gang and Don't Judge Me (with FKA twigs) both got Ivor Novello nominations. Exact year still to check.",
+    "cover": "https://i1.sndcdn.com/artworks-Hml6vVWiH6d5v8j9-bidi1Q-t500x500.jpg",
+    "story": "His mixtape with Headie One, released 3 April 2020. Charades came first (30 January 2020) and the single GANG on 2 April. Guests include FKA twigs, Jamie xx and Sampha, plus a Brian Eno remix of Told.",
     "links": {
       "spotify": "",
-      "youtube": ""
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/sets/headie-one-x-fred-again-1"
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia discography / Spotify; SoundCloud (fredagain, read 13 Nov 2026)",
     "verified": true,
     "tracks": []
   },
@@ -89,15 +93,15 @@
     "id": "kyren",
     "title": "Kyren (My Son)",
     "kind": "single",
-    "date": "2020-05",
+    "date": "2020-05-15",
     "with": [],
-    "cover": "",
-    "story": "SoundCloud upload (2020).",
+    "cover": "https://i1.sndcdn.com/artworks-PSwZMhheGKFy-0-t500x500.jpg",
+    "story": "Released 15 May 2020, built from a post by Kyren that Fred saw while scrolling Instagram.",
     "links": {
       "spotify": "",
       "youtube": ""
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia discography / Spotify; SoundCloud (fredagain, read 13 Nov 2026)",
     "verified": true,
     "tracks": []
   },
@@ -107,7 +111,7 @@
     "kind": "ep",
     "date": "2020-05-15",
     "with": [],
-    "cover": "",
+    "cover": "https://i1.sndcdn.com/artworks-774f9944-23c9-41d4-bc5c-d0957d5551fa-0-t500x500.jpg",
     "story": "The first Actual Life EP on his own Again.. Records.",
     "links": {
       "spotify": "",
@@ -121,18 +125,18 @@
     "id": "dont-judge-me",
     "title": "Don't Judge Me",
     "kind": "single",
-    "date": "2021",
+    "date": "2021-01-26",
     "with": [
       "fka-twigs",
       "headie-one"
     ],
     "cover": "https://i.scdn.co/image/ab67616d00001e02be53db0d1e09575772c04d07",
-    "story": "",
+    "story": "FKA twigs, Headie One and Fred turned Judge Me (Interlude) from GANG into a full song, unveiled on 26 January 2021 with a video by Emmanuel Adjei. Nominated for an Ivor Novello (Best Contemporary Song).",
     "links": {
       "spotify": "https://open.spotify.com/album/12xYnvNkZWg4yPn2edO0cm",
       "youtube": ""
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "The Line of Best Fit (unveiled 26 Jan 2021); Complete Music Update (27 Jan 2021)",
     "verified": true,
     "tracks": []
   },
@@ -140,18 +144,18 @@
     "id": "stay-high-again",
     "title": "Stay High Again..",
     "kind": "single",
-    "date": "2021",
+    "date": "2021-03-02",
     "with": [
       "brittany-howard",
       "joy-anonymous"
     ],
     "cover": "https://i.scdn.co/image/ab67616d00001e0215ae3adf0aedb65b52f6c9a0",
-    "story": "",
+    "story": "Fred's and Joy Anonymous' version of Brittany Howard's Stay High, released 2 March 2021 and later on Jaime Reimagined.",
     "links": {
       "spotify": "https://open.spotify.com/album/1Uyw2RktJN8K2ncx0y1LeQ",
       "youtube": ""
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Red Light Management / ATO Records (2 Mar 2021); on Jaime Reimagined (23 Jul 2021)",
     "verified": true,
     "tracks": []
   },
@@ -159,7 +163,7 @@
     "id": "diana",
     "title": "Diana (You Don't Even Know)",
     "kind": "single",
-    "date": "2021",
+    "date": "2021-05-14",
     "with": [
       "jayda-g"
     ],
@@ -169,7 +173,7 @@
       "spotify": "https://open.spotify.com/album/2FR8tMHuRmAqxrZChfSyZI",
       "youtube": ""
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia discography / Spotify; SoundCloud (fredagain, read 13 Nov 2026)",
     "verified": true,
     "tracks": []
   },
@@ -177,7 +181,7 @@
     "id": "baxter",
     "title": "Baxter (These Are My Friends)",
     "kind": "single",
-    "date": "2021",
+    "date": "2021-08-03",
     "with": [
       "baxter-dury"
     ],
@@ -187,7 +191,7 @@
       "spotify": "https://open.spotify.com/album/4JZi9eNgVdTUIoC1qMYmXz",
       "youtube": ""
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia discography / Spotify; SoundCloud (fredagain, read 13 Nov 2026)",
     "verified": true,
     "tracks": []
   },
@@ -262,17 +266,17 @@
     "id": "strong",
     "title": "Strong",
     "kind": "single",
-    "date": "2022",
+    "date": "2022-11-14",
     "with": [
       "romy"
     ],
     "cover": "https://i.scdn.co/image/ab67616d00001e0226a6aea50dcd3867253ebcc5",
-    "story": "Grammy-nominated for Best Dance/Electronic Recording in 2024. Release year still to add.",
+    "story": "Romy's single featuring Fred, released 14 November 2022 after he teased it in his Boiler Room set. Nominated for Best Dance/Electronic Recording at the 2024 Grammys.",
     "links": {
       "spotify": "https://open.spotify.com/album/4feYoBaeQJUrYygOD4A0DF",
       "youtube": ""
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia (Strong (Romy song)); Stereogum, The FADER (14 Nov 2022)",
     "verified": true,
     "tracks": []
   },
@@ -364,7 +368,7 @@
     "id": "mike-desert-island-duvet",
     "title": "Mike (Desert Island Duvet)",
     "kind": "single",
-    "date": "2023-03",
+    "date": "2023-03-03",
     "with": [
       "the-streets",
       "dermot-kennedy"
@@ -375,7 +379,7 @@
       "spotify": "https://open.spotify.com/album/3lYzZoDorEtJsL3uRZ5dPa",
       "youtube": ""
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia discography / Spotify; SoundCloud (fredagain, read 13 Nov 2026)",
     "verified": true,
     "tracks": []
   },
@@ -469,18 +473,18 @@
     "id": "air-maxes",
     "title": "Air Maxes",
     "kind": "single",
-    "date": "2025",
+    "date": "2025-07-04",
     "with": [
       "kettama",
       "shady-nasty"
     ],
     "cover": "https://i.scdn.co/image/ab67616d00001e02882e173de77b1dc0a9050e38",
-    "story": "On Kettama's album Archangel.",
+    "story": "Kettama, Fred and Shady Nasty, released 4 July 2025 on Steel City Dance Discs. On Kettama's album Archangel.",
     "links": {
       "spotify": "https://open.spotify.com/album/3uJi79dqEa5suZaCg5DTGK",
       "youtube": ""
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia (Air Maxes); Rolling Stone Australia (4 Jul 2025)",
     "verified": true,
     "tracks": []
   },
@@ -537,12 +541,13 @@
       "latin-mafia"
     ],
     "cover": "https://i.scdn.co/image/ab67616d00001e022fe1ee03a5bed6b4a2e73296",
-    "story": "Listed on Spotify under Fred again.. and LATIN MAFIA. Still to check what this is.",
+    "story": "A mixtape made with LATIN MAFIA, released 31 July 2026: every one of its 14 tracks credits them. Guests include Brian Eno (a new edit of Cmon), Lil Yachty, Mabe Fratti, bby, IVOXYGEN and KatzPascale, and Jon Hopkins' Open Eye Signal (under the fabric).",
     "links": {
       "spotify": "https://open.spotify.com/album/4HZ3fF1dwSZLwztlLwoDYA",
-      "youtube": ""
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/sets/9-months-50-hours"
     },
-    "source": "Wikipedia discography / Spotify",
+    "source": "Wikipedia discography / Spotify; SoundCloud (fredagain, read 13 Nov 2026)",
     "verified": true,
     "tracks": [
       "hey-hey",
