@@ -4671,13 +4671,14 @@
     "location": "Scottish Events Campus, Glasgow",
     "kind": "show",
     "with": [
-      "amyl-and-the-sniffers"
+      "amyl-and-the-sniffers",
+      "haai"
     ],
     "tracks": [
       "you-re-a-star"
     ],
     "thumbnail": "",
-    "story": "Phone-free show. Only official footage gets linked here. The tour's identity was one black-and-grey flag; here a giant version wrapped the venue entrance. The tour's identity was one black-and-grey flag; here a giant version wrapped the venue entrance. The tour's identity was one black-and-grey flag; here a giant version wrapped the venue entrance.",
+    "story": "Phone-free show. Only official footage gets linked here. The tour's identity was one black-and-grey flag; here a giant version wrapped the venue entrance. The tour's identity was one black-and-grey flag; here a giant version wrapped the venue entrance. The tour's identity was one black-and-grey flag; here a giant version wrapped the venue entrance. Fans report he played b2b with HAAi and Yousuke Yukimatsu for the first hours, then solo until 1am (to verify).",
     "media": [],
     "source": "Wikipedia (USB002 Tour); 1001Tracklists",
     "verified": true,
@@ -4696,12 +4697,12 @@
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "On the USB002 tour you could buy a USB as merch. Buyers got a password by email for ourfolder.fyi, a file-browser site where each password unlocked a city's folder (Glasgow 001 to CDMX 010, plus a General Sale folder) with stamps and tracks to download.",
+    "story": "The USB002 'USB' was a necklace with a 128 GB stick. After each show, people who were there got an email with a link and password to a store for that city, open for about two days, with around 100 necklaces per show. On the stick: a link to ourfolder.fyi and a code that unlocks that city's folder (Glasgow 001 to CDMX 010, plus a General Sale folder) with stamps and tracks.",
     "media": [],
     "links": {
       "site": "https://ourfolder.fyi/"
     },
-    "source": "Fan community (Discord, 2025); ourfolder.fyi site metadata (USB, archive, Fred again..). To verify: date and how the stick was sold.",
+    "source": "r/fredagain fan reports (Oct-Dec 2025); ourfolder.fyi site. To verify with an official source.",
     "verified": false
   },
   {
@@ -4833,9 +4834,51 @@
     "setting": "own"
   },
   {
+    "id": "betos-horns-video-paris",
+    "title": "Beto's Horns video, filmed in the crowd in Paris",
+    "date": "2025-10-28",
+    "location": "Paris",
+    "kind": "moment",
+    "with": [
+      "ca7riel-paco"
+    ],
+    "tracks": [
+      "beto-s-horns-fred-remix"
+    ],
+    "thumbnail": "",
+    "story": "Fred joined CA7RIEL & Paco Amoroso's Paris show and they filmed the Beto's Horns video in the middle of the crowd.",
+    "media": [],
+    "links": {},
+    "source": "r/fredagain (Oct-Nov 2025). Date to verify: 27 or 28 Oct.",
+    "verified": false,
+    "country": [
+      "FR"
+    ]
+  },
+  {
+    "id": "usb002-dublin-warmup",
+    "title": "Warm-up show, Button Factory, Dublin",
+    "date": "2025-10-30",
+    "location": "Button Factory, Dublin",
+    "kind": "show",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "A small warm-up show before the Dublin USB002 show, with tickets sent by email.",
+    "media": [],
+    "links": {},
+    "source": "r/fredagain fan reports (28-29 Oct 2025)",
+    "verified": false,
+    "country": [
+      "IE"
+    ],
+    "setting": "own",
+    "tour": "USB002"
+  },
+  {
     "id": "usb002-dublin",
     "title": "USB002 #5: Dublin",
-    "date": "2025-10-31",
+    "date": "2025-11-01",
     "location": "The Button Factory & RDS Simmonscourt, Dublin",
     "kind": "show",
     "with": [],
@@ -4846,7 +4889,7 @@
     "thumbnail": "",
     "story": "Phone-free show. Only official footage gets linked here.",
     "media": [],
-    "source": "Wikipedia (USB002 Tour); 1001Tracklists",
+    "source": "Wikipedia (USB002 Tour); 1001Tracklists; setlist.fm (RDS Simmonscourt, 1 Nov 2025); r/fredagain (\"Dublin on Saturday\")",
     "verified": true,
     "tour": "USB002",
     "country": [
@@ -4920,14 +4963,14 @@
   },
   {
     "id": "set-2025-11-26-twitch-canada",
-    "title": "Twitch, Canada",
+    "title": "Twitch, Vancouver",
     "date": "2025-11-26",
-    "location": "Twitch, Canada",
+    "location": "Twitch, Vancouver",
     "kind": "show",
     "with": [],
     "tracks": [],
     "thumbnail": "",
-    "story": "",
+    "story": "Twitch live stream #15, from Vancouver, two days before the USB002 show there.",
     "media": [],
     "source": "1001Tracklists (fan-made tracklist)",
     "verified": true,
@@ -5011,7 +5054,9 @@
     "date": "2025-12-12",
     "location": "Expo Santa Fe, Mexico City",
     "kind": "show",
-    "with": [],
+    "with": [
+      "latin-mafia"
+    ],
     "tracks": [
       "i-luv-u"
     ],

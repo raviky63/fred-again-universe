@@ -23,6 +23,8 @@ OUT = Path(__file__).resolve().parent.parent / "research" / "community"
 
 PATTERNS = [
     (re.compile(r"<@!?&?\d+>"), "[someone]"),                                  # discord mentions
+    (re.compile(r"@?\[[^\]]{1,40}\]\(https?://([\w-]+\.)?reddit\.com/(u|user)/[^)]+\)", re.I), "[someone]"),  # markdown reddit user links
+    (re.compile(r"https?://([\w-]+\.)?reddit\.com/(u|user)/[\w-]+/?", re.I), "[someone]"),
     (re.compile(r"(?<!\w)@[\w.]{2,32}"), "[someone]"),                          # @handles
     (re.compile(r"(?<!\w)/?u/[\w-]{3,20}"), "[someone]"),                       # reddit users
     (re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+"), "[email removed]"),
