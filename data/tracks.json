@@ -152,7 +152,8 @@
     "id": "julia-deep-diving",
     "title": "Julia (deep diving)",
     "releases": [
-      "actual-life"
+      "actual-life",
+      "julia-single"
     ],
     "date": "2021-04-16",
     "with": [],
@@ -168,7 +169,8 @@
     "id": "kyle-i-found-you",
     "title": "Kyle (i found you)",
     "releases": [
-      "actual-life"
+      "actual-life",
+      "kyle-single"
     ],
     "date": "2021-04-16",
     "with": [],
@@ -219,7 +221,8 @@
     "id": "marnie-wish-i-had-u",
     "title": "Marnie (wish i had u)",
     "releases": [
-      "actual-life"
+      "actual-life",
+      "marnie-single"
     ],
     "date": "2021-04-16",
     "with": [],
@@ -2027,7 +2030,7 @@
     "releases": [
       "usb"
     ],
-    "date": "2026-02-16",
+    "date": "2026-02-13",
     "with": [
       "jamie-t"
     ],
@@ -2036,7 +2039,7 @@
       "spotify": "https://open.spotify.com/album/0OrWX0oW2b94MfnA1dSeov",
       "youtube": ""
     },
-    "source": "Press, see research/usb-release-dates.md",
+    "source": "SoundCloud release date; DIY Mag (13 Feb 2026); press, see research/usb-release-dates.md",
     "verified": true,
     "story": "First out on the USB002 vinyl (12 December 2025), before it came to streaming."
   },

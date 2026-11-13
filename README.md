@@ -73,3 +73,10 @@ The web (`index.html` + `web.js`) uses the chosen combo: open & close, names onl
 `prototypes.html` lets you switch the readability ideas for the web on and off (open & close, names on zoom, shows per tour, size by collabs, story mode, era colours).
 
 See [ROADMAP.md](ROADMAP.md) for the plan ahead.
+
+## Checking the data
+
+Everything that still needs checking lives in the review sheet **"Fred again.. Universe – data nachecken"** (claude.ai/artifact/5C5bWadnuKKtHkKqrdczXe):
+- tab *Nachecken*: open items, with priority, what to check, the outcome so far, the current source and where to look;
+- tab *Afgerond*: items that are 100% closed, with the date. Closed items are moved there, never deleted.
+New questions go into *Nachecken* as soon as they come up. `CHECKLIST.md` (from `tools/verify_list.py`) still lists what the data itself marks as unverified.

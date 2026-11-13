@@ -565,5 +565,183 @@
       "mabe",
       "i-wish-it-wasnt"
     ]
+  },
+  {
+    "id": "antonio-old-me",
+    "title": "Antonio (old me)",
+    "kind": "single",
+    "date": "2019-07-16",
+    "with": [],
+    "cover": "https://i1.sndcdn.com/artworks-000568073585-ij0ewa-t500x500.jpg",
+    "story": "One of his very first SoundCloud uploads (16 July 2019), before Actual Life had a name.",
+    "links": {
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/old-me"
+    },
+    "source": "SoundCloud (fredagain, read 13 Nov 2026)",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "valentina-tokyo",
+    "title": "Valentina (Tokyo)",
+    "kind": "single",
+    "date": "2019-07-16",
+    "with": [],
+    "cover": "https://i1.sndcdn.com/artworks-000568408292-o0poqx-t500x500.jpg",
+    "story": "Uploaded 16 July 2019: made from a video his friend Valentina sent, a year after a trip to Tokyo for Red Bull Music Academy.",
+    "links": {
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/valentina1"
+    },
+    "source": "SoundCloud (fredagain, read 13 Nov 2026)",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "janelle-i-dont-like-clubs",
+    "title": "Janelle (I Dont Like Clubs)",
+    "kind": "single",
+    "date": "2019-07-24",
+    "with": [],
+    "cover": "https://i1.sndcdn.com/artworks-000571883147-110u01-t500x500.jpg",
+    "story": "Early SoundCloud upload (24 July 2019).",
+    "links": {
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/janelle-i-dont-like-clubs"
+    },
+    "source": "SoundCloud (fredagain, read 13 Nov 2026)",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "billie-im-not-okay",
+    "title": "Billie (I'm Not Okay)",
+    "kind": "single",
+    "date": "2019-07-31",
+    "with": [],
+    "cover": "https://i1.sndcdn.com/artworks-000575353658-ok5p6x-t500x500.jpg",
+    "story": "Early SoundCloud upload (31 July 2019), built around Billie Eilish talking.",
+    "links": {
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/billie"
+    },
+    "source": "SoundCloud (fredagain, read 13 Nov 2026)",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "kyle-single",
+    "title": "Kyle (i found you)",
+    "kind": "single",
+    "date": "2019-11-22",
+    "with": [],
+    "cover": "https://i1.sndcdn.com/artworks-7FO36kr9VFB7-0-t500x500.jpg",
+    "story": "Released 22 November 2019: built from a poem by Kyle, a man Fred found at an open-mic poetry night. Later on Actual Life.",
+    "links": {
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/kyle-i-found-you"
+    },
+    "source": "SoundCloud (fredagain, read 13 Nov 2026)",
+    "verified": true,
+    "tracks": [
+      "kyle-i-found-you"
+    ]
+  },
+  {
+    "id": "me-sorry",
+    "title": "Me (sorry)",
+    "kind": "single",
+    "date": "2019-12-18",
+    "with": [],
+    "cover": "https://i1.sndcdn.com/artworks-MTewmIkiwzBH-0-t500x500.jpg",
+    "story": "Single released 18 December 2019, with Fred's own voice.",
+    "links": {
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/me-sorry"
+    },
+    "source": "SoundCloud (fredagain, read 13 Nov 2026)",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "marnie-single",
+    "title": "Marnie (wish i had u)",
+    "kind": "single",
+    "date": "2020-02-20",
+    "with": [],
+    "cover": "https://i1.sndcdn.com/artworks-tlTNmgAGQUIf-0-t500x500.jpg",
+    "story": "Released 20 February 2020: a friend singing to a baby called Marnie. Later on Actual Life.",
+    "links": {
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/mani-wish-i-had-u"
+    },
+    "source": "SoundCloud (fredagain, read 13 Nov 2026)",
+    "verified": true,
+    "tracks": [
+      "marnie-wish-i-had-u"
+    ]
+  },
+  {
+    "id": "chika-scared",
+    "title": "Chika (scared)",
+    "kind": "single",
+    "date": "2020-03-26",
+    "with": [
+      "chika"
+    ],
+    "cover": "https://i1.sndcdn.com/artworks-v25n3wegUpwF-0-t500x500.jpg",
+    "story": "Released 26 March 2020, early in lockdown, built from a clip of CHIKA.",
+    "links": {
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/chika-scared"
+    },
+    "source": "SoundCloud (fredagain, read 13 Nov 2026)",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "adam-act-like",
+    "title": "Adam (act like)",
+    "kind": "single",
+    "date": "2020-06-12",
+    "with": [],
+    "cover": "https://i1.sndcdn.com/artworks-kY2rsGpjbBbN-0-t500x500.jpg",
+    "story": "Released 12 June 2020: sampled from a freestyle Fred saw on Instagram.",
+    "links": {
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/adam-act-like"
+    },
+    "source": "SoundCloud (fredagain, read 13 Nov 2026)",
+    "verified": true,
+    "tracks": []
+  },
+  {
+    "id": "julia-single",
+    "title": "Julia (deep diving)",
+    "kind": "single",
+    "date": "2020-11-23",
+    "with": [],
+    "cover": "https://i1.sndcdn.com/artworks-WcNcKGMAATRM-0-t500x500.jpg",
+    "story": "Released 23 November 2020, made from a poem Julia posted on Instagram. Later on Actual Life.",
+    "links": {
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "https://soundcloud.com/fredagain/julia-deep-diving"
+    },
+    "source": "SoundCloud (fredagain, read 13 Nov 2026)",
+    "verified": true,
+    "tracks": [
+      "julia-deep-diving"
+    ]
   }
 ]

@@ -1708,6 +1708,24 @@
     "setting": "own"
   },
   {
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "media": [],
+    "links": {},
+    "id": "usb-handed-out-2023",
+    "title": "A USB handed to a fan",
+    "date": "2023-01-06",
+    "location": "Electric Brixton, London",
+    "kind": "moment",
+    "country": [
+      "GB"
+    ],
+    "story": "During the three last-minute London shows with Skrillex and Four Tet (5–7 January 2023), USB sticks with Fred's live edits were handed to fans in the crowd. One fan got one at Electric Brixton on 6 January and put the edits online for free; a friend of his got one at Electric Ballroom the night before.",
+    "source": "rova (12 Jan 2023); the fan's own r/fredagain post (7 Jan 2023, before the Troxy show) for which night",
+    "verified": false
+  },
+  {
     "id": "set-2023-01-07-troxy-london",
     "title": "Troxy, London",
     "date": "2023-01-07",
@@ -1728,24 +1746,6 @@
       "GB"
     ],
     "setting": "own"
-  },
-  {
-    "with": [],
-    "tracks": [],
-    "thumbnail": "",
-    "media": [],
-    "links": {},
-    "id": "usb-handed-out-2023",
-    "title": "A USB handed to a fan",
-    "date": "2023-01-06",
-    "location": "Electric Brixton, London",
-    "kind": "moment",
-    "country": [
-      "GB"
-    ],
-    "story": "During the three last-minute London shows with Skrillex and Four Tet (5–7 January 2023), USB sticks with Fred's live edits were handed to fans in the crowd. One fan got one at Electric Brixton on 6 January and put the edits online for free; a friend of his got one at Electric Ballroom the night before.",
-    "source": "rova (12 Jan 2023); the fan's own r/fredagain post (7 Jan 2023, before the Troxy show) for which night",
-    "verified": false
   },
   {
     "id": "show-2023-01-28-shed-6-wellington-new-ze",
@@ -3438,7 +3438,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); setlist.fm (Parque de Cultura Urbana, inside Bosque de Chapultepec, 12 May 2024)",
     "verified": true,
     "country": [
       "MX"
@@ -3476,7 +3476,7 @@
     "thumbnail": "",
     "story": "",
     "media": [],
-    "source": "1001Tracklists (fan-made tracklist)",
+    "source": "1001Tracklists (fan-made tracklist); Billboard (Aug 2024: Fred and Skrillex sold 25,000 tickets for the Civic Center Plaza show on 1 June)",
     "verified": true,
     "country": [
       "US"
@@ -4075,6 +4075,28 @@
     "setting": "own"
   },
   {
+    "id": "show-2024-10-01-russell-industrial-center-detroit",
+    "title": "Afters with Sammy Virji, Russell Industrial Center, Detroit",
+    "date": "2024-10-01",
+    "location": "Russell Industrial Center, Detroit",
+    "kind": "show",
+    "with": [
+      "sammy-virji"
+    ],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "After the Little Caesars Arena show, a 10pm afters with Sammy Virji, announced the day before on Instagram.",
+    "media": [],
+    "links": {},
+    "source": "ClickOnDetroit (1 Oct 2024); setlist.fm",
+    "verified": true,
+    "country": [
+      "US"
+    ],
+    "setting": "own",
+    "tour": "Places We've Never Been"
+  },
+  {
     "id": "set-2024-10-03-places-we-ve-never-been-tour-s",
     "title": "Places We've Never Been Tour, Scotiabank Arena, Toronto",
     "date": "2024-10-03",
@@ -4666,6 +4688,23 @@
     "setting": "own"
   },
   {
+    "id": "usb002-ourfolder",
+    "title": "ourfolder.fyi: a USB you unlock",
+    "date": "2025-10-03",
+    "location": "Online",
+    "kind": "moment",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "On the USB002 tour you could buy a USB as merch. Buyers got a password by email for ourfolder.fyi, a file-browser site where each password unlocked a city's folder (Glasgow 001 to CDMX 010, plus a General Sale folder) with stamps and tracks to download.",
+    "media": [],
+    "links": {
+      "site": "https://ourfolder.fyi/"
+    },
+    "source": "Fan community (Discord, 2025); ourfolder.fyi site metadata (USB, archive, Fred again..). To verify: date and how the stick was sold.",
+    "verified": false
+  },
+  {
     "id": "set-2025-10-09-gimic-radio-bar-brussels",
     "title": "GIMIC Radio + Bar, Brussels",
     "date": "2025-10-09",
@@ -4835,6 +4874,26 @@
       "CA"
     ],
     "setting": "own"
+  },
+  {
+    "id": "usb002-soundcloud-week",
+    "title": "USB002 SoundCloud week",
+    "date": "2025-11-14",
+    "location": "Toronto (Twitch)",
+    "kind": "moment",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "During the Toronto USB002 shows Fred put four Twitch edits straight onto SoundCloud: Bounce / Killa P (Frhendit 1), Digital Loving Arms (Freddit1C), How Do He Does It (SonFreddit) and Viperactive Angel Freddit.",
+    "media": [],
+    "links": {
+      "soundcloud": "https://soundcloud.com/fredagain/sets/usb002-soundcloud-week"
+    },
+    "source": "SoundCloud (fredagain, read 13 Nov 2026)",
+    "verified": true,
+    "country": [
+      "CA"
+    ]
   },
   {
     "id": "usb002-chicago",
@@ -5234,6 +5293,21 @@
     "links": {
       "youtube": "https://www.youtube.com/watch?v=gfF8jzBVWvM"
     }
+  },
+  {
+    "id": "usb002-dropbox-files",
+    "title": "The USB002 folders open up",
+    "date": "2026-04-28",
+    "location": "Online (Dropbox)",
+    "kind": "moment",
+    "with": [],
+    "tracks": [],
+    "thumbnail": "",
+    "story": "After the tour Fred and Dropbox shared the working files of USB002: the flag design, show posters, vinyl artwork and templates, unused artwork options and unseen photos from every show, keeping a promise he made to fans at each show.",
+    "media": [],
+    "links": {},
+    "source": "Digital Music News (28 Apr 2026)",
+    "verified": true
   },
   {
     "with": [],
